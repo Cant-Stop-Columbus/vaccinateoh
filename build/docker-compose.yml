@@ -1,0 +1,65 @@
+version: '2'
+
+networks:
+  proxy:
+    external:
+      name: proxy-network
+  default:
+
+services:
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  web:
+    image: ${WEB_IMAGE_NAME}
+    volumes:
+      - ${SRC_ROOT}:/app
+    env_file:
+      - web.vars
+    environment:
+      VIRTUAL_HOST: ${LOCAL_DOMAIN}
+      CERT_NAME: 'default'
+      HSTS: 'off'
+      WEBPACK_DEV_SERVER_ENABLED: 'true'
+    depends_on:
+      - db
+    networks:
+      - default
+      - proxy
+
+  memcached:
+    image: memcached:latest
+
+  mailhog:
+    image: mailhog/mailhog
+    environment:
+      VIRTUAL_HOST: mailhog.${LOCAL_DOMAIN}
+      CERT_NAME: 'default'
+      HSTS: 'off'
+      VIRTUAL_PORT: '8025'
+    networks:
+      - default
+      - proxy
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: dev@buckeyeinteractive.com
+      PGADMIN_DEFAULT_PASSWORD: rootbeer
+      VIRTUAL_HOST: pgadmin.${LOCAL_DOMAIN}
+      CERT_NAME: 'default'
+      HSTS: 'off'
+    networks:
+      - proxy
+      - default
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  db_data:
+  pgadmin_data:

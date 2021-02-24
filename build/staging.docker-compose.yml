@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    labels:
+      com.buckii.managed-node.backup_type: pg_dump
+    restart: unless-stopped
+
+  web:
+    image: ${WEB_IMAGE_NAME}
+    env_file:
+      - web.vars
+    ports:
+      - ${EXPOSE_PORT}:80
+    volumes:
+      - app_storage:/app/storage
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  memcached:
+    image: memcached:latest
+    restart: unless-stopped
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - ${MAILHOG_EXPOSE_PORT}:8025
+    restart: unless-stopped
+
+volumes:
+  db_data:
+  app_storage:
