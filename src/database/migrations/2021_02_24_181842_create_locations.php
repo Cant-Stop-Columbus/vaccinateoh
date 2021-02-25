@@ -16,20 +16,20 @@ class CreateLocations extends Migration
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('bookinglink');
-            $table->string('phone');
-            $table->string('address');
-            $table->string('address2');
-            $table->string('city');
-            $table->string('state');
-            $table->string('zip');
-            $table->string('serves');
-            $table->string('vaccinesoffered');
-            $table->string('siteinstructions');
-            $table->jsonb('daysopen');
-            $table->string('county');
-            $table->float('latitude');
-            $table->float('longitude');
+            $table->string('bookinglink')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->string('address2')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('serves')->nullable();
+            $table->string('vaccinesoffered')->nullable();
+            $table->string('siteinstructions')->nullable();
+            $table->jsonb('daysopen')->nullable();
+            $table->string('county')->nullable();
+            $table->float('latitude')->nullable();
+            $table->float('longitude')->nullable();
             $table->timestamps();
         });
     }

@@ -16,8 +16,8 @@ class CreateAvailabilities extends Migration
         Schema::create('availabilities', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('location_id');
-            $table->integer('doses');
-            $table->dateTime('availability_time');
+            $table->integer('doses')->nullable();
+            $table->dateTime('availability_time')->nullable();
             $table->timestamps();
             $table->foreign('location_id')->references('id')->on('locations');
         });
