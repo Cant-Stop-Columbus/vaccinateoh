@@ -17,6 +17,7 @@ class CreateLocations extends Migration
             $table->id();
             $table->string('name');
             $table->string('bookinglink');
+            $table->string('phone');
             $table->string('address');
             $table->string('address2');
             $table->string('city');
