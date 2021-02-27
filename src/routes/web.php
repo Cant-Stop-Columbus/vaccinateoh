@@ -4,6 +4,8 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+use App\Http\Controllers\ApiController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,14 +18,20 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    $locations = App\Models\Location::orderBy('name')->take(10)->get();
+    foreach($locations as $loc) {
+        if(empty($loc->longitude)) {
+            $loc->geocode();
+        }
+    }
+
+    return Inertia::render('Welcome', compact([
+        'locations',
+    ]));
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::get('api/locations', [ApiController::class, 'locations'])->name('api.locations');
