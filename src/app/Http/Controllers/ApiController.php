@@ -11,9 +11,18 @@ use DB;
 class ApiController extends Controller
 {
     public function locations(Request $request) {
-        $zip = $request->input('zip');
+        $q = trim($request->input('q'));
 
-        $locations = Location::closeToZip($zip)->take(10)->get();
+        $matches = [];
+        if(preg_match('/^\d{5}(-\d{4})?$/',$q)) {
+            $locations = Location::closeToZip($q);
+        } else if(preg_match('/^(-?\d+\.?\d*),(-?\d+\.?\d*)$/',$q,$matches)) {
+            $locations = Location::closeTo($matches[1],$matches[2]);
+        } else {
+            $locations = Location::where('address','like','%'.$q.'%');
+        }
+
+        $locations = $locations->take(30)->get();
 
         return response()->json($locations);
     }

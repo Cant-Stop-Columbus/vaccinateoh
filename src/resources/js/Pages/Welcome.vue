@@ -21,7 +21,7 @@
         <div class="max-w-6xl absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
             <div class="p-8">
                 <div class="bg-white flex items-center rounded-full shadow-xl">
-                    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="zip">
+                    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="search_q">
 
                     <div class="p-4">
                         <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center" @click="searchLocations">
@@ -58,13 +58,13 @@ export default {
                 markers: [
                 ],
             },
-            zip: '43210',
+            search_q: '43210',
             search_locations: [],
         };
     },
     methods: {
-        searchLocations() {
-            axios.get('/api/locations?zip=' + this.zip)
+        searchLocations(q) {
+            axios.get('/api/locations?q=' + (q || this.search_q))
                 .then(resp => {
                     this.search_locations = resp.data;
                     this.resetMarkers(this.search_locations);
@@ -76,16 +76,18 @@ export default {
                 marker.setMap(null);
             });
 
+            // From http://kml4earth.appspot.com/icons.html
+            let iconBase = 'https://maps.google.com/mapfiles/kml/paddle/';
             locations.forEach((loc, index) => {
                 if(loc.latitude && loc.longitude) {
                     let latLng = { lat: parseFloat(loc.latitude), lng: parseFloat(loc.longitude)};
-                    console.log(latLng);
 
                     let marker = new google.maps.Marker({
                         position: latLng,
                         map: this.map.gmap,
                         title: loc.name,
-                        location_idx: index
+                        location_idx: index,
+                        icon: iconBase + (loc.available ? 'grn-stars.png' : 'wht-blank.png'),
                     });
 
                     marker.addListener("click", () => {
@@ -99,6 +101,34 @@ export default {
                 }
             });
             this.map.gmap.fitBounds(bounds);
+        },
+        updateCurrentLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const pos = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude,
+                        };
+                        console.log({currentPosition: position});
+
+                        if(this.map.current_location_marker) {
+                            this.map.current_location_marker.setMap(null);
+                        }
+
+                        this.map.current_location_marker = new google.maps.Marker({
+                            position: pos,
+                            map: this.map.gmap,
+                            title: 'Current Location',
+                            icon: 'http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png',
+                        });
+
+                        this.search_q = '';
+                        let q = pos.lat + ',' + pos.lng;
+                        this.searchLocations(q);
+                    }
+                );
+            }
         },
     },
     mounted() {
@@ -117,6 +147,7 @@ export default {
                 window.infoWindow = this.map.infoWindow;
 
                 this.resetMarkers(this.locations);
+                this.updateCurrentLocation();
             });
     },
 };
