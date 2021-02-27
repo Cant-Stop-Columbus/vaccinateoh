@@ -33,4 +33,8 @@ class Location extends Model
     public function scopeCloseToZip($query, $zip) {
         return $query->orderByRaw("ABS(LEFT(zip,5)::INTEGER - $zip)");
     }
+
+    public function type() {
+        return $this->belongsTo('App\Models\LocationType', 'location_type_id');
+    }
 }
