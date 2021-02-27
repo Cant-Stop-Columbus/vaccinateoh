@@ -62,6 +62,7 @@ class UserCrudController extends CrudController
 
         CRUD::field('name');
         CRUD::field('email');
+        CRUD::field('password');
         CRUD::field('is_admin');
 
         /**
@@ -79,6 +80,8 @@ class UserCrudController extends CrudController
      */
     protected function setupUpdateOperation()
     {
-        $this->setupCreateOperation();
+        CRUD::field('name');
+        CRUD::field('email');
+        CRUD::field('is_admin');
     }
 }
