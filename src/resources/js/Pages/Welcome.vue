@@ -20,15 +20,15 @@
 
         <div class="max-w-6xl absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
             <div class="p-8">
-                <div class="bg-white flex items-center rounded-full shadow-xl">
+                <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
                     <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="search_q">
 
                     <div class="p-4">
-                        <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center" @click="searchLocations">
+                        <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center" type="submit">
                             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current text-white"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -72,7 +72,8 @@ export default {
         },
         resetMarkers(locations) {
             let bounds = new google.maps.LatLngBounds();
-            this.map.markers.forEach((marker) => {
+            window.markers = window.markers || [];
+            window.markers.forEach((marker) => {
                 marker.setMap(null);
             });
 
@@ -95,7 +96,7 @@ export default {
                         this.map.infoWindow.open(this.map.gmap, marker);
                     });
 
-                    this.map.markers.push(marker);
+                    window.markers.push(marker);
 
                     bounds.extend(latLng);
                 }
@@ -120,7 +121,7 @@ export default {
                             position: pos,
                             map: this.map.gmap,
                             title: 'Current Location',
-                            icon: 'http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png',
+                            icon: 'https://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png',
                         });
 
                         this.search_q = '';

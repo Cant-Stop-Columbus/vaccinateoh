@@ -38,15 +38,17 @@ class Location extends Model
     public function scopeCloseTo($query, $lat, $lng) {
         $lat = round($lat, 4);
         $lng = round($lng, 4);
-        $dist_raw = '60 * 1.1515 * acos ( least( greatest(
+        $dist_raw = '60 * 1.1515 * acos ( least(1, greatest(-1,
             cos( radians('.$lat.') )
             * cos( radians( latitude ) )
-            * cos( radians( longitude ) - radians('.$lng.') )
-            + sin( radians('.$lng.') )
+            * cos( abs( radians('.$lng.') - radians(longitude) ) )
+            + sin( radians('.$lat.') )
             * sin( radians( latitude ) )
-        , -1), 1) )';
+        )))';
         $dist_q = DB::raw($dist_raw);
-        return $query->select('*')->selectRaw(DB::raw($dist_raw . ' AS dist'))->where('latitude','>',0)->orderByRaw($dist_q);
+        return $query->select('*')
+            ->selectRaw(DB::raw($dist_raw . ' AS distance'))
+            ->orderByRaw($dist_q);
     }
 
     public function scopeCloseToZip($query, $zip) {

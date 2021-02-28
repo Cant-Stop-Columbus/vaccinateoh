@@ -15,9 +15,12 @@ class ApiController extends Controller
 
         $matches = [];
         if(preg_match('/^\d{5}(-\d{4})?$/',$q)) {
-            $locations = Location::closeToZip($q);
+            $zip = $q;
+            $locations = Location::closeToZip($zip);
         } else if(preg_match('/^(-?\d+\.?\d*),(-?\d+\.?\d*)$/',$q,$matches)) {
-            $locations = Location::closeTo($matches[1],$matches[2]);
+            $lat = $matches[1];
+            $lng = $matches[2];
+            $locations = Location::closeTo($lat,$lng);
         } else {
             $locations = Location::where('address','like','%'.$q.'%');
         }
