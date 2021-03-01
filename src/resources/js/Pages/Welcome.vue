@@ -53,6 +53,14 @@ export default {
                 options: {
                     center: {lat: 39.9612, lng: -82.9988},
                     zoom: 8,
+                    mapTypeControl: false,
+                    fullscreenControl: false,
+                    /* Add the below after google loads
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                        position: google.maps.ControlPosition.BOTTOM_LEFT,
+                    }
+                    */
                 },
                 infoWindow: null,
                 markers: [
@@ -142,6 +150,12 @@ export default {
         loader
             .load()
             .then(() => {
+
+                this.map.options.mapTypeControl = true;
+                this.map.options.mapTypeControlOptions = {
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                    position: google.maps.ControlPosition.BOTTOM_LEFT,
+                };
                 this.map.gmap = new google.maps.Map(document.getElementById('map'), this.map.options)
                 this.map.infoWindow = new google.maps.InfoWindow();
                 window.map = this.map.gmap;

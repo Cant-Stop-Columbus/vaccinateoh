@@ -52,7 +52,18 @@ class Location extends Model
     }
 
     public function scopeCloseToZip($query, $zip) {
-        return $query->orderByRaw("ABS(LEFT(zip,5)::INTEGER - $zip)");
+        // look for zipcode in our locations
+        $latlng = Location::where('zip', $zip)
+            ->groupBy('zip')
+            ->selectRaw(DB::raw('AVG(latitude) AS latitude,AVG(longitude) AS longitude'))
+            ->first();
+
+        // if not found, just do integer zipcode math (not accurate)
+        if(!empty($latlng)) {
+            return $this->scopeCloseTo($query, $latlng->latitude, $latlng->longitude);
+        } else {
+            return $query->orderByRaw("ABS(LEFT(zip,5)::INTEGER - $zip)");
+        }
     }
 
     public function type() {

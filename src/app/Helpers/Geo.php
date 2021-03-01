@@ -15,13 +15,6 @@ class Geo
             . '&benchmark=2020&format=json');
         return static::parse_geocoder_result($result->json());
     }
-
-    public static function geocode_zip($zip) {
-        $result = Http::get('https://geocoding.geo.census.gov/geocoder/locations/address?'
-            . 'zip=' . urlencode($zip)
-            . '&benchmark=2020&format=json');
-        return static::parse_geocoder_result($result->json());
-    }
     
     public static function geocode($address) {
         $result = Http::get('https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?'

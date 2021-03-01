@@ -22,7 +22,7 @@ class ApiController extends Controller
             $lng = $matches[2];
             $locations = Location::closeTo($lat,$lng);
         } else {
-            $locations = Location::where('address','like','%'.$q.'%');
+            $locations = Location::whereRaw(DB::raw("LOWER(address) LIKE '%".strtolower($q)."%'"));
         }
 
         $locations = $locations->take(30)->get();
