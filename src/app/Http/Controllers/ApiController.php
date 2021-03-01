@@ -25,7 +25,7 @@ class ApiController extends Controller
             $locations = Location::whereRaw(DB::raw("LOWER(address) LIKE '%".strtolower($q)."%'"));
         }
 
-        $locations = $locations->take(30)->get();
+        $locations = $locations->paginate(30);
 
         return response()->json($locations);
     }

@@ -41,6 +41,7 @@
 
 <script>
 import { Loader } from '@googlemaps/js-api-loader';
+import toastr from 'toastr';
 
 export default {
     props: {
@@ -74,7 +75,18 @@ export default {
         searchLocations(q) {
             axios.get('/api/locations?q=' + (q || this.search_q))
                 .then(resp => {
-                    this.search_locations = resp.data;
+                    // If no locations are found, show a warning but don't clear the results;
+                    if(!resp.data.total) {
+                        toastr.warning('No locations found. Try a different search.');
+                        return;
+                    }
+                    let this_page_count = resp.data.to - resp.data.from + 1;
+                    if(resp.data.total > this_page_count) {
+                        toastr.success('We found ' + resp.data.total + ' locations. Showing the ' + this_page_count + ' closest.');
+                    } else {
+                        toastr.success('We found ' + this_page_count + ' locations.');
+                    }
+                    this.search_locations = resp.data.data;
                     this.resetMarkers(this.search_locations);
                 });
         },
@@ -134,6 +146,7 @@ export default {
 
                         this.search_q = '';
                         let q = pos.lat + ',' + pos.lng;
+                        toastr.info('Thanks for sharing your location. We\'re searching near you.');
                         this.searchLocations(q);
                     }
                 );
