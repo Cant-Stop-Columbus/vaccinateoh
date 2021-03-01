@@ -7,7 +7,6 @@
 3. Create a `build/env.mk` file with at least a value for your local domain (ensure the hostname you use is pointed to your machine) and avoid pulling images from a docker repo:
 ```
 export LOCAL_DOMAIN=vaccinateoh.local
-export NO_PULL=1
 ```
 4. Start nginx-proxy `docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy`
 5. From the `build` directory (for the remaining steps), build the web image with `make build`

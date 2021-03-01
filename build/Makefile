@@ -65,14 +65,11 @@ SQL_BACKUP_FILE=backup.psql
 # Environment Specific Variable Overrides
 -include env.mk
 
-up: ecr-login
+up:
 ifndef NO_PULL
 	docker-compose pull
 endif
 	docker-compose up -d
-
-ecr-login:
-	$$(aws ecr get-login --no-include-email --region us-east-2)
 
 logs:
 	docker-compose logs -f
@@ -112,7 +109,7 @@ build-web:
 
 push: push-web
 
-push-web: ecr-login
+push-web:
 	docker push $(WEB_REPO_NAME)
 
 release: build push

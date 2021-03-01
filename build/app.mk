@@ -1,4 +1,6 @@
-export REGISTRY_URL=683277130590.dkr.ecr.us-east-2.amazonaws.com
+export REGISTRY_URL=cantstopcbus
+export WEB_BUILD_PATH=vaccinate-oh
+export WEB_REPO_NAME=$(REGISTRY_URL)/$(WEB_BUILD_PATH)
 export COMPOSE_PROJECT_NAME=vaccinateoh
 export APP_NAME=Vacciate Ohio
 export MAIL_FROM_NAME=Vaccinate Ohio
