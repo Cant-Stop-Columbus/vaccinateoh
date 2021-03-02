@@ -1,8 +1,24 @@
 <template>
-    <div class="w-full h-full flex">
+    <div class="w-full md:h-full md:flex">
 
-        <div id="location-sidebar" class="h-screen w-72 flex-none overflow-y-auto">
+        <div id="map" class="h-screen flex-grow md:order-2"></div>
+        <div id="location-sidebar" class="h-screen md:w-72 flex-none md:overflow-y-auto md:order-1">
             <h1 class="text-center text-2xl">Vaccinate OH</h1>
+
+            <div class="w-96 md:absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
+                <div class="md:p-8">
+                    <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
+                        <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="search_q">
+
+                        <div class="md:p-4 p-2">
+                            <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-10 h-10 flex items-center justify-center" type="submit">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current text-white"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <ul class="location-list">
                 <li class="location p-2 py-4 flex cursor-pointer" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
                     <div class="location-details flex-grow">
@@ -18,7 +34,6 @@
                 </li>
             </ul>
         </div>
-        <div id="map" class="h-screen flex-grow"></div>
 
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
             <inertia-link v-if="$page.props.user" href="/dashboard" class="text-sm text-gray-700 underline">
@@ -34,20 +49,6 @@
                     Register
                 </inertia-link>
             </template>
-        </div>
-
-        <div class="w-96 absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
-            <div class="p-8">
-                <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
-                    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="search_q">
-
-                    <div class="p-4">
-                        <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center" type="submit">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current text-white"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
         </div>
     </div>
 </template>
@@ -148,8 +149,6 @@ export default {
             this.map.gmap.fitBounds(bounds);
         },
         showLocationMarker(loc) {
-            console.log('Clicking marker');
-            console.log(loc);
             new google.maps.event.trigger( loc.marker, 'click' );
         },
         updateCurrentLocation() {
