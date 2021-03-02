@@ -1,6 +1,24 @@
 <template>
-    <div class="w-full h-full">
-        <div id="map" class="w-full h-screen"></div>
+    <div class="w-full h-full flex">
+
+        <div id="location-sidebar" class="h-screen w-72 flex-none overflow-y-auto">
+            <h1 class="text-center text-2xl">Vaccinate OH</h1>
+            <ul class="location-list">
+                <li class="location p-2 py-4 flex cursor-pointer" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
+                    <div class="location-details flex-grow">
+                        <h3 class="font-bold">{{ loc.name }}</h3>
+                        <div class="address text-sm text-gray-700" v-html="addressHtml(loc.address)"></div>
+                        <div class="phone text-sm text-gray-500"><a :href="'tel:' + loc.phone">{{ loc.phone }}</a></div>
+                        <div class="appt-link"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink">Search Appointments</a></div>
+                    </div>
+                    <div class="location-distance w-8 px-1 pt-4 text-center flex-none">
+                        <div class="text-xs text-gray-500" v-if="loc.distance">{{ round(loc.distance) }} mi</div>
+                        <div class="location-icon">&raquo; </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="map" class="h-screen flex-grow"></div>
 
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
             <inertia-link v-if="$page.props.user" href="/dashboard" class="text-sm text-gray-700 underline">
@@ -18,7 +36,7 @@
             </template>
         </div>
 
-        <div class="max-w-6xl absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
+        <div class="w-96 absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
             <div class="p-8">
                 <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
                     <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="search_q">
@@ -87,6 +105,7 @@ export default {
                         toastr.success('We found ' + this_page_count + ' locations.');
                     }
                     this.search_locations = resp.data.data;
+                    document.querySelector('#location-sidebar').scrollTop = 0;
                     this.resetMarkers(this.search_locations);
                 });
         },
@@ -103,7 +122,7 @@ export default {
                 if(loc.latitude && loc.longitude) {
                     let latLng = { lat: parseFloat(loc.latitude), lng: parseFloat(loc.longitude)};
 
-                    let marker = new google.maps.Marker({
+                    loc.marker = new google.maps.Marker({
                         position: latLng,
                         map: this.map.gmap,
                         title: loc.name,
@@ -111,17 +130,27 @@ export default {
                         icon: iconBase + (loc.available ? 'grn-stars.png' : 'wht-blank.png'),
                     });
 
-                    marker.addListener("click", () => {
-                        this.map.infoWindow.setContent('<h1>' + loc.name + '</h1>');
-                        this.map.infoWindow.open(this.map.gmap, marker);
+                    loc.marker.addListener("click", () => {
+                        let content = '<h3 class="font-bold">' + loc.name + '</h3>'
+                            + '<div class="address text-sm text-gray-700">' + this.addressHtml(loc.address) + '</div>'
+                            + '<div class="phone text-sm text-gray-500"><a href="tel:' + loc.phone + '">' + loc.phone + '</a></div>'
+                            + (!loc.distance ? '' : '<div class="text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
+                            + (!loc.bookinglink ? '' : '<div class="appt-link"><a href="' + loc.bookinglink + '" target="_blank">Search Appointments</a></div>');
+                        this.map.infoWindow.setContent(content);
+                        this.map.infoWindow.open(this.map.gmap, loc.marker);
                     });
 
-                    window.markers.push(marker);
+                    window.markers.push(loc.marker);
 
                     bounds.extend(latLng);
                 }
             });
             this.map.gmap.fitBounds(bounds);
+        },
+        showLocationMarker(loc) {
+            console.log('Clicking marker');
+            console.log(loc);
+            new google.maps.event.trigger( loc.marker, 'click' );
         },
         updateCurrentLocation() {
             if (navigator.geolocation) {
@@ -152,6 +181,15 @@ export default {
                 );
             }
         },
+        round(num, digits) {
+            if(digits == null) {
+                digits = 1;
+            }
+            return Math.round(num * Math.pow(10,digits)) / Math.pow(10, digits);
+        },
+        addressHtml(address) {
+            return address.replace(/\||\r/,'<br>');
+        },
     },
     mounted() {
         const loader = new Loader({
@@ -159,6 +197,8 @@ export default {
             version: "weekly",
             libraries: []
         });
+
+        this.search_locations = this.locations;
 
         loader
             .load()
