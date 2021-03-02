@@ -139,3 +139,15 @@ remove-starter-files:
 
 initial-commit:
 	git add --all && git ci -m 'Initial Commit'
+
+migrate:
+	$(DOCKER_WEB_EXEC) php artisan migrate
+
+seed-locations:
+	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationTypeSeeder
+
+tinker:
+	$(DOCKER_WEB_EXEC) php artisan tinker
+
+watch:
+	$(DOCKER_WEB_EXEC) yarn watch
