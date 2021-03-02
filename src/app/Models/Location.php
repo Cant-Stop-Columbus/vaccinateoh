@@ -38,7 +38,7 @@ class Location extends Model
     public function scopeCloseTo($query, $lat, $lng) {
         $lat = round($lat, 4);
         $lng = round($lng, 4);
-        $dist_raw = '60 * 1.1515 * acos ( least(1, greatest(-1,
+        $dist_raw = '3959 * acos ( least(1, greatest(-1,
             cos( radians('.$lat.') )
             * cos( radians( latitude ) )
             * cos( abs( radians('.$lng.') - radians(longitude) ) )
