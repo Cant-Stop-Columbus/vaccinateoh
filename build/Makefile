@@ -121,23 +121,6 @@ release: build push
 # Environment Specific Target Overrides
 -include env-targets.mk
 
-create-new-app: install-new-app remove-defaults add-starter-files remove-starter-files initial-commit release up
-
-install-new-app:
-	cd .. && \
-		composer create-project --prefer-dist laravel/laravel src
-
-remove-defaults:
-	cd ../src && \
-		rm -rf resources/js resources/sass package.json webpack.mix.js
-
-add-starter-files:
-	cd custom-starter-files && \
-		cp -r * ../../src/
-
-remove-starter-files:
-	rm -rf custom-starter-files
-
 initial-commit:
 	git add --all && git ci -m 'Initial Commit'
 
