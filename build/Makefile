@@ -160,10 +160,16 @@ nginx-proxy-down:
 composer-install:
 	$(DOCKER_WEB_EXEC) composer install
 
-setup-environment: install composer-install run-dev migrate seed-location-types
+setup-environment: install composer-install run-dev migrate seed
 
 migrate:
 	$(DOCKER_WEB_EXEC) php artisan migrate
+
+seed:
+	$(DOCKER_WEB_EXEC) php artisan db:seed
+
+seed-locations:
+	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationSeeder
 
 seed-location-types:
 	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationTypeSeeder
