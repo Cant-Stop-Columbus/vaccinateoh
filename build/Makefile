@@ -3,6 +3,7 @@
 export COMPOSE_FILE=docker-compose.yml
 export COMPOSE_PROJECT_NAME=example
 export LOCAL_DOMAIN=$(COMPOSE_PROJECT_NAME).localhost
+export EXPOSE_PORT=3000
 
 # Remote Server Parameters
 PROD_WEB_SERVER=web1.$(SITE_DOMAIN)
@@ -140,14 +141,41 @@ remove-starter-files:
 initial-commit:
 	git add --all && git ci -m 'Initial Commit'
 
+init-proxy-network:
+	-docker network create -d bridge proxy-network
+
+nginx-proxy: init-proxy-network
+	-docker rm nginx-proxy
+	docker pull jwilder/nginx-proxy
+	docker run -d --name nginx-proxy -p 80:80 -p 443:443 \
+	-v /var/run/docker.sock:/tmp/docker.sock:ro \
+	-v $(PWD)/conf/custom.conf:/etc/nginx/conf.d/custom.conf \
+	--restart=unless-stopped \
+	--network=proxy-network jwilder/nginx-proxy
+
+nginx-proxy-down:
+	-docker stop nginx-proxy
+	-docker rm nginx-proxy
+
+composer-install:
+	$(DOCKER_WEB_EXEC) composer install
+
+setup-environment: install composer-install run-dev migrate seed-location-types
+
 migrate:
 	$(DOCKER_WEB_EXEC) php artisan migrate
 
-seed-locations:
+seed-location-types:
 	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationTypeSeeder
 
 tinker:
 	$(DOCKER_WEB_EXEC) php artisan tinker
+
+install:
+	$(DOCKER_WEB_EXEC) yarn install
+
+run-dev:
+	$(DOCKER_WEB_EXEC) yarn dev
 
 watch:
 	$(DOCKER_WEB_EXEC) yarn watch
