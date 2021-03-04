@@ -21,7 +21,7 @@ class LocationCrudController extends CrudController
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
-     * 
+     *
      * @return void
      */
     public function setup()
@@ -33,7 +33,7 @@ class LocationCrudController extends CrudController
 
     /**
      * Define what happens when the List operation is loaded.
-     * 
+     *
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
@@ -60,13 +60,13 @@ class LocationCrudController extends CrudController
         /**
          * Columns can be defined using the fluent syntax or array syntax:
          * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
+         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
          */
     }
 
     /**
      * Define what happens when the Create operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
@@ -95,13 +95,13 @@ class LocationCrudController extends CrudController
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
+         * - CRUD::addField(['name' => 'price', 'type' => 'number']));
          */
     }
 
     /**
      * Define what happens when the Update operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-update
      * @return void
      */
@@ -109,4 +109,26 @@ class LocationCrudController extends CrudController
     {
         $this->setupCreateOperation();
     }
+
+    /*
+    GECODING FUNCTION
+     be sure to add your google key in the .env file
+     In the .ENV file: GOOGLE_KEY="YOUR KEY HERE"
+    */
+
+    /*public function geoCoding($zip_code){
+
+        $api = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
+        $par = '&key=';
+        $goo = env('GOOGLE_KEY');
+        $url = $api . $zip_code . $par . $goo;
+        $file = file_get_contents($url);
+        $json = json_decode($file, true);
+
+        $lat = $json['results'][0]['geometry']['location']['lat'];
+        $lon = $json['results'][0]['geometry']['location']['lng'];
+        $geo = array($lat, $lon);
+
+        return $geo;
+    }*/
 }
