@@ -12,7 +12,7 @@
 ```
 export LOCAL_DOMAIN=vaccinateoh.local
 ```
-6. Follow the instructions in Starting Your Environment.
+1. Follow the instructions in Starting Your Environment.
 
 ### Starting Your Environment
 
