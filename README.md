@@ -8,7 +8,7 @@
 1. [Install docker-compose](https://docs.docker.com/compose/install/)
 1. Clone this repo `git clone git@github.com:Cant-Stop-Columbus/vaccinateoh.git`
 1. `cd build`
-1. Using the `build/env.mk.environment` as a template, create a `build/env.mk` file with at least a value for your local domain (ensure the hostname you use is pointed to your machine) and avoid pulling images from a docker repo:
+1. Using the `build/env.mk.example` as a template, create a `build/env.mk` file with at least a value for your local domain (ensure the hostname you use is pointed to your machine) and avoid pulling images from a docker repo:
 ```
 export LOCAL_DOMAIN=vaccinateoh.local
 ```
