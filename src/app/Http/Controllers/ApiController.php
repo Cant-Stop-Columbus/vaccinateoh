@@ -22,7 +22,8 @@ class ApiController extends Controller
             $lng = $matches[2];
             $locations = Location::closeTo($lat,$lng);
         } else {
-            $locations = Location::whereRaw(DB::raw("LOWER(address) LIKE '%".strtolower($q)."%'"));
+            // Try geocoding the address
+            $locations = Location::closeToAddress($q);
         }
 
         $locations = $locations->paginate(30);
