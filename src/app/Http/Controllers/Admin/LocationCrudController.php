@@ -39,9 +39,22 @@ class LocationCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('id');
         CRUD::column('name')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::addColumn([
+            'name' => 'available',
+            'label' => 'Next Appointment',
+            'orderable' => true,
+            'orderLogic' => function ($query, $column, $columnDirection) {
+                return $query->leftJoin(
+                    \DB::raw('(SELECT min(availability_time) as available,location_id
+                        FROM availabilities
+                        WHERE availability_time > NOW()
+                        GROUP BY location_id
+                    ) AS a'), 'locations.id', '=', 'a.location_id')
+                ->orderBy('a.available', $columnDirection);
+            }
+        ]);
         CRUD::column('bookinglink')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('address')
