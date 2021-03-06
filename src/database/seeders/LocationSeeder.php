@@ -38,6 +38,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.87762',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:42:32',
+                'location_type_id' => NULL,
             ),
             1 =>
             array (
@@ -59,6 +60,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.06496',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:42:39',
+                'location_type_id' => NULL,
             ),
             2 =>
             array (
@@ -80,6 +82,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.981544',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:43:02',
+                'location_type_id' => NULL,
             ),
             3 =>
             array (
@@ -101,6 +104,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.86392',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:43:15',
+                'location_type_id' => NULL,
             ),
             4 =>
             array (
@@ -122,6 +126,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.09332',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:43:15',
+                'location_type_id' => NULL,
             ),
             5 =>
             array (
@@ -143,6 +148,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.02801',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:44:52',
+                'location_type_id' => NULL,
             ),
             6 =>
             array (
@@ -164,6 +170,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.86703',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:04',
+                'location_type_id' => NULL,
             ),
             7 =>
             array (
@@ -185,6 +192,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.04405',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:10',
+                'location_type_id' => NULL,
             ),
             8 =>
             array (
@@ -206,6 +214,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.05418',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:04',
+                'location_type_id' => NULL,
             ),
             9 =>
             array (
@@ -227,6 +236,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.15364',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:15',
+                'location_type_id' => NULL,
             ),
             10 =>
             array (
@@ -248,6 +258,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.876854',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:27',
+                'location_type_id' => NULL,
             ),
             11 =>
             array (
@@ -269,6 +280,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.14047',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:33',
+                'location_type_id' => NULL,
             ),
             12 =>
             array (
@@ -290,6 +302,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.895645',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:03',
+                'location_type_id' => NULL,
             ),
             13 =>
             array (
@@ -311,6 +324,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.09027',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:42',
+                'location_type_id' => NULL,
             ),
             14 =>
             array (
@@ -332,6 +346,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.777565',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:52',
+                'location_type_id' => NULL,
             ),
             15 =>
             array (
@@ -353,6 +368,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.031715',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:49:14',
+                'location_type_id' => NULL,
             ),
             16 =>
             array (
@@ -374,6 +390,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99206',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:49',
+                'location_type_id' => NULL,
             ),
             17 =>
             array (
@@ -395,6 +412,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.04797',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:49',
+                'location_type_id' => NULL,
             ),
             18 =>
             array (
@@ -416,6 +434,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.661224',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:19:19',
+                'location_type_id' => NULL,
             ),
             19 =>
             array (
@@ -437,6 +456,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.77038',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:19:58',
+                'location_type_id' => NULL,
             ),
             20 =>
             array (
@@ -458,6 +478,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.44386',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:03:42',
+                'location_type_id' => NULL,
             ),
             21 =>
             array (
@@ -479,6 +500,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.989174',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:21:00',
+                'location_type_id' => NULL,
             ),
             22 =>
             array (
@@ -500,6 +522,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.015976',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:21:48',
+                'location_type_id' => NULL,
             ),
             23 =>
             array (
@@ -521,6 +544,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.438156',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:05:31',
+                'location_type_id' => NULL,
             ),
             24 =>
             array (
@@ -542,6 +566,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.163536',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:24:43',
+                'location_type_id' => NULL,
             ),
             25 =>
             array (
@@ -563,6 +588,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.58535',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:22',
+                'location_type_id' => NULL,
             ),
             26 =>
             array (
@@ -584,6 +610,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44353',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:37',
+                'location_type_id' => NULL,
             ),
             27 =>
             array (
@@ -605,6 +632,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.830986',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:52',
+                'location_type_id' => NULL,
             ),
             28 =>
             array (
@@ -626,6 +654,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.625084',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:04',
+                'location_type_id' => NULL,
             ),
             29 =>
             array (
@@ -647,6 +676,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.81066',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:30:21',
+                'location_type_id' => NULL,
             ),
             30 =>
             array (
@@ -668,6 +698,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.13445',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:30:54',
+                'location_type_id' => NULL,
             ),
             31 =>
             array (
@@ -689,6 +720,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.11287',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:21',
+                'location_type_id' => NULL,
             ),
             32 =>
             array (
@@ -710,6 +742,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.32896',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:23',
+                'location_type_id' => NULL,
             ),
             33 =>
             array (
@@ -731,6 +764,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.33377',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:25',
+                'location_type_id' => NULL,
             ),
             34 =>
             array (
@@ -752,6 +786,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.371574',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:57',
+                'location_type_id' => NULL,
             ),
             35 =>
             array (
@@ -773,6 +808,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.165115',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:39',
+                'location_type_id' => NULL,
             ),
             36 =>
             array (
@@ -794,6 +830,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.764275',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:16',
+                'location_type_id' => NULL,
             ),
             37 =>
             array (
@@ -815,6 +852,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.6232',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:36',
+                'location_type_id' => NULL,
             ),
             38 =>
             array (
@@ -836,6 +874,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.43126',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:18',
+                'location_type_id' => NULL,
             ),
             39 =>
             array (
@@ -857,6 +896,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.02218',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:27',
+                'location_type_id' => NULL,
             ),
             40 =>
             array (
@@ -878,6 +918,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.50999',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:34',
+                'location_type_id' => NULL,
             ),
             41 =>
             array (
@@ -899,6 +940,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.50208',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:54',
+                'location_type_id' => NULL,
             ),
             42 =>
             array (
@@ -920,6 +962,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.128456',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:48',
+                'location_type_id' => NULL,
             ),
             43 =>
             array (
@@ -941,6 +984,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.55872',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:19',
+                'location_type_id' => NULL,
             ),
             44 =>
             array (
@@ -962,6 +1006,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.84259',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:10:21',
+                'location_type_id' => NULL,
             ),
             45 =>
             array (
@@ -983,6 +1028,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.50102',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:11:22',
+                'location_type_id' => NULL,
             ),
             46 =>
             array (
@@ -1004,6 +1050,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.53558',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:52',
+                'location_type_id' => NULL,
             ),
             47 =>
             array (
@@ -1025,6 +1072,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.96899',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:19',
+                'location_type_id' => NULL,
             ),
             48 =>
             array (
@@ -1046,6 +1094,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.184395',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:29',
+                'location_type_id' => NULL,
             ),
             49 =>
             array (
@@ -1067,6 +1116,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.30219',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:15:21',
+                'location_type_id' => NULL,
             ),
             50 =>
             array (
@@ -1088,6 +1138,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.40632',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:10',
+                'location_type_id' => NULL,
             ),
             51 =>
             array (
@@ -1109,6 +1160,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.508514',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:20',
+                'location_type_id' => NULL,
             ),
             52 =>
             array (
@@ -1130,6 +1182,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.53358',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:30',
+                'location_type_id' => NULL,
             ),
             53 =>
             array (
@@ -1151,6 +1204,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.7989',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:38',
+                'location_type_id' => NULL,
             ),
             54 =>
             array (
@@ -1172,6 +1226,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.53617',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:18',
+                'location_type_id' => NULL,
             ),
             55 =>
             array (
@@ -1193,6 +1248,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.65049',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:50',
+                'location_type_id' => NULL,
             ),
             56 =>
             array (
@@ -1214,6 +1270,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.636505',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:57',
+                'location_type_id' => NULL,
             ),
             57 =>
             array (
@@ -1235,6 +1292,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.56872',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:35',
+                'location_type_id' => NULL,
             ),
             58 =>
             array (
@@ -1256,6 +1314,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.66479',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:40',
+                'location_type_id' => NULL,
             ),
             59 =>
             array (
@@ -1277,6 +1336,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.537994',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:46',
+                'location_type_id' => NULL,
             ),
             60 =>
             array (
@@ -1298,6 +1358,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.1651',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:18',
+                'location_type_id' => NULL,
             ),
             61 =>
             array (
@@ -1319,6 +1380,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.78271',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:37',
+                'location_type_id' => NULL,
             ),
             62 =>
             array (
@@ -1340,6 +1402,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.7111',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:42',
+                'location_type_id' => NULL,
             ),
             63 =>
             array (
@@ -1361,6 +1424,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.22218',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:08',
+                'location_type_id' => NULL,
             ),
             64 =>
             array (
@@ -1382,6 +1446,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.6436',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:14',
+                'location_type_id' => NULL,
             ),
             65 =>
             array (
@@ -1403,6 +1468,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.75974',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:21',
+                'location_type_id' => NULL,
             ),
             66 =>
             array (
@@ -1424,6 +1490,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97651',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:44',
+                'location_type_id' => NULL,
             ),
             67 =>
             array (
@@ -1445,6 +1512,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.60829',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:56',
+                'location_type_id' => NULL,
             ),
             68 =>
             array (
@@ -1466,6 +1534,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.941154',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:13',
+                'location_type_id' => NULL,
             ),
             69 =>
             array (
@@ -1487,6 +1556,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.28137',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:54',
+                'location_type_id' => NULL,
             ),
             70 =>
             array (
@@ -1508,6 +1578,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.337906',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:44',
+                'location_type_id' => NULL,
             ),
             71 =>
             array (
@@ -1529,6 +1600,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.334946',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:33',
+                'location_type_id' => NULL,
             ),
             72 =>
             array (
@@ -1550,6 +1622,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.331436',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:25',
+                'location_type_id' => NULL,
             ),
             73 =>
             array (
@@ -1571,6 +1644,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.987495',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:10',
+                'location_type_id' => NULL,
             ),
             74 =>
             array (
@@ -1592,6 +1666,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.332344',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:21:03',
+                'location_type_id' => NULL,
             ),
             75 =>
             array (
@@ -1613,6 +1688,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.7255',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:00',
+                'location_type_id' => NULL,
             ),
             76 =>
             array (
@@ -1634,6 +1710,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.639984',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:34',
+                'location_type_id' => NULL,
             ),
             77 =>
             array (
@@ -1655,6 +1732,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.801735',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:10',
+                'location_type_id' => NULL,
             ),
             78 =>
             array (
@@ -1676,6 +1754,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.90177',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:33',
+                'location_type_id' => NULL,
             ),
             79 =>
             array (
@@ -1697,6 +1776,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.74391',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:39',
+                'location_type_id' => NULL,
             ),
             80 =>
             array (
@@ -1718,6 +1798,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.43663',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:16',
+                'location_type_id' => NULL,
             ),
             81 =>
             array (
@@ -1739,6 +1820,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.66267',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:16',
+                'location_type_id' => NULL,
             ),
             82 =>
             array (
@@ -1760,6 +1842,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.13428',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:52',
+                'location_type_id' => NULL,
             ),
             83 =>
             array (
@@ -1781,6 +1864,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44939',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:43',
+                'location_type_id' => NULL,
             ),
             84 =>
             array (
@@ -1802,6 +1886,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.47598',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:30',
+                'location_type_id' => NULL,
             ),
             85 =>
             array (
@@ -1823,6 +1908,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52102',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:05',
+                'location_type_id' => NULL,
             ),
             86 =>
             array (
@@ -1844,6 +1930,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.94732',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:40',
+                'location_type_id' => NULL,
             ),
             87 =>
             array (
@@ -1865,6 +1952,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.346985',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:30',
+                'location_type_id' => NULL,
             ),
             88 =>
             array (
@@ -1886,6 +1974,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.46777',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:30',
+                'location_type_id' => NULL,
             ),
             89 =>
             array (
@@ -1907,6 +1996,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.41694',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:31:30',
+                'location_type_id' => NULL,
             ),
             90 =>
             array (
@@ -1928,6 +2018,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.65907',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:29',
+                'location_type_id' => NULL,
             ),
             91 =>
             array (
@@ -1949,6 +2040,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.38279',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:26',
+                'location_type_id' => NULL,
             ),
             92 =>
             array (
@@ -1970,6 +2062,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86334',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:34:20',
+                'location_type_id' => NULL,
             ),
             93 =>
             array (
@@ -1991,6 +2084,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.015816',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:36:02',
+                'location_type_id' => NULL,
             ),
             94 =>
             array (
@@ -2012,8 +2106,31 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.56705',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:12',
+                'location_type_id' => NULL,
             ),
             95 =>
+            array (
+                'id' => 158,
+                'name' => 'DISCOUNT DRUG MART INC',
+                'bookinglink' => 'http://discount-drugmart.com/covid',
+                'phone' => '(844) 625-0843',
+                'address' => '5298 DETROIT RD|SHEFFIELD VILLAGE, OH 44035',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44035',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lorain',
+                'latitude' => '41.4234044',
+                'longitude' => '-82.0777383',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:54',
+                'location_type_id' => NULL,
+            ),
+            96 =>
             array (
                 'id' => 346,
                 'name' => 'Holmes County General Health District',
@@ -2033,8 +2150,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.920746',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:21',
+                'location_type_id' => NULL,
             ),
-            96 =>
+            97 =>
             array (
                 'id' => 355,
                 'name' => 'Hopewell Health Centers New Lexington',
@@ -2054,8 +2172,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.20609',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:48',
+                'location_type_id' => NULL,
             ),
-            97 =>
+            98 =>
             array (
                 'id' => 363,
                 'name' => 'Joint Township District Memorial Hospital',
@@ -2075,8 +2194,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.37012',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:06',
+                'location_type_id' => NULL,
             ),
-            98 =>
+            99 =>
             array (
                 'id' => 373,
                 'name' => 'Kroger Pharmacy',
@@ -2096,8 +2216,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.649956',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:36',
+                'location_type_id' => NULL,
             ),
-            99 =>
+            100 =>
             array (
                 'id' => 381,
                 'name' => 'Kroger Pharmacy',
@@ -2117,8 +2238,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.16031',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:26',
+                'location_type_id' => NULL,
             ),
-            100 =>
+            101 =>
             array (
                 'id' => 399,
                 'name' => 'Kroger Pharmacy',
@@ -2138,8 +2260,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.11897',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:03',
+                'location_type_id' => NULL,
             ),
-            101 =>
+            102 =>
             array (
                 'id' => 410,
                 'name' => 'Kroger Pharmacy',
@@ -2159,8 +2282,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.61466',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:44',
+                'location_type_id' => NULL,
             ),
-            102 =>
+            103 =>
             array (
                 'id' => 422,
                 'name' => 'Kroger Pharmacy',
@@ -2180,8 +2304,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.60642',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:53',
+                'location_type_id' => NULL,
             ),
-            103 =>
+            104 =>
             array (
                 'id' => 430,
                 'name' => 'Kroger Pharmacy',
@@ -2201,8 +2326,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.38699',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:44:42',
+                'location_type_id' => NULL,
             ),
-            104 =>
+            105 =>
             array (
                 'id' => 442,
                 'name' => 'Kroger Pharmacy',
@@ -2222,8 +2348,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.642914',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:29',
+                'location_type_id' => NULL,
             ),
-            105 =>
+            106 =>
             array (
                 'id' => 454,
                 'name' => 'Kroger Pharmacy',
@@ -2243,8 +2370,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.05333',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:25',
+                'location_type_id' => NULL,
             ),
-            106 =>
+            107 =>
             array (
                 'id' => 469,
                 'name' => 'Kroger Pharmacy',
@@ -2264,8 +2392,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.42971',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:14',
+                'location_type_id' => NULL,
             ),
-            107 =>
+            108 =>
             array (
                 'id' => 480,
                 'name' => 'Kroger Pharmacy',
@@ -2285,8 +2414,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.129364',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:57',
+                'location_type_id' => NULL,
             ),
-            108 =>
+            109 =>
             array (
                 'id' => 489,
                 'name' => 'Kroger Pharmacy',
@@ -2306,8 +2436,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.58543',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:11',
+                'location_type_id' => NULL,
             ),
-            109 =>
+            110 =>
             array (
                 'id' => 505,
                 'name' => 'Kroger Pharmacy',
@@ -2327,8 +2458,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.64198',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:40',
+                'location_type_id' => NULL,
             ),
-            110 =>
+            111 =>
             array (
                 'id' => 522,
                 'name' => 'Kroger Pharmacy',
@@ -2348,8 +2480,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.710495',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:12',
+                'location_type_id' => NULL,
             ),
-            111 =>
+            112 =>
             array (
                 'id' => 526,
                 'name' => 'Kroger Pharmacy',
@@ -2369,8 +2502,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.37619',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:35',
+                'location_type_id' => NULL,
             ),
-            112 =>
+            113 =>
             array (
                 'id' => 535,
                 'name' => 'Kroger Pharmacy',
@@ -2390,8 +2524,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.36014',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:30',
+                'location_type_id' => NULL,
             ),
-            113 =>
+            114 =>
             array (
                 'id' => 545,
                 'name' => 'Kroger Pharmacy',
@@ -2411,8 +2546,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.51786',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:16',
+                'location_type_id' => NULL,
             ),
-            114 =>
+            115 =>
             array (
                 'id' => 555,
                 'name' => 'Kroger Pharmacy',
@@ -2432,8 +2568,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.06994',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:44',
+                'location_type_id' => NULL,
             ),
-            115 =>
+            116 =>
             array (
                 'id' => 566,
                 'name' => 'Lima Memorial Hospital - Main Campus',
@@ -2453,8 +2590,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.08863',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:52:40',
+                'location_type_id' => NULL,
             ),
-            116 =>
+            117 =>
             array (
                 'id' => 576,
                 'name' => 'Mahoning County Public Health',
@@ -2474,8 +2612,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.748566',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:27',
+                'location_type_id' => NULL,
             ),
-            117 =>
+            118 =>
             array (
                 'id' => 585,
                 'name' => 'Marcs Pharmacy Alliance',
@@ -2495,8 +2634,229 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.15209',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:22',
+                'location_type_id' => NULL,
             ),
-            118 =>
+            119 =>
+            array (
+                'id' => 339,
+                'name' => 'HealthSource of Ohio Mt. Orab Pharmacy',
+                'bookinglink' => 'http://www.healthsourceofohio.org/',
+                'phone' => '(937) 444-8009',
+                'address' => '150 Healthpartners Circle Mt. Orab, OH 45154',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45154',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Brown',
+                'latitude' => '39.0450901',
+                'longitude' => '-83.9414783',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:18',
+                'location_type_id' => NULL,
+            ),
+            120 =>
+            array (
+                'id' => 353,
+                'name' => 'Hopewell Health Centers McArthur',
+                'bookinglink' => 'http://www.hopewellhealth.org',
+                'phone' => '(740) 596-5249',
+                'address' => '31891 State Route 93 North|McArthur, OH 45651',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45651',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Vinton',
+                'latitude' => '39.2620262',
+                'longitude' => '-82.4773442',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:20',
+                'location_type_id' => NULL,
+            ),
+            121 =>
+            array (
+                'id' => 413,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '1700 W Park Square Xenia, OH 45385',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45385',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Greene',
+                'latitude' => '39.6895898',
+                'longitude' => '-83.9583846',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:21',
+                'location_type_id' => NULL,
+            ),
+            122 =>
+            array (
+                'id' => 497,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '5400 Cornerstone North Blvd Kettering, OH 45440',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45440',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Montgomery',
+                'latitude' => '39.662357',
+                'longitude' => '-84.1037612',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:27',
+                'location_type_id' => NULL,
+            ),
+            123 =>
+            array (
+                'id' => 560,
+                'name' => 'KROGER PHARMACY 02900781',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '6306 COUNTY ROAD 107|PROCTORVILLE, OH 45669',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45669',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lawrence',
+                'latitude' => '38.4369975',
+                'longitude' => '-82.3867145',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:30',
+                'location_type_id' => NULL,
+            ),
+            124 =>
+            array (
+                'id' => 674,
+                'name' => 'OhioHealth Blom Admin Campus COVID Vaccine Clinic',
+                'bookinglink' => 'http://www.ohiohealth.com/covid-19/covid-19-vaccinations',
+                'phone' => '(614) 533-6999',
+                'address' => '3430 Ohio Health Pkwy Columbus, OH 43202',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43202',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0313548',
+                'longitude' => '-83.0267233',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:35',
+                'location_type_id' => NULL,
+            ),
+            125 =>
+            array (
+                'id' => 850,
+                'name' => 'Rite Aid Store 04010',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(419) 884-6107',
+                'address' => '355 EAST MAIN STREET LEXINGTON, OH 44904',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44904',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Richland',
+                'latitude' => '40.6814696',
+                'longitude' => '-82.5702301',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:40',
+                'location_type_id' => NULL,
+            ),
+            126 =>
+            array (
+                'id' => 964,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(614) 751-1736',
+                'address' => '1101 HILL RD N PICKERINGTON, OH 43147-8887',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43147-8887',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Fairfield',
+                'latitude' => '39.9104671',
+                'longitude' => '-82.7796269',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:47',
+                'location_type_id' => NULL,
+            ),
+            127 =>
+            array (
+                'id' => 1020,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(614) 866-8218',
+                'address' => '2615 BRICE RD|REYNOLDSBURG, OH 43068-3420',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43068-3420',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '39.9271411',
+                'longitude' => '-82.8320012',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:49',
+                'location_type_id' => NULL,
+            ),
+            128 =>
+            array (
+                'id' => 1117,
+                'name' => 'Warren City Health District',
+                'bookinglink' => 'http://www.warren.org/living/departments/health',
+                'phone' => '(330) 841-2596',
+                'address' => '258 East Market Street Warren, OH 44481',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44481',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Trumbull',
+                'latitude' => '41.2357001',
+                'longitude' => '-80.8150267',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:52',
+                'location_type_id' => NULL,
+            ),
+            129 =>
             array (
                 'id' => 592,
                 'name' => 'Marcs Pharmacy Kamms Corner',
@@ -2516,8 +2876,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.81809',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:55:14',
+                'location_type_id' => NULL,
             ),
-            119 =>
+            130 =>
             array (
                 'id' => 602,
                 'name' => 'Marcs Pharmacy South Euclid',
@@ -2537,8 +2898,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.51799',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:23',
+                'location_type_id' => NULL,
             ),
-            120 =>
+            131 =>
             array (
                 'id' => 609,
                 'name' => 'Marcs Pharmcy Broadview Heights',
@@ -2558,8 +2920,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.68458',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:15',
+                'location_type_id' => NULL,
             ),
-            121 =>
+            132 =>
             array (
                 'id' => 614,
                 'name' => 'McFadden Pharmacy',
@@ -2579,8 +2942,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97839',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:52',
+                'location_type_id' => NULL,
             ),
-            122 =>
+            133 =>
             array (
                 'id' => 615,
                 'name' => 'McLaren St. Lukes',
@@ -2600,8 +2964,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.681244',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:55',
+                'location_type_id' => NULL,
             ),
-            123 =>
+            134 =>
             array (
                 'id' => 616,
                 'name' => 'Medina County Health Department',
@@ -2621,8 +2986,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.85839',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:56',
+                'location_type_id' => NULL,
             ),
-            124 =>
+            135 =>
             array (
                 'id' => 617,
                 'name' => 'Meigs County Health Department',
@@ -2642,8 +3008,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.05038',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:56',
+                'location_type_id' => NULL,
             ),
-            125 =>
+            136 =>
             array (
                 'id' => 618,
                 'name' => 'Meijer',
@@ -2663,8 +3030,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.23696',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:03',
+                'location_type_id' => NULL,
             ),
-            126 =>
+            137 =>
             array (
                 'id' => 619,
                 'name' => 'Meijer',
@@ -2684,8 +3052,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.07149',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:04',
+                'location_type_id' => NULL,
             ),
-            127 =>
+            138 =>
             array (
                 'id' => 620,
                 'name' => 'Meijer',
@@ -2705,8 +3074,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.2652',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:04',
+                'location_type_id' => NULL,
             ),
-            128 =>
+            139 =>
             array (
                 'id' => 623,
                 'name' => 'Memorial Health System Wayne St. Campus',
@@ -2726,8 +3096,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43871',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:07',
+                'location_type_id' => NULL,
             ),
-            129 =>
+            140 =>
             array (
                 'id' => 624,
                 'name' => 'Mercer County Health District',
@@ -2747,8 +3118,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.57329',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:18',
+                'location_type_id' => NULL,
             ),
-            130 =>
+            141 =>
             array (
                 'id' => 625,
                 'name' => 'Mercer Health Hospital',
@@ -2768,8 +3140,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.638336',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:25',
+                'location_type_id' => NULL,
             ),
-            131 =>
+            142 =>
             array (
                 'id' => 658,
                 'name' => 'Mt. Healthy Family Practice',
@@ -2789,8 +3162,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.53878',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:02',
+                'location_type_id' => NULL,
             ),
-            132 =>
+            143 =>
             array (
                 'id' => 668,
                 'name' => 'New Philadelphia City Health District',
@@ -2810,8 +3184,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44731',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:07',
+                'location_type_id' => NULL,
             ),
-            133 =>
+            144 =>
             array (
                 'id' => 678,
                 'name' => 'OhioHealth Mansfield COVID Vaccine Clinic',
@@ -2831,8 +3206,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.5498',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:57',
+                'location_type_id' => NULL,
             ),
-            134 =>
+            145 =>
             array (
                 'id' => 690,
                 'name' => 'Paulding County Health Department',
@@ -2852,8 +3228,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.57371',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:14',
+                'location_type_id' => NULL,
             ),
-            135 =>
+            146 =>
             array (
                 'id' => 707,
                 'name' => 'ProMedica Defiance Regional Hospital',
@@ -2873,8 +3250,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.37383',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:33',
+                'location_type_id' => NULL,
             ),
-            136 =>
+            147 =>
             array (
                 'id' => 718,
                 'name' => 'Riesbecks Pharmacy',
@@ -2894,8 +3272,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.01437',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:53',
+                'location_type_id' => NULL,
             ),
-            137 =>
+            148 =>
             array (
                 'id' => 725,
                 'name' => 'Rite Aid Store 00195',
@@ -2915,8 +3294,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.7099',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:35',
+                'location_type_id' => NULL,
             ),
-            138 =>
+            149 =>
             array (
                 'id' => 733,
                 'name' => 'Rite Aid Store 01092',
@@ -2936,8 +3316,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.664825',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:12',
+                'location_type_id' => NULL,
             ),
-            139 =>
+            150 =>
             array (
                 'id' => 744,
                 'name' => 'Rite Aid Store 01570',
@@ -2957,8 +3338,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.730576',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:19',
+                'location_type_id' => NULL,
             ),
-            140 =>
+            151 =>
             array (
                 'id' => 786,
                 'name' => 'Rite Aid Store 02408',
@@ -2978,8 +3360,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.26528',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:54',
+                'location_type_id' => NULL,
             ),
-            141 =>
+            152 =>
             array (
                 'id' => 802,
                 'name' => 'Rite Aid Store 03016',
@@ -2999,8 +3382,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.78381',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:47',
+                'location_type_id' => NULL,
             ),
-            142 =>
+            153 =>
             array (
                 'id' => 810,
                 'name' => 'Rite Aid Store 03061',
@@ -3020,8 +3404,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.39186',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:28',
+                'location_type_id' => NULL,
             ),
-            143 =>
+            154 =>
             array (
                 'id' => 817,
                 'name' => 'Rite Aid Store 03109',
@@ -3041,8 +3426,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.84245',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:00',
+                'location_type_id' => NULL,
             ),
-            144 =>
+            155 =>
             array (
                 'id' => 826,
                 'name' => 'Rite Aid Store 03146',
@@ -3062,8 +3448,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.5861',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:41',
+                'location_type_id' => NULL,
             ),
-            145 =>
+            156 =>
             array (
                 'id' => 574,
                 'name' => 'MAC Pharmacy',
@@ -3083,8 +3470,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49408',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:06:22',
+                'location_type_id' => NULL,
             ),
-            146 =>
+            157 =>
             array (
                 'id' => 1,
                 'name' => 'ACMC Health and Wellness Plaza',
@@ -3104,8 +3492,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.79818',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:44',
+                'location_type_id' => NULL,
             ),
-            147 =>
+            158 =>
             array (
                 'id' => 2,
                 'name' => 'Acme Pharmacy',
@@ -3125,8 +3514,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.55432',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:56',
+                'location_type_id' => NULL,
             ),
-            148 =>
+            159 =>
             array (
                 'id' => 3,
                 'name' => 'Acme Pharmacy',
@@ -3146,8 +3536,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.64424',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:56',
+                'location_type_id' => NULL,
             ),
-            149 =>
+            160 =>
             array (
                 'id' => 4,
                 'name' => 'Adams County Health Department',
@@ -3167,8 +3558,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.534584',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:56',
+                'location_type_id' => NULL,
             ),
-            150 =>
+            161 =>
             array (
                 'id' => 5,
                 'name' => 'Adams County Regional Medical Center',
@@ -3188,8 +3580,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.58552',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:57',
+                'location_type_id' => NULL,
             ),
-            151 =>
+            162 =>
             array (
                 'id' => 6,
                 'name' => 'Adena PACCAR Medical Education Center',
@@ -3209,8 +3602,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.972534',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:57',
+                'location_type_id' => NULL,
             ),
-            152 =>
+            163 =>
             array (
                 'id' => 7,
                 'name' => 'Akron General Health & Wellness Center, Bath',
@@ -3230,8 +3624,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.64555',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:57',
+                'location_type_id' => NULL,
             ),
-            153 =>
+            164 =>
             array (
                 'id' => 8,
                 'name' => 'Alex Central Health Center',
@@ -3251,8 +3646,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.29347',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:30:58',
+                'location_type_id' => NULL,
             ),
-            154 =>
+            165 =>
             array (
                 'id' => 9,
                 'name' => 'Allen County Public Health',
@@ -3272,8 +3668,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.10292',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:31:10',
+                'location_type_id' => NULL,
             ),
-            155 =>
+            166 =>
             array (
                 'id' => 10,
                 'name' => 'Alliance Family Health Center',
@@ -3293,8 +3690,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.101326',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:31:19',
+                'location_type_id' => NULL,
             ),
-            156 =>
+            167 =>
             array (
                 'id' => 11,
                 'name' => 'Alliance Senior Citizens Center',
@@ -3314,8 +3712,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.1156',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:06:32',
+                'location_type_id' => NULL,
             ),
-            157 =>
+            168 =>
             array (
                 'id' => 15,
                 'name' => 'Ashville Apothecary',
@@ -3335,8 +3734,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.95532',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:07:01',
+                'location_type_id' => NULL,
             ),
-            158 =>
+            169 =>
             array (
                 'id' => 17,
                 'name' => 'Atrium Medical Center',
@@ -3356,8 +3756,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.31581',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:07:12',
+                'location_type_id' => NULL,
             ),
-            159 =>
+            170 =>
             array (
                 'id' => 18,
                 'name' => 'Auglaize County Health Department',
@@ -3377,8 +3778,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.20219',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:07:15',
+                'location_type_id' => NULL,
             ),
-            160 =>
+            171 =>
             array (
                 'id' => 20,
                 'name' => 'Aultman Hospital',
@@ -3398,8 +3800,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.40357',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:07:33',
+                'location_type_id' => NULL,
             ),
-            161 =>
+            172 =>
             array (
                 'id' => 22,
                 'name' => 'Avita Health System - Galion Hospital',
@@ -3419,8 +3822,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.8033',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:07:50',
+                'location_type_id' => NULL,
             ),
-            162 =>
+            173 =>
             array (
                 'id' => 23,
                 'name' => 'Avita Health System - Ontario Hospital',
@@ -3440,8 +3844,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.591385',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:07:50',
+                'location_type_id' => NULL,
             ),
-            163 =>
+            174 =>
             array (
                 'id' => 19,
                 'name' => 'Aultman Alliance Community Hospital',
@@ -3461,8 +3866,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.103386',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:18:14',
+                'location_type_id' => NULL,
             ),
-            164 =>
+            175 =>
             array (
                 'id' => 24,
                 'name' => 'AxessPointe Community Health Centers, Inc.',
@@ -3482,8 +3888,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.4914',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:18:35',
+                'location_type_id' => NULL,
             ),
-            165 =>
+            176 =>
             array (
                 'id' => 12,
                 'name' => 'Ashland County Health Department',
@@ -3503,8 +3910,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.27034',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:23:10',
+                'location_type_id' => NULL,
             ),
-            166 =>
+            177 =>
             array (
                 'id' => 14,
                 'name' => 'Ashtabula County Health Department',
@@ -3524,71 +3932,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.770355',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:23:13',
+                'location_type_id' => NULL,
             ),
-            167 =>
-            array (
-                'id' => 21,
-                'name' => 'Aultman Orrville Hospital',
-                'bookinglink' => 'http://www.aultmanorrville.org',
-                'phone' => '(330) 363-6400',
-                'address' => '832 South Main Street Orrville, OH 44667',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44667',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Wayne',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            168 =>
-            array (
-                'id' => 25,
-                'name' => 'Barnesville Family Health Center',
-                'bookinglink' => 'http://ohiohillshealthservices.com',
-                'phone' => '(740) 239-6447',
-                'address' => '101 East Main Street Barnesville, OH 43713',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43713',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Belmont',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            169 =>
-            array (
-                'id' => 13,
-                'name' => 'Ashtabula City Health Department',
-                'bookinglink' => 'http://www.cityofashtabula.com/health-department',
-                'phone' => '(440) 992-7123',
-                'address' => '4717 Main Ave Municipal Building - Main level/Council Chambers..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Ashtabula',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            170 =>
+            178 =>
             array (
                 'id' => 16,
                 'name' => 'Athens City-County Health Department',
@@ -3608,134 +3954,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.1136',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:23:14',
+                'location_type_id' => NULL,
             ),
-            171 =>
+            179 =>
             array (
-                'id' => 42,
-                'name' => 'CAA Health Behavioral Health at Lisbon',
-                'bookinglink' => 'http://www.caaofcc.org',
-                'phone' => '(330) 424-5686',
-                'address' => '7880 Lincole Place|Lisbon, OH 44432',
+                'id' => 21,
+                'name' => 'Aultman Orrville Hospital',
+                'bookinglink' => 'http://www.aultmanorrville.org',
+                'phone' => '(330) 363-6400',
+                'address' => '832 South Main Street Orrville, OH 44667',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44432',
+                'zip' => '44667',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Columbiana',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Wayne',
+                'latitude' => '40.8317694',
+                'longitude' => '-81.7637304',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:47',
+                'location_type_id' => NULL,
             ),
-            172 =>
+            180 =>
             array (
-                'id' => 45,
-                'name' => 'Capital Park Family Health',
-                'bookinglink' => 'http://heartofohiofamilyhealth.org',
-                'phone' => '(614) 235-5555',
-                'address' => '2365 Innis Road|Columbus, OH 43224',
+                'id' => 25,
+                'name' => 'Barnesville Family Health Center',
+                'bookinglink' => 'http://ohiohillshealthservices.com',
+                'phone' => '(740) 239-6447',
+                'address' => '101 East Main Street Barnesville, OH 43713',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43224',
+                'zip' => '43713',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Belmont',
+                'latitude' => '39.9880681',
+                'longitude' => '-81.1770322',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:48',
+                'location_type_id' => NULL,
             ),
-            173 =>
+            181 =>
             array (
-                'id' => 47,
-                'name' => 'CCGHD at Carroll County Transit',
-                'bookinglink' => 'http://www.carroll-lhd.org/',
-                'phone' => '(330) 627-8928',
-                'address' => '2205 Commerce Dr|Carrollton, OH 44615',
+                'id' => 13,
+                'name' => 'Ashtabula City Health Department',
+                'bookinglink' => 'http://www.cityofashtabula.com/health-department',
+                'phone' => '(440) 992-7123',
+                'address' => '4717 Main Ave., Ashtabula, OH 44004',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44615',
+                'zip' => '44044',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Carroll',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Ashtabula',
+                'latitude' => '41.8642085',
+                'longitude' => '-80.7831369',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:21:30',
+                'location_type_id' => NULL,
             ),
-            174 =>
-            array (
-                'id' => 50,
-                'name' => 'Champaign Health District',
-                'bookinglink' => 'http://www.champaignhd.com/',
-                'phone' => '(937) 484-1667',
-                'address' => '1512 South Highway 68 Suite Q-100|Urbana, OH 43078',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43078',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Champaign',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            175 =>
-            array (
-                'id' => 54,
-                'name' => 'Children\'s Hospital Medical Center of Akron',
-                'bookinglink' => 'http://akronchildrens.org',
-                'phone' => '(330) 543-2621',
-                'address' => 'One Perkins Akron, OH 44308',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44308',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Summit',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            176 =>
-            array (
-                'id' => 61,
-                'name' => 'City of Middletown Health Department',
-                'bookinglink' => 'http://covid.cityofmiddletown.org',
-                'phone' => '(513) 425-1818',
-                'address' => '1 Donham Plaza|Middletown, OH 45042',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45042',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Butler',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            177 =>
+            182 =>
             array (
                 'id' => 26,
                 'name' => 'Barnesville Hospital',
@@ -3755,8 +4042,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.18784',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:24',
+                'location_type_id' => NULL,
             ),
-            178 =>
+            183 =>
             array (
                 'id' => 27,
                 'name' => 'Beachwood Medical Center',
@@ -3776,8 +4064,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49776',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:25',
+                'location_type_id' => NULL,
             ),
-            179 =>
+            184 =>
             array (
                 'id' => 28,
                 'name' => 'Belmont County Health Department',
@@ -3797,8 +4086,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.97012',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:29',
+                'location_type_id' => NULL,
             ),
-            180 =>
+            185 =>
             array (
                 'id' => 29,
                 'name' => 'Blanchard Valley Hospital',
@@ -3818,8 +4108,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.65035',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:40',
+                'location_type_id' => NULL,
             ),
-            181 =>
+            186 =>
             array (
                 'id' => 30,
                 'name' => 'Bluffton Hospital',
@@ -3839,8 +4130,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.89757',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:40',
+                'location_type_id' => NULL,
             ),
-            182 =>
+            187 =>
             array (
                 'id' => 31,
                 'name' => 'Bradfield Community Health Center',
@@ -3860,8 +4152,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.11913',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:45',
+                'location_type_id' => NULL,
             ),
-            183 =>
+            188 =>
             array (
                 'id' => 33,
                 'name' => 'BREWSTERS HOMETOWN PHARMACY',
@@ -3881,8 +4174,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.0183',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:48',
+                'location_type_id' => NULL,
             ),
-            184 =>
+            189 =>
             array (
                 'id' => 34,
                 'name' => 'Broadway Pharmacy',
@@ -3902,8 +4196,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.64385',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:08:55',
+                'location_type_id' => NULL,
             ),
-            185 =>
+            190 =>
             array (
                 'id' => 35,
                 'name' => 'Broughton Complex Elizabeth Sugden Building',
@@ -3923,8 +4218,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44883',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:01',
+                'location_type_id' => NULL,
             ),
-            186 =>
+            191 =>
             array (
                 'id' => 36,
                 'name' => 'Brown County Health Department',
@@ -3944,8 +4240,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.90115',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:02',
+                'location_type_id' => NULL,
             ),
-            187 =>
+            192 =>
             array (
                 'id' => 37,
                 'name' => 'Bucyrus Health and Wellness',
@@ -3965,8 +4262,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.939476',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:08',
+                'location_type_id' => NULL,
             ),
-            188 =>
+            193 =>
             array (
                 'id' => 38,
                 'name' => 'Bulldog Health Center',
@@ -3986,8 +4284,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.55517',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:10',
+                'location_type_id' => NULL,
             ),
-            189 =>
+            194 =>
             array (
                 'id' => 40,
                 'name' => 'CAA East Liverpool Campus Building #1',
@@ -4007,8 +4306,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.57472',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:21',
+                'location_type_id' => NULL,
             ),
-            190 =>
+            195 =>
             array (
                 'id' => 41,
                 'name' => 'CAA Health and Dental center Melhorn Salineville',
@@ -4028,8 +4328,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.84198',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:31',
+                'location_type_id' => NULL,
             ),
-            191 =>
+            196 =>
             array (
                 'id' => 43,
                 'name' => 'Cambridge Guernsey County Health Department',
@@ -4049,8 +4350,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.57812',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:32',
+                'location_type_id' => NULL,
             ),
-            192 =>
+            197 =>
             array (
                 'id' => 44,
                 'name' => 'Canton City Public Health',
@@ -4070,8 +4372,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.373924',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:34',
+                'location_type_id' => NULL,
             ),
-            193 =>
+            198 =>
             array (
                 'id' => 46,
                 'name' => 'Carroll County General Health District',
@@ -4091,8 +4394,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.093216',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:44',
+                'location_type_id' => NULL,
             ),
-            194 =>
+            199 =>
             array (
                 'id' => 48,
                 'name' => 'Cedar Care Village Pharmacy',
@@ -4112,8 +4416,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.82463',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:09:53',
+                'location_type_id' => NULL,
             ),
-            195 =>
+            200 =>
             array (
                 'id' => 53,
                 'name' => 'Chesapeake Family Medical Center',
@@ -4133,8 +4438,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.46113',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:10:33',
+                'location_type_id' => NULL,
             ),
-            196 =>
+            201 =>
             array (
                 'id' => 55,
                 'name' => 'CHWC Hospital - Bryan, Ohio',
@@ -4154,8 +4460,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.55701',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:10:44',
+                'location_type_id' => NULL,
             ),
-            197 =>
+            202 =>
             array (
                 'id' => 56,
                 'name' => 'Cincinnati Health Network',
@@ -4175,8 +4482,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.51572',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:10:52',
+                'location_type_id' => NULL,
             ),
-            198 =>
+            203 =>
             array (
                 'id' => 57,
                 'name' => 'Circle Health Services Midtown',
@@ -4196,8 +4504,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.65645',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:11:00',
+                'location_type_id' => NULL,
             ),
-            199 =>
+            204 =>
             array (
                 'id' => 58,
                 'name' => 'Circle Health Services Uptown',
@@ -4217,8 +4526,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.60035',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:11:08',
+                'location_type_id' => NULL,
             ),
-            200 =>
+            205 =>
             array (
                 'id' => 59,
                 'name' => 'Circleville Apothecary',
@@ -4238,8 +4548,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.94053',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:11:19',
+                'location_type_id' => NULL,
             ),
-            201 =>
+            206 =>
             array (
                 'id' => 64,
                 'name' => 'Cleveland Clinic Fairview Hospital',
@@ -4259,8 +4570,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.82342',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:11:45',
+                'location_type_id' => NULL,
             ),
-            202 =>
+            207 =>
             array (
                 'id' => 65,
                 'name' => 'Cleveland Clinic Hillcrest Hospital',
@@ -4280,8 +4592,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43736',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:11:56',
+                'location_type_id' => NULL,
             ),
-            203 =>
+            208 =>
             array (
                 'id' => 66,
                 'name' => 'Cleveland Clinic Medina Hospital',
@@ -4301,8 +4614,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.83863',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:01',
+                'location_type_id' => NULL,
             ),
-            204 =>
+            209 =>
             array (
                 'id' => 67,
                 'name' => 'Cleveland Clinic Union Hospital',
@@ -4322,8 +4636,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.45648',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:03',
+                'location_type_id' => NULL,
             ),
-            205 =>
+            210 =>
             array (
                 'id' => 68,
                 'name' => 'Cleveland Department of Public Health',
@@ -4343,8 +4658,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.71544',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:08',
+                'location_type_id' => NULL,
             ),
-            206 =>
+            211 =>
             array (
                 'id' => 69,
                 'name' => 'Clinton County Health District',
@@ -4364,8 +4680,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.85176',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:19',
+                'location_type_id' => NULL,
             ),
-            207 =>
+            212 =>
             array (
                 'id' => 49,
                 'name' => 'Center Street Community Health Records',
@@ -4385,8 +4702,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.12989',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:18:54',
+                'location_type_id' => NULL,
             ),
-            208 =>
+            213 =>
             array (
                 'id' => 52,
                 'name' => 'Charles Drew Health Center',
@@ -4406,71 +4724,141 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.21691',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:19:07',
+                'location_type_id' => NULL,
             ),
-            209 =>
+            214 =>
             array (
-                'id' => 98,
-                'name' => 'CVS Pharmacy 6144',
-                'bookinglink' => 'http://www.cvs.com/immunizations/covid-19-vaccine',
-                'phone' => '(888) 300-4419',
-                'address' => '2657 W. ALEX BELL RD|Moraine, OH 45459',
+                'id' => 42,
+                'name' => 'CAA Health Behavioral Health at Lisbon',
+                'bookinglink' => 'http://www.caaofcc.org',
+                'phone' => '(330) 424-5686',
+                'address' => '7880 Lincole Place|Lisbon, OH 44432',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '45459',
+                'zip' => '44432',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Montgomery',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Columbiana',
+                'latitude' => '40.7866898',
+                'longitude' => '-80.7716522',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:48',
+                'location_type_id' => NULL,
             ),
-            210 =>
+            215 =>
             array (
-                'id' => 107,
-                'name' => 'Davies Pharmacy',
-                'bookinglink' => 'http://www.daviesdrugs.com',
-                'phone' => '(330) 454-5151',
-                'address' => '2915 West Tuscarawas St Canton, OH 44708',
+                'id' => 45,
+                'name' => 'Capital Park Family Health',
+                'bookinglink' => 'http://heartofohiofamilyhealth.org',
+                'phone' => '(614) 235-5555',
+                'address' => '2365 Innis Road|Columbus, OH 43224',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44708',
+                'zip' => '43224',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0366697',
+                'longitude' => '-82.9520882',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:49',
+                'location_type_id' => NULL,
             ),
-            211 =>
+            216 =>
             array (
-                'id' => 109,
-                'name' => 'Delaware Public Health District',
-                'bookinglink' => 'http://www.delawarehealth.org',
-                'phone' => '(740) 203-2040',
-                'address' => 'P.O. Box 570 Delaware, OH 43015',
+                'id' => 47,
+                'name' => 'CCGHD at Carroll County Transit',
+                'bookinglink' => 'http://www.carroll-lhd.org/',
+                'phone' => '(330) 627-8928',
+                'address' => '2205 Commerce Dr|Carrollton, OH 44615',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43015',
+                'zip' => '44615',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Delaware',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Carroll',
+                'latitude' => '40.6141452',
+                'longitude' => '-81.0699271',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:49',
+                'location_type_id' => NULL,
             ),
-            212 =>
+            217 =>
+            array (
+                'id' => 50,
+                'name' => 'Champaign Health District',
+                'bookinglink' => 'http://www.champaignhd.com/',
+                'phone' => '(937) 484-1667',
+                'address' => '1512 South Highway 68 Suite Q-100|Urbana, OH 43078',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43078',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Champaign',
+                'latitude' => '40.1083912',
+                'longitude' => '-83.7524298',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:50',
+                'location_type_id' => NULL,
+            ),
+            218 =>
+            array (
+                'id' => 54,
+                'name' => 'Children\'s Hospital Medical Center of Akron',
+                'bookinglink' => 'http://akronchildrens.org',
+                'phone' => '(330) 543-2621',
+                'address' => 'One Perkins Akron, OH 44308',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44308',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Summit',
+                'latitude' => '41.0790591',
+                'longitude' => '-81.5269298',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:50',
+                'location_type_id' => NULL,
+            ),
+            219 =>
+            array (
+                'id' => 61,
+                'name' => 'City of Middletown Health Department',
+                'bookinglink' => 'http://covid.cityofmiddletown.org',
+                'phone' => '(513) 425-1818',
+                'address' => '1 Donham Plaza|Middletown, OH 45042',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45042',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Butler',
+                'latitude' => '39.5194194',
+                'longitude' => '-84.4016306',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:51',
+                'location_type_id' => NULL,
+            ),
+            220 =>
             array (
                 'id' => 70,
                 'name' => 'Clinton Memorial Hospital',
@@ -4490,8 +4878,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.83953',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:30',
+                'location_type_id' => NULL,
             ),
-            213 =>
+            221 =>
             array (
                 'id' => 72,
                 'name' => 'Community First Pharmacy at Central Connections',
@@ -4511,8 +4900,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.36226',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:51',
+                'location_type_id' => NULL,
             ),
-            214 =>
+            222 =>
             array (
                 'id' => 74,
                 'name' => 'Community Memorial Hospital',
@@ -4532,8 +4922,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.75562',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:52',
+                'location_type_id' => NULL,
             ),
-            215 =>
+            223 =>
             array (
                 'id' => 75,
                 'name' => 'Conneaut City Health Department',
@@ -4553,8 +4944,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.56024',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:53',
+                'location_type_id' => NULL,
             ),
-            216 =>
+            224 =>
             array (
                 'id' => 76,
                 'name' => 'Corner Pharmacy, LLC',
@@ -4574,8 +4966,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.3829',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:55',
+                'location_type_id' => NULL,
             ),
-            217 =>
+            225 =>
             array (
                 'id' => 77,
                 'name' => 'Corwin Nixon Health Center',
@@ -4595,8 +4988,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.174904',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:12:57',
+                'location_type_id' => NULL,
             ),
-            218 =>
+            226 =>
             array (
                 'id' => 78,
                 'name' => 'Coshocton County Coronavirus Vaccination Clinic',
@@ -4616,8 +5010,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86073',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:02',
+                'location_type_id' => NULL,
             ),
-            219 =>
+            227 =>
             array (
                 'id' => 79,
                 'name' => 'Coshocton COVID Vaccine Clinic',
@@ -4637,8 +5032,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86073',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:08',
+                'location_type_id' => NULL,
             ),
-            220 =>
+            228 =>
             array (
                 'id' => 80,
                 'name' => 'Coshocton Family Care',
@@ -4658,8 +5054,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.847206',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:18',
+                'location_type_id' => NULL,
             ),
-            221 =>
+            229 =>
             array (
                 'id' => 82,
                 'name' => 'Cuyahoga County Fairgrounds',
@@ -4679,8 +5076,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.836784',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:30',
+                'location_type_id' => NULL,
             ),
-            222 =>
+            230 =>
             array (
                 'id' => 83,
                 'name' => 'CVS Pharmacy 11155',
@@ -4700,8 +5098,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.62472',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:41',
+                'location_type_id' => NULL,
             ),
-            223 =>
+            231 =>
             array (
                 'id' => 84,
                 'name' => 'CVS Pharmacy 11213',
@@ -4721,8 +5120,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.891014',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:51',
+                'location_type_id' => NULL,
             ),
-            224 =>
+            232 =>
             array (
                 'id' => 85,
                 'name' => 'CVS Pharmacy 2486',
@@ -4742,8 +5142,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.73813',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:13:53',
+                'location_type_id' => NULL,
             ),
-            225 =>
+            233 =>
             array (
                 'id' => 87,
                 'name' => 'CVS Pharmacy 3304',
@@ -4763,8 +5164,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.867516',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:15',
+                'location_type_id' => NULL,
             ),
-            226 =>
+            234 =>
             array (
                 'id' => 88,
                 'name' => 'CVS Pharmacy 3402',
@@ -4784,8 +5186,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.24913',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:19',
+                'location_type_id' => NULL,
             ),
-            227 =>
+            235 =>
             array (
                 'id' => 90,
                 'name' => 'CVS Pharmacy 3996',
@@ -4805,8 +5208,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.701866',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:33',
+                'location_type_id' => NULL,
             ),
-            228 =>
+            236 =>
             array (
                 'id' => 91,
                 'name' => 'CVS Pharmacy 4447',
@@ -4826,8 +5230,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.089455',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:39',
+                'location_type_id' => NULL,
             ),
-            229 =>
+            237 =>
             array (
                 'id' => 92,
                 'name' => 'CVS Pharmacy 5433',
@@ -4847,8 +5252,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.63653',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:48',
+                'location_type_id' => NULL,
             ),
-            230 =>
+            238 =>
             array (
                 'id' => 93,
                 'name' => 'CVS Pharmacy 5813',
@@ -4868,8 +5274,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.642395',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:14:53',
+                'location_type_id' => NULL,
             ),
-            231 =>
+            239 =>
             array (
                 'id' => 94,
                 'name' => 'CVS Pharmacy 6098',
@@ -4889,8 +5296,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.830605',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:15:04',
+                'location_type_id' => NULL,
             ),
-            232 =>
+            240 =>
             array (
                 'id' => 95,
                 'name' => 'CVS Pharmacy 6111',
@@ -4910,8 +5318,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.4504',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:15:12',
+                'location_type_id' => NULL,
             ),
-            233 =>
+            241 =>
             array (
                 'id' => 97,
                 'name' => 'CVS Pharmacy 6143',
@@ -4931,8 +5340,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.02064',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:15:32',
+                'location_type_id' => NULL,
             ),
-            234 =>
+            242 =>
             array (
                 'id' => 99,
                 'name' => 'CVS Pharmacy 6145',
@@ -4952,8 +5362,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.63648',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:15:54',
+                'location_type_id' => NULL,
             ),
-            235 =>
+            243 =>
             array (
                 'id' => 100,
                 'name' => 'CVS Pharmacy 6176',
@@ -4973,8 +5384,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.552505',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:16:05',
+                'location_type_id' => NULL,
             ),
-            236 =>
+            244 =>
             array (
                 'id' => 102,
                 'name' => 'CVS Pharmacy 6179',
@@ -4994,8 +5406,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.17299',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:16:19',
+                'location_type_id' => NULL,
             ),
-            237 =>
+            245 =>
             array (
                 'id' => 105,
                 'name' => 'Darke County General Health District',
@@ -5015,8 +5428,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.634674',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:16:31',
+                'location_type_id' => NULL,
             ),
-            238 =>
+            246 =>
             array (
                 'id' => 106,
                 'name' => 'Davies Drugs',
@@ -5036,8 +5450,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.42229',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:16:42',
+                'location_type_id' => NULL,
             ),
-            239 =>
+            247 =>
             array (
                 'id' => 108,
                 'name' => 'Dayton Convention Center',
@@ -5057,8 +5472,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.1906',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:16:59',
+                'location_type_id' => NULL,
             ),
-            240 =>
+            248 =>
             array (
                 'id' => 111,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5078,8 +5494,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.728806',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:11',
+                'location_type_id' => NULL,
             ),
-            241 =>
+            249 =>
             array (
                 'id' => 112,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5099,8 +5516,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99351',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:22',
+                'location_type_id' => NULL,
             ),
-            242 =>
+            250 =>
             array (
                 'id' => 113,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5120,8 +5538,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.76946',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:25',
+                'location_type_id' => NULL,
             ),
-            243 =>
+            251 =>
             array (
                 'id' => 114,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5141,8 +5560,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.06648',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:26',
+                'location_type_id' => NULL,
             ),
-            244 =>
+            252 =>
             array (
                 'id' => 71,
                 'name' => 'Columbiana County Health Department',
@@ -5162,8 +5582,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.77915',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:19:21',
+                'location_type_id' => NULL,
             ),
-            245 =>
+            253 =>
             array (
                 'id' => 86,
                 'name' => 'CVS Pharmacy 3169',
@@ -5183,8 +5604,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.944725',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:19:29',
+                'location_type_id' => NULL,
             ),
-            246 =>
+            254 =>
             array (
                 'id' => 101,
                 'name' => 'CVS Pharmacy 6177',
@@ -5204,92 +5626,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.84165',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:23:59',
+                'location_type_id' => NULL,
             ),
-            247 =>
+            255 =>
             array (
-                'id' => 134,
-                'name' => 'DISCOUNT DRUG MART INC',
-                'bookinglink' => 'http://discount-drugmart.com/covid',
-                'phone' => '(844) 625-0843',
-                'address' => '24485 LORAIN RD|NORTH OLMSTED, OH 44070',
+                'id' => 98,
+                'name' => 'CVS Pharmacy 6144',
+                'bookinglink' => 'http://www.cvs.com/immunizations/covid-19-vaccine',
+                'phone' => '(888) 300-4419',
+                'address' => '2657 W. ALEX BELL RD|Moraine, OH 45459',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44070',
+                'zip' => '45459',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Montgomery',
+                'latitude' => '39.6730914',
+                'longitude' => '-84.215926',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:51',
+                'location_type_id' => NULL,
             ),
-            248 =>
+            256 =>
             array (
-                'id' => 137,
-                'name' => 'DISCOUNT DRUG MART INC',
-                'bookinglink' => 'http://discount-drugmart.com/covid',
-                'phone' => '(844) 625-0843',
-                'address' => '300 LEAVITT RD N AMHERST, OH 44001',
+                'id' => 107,
+                'name' => 'Davies Pharmacy',
+                'bookinglink' => 'http://www.daviesdrugs.com',
+                'phone' => '(330) 454-5151',
+                'address' => '2915 West Tuscarawas St Canton, OH 44708',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44001',
+                'zip' => '44708',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.7989221',
+                'longitude' => '-81.4071793',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:52',
+                'location_type_id' => NULL,
             ),
-            249 =>
+            257 =>
             array (
-                'id' => 152,
-                'name' => 'DISCOUNT DRUG MART INC',
-                'bookinglink' => 'http://discount-drugmart.com/covid',
-                'phone' => '(844) 625-0843',
-                'address' => '4441 STATE ROUTE 725|BELLBROOK, OH 45305',
+                'id' => 109,
+                'name' => 'Delaware Public Health District',
+                'bookinglink' => 'http://www.delawarehealth.org',
+                'phone' => '(740) 203-2040',
+                'address' => 'P.O. Box 570 Delaware, OH 43015',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '45305',
+                'zip' => '43015',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Greene',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Delaware',
+                'latitude' => '40.2986724',
+                'longitude' => '-83.067965',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:52',
+                'location_type_id' => NULL,
             ),
-            250 =>
-            array (
-                'id' => 158,
-                'name' => 'DISCOUNT DRUG MART INC',
-                'bookinglink' => 'http://discount-drugmart.com/covid',
-                'phone' => '(844) 625-0843',
-                'address' => '5298 DETROIT RD|SHEFFIELD VILLAGE, OH 44035',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44035',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            251 =>
+            258 =>
             array (
                 'id' => 115,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5309,8 +5714,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.11912',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:29',
+                'location_type_id' => NULL,
             ),
-            252 =>
+            259 =>
             array (
                 'id' => 116,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5330,8 +5736,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.26138',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:40',
+                'location_type_id' => NULL,
             ),
-            253 =>
+            260 =>
             array (
                 'id' => 117,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5351,8 +5758,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.216805',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:40',
+                'location_type_id' => NULL,
             ),
-            254 =>
+            261 =>
             array (
                 'id' => 119,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5372,8 +5780,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.77984',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:50',
+                'location_type_id' => NULL,
             ),
-            255 =>
+            262 =>
             array (
                 'id' => 120,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5393,8 +5802,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.861984',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:51',
+                'location_type_id' => NULL,
             ),
-            256 =>
+            263 =>
             array (
                 'id' => 121,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5414,8 +5824,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.857796',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:17:55',
+                'location_type_id' => NULL,
             ),
-            257 =>
+            264 =>
             array (
                 'id' => 122,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5435,8 +5846,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.80385',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:06',
+                'location_type_id' => NULL,
             ),
-            258 =>
+            265 =>
             array (
                 'id' => 123,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5456,8 +5868,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.19945',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:06',
+                'location_type_id' => NULL,
             ),
-            259 =>
+            266 =>
             array (
                 'id' => 124,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5477,8 +5890,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.33675',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:12',
+                'location_type_id' => NULL,
             ),
-            260 =>
+            267 =>
             array (
                 'id' => 125,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5498,8 +5912,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.84141',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:23',
+                'location_type_id' => NULL,
             ),
-            261 =>
+            268 =>
             array (
                 'id' => 127,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5519,8 +5934,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.82099',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:41',
+                'location_type_id' => NULL,
             ),
-            262 =>
+            269 =>
             array (
                 'id' => 128,
                 'name' => 'Discount Drug Mart Inc',
@@ -5540,8 +5956,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.612495',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:41',
+                'location_type_id' => NULL,
             ),
-            263 =>
+            270 =>
             array (
                 'id' => 129,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5561,8 +5978,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.64279',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:46',
+                'location_type_id' => NULL,
             ),
-            264 =>
+            271 =>
             array (
                 'id' => 130,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5582,8 +6000,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.14881',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:18:50',
+                'location_type_id' => NULL,
             ),
-            265 =>
+            272 =>
             array (
                 'id' => 132,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5603,8 +6022,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44697',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:01',
+                'location_type_id' => NULL,
             ),
-            266 =>
+            273 =>
             array (
                 'id' => 133,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5624,8 +6044,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.23887',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:08',
+                'location_type_id' => NULL,
             ),
-            267 =>
+            274 =>
             array (
                 'id' => 136,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5645,8 +6066,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.92207',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:33',
+                'location_type_id' => NULL,
             ),
-            268 =>
+            275 =>
             array (
                 'id' => 138,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5666,8 +6088,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.495605',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:45',
+                'location_type_id' => NULL,
             ),
-            269 =>
+            276 =>
             array (
                 'id' => 139,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5687,8 +6110,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.755806',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:52',
+                'location_type_id' => NULL,
             ),
-            270 =>
+            277 =>
             array (
                 'id' => 140,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5708,8 +6132,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.72982',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:56',
+                'location_type_id' => NULL,
             ),
-            271 =>
+            278 =>
             array (
                 'id' => 141,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5729,8 +6154,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.41755',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:19:58',
+                'location_type_id' => NULL,
             ),
-            272 =>
+            279 =>
             array (
                 'id' => 142,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5750,8 +6176,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.04587',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:05',
+                'location_type_id' => NULL,
             ),
-            273 =>
+            280 =>
             array (
                 'id' => 144,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5771,8 +6198,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.445656',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:16',
+                'location_type_id' => NULL,
             ),
-            274 =>
+            281 =>
             array (
                 'id' => 145,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5792,8 +6220,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.67864',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:27',
+                'location_type_id' => NULL,
             ),
-            275 =>
+            282 =>
             array (
                 'id' => 146,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5813,8 +6242,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.687004',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:28',
+                'location_type_id' => NULL,
             ),
-            276 =>
+            283 =>
             array (
                 'id' => 148,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5834,8 +6264,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.40366',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:42',
+                'location_type_id' => NULL,
             ),
-            277 =>
+            284 =>
             array (
                 'id' => 149,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5855,8 +6286,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.72336',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:45',
+                'location_type_id' => NULL,
             ),
-            278 =>
+            285 =>
             array (
                 'id' => 150,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5876,8 +6308,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.54091',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:20:56',
+                'location_type_id' => NULL,
             ),
-            279 =>
+            286 =>
             array (
                 'id' => 153,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5897,8 +6330,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43251',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:21:18',
+                'location_type_id' => NULL,
             ),
-            280 =>
+            287 =>
             array (
                 'id' => 154,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5918,8 +6352,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43963',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:21:29',
+                'location_type_id' => NULL,
             ),
-            281 =>
+            288 =>
             array (
                 'id' => 155,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5939,8 +6374,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.07748',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:21:40',
+                'location_type_id' => NULL,
             ),
-            282 =>
+            289 =>
             array (
                 'id' => 156,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5960,8 +6396,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.84518',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:21:45',
+                'location_type_id' => NULL,
             ),
-            283 =>
+            290 =>
             array (
                 'id' => 157,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -5981,8 +6418,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.87682',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:21:53',
+                'location_type_id' => NULL,
             ),
-            284 =>
+            291 =>
             array (
                 'id' => 161,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6002,8 +6440,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44041',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:16',
+                'location_type_id' => NULL,
             ),
-            285 =>
+            292 =>
             array (
                 'id' => 147,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6023,8 +6462,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.63888',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:24:22',
+                'location_type_id' => NULL,
             ),
-            286 =>
+            293 =>
             array (
                 'id' => 160,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6044,92 +6484,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.87624',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:24:36',
+                'location_type_id' => NULL,
             ),
-            287 =>
+            294 =>
             array (
-                'id' => 180,
+                'id' => 134,
                 'name' => 'DISCOUNT DRUG MART INC',
                 'bookinglink' => 'http://discount-drugmart.com/covid',
                 'phone' => '(844) 625-0843',
-                'address' => '845 HILL RD N PICKERINGTON, OH 43147',
+                'address' => '24485 LORAIN RD|NORTH OLMSTED, OH 44070',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43147',
+                'zip' => '44070',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Fairfield',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Cuyahoga',
+                'latitude' => '41.4263081',
+                'longitude' => '-81.8928461',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:52',
+                'location_type_id' => NULL,
             ),
-            288 =>
+            295 =>
             array (
-                'id' => 187,
-                'name' => 'East Liverpool City Hospital',
-                'bookinglink' => 'http://www.elch.org',
-                'phone' => '(330) 386-2023',
-                'address' => '425 West 5th Street|East Liverpool, OH 43920',
+                'id' => 137,
+                'name' => 'DISCOUNT DRUG MART INC',
+                'bookinglink' => 'http://discount-drugmart.com/covid',
+                'phone' => '(844) 625-0843',
+                'address' => '300 LEAVITT RD N AMHERST, OH 44001',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43920',
+                'zip' => '44001',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Columbiana',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Lorain',
+                'latitude' => '41.4086958',
+                'longitude' => '-82.2105284',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:53',
+                'location_type_id' => NULL,
             ),
-            289 =>
+            296 =>
             array (
-                'id' => 198,
-                'name' => 'FCMH Medical Arts Building 2',
-                'bookinglink' => 'http://www.fcmh.org',
-                'phone' => '(740) 333-2743',
-                'address' => '1510 Columbus Avenue|Washington Court House, OH 43160',
+                'id' => 152,
+                'name' => 'DISCOUNT DRUG MART INC',
+                'bookinglink' => 'http://discount-drugmart.com/covid',
+                'phone' => '(844) 625-0843',
+                'address' => '4441 STATE ROUTE 725|BELLBROOK, OH 45305',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43160',
+                'zip' => '45305',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Fayette',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Greene',
+                'latitude' => '39.6375309',
+                'longitude' => '-84.108278',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:53',
+                'location_type_id' => NULL,
             ),
-            290 =>
-            array (
-                'id' => 203,
-                'name' => 'Five Rivers Med Surg Clinic',
-                'bookinglink' => 'http://fiverivershealthcenters.org',
-                'phone' => '(937) 503-5664',
-                'address' => '725 S Ludlow S Ludlow St Dayton, OH 45402',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45402',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Montgomery',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            291 =>
+            297 =>
             array (
                 'id' => 204,
                 'name' => 'Franklin County Public Health',
@@ -6149,8 +6572,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97369',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:43:03',
+                'location_type_id' => NULL,
             ),
-            292 =>
+            298 =>
             array (
                 'id' => 162,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6170,8 +6594,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.091576',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:17',
+                'location_type_id' => NULL,
             ),
-            293 =>
+            299 =>
             array (
                 'id' => 163,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6191,8 +6616,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86408',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:18',
+                'location_type_id' => NULL,
             ),
-            294 =>
+            300 =>
             array (
                 'id' => 164,
                 'name' => 'Discount Drug Mart Inc',
@@ -6212,8 +6638,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.57509',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:26',
+                'location_type_id' => NULL,
             ),
-            295 =>
+            301 =>
             array (
                 'id' => 166,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6233,8 +6660,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.332726',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:36',
+                'location_type_id' => NULL,
             ),
-            296 =>
+            302 =>
             array (
                 'id' => 167,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6254,8 +6682,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.93438',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:41',
+                'location_type_id' => NULL,
             ),
-            297 =>
+            303 =>
             array (
                 'id' => 168,
                 'name' => 'Discount Drug Mart Inc',
@@ -6275,8 +6704,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.759735',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:49',
+                'location_type_id' => NULL,
             ),
-            298 =>
+            304 =>
             array (
                 'id' => 169,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6296,8 +6726,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49136',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:55',
+                'location_type_id' => NULL,
             ),
-            299 =>
+            305 =>
             array (
                 'id' => 170,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6317,8 +6748,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.000824',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:22:55',
+                'location_type_id' => NULL,
             ),
-            300 =>
+            306 =>
             array (
                 'id' => 171,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6338,8 +6770,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43497',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:03',
+                'location_type_id' => NULL,
             ),
-            301 =>
+            307 =>
             array (
                 'id' => 172,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6359,8 +6792,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.54016',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:09',
+                'location_type_id' => NULL,
             ),
-            302 =>
+            308 =>
             array (
                 'id' => 174,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6380,8 +6814,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.978065',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:10',
+                'location_type_id' => NULL,
             ),
-            303 =>
+            309 =>
             array (
                 'id' => 175,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6401,8 +6836,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.77681',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:19',
+                'location_type_id' => NULL,
             ),
-            304 =>
+            310 =>
             array (
                 'id' => 176,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6422,8 +6858,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.45301',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:20',
+                'location_type_id' => NULL,
             ),
-            305 =>
+            311 =>
             array (
                 'id' => 177,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6443,8 +6880,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.24048',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:20',
+                'location_type_id' => NULL,
             ),
-            306 =>
+            312 =>
             array (
                 'id' => 178,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6464,8 +6902,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.21722',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:27',
+                'location_type_id' => NULL,
             ),
-            307 =>
+            313 =>
             array (
                 'id' => 181,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6485,8 +6924,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.33524',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:23:49',
+                'location_type_id' => NULL,
             ),
-            308 =>
+            314 =>
             array (
                 'id' => 182,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6506,8 +6946,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99729',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:00',
+                'location_type_id' => NULL,
             ),
-            309 =>
+            315 =>
             array (
                 'id' => 183,
                 'name' => 'DISCOUNT DRUG MART INC',
@@ -6527,8 +6968,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.684685',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:06',
+                'location_type_id' => NULL,
             ),
-            310 =>
+            316 =>
             array (
                 'id' => 184,
                 'name' => 'Dr. Gene Wright Community Health Center',
@@ -6548,8 +6990,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.09925',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:09',
+                'location_type_id' => NULL,
             ),
-            311 =>
+            317 =>
             array (
                 'id' => 186,
                 'name' => 'East Liverpool City Health Department',
@@ -6569,8 +7012,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.58038',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:24',
+                'location_type_id' => NULL,
             ),
-            312 =>
+            318 =>
             array (
                 'id' => 188,
                 'name' => 'Equitas Health Pharmacy',
@@ -6590,8 +7034,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.48852',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:39',
+                'location_type_id' => NULL,
             ),
-            313 =>
+            319 =>
             array (
                 'id' => 191,
                 'name' => 'Fairfield Community Health Center',
@@ -6611,8 +7056,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.57937',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:24:50',
+                'location_type_id' => NULL,
             ),
-            314 =>
+            320 =>
             array (
                 'id' => 192,
                 'name' => 'Fairfield County Fairgrounds - Ed Sands Building',
@@ -6632,8 +7078,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.59971',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:00',
+                'location_type_id' => NULL,
             ),
-            315 =>
+            321 =>
             array (
                 'id' => 193,
                 'name' => 'Fairfield Medical Center',
@@ -6653,8 +7100,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.57666',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:05',
+                'location_type_id' => NULL,
             ),
-            316 =>
+            322 =>
             array (
                 'id' => 194,
                 'name' => 'Family Health Care of Northwest Ohio',
@@ -6674,8 +7122,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.59476',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:05',
+                'location_type_id' => NULL,
             ),
-            317 =>
+            323 =>
             array (
                 'id' => 195,
                 'name' => 'Family Health Services Darke County',
@@ -6695,8 +7144,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.627556',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:06',
+                'location_type_id' => NULL,
             ),
-            318 =>
+            324 =>
             array (
                 'id' => 196,
                 'name' => 'Family Medical Care Community Health Center',
@@ -6716,8 +7166,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.70311',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:06',
+                'location_type_id' => NULL,
             ),
-            319 =>
+            325 =>
             array (
                 'id' => 199,
                 'name' => 'Firelands Regional Medical Center',
@@ -6737,8 +7188,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.70903',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:36',
+                'location_type_id' => NULL,
             ),
-            320 =>
+            326 =>
             array (
                 'id' => 200,
                 'name' => 'Fisher-Titus Medical Center',
@@ -6758,8 +7210,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.60233',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:40',
+                'location_type_id' => NULL,
             ),
-            321 =>
+            327 =>
             array (
                 'id' => 201,
                 'name' => 'Five Points Primary Care',
@@ -6779,8 +7232,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.52325',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:46',
+                'location_type_id' => NULL,
             ),
-            322 =>
+            328 =>
             array (
                 'id' => 202,
                 'name' => 'Five Rivers Family Health Center',
@@ -6800,8 +7254,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.235016',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:47',
+                'location_type_id' => NULL,
             ),
-            323 =>
+            329 =>
             array (
                 'id' => 205,
                 'name' => 'Fruth Pharmacy',
@@ -6821,8 +7276,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99255',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:25:58',
+                'location_type_id' => NULL,
             ),
-            324 =>
+            330 =>
             array (
                 'id' => 207,
                 'name' => 'Fruth Pharmacy',
@@ -6842,8 +7298,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.58838',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:11',
+                'location_type_id' => NULL,
             ),
-            325 =>
+            331 =>
             array (
                 'id' => 206,
                 'name' => 'Fruth Pharmacy',
@@ -6863,71 +7320,97 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.53409',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:09',
+                'location_type_id' => NULL,
             ),
-            326 =>
+            332 =>
             array (
-                'id' => 237,
-                'name' => 'Giant Eagle Pharmacy #0231',
-                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(440) 934-5377',
-                'address' => '5231 Detroit Road  Sheffield Village, OH 44054',
+                'id' => 180,
+                'name' => 'DISCOUNT DRUG MART INC',
+                'bookinglink' => 'http://discount-drugmart.com/covid',
+                'phone' => '(844) 625-0843',
+                'address' => '845 HILL RD N PICKERINGTON, OH 43147',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44054',
+                'zip' => '43147',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Fairfield',
+                'latitude' => '39.9084531',
+                'longitude' => '-82.7778778',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:54',
+                'location_type_id' => NULL,
             ),
-            327 =>
+            333 =>
             array (
-                'id' => 242,
-                'name' => 'Giant Eagle Pharmacy #1217',
-                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(440) 306-0011',
-                'address' => '6079 Andrews Road|Mentor-on-the-Lake, OH 44060',
+                'id' => 187,
+                'name' => 'East Liverpool City Hospital',
+                'bookinglink' => 'http://www.elch.org',
+                'phone' => '(330) 386-2023',
+                'address' => '425 West 5th Street|East Liverpool, OH 43920',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44060',
+                'zip' => '43920',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Lake',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Columbiana',
+                'latitude' => '40.6218488',
+                'longitude' => '-80.5861388',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:54',
+                'location_type_id' => NULL,
             ),
-            328 =>
+            334 =>
             array (
-                'id' => 248,
-                'name' => 'Giant Eagle Pharmacy #1421',
-                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(440) 992-6165',
-                'address' => '2390 Prospect Avenue|Ashtabula, OH 44004',
+                'id' => 198,
+                'name' => 'FCMH Medical Arts Building 2',
+                'bookinglink' => 'http://www.fcmh.org',
+                'phone' => '(740) 333-2743',
+                'address' => '1510 Columbus Avenue|Washington Court House, OH 43160',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44004',
+                'zip' => '43160',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Ashtabula',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Fayette',
+                'latitude' => '39.548893',
+                'longitude' => '-83.4264311',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:55',
+                'location_type_id' => NULL,
             ),
-            329 =>
+            335 =>
+            array (
+                'id' => 203,
+                'name' => 'Five Rivers Med Surg Clinic',
+                'bookinglink' => 'http://fiverivershealthcenters.org',
+                'phone' => '(937) 503-5664',
+                'address' => '725 S Ludlow S Ludlow St Dayton, OH 45402',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45402',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Montgomery',
+                'latitude' => '39.7506674',
+                'longitude' => '-84.1918491',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:55',
+                'location_type_id' => NULL,
+            ),
+            336 =>
             array (
                 'id' => 209,
                 'name' => 'Fruth Pharmacy',
@@ -6947,8 +7430,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.20919',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:17',
+                'location_type_id' => NULL,
             ),
-            330 =>
+            337 =>
             array (
                 'id' => 210,
                 'name' => 'Fruth Pharmacy',
@@ -6968,8 +7452,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.380424',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:17',
+                'location_type_id' => NULL,
             ),
-            331 =>
+            338 =>
             array (
                 'id' => 211,
                 'name' => 'Fruth Pharmacy',
@@ -6989,8 +7474,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.23416',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:25',
+                'location_type_id' => NULL,
             ),
-            332 =>
+            339 =>
             array (
                 'id' => 212,
                 'name' => 'Fruth Pharmacy',
@@ -7010,8 +7496,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.01455',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:31',
+                'location_type_id' => NULL,
             ),
-            333 =>
+            340 =>
             array (
                 'id' => 214,
                 'name' => 'Fruth Pharmacy',
@@ -7031,8 +7518,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.1213',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:26:42',
+                'location_type_id' => NULL,
             ),
-            334 =>
+            341 =>
             array (
                 'id' => 216,
                 'name' => 'Fulton County Health Department',
@@ -7052,8 +7540,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.13429',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:02',
+                'location_type_id' => NULL,
             ),
-            335 =>
+            342 =>
             array (
                 'id' => 217,
                 'name' => 'Gahm\'s Pharmacy',
@@ -7073,8 +7562,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99772',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:03',
+                'location_type_id' => NULL,
             ),
-            336 =>
+            343 =>
             array (
                 'id' => 218,
                 'name' => 'Galion City Health Department',
@@ -7094,8 +7584,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.78917',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:12',
+                'location_type_id' => NULL,
             ),
-            337 =>
+            344 =>
             array (
                 'id' => 219,
                 'name' => 'Gallia County General Health District',
@@ -7115,8 +7606,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.24462',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:14',
+                'location_type_id' => NULL,
             ),
-            338 =>
+            345 =>
             array (
                 'id' => 220,
                 'name' => 'Geauga Public Health',
@@ -7136,8 +7628,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.22285',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:15',
+                'location_type_id' => NULL,
             ),
-            339 =>
+            346 =>
             array (
                 'id' => 221,
                 'name' => 'Genesis HealthCare System',
@@ -7157,8 +7650,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.01436',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:21',
+                'location_type_id' => NULL,
             ),
-            340 =>
+            347 =>
             array (
                 'id' => 224,
                 'name' => 'Giant Eagle Pharmacy',
@@ -7178,8 +7672,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.36976',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:27:49',
+                'location_type_id' => NULL,
             ),
-            341 =>
+            348 =>
             array (
                 'id' => 225,
                 'name' => 'Giant Eagle Pharmacy #0199',
@@ -7199,8 +7694,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.99674',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:00',
+                'location_type_id' => NULL,
             ),
-            342 =>
+            349 =>
             array (
                 'id' => 226,
                 'name' => 'Giant Eagle Pharmacy #0203',
@@ -7220,8 +7716,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.33795',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:01',
+                'location_type_id' => NULL,
             ),
-            343 =>
+            350 =>
             array (
                 'id' => 227,
                 'name' => 'Giant Eagle Pharmacy #0204',
@@ -7241,8 +7738,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.72492',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:10',
+                'location_type_id' => NULL,
             ),
-            344 =>
+            351 =>
             array (
                 'id' => 228,
                 'name' => 'Giant Eagle Pharmacy #0208',
@@ -7262,8 +7760,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49986',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:14',
+                'location_type_id' => NULL,
             ),
-            345 =>
+            352 =>
             array (
                 'id' => 229,
                 'name' => 'Giant Eagle Pharmacy #0209',
@@ -7283,8 +7782,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52455',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:19',
+                'location_type_id' => NULL,
             ),
-            346 =>
+            353 =>
             array (
                 'id' => 231,
                 'name' => 'Giant Eagle Pharmacy #0217',
@@ -7304,8 +7804,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.78728',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:31',
+                'location_type_id' => NULL,
             ),
-            347 =>
+            354 =>
             array (
                 'id' => 232,
                 'name' => 'Giant Eagle Pharmacy #0218',
@@ -7325,8 +7826,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.61175',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:31',
+                'location_type_id' => NULL,
             ),
-            348 =>
+            355 =>
             array (
                 'id' => 233,
                 'name' => 'Giant Eagle Pharmacy #0220',
@@ -7346,8 +7848,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.205605',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:31',
+                'location_type_id' => NULL,
             ),
-            349 =>
+            356 =>
             array (
                 'id' => 234,
                 'name' => 'Giant Eagle Pharmacy #0224',
@@ -7367,8 +7870,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44026',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:36',
+                'location_type_id' => NULL,
             ),
-            350 =>
+            357 =>
             array (
                 'id' => 235,
                 'name' => 'Giant Eagle Pharmacy #0229',
@@ -7388,8 +7892,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.80918',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:45',
+                'location_type_id' => NULL,
             ),
-            351 =>
+            358 =>
             array (
                 'id' => 236,
                 'name' => 'Giant Eagle Pharmacy #0230',
@@ -7409,8 +7914,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.76882',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:28:56',
+                'location_type_id' => NULL,
             ),
-            352 =>
+            359 =>
             array (
                 'id' => 239,
                 'name' => 'Giant Eagle Pharmacy #0465',
@@ -7430,8 +7936,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.79751',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:07',
+                'location_type_id' => NULL,
             ),
-            353 =>
+            360 =>
             array (
                 'id' => 240,
                 'name' => 'Giant Eagle Pharmacy #0515',
@@ -7451,8 +7958,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.33775',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:08',
+                'location_type_id' => NULL,
             ),
-            354 =>
+            361 =>
             array (
                 'id' => 241,
                 'name' => 'Giant Eagle Pharmacy #1216',
@@ -7472,8 +7980,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.956345',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:16',
+                'location_type_id' => NULL,
             ),
-            355 =>
+            362 =>
             array (
                 'id' => 243,
                 'name' => 'Giant Eagle Pharmacy #1238',
@@ -7493,8 +8002,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.34302',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:24',
+                'location_type_id' => NULL,
             ),
-            356 =>
+            363 =>
             array (
                 'id' => 244,
                 'name' => 'Giant Eagle Pharmacy #1263',
@@ -7514,8 +8024,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.80376',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:24',
+                'location_type_id' => NULL,
             ),
-            357 =>
+            364 =>
             array (
                 'id' => 245,
                 'name' => 'Giant Eagle Pharmacy #1405',
@@ -7535,8 +8046,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.75902',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:29',
+                'location_type_id' => NULL,
             ),
-            358 =>
+            365 =>
             array (
                 'id' => 247,
                 'name' => 'Giant Eagle Pharmacy #1419',
@@ -7556,8 +8068,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.79255',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:49',
+                'location_type_id' => NULL,
             ),
-            359 =>
+            366 =>
             array (
                 'id' => 249,
                 'name' => 'Giant Eagle Pharmacy #1435',
@@ -7577,8 +8090,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.55649',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:29:58',
+                'location_type_id' => NULL,
             ),
-            360 =>
+            367 =>
             array (
                 'id' => 251,
                 'name' => 'Giant Eagle Pharmacy #1478',
@@ -7598,8 +8112,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.59265',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:10',
+                'location_type_id' => NULL,
             ),
-            361 =>
+            368 =>
             array (
                 'id' => 252,
                 'name' => 'Giant Eagle Pharmacy #1479',
@@ -7619,8 +8134,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.57631',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:11',
+                'location_type_id' => NULL,
             ),
-            362 =>
+            369 =>
             array (
                 'id' => 213,
                 'name' => 'Fruth Pharmacy',
@@ -7640,8 +8156,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.04474',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:11',
+                'location_type_id' => NULL,
             ),
-            363 =>
+            370 =>
             array (
                 'id' => 222,
                 'name' => 'Giant Eagle Pharmacy',
@@ -7661,71 +8178,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.13279',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:14',
+                'location_type_id' => NULL,
             ),
-            364 =>
+            371 =>
             array (
-                'id' => 271,
-                'name' => 'Giant Eagle Pharmacy #4075',
+                'id' => 237,
+                'name' => 'Giant Eagle Pharmacy #0231',
                 'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(330) 726-7142',
-                'address' => '1201 Doral Drive|Boardman, OH 44512',
+                'phone' => '(440) 934-5377',
+                'address' => '5231 Detroit Road  Sheffield Village, OH 44054',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44512',
+                'zip' => '44054',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Mahoning',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Lorain',
+                'latitude' => '41.4277923',
+                'longitude' => '-82.079355',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:56',
+                'location_type_id' => NULL,
             ),
-            365 =>
+            372 =>
             array (
-                'id' => 281,
-                'name' => 'Giant Eagle Pharmacy #4133',
+                'id' => 242,
+                'name' => 'Giant Eagle Pharmacy #1217',
                 'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(440) 632-5587',
-                'address' => '15400 West High St. Middlefield, OH 44062',
+                'phone' => '(440) 306-0011',
+                'address' => '6079 Andrews Road|Mentor-on-the-Lake, OH 44060',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44062',
+                'zip' => '44060',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Geauga',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Lake',
+                'latitude' => '41.7071077',
+                'longitude' => '-81.3592431',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:56',
+                'location_type_id' => NULL,
             ),
-            366 =>
+            373 =>
             array (
-                'id' => 294,
-                'name' => 'Giant Eagle Pharmacy #6299',
+                'id' => 248,
+                'name' => 'Giant Eagle Pharmacy #1421',
                 'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(330) 468-3263',
-                'address' => '290 East Aurora Road Northfield, OH 44067',
+                'phone' => '(440) 992-6165',
+                'address' => '2390 Prospect Avenue|Ashtabula, OH 44004',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44067',
+                'zip' => '44004',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Summit',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Ashtabula',
+                'latitude' => '41.8516485',
+                'longitude' => '-80.8178819',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:57',
+                'location_type_id' => NULL,
             ),
-            367 =>
+            374 =>
             array (
                 'id' => 256,
                 'name' => 'Giant Eagle Pharmacy #2108',
@@ -7745,8 +8266,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.85561',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:31',
+                'location_type_id' => NULL,
             ),
-            368 =>
+            375 =>
             array (
                 'id' => 257,
                 'name' => 'Giant Eagle Pharmacy #4002',
@@ -7766,8 +8288,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.664795',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:36',
+                'location_type_id' => NULL,
             ),
-            369 =>
+            376 =>
             array (
                 'id' => 258,
                 'name' => 'Giant Eagle Pharmacy #4009',
@@ -7787,8 +8310,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.692566',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:38',
+                'location_type_id' => NULL,
             ),
-            370 =>
+            377 =>
             array (
                 'id' => 260,
                 'name' => 'Giant Eagle Pharmacy #4018',
@@ -7808,8 +8332,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.67748',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:30:51',
+                'location_type_id' => NULL,
             ),
-            371 =>
+            378 =>
             array (
                 'id' => 262,
                 'name' => 'Giant Eagle Pharmacy #4029',
@@ -7829,8 +8354,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.430176',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:31:13',
+                'location_type_id' => NULL,
             ),
-            372 =>
+            379 =>
             array (
                 'id' => 263,
                 'name' => 'Giant Eagle Pharmacy #4031',
@@ -7850,8 +8376,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.58995',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:31:24',
+                'location_type_id' => NULL,
             ),
-            373 =>
+            380 =>
             array (
                 'id' => 264,
                 'name' => 'Giant Eagle Pharmacy #4032',
@@ -7871,8 +8398,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.437904',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:31:26',
+                'location_type_id' => NULL,
             ),
-            374 =>
+            381 =>
             array (
                 'id' => 266,
                 'name' => 'Giant Eagle Pharmacy #4036',
@@ -7892,8 +8420,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.508514',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:31:37',
+                'location_type_id' => NULL,
             ),
-            375 =>
+            382 =>
             array (
                 'id' => 268,
                 'name' => 'Giant Eagle Pharmacy #4056',
@@ -7913,8 +8442,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.8336',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:31:59',
+                'location_type_id' => NULL,
             ),
-            376 =>
+            383 =>
             array (
                 'id' => 269,
                 'name' => 'Giant Eagle Pharmacy #4060',
@@ -7934,8 +8464,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43199',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:00',
+                'location_type_id' => NULL,
             ),
-            377 =>
+            384 =>
             array (
                 'id' => 272,
                 'name' => 'Giant Eagle Pharmacy #4078',
@@ -7955,8 +8486,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.75597',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:17',
+                'location_type_id' => NULL,
             ),
-            378 =>
+            385 =>
             array (
                 'id' => 273,
                 'name' => 'Giant Eagle Pharmacy #4086',
@@ -7976,8 +8508,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.83519',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:22',
+                'location_type_id' => NULL,
             ),
-            379 =>
+            386 =>
             array (
                 'id' => 275,
                 'name' => 'Giant Eagle Pharmacy #4089',
@@ -7997,8 +8530,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.46684',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:33',
+                'location_type_id' => NULL,
             ),
-            380 =>
+            387 =>
             array (
                 'id' => 276,
                 'name' => 'Giant Eagle Pharmacy #4095',
@@ -8018,8 +8552,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.242386',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:40',
+                'location_type_id' => NULL,
             ),
-            381 =>
+            388 =>
             array (
                 'id' => 277,
                 'name' => 'Giant Eagle Pharmacy #4096',
@@ -8039,8 +8574,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.407585',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:48',
+                'location_type_id' => NULL,
             ),
-            382 =>
+            389 =>
             array (
                 'id' => 278,
                 'name' => 'Giant Eagle Pharmacy #4097',
@@ -8060,8 +8596,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.05536',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:57',
+                'location_type_id' => NULL,
             ),
-            383 =>
+            390 =>
             array (
                 'id' => 279,
                 'name' => 'Giant Eagle Pharmacy #4098',
@@ -8081,8 +8618,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.2173',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:32:57',
+                'location_type_id' => NULL,
             ),
-            384 =>
+            391 =>
             array (
                 'id' => 280,
                 'name' => 'Giant Eagle Pharmacy #4124',
@@ -8102,8 +8640,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.50985',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:04',
+                'location_type_id' => NULL,
             ),
-            385 =>
+            392 =>
             array (
                 'id' => 282,
                 'name' => 'Giant Eagle Pharmacy #4152',
@@ -8123,8 +8662,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49583',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:26',
+                'location_type_id' => NULL,
             ),
-            386 =>
+            393 =>
             array (
                 'id' => 284,
                 'name' => 'Giant Eagle Pharmacy #4601',
@@ -8144,8 +8684,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.70169',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:26',
+                'location_type_id' => NULL,
             ),
-            387 =>
+            394 =>
             array (
                 'id' => 285,
                 'name' => 'Giant Eagle Pharmacy #5810',
@@ -8165,8 +8706,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86078',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:37',
+                'location_type_id' => NULL,
             ),
-            388 =>
+            395 =>
             array (
                 'id' => 286,
                 'name' => 'Giant Eagle Pharmacy #5817',
@@ -8186,8 +8728,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.74034',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:38',
+                'location_type_id' => NULL,
             ),
-            389 =>
+            396 =>
             array (
                 'id' => 287,
                 'name' => 'Giant Eagle Pharmacy #5830',
@@ -8207,8 +8750,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.50582',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:48',
+                'location_type_id' => NULL,
             ),
-            390 =>
+            397 =>
             array (
                 'id' => 288,
                 'name' => 'Giant Eagle Pharmacy #5831',
@@ -8228,8 +8772,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.790474',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:33:58',
+                'location_type_id' => NULL,
             ),
-            391 =>
+            398 =>
             array (
                 'id' => 289,
                 'name' => 'Giant Eagle Pharmacy #5836',
@@ -8249,8 +8794,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.45426',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:34:09',
+                'location_type_id' => NULL,
             ),
-            392 =>
+            399 =>
             array (
                 'id' => 291,
                 'name' => 'Giant Eagle Pharmacy #5861',
@@ -8270,8 +8816,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.63347',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:34:27',
+                'location_type_id' => NULL,
             ),
-            393 =>
+            400 =>
             array (
                 'id' => 292,
                 'name' => 'Giant Eagle Pharmacy #5863',
@@ -8291,8 +8838,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.35467',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:34:36',
+                'location_type_id' => NULL,
             ),
-            394 =>
+            401 =>
             array (
                 'id' => 293,
                 'name' => 'Giant Eagle Pharmacy #5878',
@@ -8312,8 +8860,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.48325',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:34:37',
+                'location_type_id' => NULL,
             ),
-            395 =>
+            402 =>
             array (
                 'id' => 296,
                 'name' => 'Giant Eagle Pharmacy #6359',
@@ -8333,8 +8882,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.92419',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:08',
+                'location_type_id' => NULL,
             ),
-            396 =>
+            403 =>
             array (
                 'id' => 297,
                 'name' => 'Giant Eagle Pharmacy #6375',
@@ -8354,8 +8904,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.10867',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:09',
+                'location_type_id' => NULL,
             ),
-            397 =>
+            404 =>
             array (
                 'id' => 253,
                 'name' => 'Giant Eagle Pharmacy #1611',
@@ -8375,8 +8926,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.26051',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:28',
+                'location_type_id' => NULL,
             ),
-            398 =>
+            405 =>
             array (
                 'id' => 261,
                 'name' => 'Giant Eagle Pharmacy #4025',
@@ -8396,8 +8948,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.60632',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:42',
+                'location_type_id' => NULL,
             ),
-            399 =>
+            406 =>
             array (
                 'id' => 267,
                 'name' => 'Giant Eagle Pharmacy #4051',
@@ -8417,8 +8970,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.74359',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:45',
+                'location_type_id' => NULL,
             ),
-            400 =>
+            407 =>
             array (
                 'id' => 270,
                 'name' => 'Giant Eagle Pharmacy #4064',
@@ -8438,8 +8992,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.82747',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:25:49',
+                'location_type_id' => NULL,
             ),
-            401 =>
+            408 =>
             array (
                 'id' => 295,
                 'name' => 'Giant Eagle Pharmacy #6348',
@@ -8459,155 +9014,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.229',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:05',
+                'location_type_id' => NULL,
             ),
-            402 =>
+            409 =>
             array (
-                'id' => 302,
-                'name' => 'Giant Eagle Pharmacy #6385',
+                'id' => 271,
+                'name' => 'Giant Eagle Pharmacy #4075',
                 'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(330) 286-0012',
-                'address' => '525 East Main St Canfield, OH 44406',
+                'phone' => '(330) 726-7142',
+                'address' => '1201 Doral Drive|Boardman, OH 44512',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44406',
+                'zip' => '44512',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Mahoning',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '41.0269909',
+                'longitude' => '-80.6325181',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:57',
+                'location_type_id' => NULL,
             ),
-            403 =>
+            410 =>
             array (
-                'id' => 314,
-                'name' => 'Giant Eagle Pharmacy #6515',
+                'id' => 281,
+                'name' => 'Giant Eagle Pharmacy #4133',
                 'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(614) 538-0801',
-                'address' => '3061 Kingsdale Center|Columbus, OH 43221',
+                'phone' => '(440) 632-5587',
+                'address' => '15400 West High St. Middlefield, OH 44062',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43221',
+                'zip' => '44062',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Geauga',
+                'latitude' => '41.4646301',
+                'longitude' => '-81.0915045',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:58',
+                'location_type_id' => NULL,
             ),
-            404 =>
+            411 =>
             array (
-                'id' => 322,
-                'name' => 'Giant Eagle Pharmacy #6529',
+                'id' => 294,
+                'name' => 'Giant Eagle Pharmacy #6299',
                 'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(614) 529-6685',
-                'address' => '6700 Hayden Run Road Hilliard, OH 43026',
+                'phone' => '(330) 468-3263',
+                'address' => '290 East Aurora Road Northfield, OH 44067',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43026',
+                'zip' => '44067',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Summit',
+                'latitude' => '41.3131984',
+                'longitude' => '-81.5293148',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:58',
+                'location_type_id' => NULL,
             ),
-            405 =>
-            array (
-                'id' => 323,
-                'name' => 'Giant Eagle Pharmacy #6531',
-                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
-                'phone' => '(614) 921-8260',
-                'address' => '4001 Britton Parkway|Hilliard, OH 43026',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43026',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            406 =>
-            array (
-                'id' => 330,
-                'name' => 'Hancock Public Health',
-                'bookinglink' => 'http://www.hancockph.com',
-                'phone' => '(419) 424-7105',
-                'address' => '2225 Keith Parkway|Findlay, OH 45840',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45840',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hancock',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            407 =>
-            array (
-                'id' => 336,
-                'name' => 'HealthSource Mt Orab',
-                'bookinglink' => 'http://www.healthsourceofohio.org/',
-                'phone' => '(937) 444-8009',
-                'address' => '150 Health Partners Circle Mt Orab, OH 45154',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45154',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Brown',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            408 =>
-            array (
-                'id' => 339,
-                'name' => 'HealthSource of Ohio Mt. Orab Pharmacy',
-                'bookinglink' => 'http://www.healthsourceofohio.org/',
-                'phone' => '(937) 444-8009',
-                'address' => '150 Healthpartners Circle Mt. Orab, OH 45154',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45154',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Brown',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            409 =>
+            412 =>
             array (
                 'id' => 311,
                 'name' => 'Giant Eagle Pharmacy #6512',
@@ -8627,8 +9102,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.012695',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:43:37',
+                'location_type_id' => NULL,
             ),
-            410 =>
+            413 =>
             array (
                 'id' => 315,
                 'name' => 'Giant Eagle Pharmacy #6517',
@@ -8648,8 +9124,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.91044',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:43:59',
+                'location_type_id' => NULL,
             ),
-            411 =>
+            414 =>
             array (
                 'id' => 317,
                 'name' => 'Giant Eagle Pharmacy #6520',
@@ -8669,8 +9146,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.157814',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:44:11',
+                'location_type_id' => NULL,
             ),
-            412 =>
+            415 =>
             array (
                 'id' => 319,
                 'name' => 'Giant Eagle Pharmacy #6526',
@@ -8690,8 +9168,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.06138',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:44:20',
+                'location_type_id' => NULL,
             ),
-            413 =>
+            416 =>
             array (
                 'id' => 321,
                 'name' => 'Giant Eagle Pharmacy #6528',
@@ -8711,8 +9190,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.82544',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:44:26',
+                'location_type_id' => NULL,
             ),
-            414 =>
+            417 =>
             array (
                 'id' => 324,
                 'name' => 'Giant Eagle Pharmacy #6537',
@@ -8732,8 +9212,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.88204',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:44:41',
+                'location_type_id' => NULL,
             ),
-            415 =>
+            418 =>
             array (
                 'id' => 318,
                 'name' => 'Giant Eagle Pharmacy #6523',
@@ -8753,8 +9234,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.43348',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:04:27',
+                'location_type_id' => NULL,
             ),
-            416 =>
+            419 =>
             array (
                 'id' => 298,
                 'name' => 'Giant Eagle Pharmacy #6376',
@@ -8774,8 +9256,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.73048',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:13',
+                'location_type_id' => NULL,
             ),
-            417 =>
+            420 =>
             array (
                 'id' => 299,
                 'name' => 'Giant Eagle Pharmacy #6377',
@@ -8795,8 +9278,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.268715',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:21',
+                'location_type_id' => NULL,
             ),
-            418 =>
+            421 =>
             array (
                 'id' => 301,
                 'name' => 'Giant Eagle Pharmacy #6381',
@@ -8816,8 +9300,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.42339',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:38',
+                'location_type_id' => NULL,
             ),
-            419 =>
+            422 =>
             array (
                 'id' => 303,
                 'name' => 'Giant Eagle Pharmacy #6388',
@@ -8837,8 +9322,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.6846',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:57',
+                'location_type_id' => NULL,
             ),
-            420 =>
+            423 =>
             array (
                 'id' => 304,
                 'name' => 'Giant Eagle Pharmacy #6414',
@@ -8858,8 +9344,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5373',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:35:59',
+                'location_type_id' => NULL,
             ),
-            421 =>
+            424 =>
             array (
                 'id' => 308,
                 'name' => 'Giant Eagle Pharmacy #6507',
@@ -8879,8 +9366,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.92712',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:36:08',
+                'location_type_id' => NULL,
             ),
-            422 =>
+            425 =>
             array (
                 'id' => 310,
                 'name' => 'Giant Eagle Pharmacy #6510',
@@ -8900,8 +9388,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44769',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:36:19',
+                'location_type_id' => NULL,
             ),
-            423 =>
+            426 =>
             array (
                 'id' => 313,
                 'name' => 'Giant Eagle Pharmacy #6514',
@@ -8921,8 +9410,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.77453',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:36:37',
+                'location_type_id' => NULL,
             ),
-            424 =>
+            427 =>
             array (
                 'id' => 320,
                 'name' => 'Giant Eagle Pharmacy #6527',
@@ -8942,8 +9432,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.097725',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:36:54',
+                'location_type_id' => NULL,
             ),
-            425 =>
+            428 =>
             array (
                 'id' => 325,
                 'name' => 'Giant Eagle Pharmacy #6538',
@@ -8963,8 +9454,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.63696',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:05',
+                'location_type_id' => NULL,
             ),
-            426 =>
+            429 =>
             array (
                 'id' => 327,
                 'name' => 'Grand Lake Primary Care at St. Marys',
@@ -8984,8 +9476,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.373955',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:06',
+                'location_type_id' => NULL,
             ),
-            427 =>
+            430 =>
             array (
                 'id' => 328,
                 'name' => 'Greene County Public Health Covid Vaccine',
@@ -9005,8 +9498,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.03942',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:11',
+                'location_type_id' => NULL,
             ),
-            428 =>
+            431 =>
             array (
                 'id' => 334,
                 'name' => 'HealthSource Batavia',
@@ -9026,8 +9520,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.14973',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:45',
+                'location_type_id' => NULL,
             ),
-            429 =>
+            432 =>
             array (
                 'id' => 335,
                 'name' => 'Healthsource Lebanon',
@@ -9047,8 +9542,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.18297',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:47',
+                'location_type_id' => NULL,
             ),
-            430 =>
+            433 =>
             array (
                 'id' => 337,
                 'name' => 'HealthSource Mt Washington',
@@ -9068,8 +9564,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.38818',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:49',
+                'location_type_id' => NULL,
             ),
-            431 =>
+            434 =>
             array (
                 'id' => 338,
                 'name' => 'HealthSource New Richmond',
@@ -9089,8 +9586,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.285034',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:37:49',
+                'location_type_id' => NULL,
             ),
-            432 =>
+            435 =>
             array (
                 'id' => 341,
                 'name' => 'Henry County Combined General Health District',
@@ -9110,8 +9608,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.118866',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:03',
+                'location_type_id' => NULL,
             ),
-            433 =>
+            436 =>
             array (
                 'id' => 342,
                 'name' => 'Henry County Hospital',
@@ -9131,8 +9630,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.08736',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:12',
+                'location_type_id' => NULL,
             ),
-            434 =>
+            437 =>
             array (
                 'id' => 316,
                 'name' => 'Giant Eagle Pharmacy #6519',
@@ -9152,8 +9652,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.12844',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:21:14',
+                'location_type_id' => NULL,
             ),
-            435 =>
+            438 =>
             array (
                 'id' => 300,
                 'name' => 'Giant Eagle Pharmacy #6378',
@@ -9173,8 +9674,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.36868',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:11',
+                'location_type_id' => NULL,
             ),
-            436 =>
+            439 =>
             array (
                 'id' => 312,
                 'name' => 'Giant Eagle Pharmacy #6513',
@@ -9194,8 +9696,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.82123',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:25',
+                'location_type_id' => NULL,
             ),
-            437 =>
+            440 =>
             array (
                 'id' => 331,
                 'name' => 'Harrison County General Health District',
@@ -9215,8 +9718,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.98557',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:31',
+                'location_type_id' => NULL,
             ),
-            438 =>
+            441 =>
             array (
                 'id' => 332,
                 'name' => 'Hawkins Medical Center',
@@ -9236,8 +9740,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.59088',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:40',
+                'location_type_id' => NULL,
             ),
-            439 =>
+            442 =>
             array (
                 'id' => 333,
                 'name' => 'Health Partners of Western Ohio Quick Care',
@@ -9257,113 +9762,141 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.10501',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:26:47',
-            ),
-            440 =>
-            array (
-                'id' => 344,
-                'name' => 'Hocking County Health Department',
-                'bookinglink' => 'http://www.hockingcountyhealthdepartment.com',
-                'phone' => '(740) 385-3030',
-                'address' => '350 St Rt 664N|Logan, OH 43138',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43138',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hocking',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            441 =>
-            array (
-                'id' => 345,
-                'name' => 'Hocking Valley Community Hospital',
-                'bookinglink' => 'http://www.hvch.org',
-                'phone' => '(740) 380-8402',
-                'address' => '601 SR 664N|Logan, OH 43138',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43138',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hocking',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            442 =>
-            array (
-                'id' => 353,
-                'name' => 'Hopewell Health Centers McArthur',
-                'bookinglink' => 'http://www.hopewellhealth.org',
-                'phone' => '(740) 596-5249',
-                'address' => '31891 State Route 93 North|McArthur, OH 45651',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45651',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Vinton',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             443 =>
             array (
-                'id' => 371,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '1001 Cherry St Ste A Blanchester, OH 45107',
+                'id' => 302,
+                'name' => 'Giant Eagle Pharmacy #6385',
+                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
+                'phone' => '(330) 286-0012',
+                'address' => '525 East Main St Canfield, OH 44406',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '45107',
+                'zip' => '44406',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Clinton',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Mahoning',
+                'latitude' => '41.0234649',
+                'longitude' => '-80.7469048',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:59',
+                'location_type_id' => NULL,
             ),
             444 =>
             array (
-                'id' => 376,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '1045 Hill Rd N Pickerington, OH 43147',
+                'id' => 314,
+                'name' => 'Giant Eagle Pharmacy #6515',
+                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
+                'phone' => '(614) 538-0801',
+                'address' => '3061 Kingsdale Center|Columbus, OH 43221',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43147',
+                'zip' => '43221',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Fairfield',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0199216',
+                'longitude' => '-83.0584807',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:13:59',
+                'location_type_id' => NULL,
             ),
             445 =>
+            array (
+                'id' => 322,
+                'name' => 'Giant Eagle Pharmacy #6529',
+                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
+                'phone' => '(614) 529-6685',
+                'address' => '6700 Hayden Run Road Hilliard, OH 43026',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43026',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0612349',
+                'longitude' => '-83.1798054',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:00',
+                'location_type_id' => NULL,
+            ),
+            446 =>
+            array (
+                'id' => 323,
+                'name' => 'Giant Eagle Pharmacy #6531',
+                'bookinglink' => 'http://www.gianteagle.com/covidvaccine',
+                'phone' => '(614) 921-8260',
+                'address' => '4001 Britton Parkway|Hilliard, OH 43026',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43026',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0345767',
+                'longitude' => '-83.1335711',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:00',
+                'location_type_id' => NULL,
+            ),
+            447 =>
+            array (
+                'id' => 330,
+                'name' => 'Hancock Public Health',
+                'bookinglink' => 'http://www.hancockph.com',
+                'phone' => '(419) 424-7105',
+                'address' => '2225 Keith Parkway|Findlay, OH 45840',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45840',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Hancock',
+                'latitude' => '41.0661353',
+                'longitude' => '-83.6202929',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:00',
+                'location_type_id' => NULL,
+            ),
+            448 =>
+            array (
+                'id' => 336,
+                'name' => 'HealthSource Mt Orab',
+                'bookinglink' => 'http://www.healthsourceofohio.org/',
+                'phone' => '(937) 444-8009',
+                'address' => '150 Health Partners Circle Mt Orab, OH 45154',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45154',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Brown',
+                'latitude' => '39.0450901',
+                'longitude' => '-83.9414783',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:18',
+                'location_type_id' => NULL,
+            ),
+            449 =>
             array (
                 'id' => 369,
                 'name' => 'Knox Public Health',
@@ -9383,8 +9916,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.43723',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:03:49',
+                'location_type_id' => NULL,
             ),
-            446 =>
+            450 =>
             array (
                 'id' => 385,
                 'name' => 'Kroger Pharmacy',
@@ -9404,8 +9938,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.42806',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:04:38',
+                'location_type_id' => NULL,
             ),
-            447 =>
+            451 =>
             array (
                 'id' => 343,
                 'name' => 'Highland County Health Department',
@@ -9425,8 +9960,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.60933',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:18',
+                'location_type_id' => NULL,
             ),
-            448 =>
+            452 =>
             array (
                 'id' => 347,
                 'name' => 'Holzer Medical Center Gallipolis',
@@ -9446,8 +9982,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.23679',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:23',
+                'location_type_id' => NULL,
             ),
-            449 =>
+            453 =>
             array (
                 'id' => 348,
                 'name' => 'Holzer Medical Center Jackson',
@@ -9467,8 +10004,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.63811',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:26',
+                'location_type_id' => NULL,
             ),
-            450 =>
+            454 =>
             array (
                 'id' => 349,
                 'name' => 'Hopewell Health Center Logan PC',
@@ -9488,8 +10026,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.45642',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:28',
+                'location_type_id' => NULL,
             ),
-            451 =>
+            455 =>
             array (
                 'id' => 350,
                 'name' => 'Hopewell Health Centers Athens',
@@ -9509,8 +10048,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.11572',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:29',
+                'location_type_id' => NULL,
             ),
-            452 =>
+            456 =>
             array (
                 'id' => 351,
                 'name' => 'Hopewell Health Centers Chillicothe',
@@ -9530,8 +10070,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.013664',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:35',
+                'location_type_id' => NULL,
             ),
-            453 =>
+            457 =>
             array (
                 'id' => 352,
                 'name' => 'Hopewell Health Centers Gallipolis',
@@ -9551,8 +10092,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.2356',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:36',
+                'location_type_id' => NULL,
             ),
-            454 =>
+            458 =>
             array (
                 'id' => 354,
                 'name' => 'Hopewell Health Centers Nelsonville',
@@ -9572,8 +10114,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.24318',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:47',
+                'location_type_id' => NULL,
             ),
-            455 =>
+            459 =>
             array (
                 'id' => 356,
                 'name' => 'Hopewell Health Centers Pomeroy',
@@ -9593,8 +10136,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.015335',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:49',
+                'location_type_id' => NULL,
             ),
-            456 =>
+            460 =>
             array (
                 'id' => 357,
                 'name' => 'Howland Flu Clinic',
@@ -9614,8 +10158,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.74086',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:56',
+                'location_type_id' => NULL,
             ),
-            457 =>
+            461 =>
             array (
                 'id' => 358,
                 'name' => 'Huron County Public Health',
@@ -9635,8 +10180,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.60069',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:56',
+                'location_type_id' => NULL,
             ),
-            458 =>
+            462 =>
             array (
                 'id' => 359,
                 'name' => 'InterContinental Hotel - Cleveland Clinic Main',
@@ -9656,8 +10202,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.61928',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:57',
+                'location_type_id' => NULL,
             ),
-            459 =>
+            463 =>
             array (
                 'id' => 360,
                 'name' => 'Ironton HealthCare Campus',
@@ -9677,8 +10224,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.65586',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:38:57',
+                'location_type_id' => NULL,
             ),
-            460 =>
+            464 =>
             array (
                 'id' => 361,
                 'name' => 'Jackson County Health Department',
@@ -9698,8 +10246,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.63129',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:03',
+                'location_type_id' => NULL,
             ),
-            461 =>
+            465 =>
             array (
                 'id' => 362,
                 'name' => 'Jefferson County General Health Distrcit',
@@ -9719,8 +10268,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.61649',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:05',
+                'location_type_id' => NULL,
             ),
-            462 =>
+            466 =>
             array (
                 'id' => 364,
                 'name' => 'Kenton Community Health Center',
@@ -9740,8 +10290,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.60823',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:10',
+                'location_type_id' => NULL,
             ),
-            463 =>
+            467 =>
             array (
                 'id' => 365,
                 'name' => 'Kenton Hardin Health Department',
@@ -9761,8 +10312,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.60893',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:20',
+                'location_type_id' => NULL,
             ),
-            464 =>
+            468 =>
             array (
                 'id' => 366,
                 'name' => 'Kettering Health Network Vaccine Clinic',
@@ -9782,8 +10334,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.12728',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:24',
+                'location_type_id' => NULL,
             ),
-            465 =>
+            469 =>
             array (
                 'id' => 367,
                 'name' => 'Kettering Health Vaccine Clinic - Jamestown',
@@ -9803,8 +10356,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.75933',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:24',
+                'location_type_id' => NULL,
             ),
-            466 =>
+            470 =>
             array (
                 'id' => 370,
                 'name' => 'Kroger Pharmacy',
@@ -9824,8 +10378,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.50957',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:26',
+                'location_type_id' => NULL,
             ),
-            467 =>
+            471 =>
             array (
                 'id' => 372,
                 'name' => 'Kroger Pharmacy',
@@ -9845,8 +10400,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.58073',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:31',
+                'location_type_id' => NULL,
             ),
-            468 =>
+            472 =>
             array (
                 'id' => 374,
                 'name' => 'Kroger Pharmacy',
@@ -9866,8 +10422,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.229034',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:36',
+                'location_type_id' => NULL,
             ),
-            469 =>
+            473 =>
             array (
                 'id' => 375,
                 'name' => 'Kroger Pharmacy',
@@ -9887,8 +10444,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.13894',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:42',
+                'location_type_id' => NULL,
             ),
-            470 =>
+            474 =>
             array (
                 'id' => 377,
                 'name' => 'Kroger Pharmacy',
@@ -9908,8 +10466,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.79221',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:39:57',
+                'location_type_id' => NULL,
             ),
-            471 =>
+            475 =>
             array (
                 'id' => 378,
                 'name' => 'Kroger Pharmacy',
@@ -9929,8 +10488,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.476204',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:06',
+                'location_type_id' => NULL,
             ),
-            472 =>
+            476 =>
             array (
                 'id' => 379,
                 'name' => 'Kroger Pharmacy',
@@ -9950,8 +10510,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.23881',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:15',
+                'location_type_id' => NULL,
             ),
-            473 =>
+            477 =>
             array (
                 'id' => 380,
                 'name' => 'Kroger Pharmacy',
@@ -9971,8 +10532,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.65055',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:23',
+                'location_type_id' => NULL,
             ),
-            474 =>
+            478 =>
             array (
                 'id' => 382,
                 'name' => 'Kroger Pharmacy',
@@ -9992,8 +10554,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.88711',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:37',
+                'location_type_id' => NULL,
             ),
-            475 =>
+            479 =>
             array (
                 'id' => 383,
                 'name' => 'Kroger Pharmacy',
@@ -10013,8 +10576,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.32742',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:41',
+                'location_type_id' => NULL,
             ),
-            476 =>
+            480 =>
             array (
                 'id' => 384,
                 'name' => 'Kroger Pharmacy',
@@ -10034,8 +10598,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.57951',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:40:52',
+                'location_type_id' => NULL,
             ),
-            477 =>
+            481 =>
             array (
                 'id' => 386,
                 'name' => 'Kroger Pharmacy',
@@ -10055,8 +10620,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.99806',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:03',
+                'location_type_id' => NULL,
             ),
-            478 =>
+            482 =>
             array (
                 'id' => 387,
                 'name' => 'Kroger Pharmacy',
@@ -10076,71 +10642,97 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.0169',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:11',
+                'location_type_id' => NULL,
             ),
-            479 =>
+            483 =>
             array (
-                'id' => 400,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '1435 Reynolds Rd|Maumee, OH 43537',
+                'id' => 344,
+                'name' => 'Hocking County Health Department',
+                'bookinglink' => 'http://www.hockingcountyhealthdepartment.com',
+                'phone' => '(740) 385-3030',
+                'address' => '350 St Rt 664N|Logan, OH 43138',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43537',
+                'zip' => '43138',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Lucas',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Hocking',
+                'latitude' => '39.5452528',
+                'longitude' => '-82.4279174',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:19',
+                'location_type_id' => NULL,
             ),
-            480 =>
+            484 =>
             array (
-                'id' => 413,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '1700 W Park Square Xenia, OH 45385',
+                'id' => 345,
+                'name' => 'Hocking Valley Community Hospital',
+                'bookinglink' => 'http://www.hvch.org',
+                'phone' => '(740) 380-8402',
+                'address' => '601 SR 664N|Logan, OH 43138',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '45385',
+                'zip' => '43138',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Greene',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Hocking',
+                'latitude' => '39.5479906',
+                'longitude' => '-82.4294082',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:19',
+                'location_type_id' => NULL,
             ),
-            481 =>
+            485 =>
             array (
-                'id' => 433,
+                'id' => 371,
                 'name' => 'Kroger Pharmacy',
                 'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
                 'phone' => '(866) 211-5320',
-                'address' => '220 Waverly Plz|Waverly, OH 45690',
+                'address' => '1001 Cherry St Ste A Blanchester, OH 45107',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '45690',
+                'zip' => '45107',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Pike',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Clinton',
+                'latitude' => '39.3006296',
+                'longitude' => '-83.9608788',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:20',
+                'location_type_id' => NULL,
             ),
-            482 =>
+            486 =>
+            array (
+                'id' => 376,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '1045 Hill Rd N Pickerington, OH 43147',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43147',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Fairfield',
+                'latitude' => '39.9066654',
+                'longitude' => '-82.7792925',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:20',
+                'location_type_id' => NULL,
+            ),
+            487 =>
             array (
                 'id' => 398,
                 'name' => 'Kroger Pharmacy',
@@ -10160,8 +10752,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.9804',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:10',
+                'location_type_id' => NULL,
             ),
-            483 =>
+            488 =>
             array (
                 'id' => 401,
                 'name' => 'Kroger Pharmacy',
@@ -10181,8 +10774,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.983765',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:20',
+                'location_type_id' => NULL,
             ),
-            484 =>
+            489 =>
             array (
                 'id' => 404,
                 'name' => 'Kroger Pharmacy',
@@ -10202,8 +10796,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.00152',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:23',
+                'location_type_id' => NULL,
             ),
-            485 =>
+            490 =>
             array (
                 'id' => 408,
                 'name' => 'Kroger Pharmacy',
@@ -10223,8 +10818,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.11999',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:32',
+                'location_type_id' => NULL,
             ),
-            486 =>
+            491 =>
             array (
                 'id' => 414,
                 'name' => 'Kroger Pharmacy',
@@ -10244,8 +10840,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97269',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:37',
+                'location_type_id' => NULL,
             ),
-            487 =>
+            492 =>
             array (
                 'id' => 421,
                 'name' => 'Kroger Pharmacy',
@@ -10265,8 +10862,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.02406',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:45:49',
+                'location_type_id' => NULL,
             ),
-            488 =>
+            493 =>
             array (
                 'id' => 388,
                 'name' => 'Kroger Pharmacy',
@@ -10286,8 +10884,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.5239',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:18',
+                'location_type_id' => NULL,
             ),
-            489 =>
+            494 =>
             array (
                 'id' => 389,
                 'name' => 'Kroger Pharmacy',
@@ -10307,8 +10906,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.39142',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:18',
+                'location_type_id' => NULL,
             ),
-            490 =>
+            495 =>
             array (
                 'id' => 390,
                 'name' => 'Kroger Pharmacy',
@@ -10328,8 +10928,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.80788',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:22',
+                'location_type_id' => NULL,
             ),
-            491 =>
+            496 =>
             array (
                 'id' => 391,
                 'name' => 'Kroger Pharmacy',
@@ -10349,8 +10950,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.560104',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:33',
+                'location_type_id' => NULL,
             ),
-            492 =>
+            497 =>
             array (
                 'id' => 392,
                 'name' => 'Kroger Pharmacy',
@@ -10370,8 +10972,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.414795',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:41:38',
+                'location_type_id' => NULL,
             ),
-            493 =>
+            498 =>
             array (
                 'id' => 397,
                 'name' => 'Kroger Pharmacy',
@@ -10391,8 +10994,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.181175',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:01',
+                'location_type_id' => NULL,
             ),
-            494 =>
+            499 =>
             array (
                 'id' => 402,
                 'name' => 'Kroger Pharmacy',
@@ -10412,8 +11016,11 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.54968',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:13',
+                'location_type_id' => NULL,
             ),
-            495 =>
+        ));
+        \DB::table('locations')->insert(array (
+            0 =>
             array (
                 'id' => 403,
                 'name' => 'Kroger Pharmacy',
@@ -10433,8 +11040,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.58682',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:18',
+                'location_type_id' => NULL,
             ),
-            496 =>
+            1 =>
             array (
                 'id' => 405,
                 'name' => 'Kroger Pharmacy',
@@ -10454,8 +11062,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.5455',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:26',
+                'location_type_id' => NULL,
             ),
-            497 =>
+            2 =>
             array (
                 'id' => 406,
                 'name' => 'Kroger Pharmacy',
@@ -10475,8 +11084,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.265526',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:29',
+                'location_type_id' => NULL,
             ),
-            498 =>
+            3 =>
             array (
                 'id' => 407,
                 'name' => 'Kroger Pharmacy',
@@ -10496,8 +11106,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.26467',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:33',
+                'location_type_id' => NULL,
             ),
-            499 =>
+            4 =>
             array (
                 'id' => 409,
                 'name' => 'Kroger Pharmacy',
@@ -10517,10 +11128,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.08518',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:33',
+                'location_type_id' => NULL,
             ),
-        ));
-        \DB::table('locations')->insert(array (
-            0 =>
+            5 =>
             array (
                 'id' => 412,
                 'name' => 'Kroger Pharmacy',
@@ -10540,8 +11150,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.13417',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:42:55',
+                'location_type_id' => NULL,
             ),
-            1 =>
+            6 =>
             array (
                 'id' => 415,
                 'name' => 'Kroger Pharmacy',
@@ -10561,8 +11172,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.93178',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:09',
+                'location_type_id' => NULL,
             ),
-            2 =>
+            7 =>
             array (
                 'id' => 416,
                 'name' => 'Kroger Pharmacy',
@@ -10582,8 +11194,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.00338',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:10',
+                'location_type_id' => NULL,
             ),
-            3 =>
+            8 =>
             array (
                 'id' => 417,
                 'name' => 'Kroger Pharmacy',
@@ -10603,8 +11216,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.0703',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:20',
+                'location_type_id' => NULL,
             ),
-            4 =>
+            9 =>
             array (
                 'id' => 418,
                 'name' => 'Kroger Pharmacy',
@@ -10624,8 +11238,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.32832',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:30',
+                'location_type_id' => NULL,
             ),
-            5 =>
+            10 =>
             array (
                 'id' => 419,
                 'name' => 'Kroger Pharmacy',
@@ -10645,8 +11260,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.078',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:31',
+                'location_type_id' => NULL,
             ),
-            6 =>
+            11 =>
             array (
                 'id' => 423,
                 'name' => 'Kroger Pharmacy',
@@ -10666,8 +11282,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.62217',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:43:54',
+                'location_type_id' => NULL,
             ),
-            7 =>
+            12 =>
             array (
                 'id' => 425,
                 'name' => 'Kroger Pharmacy',
@@ -10687,8 +11304,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.90223',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:44:16',
+                'location_type_id' => NULL,
             ),
-            8 =>
+            13 =>
             array (
                 'id' => 426,
                 'name' => 'Kroger Pharmacy',
@@ -10708,8 +11326,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97402',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:44:25',
+                'location_type_id' => NULL,
             ),
-            9 =>
+            14 =>
             array (
                 'id' => 427,
                 'name' => 'Kroger Pharmacy',
@@ -10729,8 +11348,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.92219',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:44:26',
+                'location_type_id' => NULL,
             ),
-            10 =>
+            15 =>
             array (
                 'id' => 428,
                 'name' => 'Kroger Pharmacy',
@@ -10750,8 +11370,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.186554',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:44:30',
+                'location_type_id' => NULL,
             ),
-            11 =>
+            16 =>
             array (
                 'id' => 429,
                 'name' => 'Kroger Pharmacy',
@@ -10771,8 +11392,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.12563',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:44:34',
+                'location_type_id' => NULL,
             ),
-            12 =>
+            17 =>
             array (
                 'id' => 394,
                 'name' => 'Kroger Pharmacy',
@@ -10792,8 +11414,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.00604',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:21:26',
+                'location_type_id' => NULL,
             ),
-            13 =>
+            18 =>
             array (
                 'id' => 420,
                 'name' => 'Kroger Pharmacy',
@@ -10813,8 +11436,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.07086',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:21:33',
+                'location_type_id' => NULL,
             ),
-            14 =>
+            19 =>
             array (
                 'id' => 424,
                 'name' => 'Kroger Pharmacy',
@@ -10834,8 +11458,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.94564',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:21:41',
+                'location_type_id' => NULL,
             ),
-            15 =>
+            20 =>
             array (
                 'id' => 393,
                 'name' => 'Kroger Pharmacy',
@@ -10855,8 +11480,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.870766',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:27:03',
+                'location_type_id' => NULL,
             ),
-            16 =>
+            21 =>
             array (
                 'id' => 411,
                 'name' => 'Kroger Pharmacy',
@@ -10876,8 +11502,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.718124',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:27:13',
+                'location_type_id' => NULL,
             ),
-            17 =>
+            22 =>
             array (
                 'id' => 431,
                 'name' => 'Kroger Pharmacy',
@@ -10897,134 +11524,53 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.76155',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:27:24',
-            ),
-            18 =>
-            array (
-                'id' => 445,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '2900 Crown Plaza Dr Columbus, OH 43235',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43235',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            19 =>
-            array (
-                'id' => 446,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '2900 W SR 22|Maineville, OH 45039',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45039',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Warren',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            20 =>
-            array (
-                'id' => 447,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '2921 W. Alex-Bell Rd Dayton, OH 45459',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45459',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Montgomery',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            21 =>
-            array (
-                'id' => 459,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '345 State Route 3|Westerville, OH 43082',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43082',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            22 =>
-            array (
-                'id' => 470,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '3975 West Powell Road Powell, OH 43065',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43065',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Delaware',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             23 =>
             array (
-                'id' => 471,
+                'id' => 400,
                 'name' => 'Kroger Pharmacy',
                 'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
                 'phone' => '(866) 211-5320',
-                'address' => '400 28th Street|Bellaire, OH 43906',
+                'address' => '1435 Reynolds Rd|Maumee, OH 43537',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43906',
+                'zip' => '43537',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Belmont',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Lucas',
+                'latitude' => '41.5844324',
+                'longitude' => '-83.6669879',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:21',
+                'location_type_id' => NULL,
             ),
             24 =>
+            array (
+                'id' => 433,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '220 Waverly Plz|Waverly, OH 45690',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45690',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Pike',
+                'latitude' => '39.1329131',
+                'longitude' => '-82.977373',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:22',
+                'location_type_id' => NULL,
+            ),
+            25 =>
             array (
                 'id' => 438,
                 'name' => 'Kroger Pharmacy',
@@ -11044,8 +11590,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.0672',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:12',
+                'location_type_id' => NULL,
             ),
-            25 =>
+            26 =>
             array (
                 'id' => 449,
                 'name' => 'Kroger Pharmacy',
@@ -11065,8 +11612,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.12096',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:20',
+                'location_type_id' => NULL,
             ),
-            26 =>
+            27 =>
             array (
                 'id' => 450,
                 'name' => 'Kroger Pharmacy',
@@ -11086,8 +11634,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.86711',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:31',
+                'location_type_id' => NULL,
             ),
-            27 =>
+            28 =>
             array (
                 'id' => 463,
                 'name' => 'Kroger Pharmacy',
@@ -11107,8 +11656,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.82443',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:59',
+                'location_type_id' => NULL,
             ),
-            28 =>
+            29 =>
             array (
                 'id' => 464,
                 'name' => 'Kroger Pharmacy',
@@ -11128,8 +11678,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.09531',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:46:59',
+                'location_type_id' => NULL,
             ),
-            29 =>
+            30 =>
             array (
                 'id' => 467,
                 'name' => 'Kroger Pharmacy',
@@ -11149,8 +11700,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99874',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:10',
+                'location_type_id' => NULL,
             ),
-            30 =>
+            31 =>
             array (
                 'id' => 468,
                 'name' => 'Kroger Pharmacy',
@@ -11170,8 +11722,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.90281',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:21',
+                'location_type_id' => NULL,
             ),
-            31 =>
+            32 =>
             array (
                 'id' => 461,
                 'name' => 'Kroger Pharmacy',
@@ -11191,8 +11744,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.66792',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:04:49',
+                'location_type_id' => NULL,
             ),
-            32 =>
+            33 =>
             array (
                 'id' => 434,
                 'name' => 'Kroger Pharmacy',
@@ -11212,8 +11766,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.68254',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:04',
+                'location_type_id' => NULL,
             ),
-            33 =>
+            34 =>
             array (
                 'id' => 435,
                 'name' => 'Kroger Pharmacy',
@@ -11233,8 +11788,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.695435',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:15',
+                'location_type_id' => NULL,
             ),
-            34 =>
+            35 =>
             array (
                 'id' => 436,
                 'name' => 'Kroger Pharmacy',
@@ -11254,8 +11810,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.44128',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:15',
+                'location_type_id' => NULL,
             ),
-            35 =>
+            36 =>
             array (
                 'id' => 437,
                 'name' => 'Kroger Pharmacy',
@@ -11275,8 +11832,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.60093',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:16',
+                'location_type_id' => NULL,
             ),
-            36 =>
+            37 =>
             array (
                 'id' => 440,
                 'name' => 'Kroger Pharmacy',
@@ -11296,8 +11854,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.60582',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:21',
+                'location_type_id' => NULL,
             ),
-            37 =>
+            38 =>
             array (
                 'id' => 441,
                 'name' => 'Kroger Pharmacy',
@@ -11317,8 +11876,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.229965',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:27',
+                'location_type_id' => NULL,
             ),
-            38 =>
+            39 =>
             array (
                 'id' => 443,
                 'name' => 'Kroger Pharmacy',
@@ -11338,8 +11898,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.765724',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:38',
+                'location_type_id' => NULL,
             ),
-            39 =>
+            40 =>
             array (
                 'id' => 444,
                 'name' => 'Kroger Pharmacy',
@@ -11359,8 +11920,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.59819',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:45:39',
+                'location_type_id' => NULL,
             ),
-            40 =>
+            41 =>
             array (
                 'id' => 448,
                 'name' => 'Kroger Pharmacy',
@@ -11380,8 +11942,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.78528',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:06',
+                'location_type_id' => NULL,
             ),
-            41 =>
+            42 =>
             array (
                 'id' => 451,
                 'name' => 'Kroger Pharmacy',
@@ -11401,8 +11964,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.74939',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:11',
+                'location_type_id' => NULL,
             ),
-            42 =>
+            43 =>
             array (
                 'id' => 452,
                 'name' => 'Kroger Pharmacy',
@@ -11422,8 +11986,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.37716',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:11',
+                'location_type_id' => NULL,
             ),
-            43 =>
+            44 =>
             array (
                 'id' => 453,
                 'name' => 'Kroger Pharmacy',
@@ -11443,8 +12008,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.43462',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:15',
+                'location_type_id' => NULL,
             ),
-            44 =>
+            45 =>
             array (
                 'id' => 455,
                 'name' => 'Kroger Pharmacy',
@@ -11464,8 +12030,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.470215',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:28',
+                'location_type_id' => NULL,
             ),
-            45 =>
+            46 =>
             array (
                 'id' => 456,
                 'name' => 'Kroger Pharmacy',
@@ -11485,8 +12052,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.0208',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:38',
+                'location_type_id' => NULL,
             ),
-            46 =>
+            47 =>
             array (
                 'id' => 458,
                 'name' => 'Kroger Pharmacy',
@@ -11506,8 +12074,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.32847',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:46:50',
+                'location_type_id' => NULL,
             ),
-            47 =>
+            48 =>
             array (
                 'id' => 460,
                 'name' => 'Kroger Pharmacy',
@@ -11527,8 +12096,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.59825',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:06',
+                'location_type_id' => NULL,
             ),
-            48 =>
+            49 =>
             array (
                 'id' => 462,
                 'name' => 'Kroger Pharmacy',
@@ -11548,8 +12118,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.24548',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:08',
+                'location_type_id' => NULL,
             ),
-            49 =>
+            50 =>
             array (
                 'id' => 465,
                 'name' => 'Kroger Pharmacy',
@@ -11569,8 +12140,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.57102',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:10',
+                'location_type_id' => NULL,
             ),
-            50 =>
+            51 =>
             array (
                 'id' => 466,
                 'name' => 'Kroger Pharmacy',
@@ -11590,8 +12162,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.5981',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:13',
+                'location_type_id' => NULL,
             ),
-            51 =>
+            52 =>
             array (
                 'id' => 473,
                 'name' => 'Kroger Pharmacy',
@@ -11611,8 +12184,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.46481',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:25',
+                'location_type_id' => NULL,
             ),
-            52 =>
+            53 =>
             array (
                 'id' => 474,
                 'name' => 'Kroger Pharmacy',
@@ -11632,8 +12206,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.57666',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:30',
+                'location_type_id' => NULL,
             ),
-            53 =>
+            54 =>
             array (
                 'id' => 475,
                 'name' => 'Kroger Pharmacy',
@@ -11653,8 +12228,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.398155',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:34',
+                'location_type_id' => NULL,
             ),
-            54 =>
+            55 =>
             array (
                 'id' => 476,
                 'name' => 'Kroger Pharmacy',
@@ -11674,8 +12250,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.42239',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:40',
+                'location_type_id' => NULL,
             ),
-            55 =>
+            56 =>
             array (
                 'id' => 478,
                 'name' => 'Kroger Pharmacy',
@@ -11695,8 +12272,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.30747',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:41',
+                'location_type_id' => NULL,
             ),
-            56 =>
+            57 =>
             array (
                 'id' => 479,
                 'name' => 'Kroger Pharmacy',
@@ -11716,161 +12294,37 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.456856',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:50',
-            ),
-            57 =>
-            array (
-                'id' => 487,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '475 Fortman Dr|St Marys, OH 45885',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45885',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Auglaize',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             58 =>
             array (
-                'id' => 490,
+                'id' => 445,
                 'name' => 'Kroger Pharmacy',
                 'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
                 'phone' => '(866) 211-5320',
-                'address' => '50789 Valley Plaza Drive St Clairesville, OH 43950',
+                'address' => '2900 Crown Plaza Dr Columbus, OH 43235',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43950',
+                'zip' => '43235',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Belmont',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0653169',
+                'longitude' => '-83.0736659',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:22',
+                'location_type_id' => NULL,
             ),
             59 =>
             array (
-                'id' => 492,
+                'id' => 446,
                 'name' => 'Kroger Pharmacy',
                 'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
                 'phone' => '(866) 211-5320',
-                'address' => '5100 Terra Firma Dr Mason, OH 45040',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45040',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Warren',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            60 =>
-            array (
-                'id' => 494,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '5210 St Rt 741|Mason, OH 45050',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45050',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Warren',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            61 =>
-            array (
-                'id' => 495,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '5250 Newtown Dr|Liberty Township, OH 45011',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45011',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Butler',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            62 =>
-            array (
-                'id' => 497,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '5400 Cornerstone North Blvd Kettering, OH 45440',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45440',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Montgomery',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            63 =>
-            array (
-                'id' => 500,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '555 Marion Rd|Mt Gilead, OH 43338',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43338',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Morrow',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            64 =>
-            array (
-                'id' => 502,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '5705 South St Rt 48|Maineville, OH 45039',
+                'address' => '2900 W SR 22|Maineville, OH 45039',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
@@ -11880,18 +12334,19 @@ class LocationSeeder extends Seeder
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Warren',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '39.3112501',
+                'longitude' => '-84.27488',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:23',
+                'location_type_id' => NULL,
             ),
-            65 =>
+            60 =>
             array (
-                'id' => 517,
+                'id' => 447,
                 'name' => 'Kroger Pharmacy',
                 'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
                 'phone' => '(866) 211-5320',
-                'address' => '6480 Wilmington Pike|Centerville, OH 45459',
+                'address' => '2921 W. Alex-Bell Rd Dayton, OH 45459',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
@@ -11900,13 +12355,80 @@ class LocationSeeder extends Seeder
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Greene',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Montgomery',
+                'latitude' => '39.6754346',
+                'longitude' => '-84.2199893',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:23',
+                'location_type_id' => NULL,
             ),
-            66 =>
+            61 =>
+            array (
+                'id' => 459,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '345 State Route 3|Westerville, OH 43082',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43082',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '39.3426001',
+                'longitude' => '-84.2112692',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:23',
+                'location_type_id' => NULL,
+            ),
+            62 =>
+            array (
+                'id' => 470,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '3975 West Powell Road Powell, OH 43065',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43065',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Delaware',
+                'latitude' => '40.156841',
+                'longitude' => '-83.0953268',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:24',
+                'location_type_id' => NULL,
+            ),
+            63 =>
+            array (
+                'id' => 471,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '400 28th Street|Bellaire, OH 43906',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43906',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Belmont',
+                'latitude' => '40.0112766',
+                'longitude' => '-80.7467316',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:24',
+                'location_type_id' => NULL,
+            ),
+            64 =>
             array (
                 'id' => 493,
                 'name' => 'Kroger Pharmacy',
@@ -11926,8 +12448,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.825386',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:33',
+                'location_type_id' => NULL,
             ),
-            67 =>
+            65 =>
             array (
                 'id' => 499,
                 'name' => 'Kroger Pharmacy',
@@ -11947,8 +12470,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.9273',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:42',
+                'location_type_id' => NULL,
             ),
-            68 =>
+            66 =>
             array (
                 'id' => 504,
                 'name' => 'Kroger Pharmacy',
@@ -11968,8 +12492,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.15504',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:47:52',
+                'location_type_id' => NULL,
             ),
-            69 =>
+            67 =>
             array (
                 'id' => 506,
                 'name' => 'Kroger Pharmacy',
@@ -11989,8 +12514,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.07327',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:02',
+                'location_type_id' => NULL,
             ),
-            70 =>
+            68 =>
             array (
                 'id' => 508,
                 'name' => 'Kroger Pharmacy',
@@ -12010,8 +12536,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.01727',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:04',
+                'location_type_id' => NULL,
             ),
-            71 =>
+            69 =>
             array (
                 'id' => 510,
                 'name' => 'Kroger Pharmacy',
@@ -12031,8 +12558,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.899826',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:07',
+                'location_type_id' => NULL,
             ),
-            72 =>
+            70 =>
             array (
                 'id' => 511,
                 'name' => 'Kroger Pharmacy',
@@ -12052,8 +12580,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.82873',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:13',
+                'location_type_id' => NULL,
             ),
-            73 =>
+            71 =>
             array (
                 'id' => 518,
                 'name' => 'Kroger Pharmacy',
@@ -12073,8 +12602,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.8223',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:24',
+                'location_type_id' => NULL,
             ),
-            74 =>
+            72 =>
             array (
                 'id' => 521,
                 'name' => 'Kroger Pharmacy',
@@ -12094,8 +12624,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.81527',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:36',
+                'location_type_id' => NULL,
             ),
-            75 =>
+            73 =>
             array (
                 'id' => 523,
                 'name' => 'Kroger Pharmacy',
@@ -12115,8 +12646,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.161766',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:48:36',
+                'location_type_id' => NULL,
             ),
-            76 =>
+            74 =>
             array (
                 'id' => 509,
                 'name' => 'Kroger Pharmacy',
@@ -12136,8 +12668,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.47933',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:04:58',
+                'location_type_id' => NULL,
             ),
-            77 =>
+            75 =>
             array (
                 'id' => 481,
                 'name' => 'Kroger Pharmacy',
@@ -12157,8 +12690,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.2738',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:58',
+                'location_type_id' => NULL,
             ),
-            78 =>
+            76 =>
             array (
                 'id' => 482,
                 'name' => 'Kroger Pharmacy',
@@ -12178,8 +12712,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.620834',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:47:58',
+                'location_type_id' => NULL,
             ),
-            79 =>
+            77 =>
             array (
                 'id' => 483,
                 'name' => 'Kroger Pharmacy',
@@ -12199,8 +12734,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.42488',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:01',
+                'location_type_id' => NULL,
             ),
-            80 =>
+            78 =>
             array (
                 'id' => 484,
                 'name' => 'Kroger Pharmacy',
@@ -12220,8 +12756,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.28881',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:01',
+                'location_type_id' => NULL,
             ),
-            81 =>
+            79 =>
             array (
                 'id' => 485,
                 'name' => 'Kroger Pharmacy',
@@ -12241,8 +12778,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.49864',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:07',
+                'location_type_id' => NULL,
             ),
-            82 =>
+            80 =>
             array (
                 'id' => 488,
                 'name' => 'Kroger Pharmacy',
@@ -12262,8 +12800,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.51309',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:07',
+                'location_type_id' => NULL,
             ),
-            83 =>
+            81 =>
             array (
                 'id' => 491,
                 'name' => 'Kroger Pharmacy',
@@ -12283,8 +12822,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.61204',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:17',
+                'location_type_id' => NULL,
             ),
-            84 =>
+            82 =>
             array (
                 'id' => 496,
                 'name' => 'Kroger Pharmacy',
@@ -12304,8 +12844,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.63022',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:27',
+                'location_type_id' => NULL,
             ),
-            85 =>
+            83 =>
             array (
                 'id' => 498,
                 'name' => 'Kroger Pharmacy',
@@ -12325,8 +12866,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.44698',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:29',
+                'location_type_id' => NULL,
             ),
-            86 =>
+            84 =>
             array (
                 'id' => 501,
                 'name' => 'Kroger Pharmacy',
@@ -12346,8 +12888,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.56164',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:33',
+                'location_type_id' => NULL,
             ),
-            87 =>
+            85 =>
             array (
                 'id' => 503,
                 'name' => 'Kroger Pharmacy',
@@ -12367,8 +12910,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.62102',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:39',
+                'location_type_id' => NULL,
             ),
-            88 =>
+            86 =>
             array (
                 'id' => 512,
                 'name' => 'Kroger Pharmacy',
@@ -12388,8 +12932,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.205475',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:40',
+                'location_type_id' => NULL,
             ),
-            89 =>
+            87 =>
             array (
                 'id' => 513,
                 'name' => 'Kroger Pharmacy',
@@ -12409,8 +12954,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.62243',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:40',
+                'location_type_id' => NULL,
             ),
-            90 =>
+            88 =>
             array (
                 'id' => 514,
                 'name' => 'Kroger Pharmacy',
@@ -12430,8 +12976,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.693016',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:43',
+                'location_type_id' => NULL,
             ),
-            91 =>
+            89 =>
             array (
                 'id' => 515,
                 'name' => 'Kroger Pharmacy',
@@ -12451,8 +12998,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.25605',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:48',
+                'location_type_id' => NULL,
             ),
-            92 =>
+            90 =>
             array (
                 'id' => 516,
                 'name' => 'Kroger Pharmacy',
@@ -12472,8 +13020,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.02944',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:48:57',
+                'location_type_id' => NULL,
             ),
-            93 =>
+            91 =>
             array (
                 'id' => 519,
                 'name' => 'Kroger Pharmacy',
@@ -12493,8 +13042,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.1637',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:04',
+                'location_type_id' => NULL,
             ),
-            94 =>
+            92 =>
             array (
                 'id' => 520,
                 'name' => 'Kroger Pharmacy',
@@ -12514,8 +13064,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.3633',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:12',
+                'location_type_id' => NULL,
             ),
-            95 =>
+            93 =>
             array (
                 'id' => 524,
                 'name' => 'Kroger Pharmacy',
@@ -12535,92 +13086,185 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.548965',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:20',
+                'location_type_id' => NULL,
             ),
-            96 =>
+            94 =>
             array (
-                'id' => 528,
+                'id' => 487,
                 'name' => 'Kroger Pharmacy',
                 'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
                 'phone' => '(866) 211-5320',
-                'address' => '7385 Wooster Pike|Mariemont, OH 45227',
+                'address' => '475 Fortman Dr|St Marys, OH 45885',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '45227',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hamilton',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            97 =>
-            array (
-                'id' => 536,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '790 Market St|Tiffin, OH 44883',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44883',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Seneca',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            98 =>
-            array (
-                'id' => 560,
-                'name' => 'KROGER PHARMACY 02900781',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '6306 COUNTY ROAD 107|PROCTORVILLE, OH 45669',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45669',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lawrence',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            99 =>
-            array (
-                'id' => 565,
-                'name' => 'Lima Memorial Hospital - Lincoln Family Practice',
-                'bookinglink' => 'http://www.limamemorial.org/vaccine',
-                'phone' => '(419) 998-4491',
-                'address' => '602 West Redskin Trail Wapakoneta, OH 45895',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45895',
+                'zip' => '45885',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Auglaize',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '40.5541101',
+                'longitude' => '-84.3839377',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:25',
+                'location_type_id' => NULL,
+            ),
+            95 =>
+            array (
+                'id' => 490,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '50789 Valley Plaza Drive St Clairesville, OH 43950',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43950',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Belmont',
+                'latitude' => '40.0757408',
+                'longitude' => '-80.8726299',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:25',
+                'location_type_id' => NULL,
+            ),
+            96 =>
+            array (
+                'id' => 492,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '5100 Terra Firma Dr Mason, OH 45040',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45040',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Warren',
+                'latitude' => '39.3175296',
+                'longitude' => '-84.316165',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:26',
+                'location_type_id' => NULL,
+            ),
+            97 =>
+            array (
+                'id' => 494,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '5210 St Rt 741|Mason, OH 45050',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45050',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Warren',
+                'latitude' => '39.3607883',
+                'longitude' => '-84.2787381',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:26',
+                'location_type_id' => NULL,
+            ),
+            98 =>
+            array (
+                'id' => 495,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '5250 Newtown Dr|Liberty Township, OH 45011',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45011',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Butler',
+                'latitude' => '39.4237369',
+                'longitude' => '-84.458177',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:27',
+                'location_type_id' => NULL,
+            ),
+            99 =>
+            array (
+                'id' => 500,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '555 Marion Rd|Mt Gilead, OH 43338',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43338',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Morrow',
+                'latitude' => '40.5480647',
+                'longitude' => '-82.8462244',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:28',
+                'location_type_id' => NULL,
             ),
             100 =>
+            array (
+                'id' => 502,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '5705 South St Rt 48|Maineville, OH 45039',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45039',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Warren',
+                'latitude' => '39.3511942',
+                'longitude' => '-84.2197901',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:28',
+                'location_type_id' => NULL,
+            ),
+            101 =>
+            array (
+                'id' => 517,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '6480 Wilmington Pike|Centerville, OH 45459',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45459',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Greene',
+                'latitude' => '39.6396645',
+                'longitude' => '-84.109536',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:29',
+                'location_type_id' => NULL,
+            ),
+            102 =>
             array (
                 'id' => 547,
                 'name' => 'Kroger Pharmacy',
@@ -12640,8 +13284,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.876564',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:49:03',
+                'location_type_id' => NULL,
             ),
-            101 =>
+            103 =>
             array (
                 'id' => 548,
                 'name' => 'Kroger Pharmacy',
@@ -12661,8 +13306,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.45781',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:04:00',
+                'location_type_id' => NULL,
             ),
-            102 =>
+            104 =>
             array (
                 'id' => 538,
                 'name' => 'Kroger Pharmacy',
@@ -12682,8 +13328,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.71025',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:05:01',
+                'location_type_id' => NULL,
             ),
-            103 =>
+            105 =>
             array (
                 'id' => 553,
                 'name' => 'Kroger Pharmacy',
@@ -12703,8 +13350,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.447845',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:05:10',
+                'location_type_id' => NULL,
             ),
-            104 =>
+            106 =>
             array (
                 'id' => 563,
                 'name' => 'Licking County Health Department',
@@ -12724,8 +13372,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.44465',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:05:16',
+                'location_type_id' => NULL,
             ),
-            105 =>
+            107 =>
             array (
                 'id' => 525,
                 'name' => 'Kroger Pharmacy',
@@ -12745,8 +13394,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.25378',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:28',
+                'location_type_id' => NULL,
             ),
-            106 =>
+            108 =>
             array (
                 'id' => 527,
                 'name' => 'Kroger Pharmacy',
@@ -12766,8 +13416,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.21934',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:44',
+                'location_type_id' => NULL,
             ),
-            107 =>
+            109 =>
             array (
                 'id' => 529,
                 'name' => 'Kroger Pharmacy',
@@ -12787,8 +13438,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.72463',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:49:59',
+                'location_type_id' => NULL,
             ),
-            108 =>
+            110 =>
             array (
                 'id' => 530,
                 'name' => 'Kroger Pharmacy',
@@ -12808,8 +13460,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.34595',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:03',
+                'location_type_id' => NULL,
             ),
-            109 =>
+            111 =>
             array (
                 'id' => 532,
                 'name' => 'Kroger Pharmacy',
@@ -12829,8 +13482,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.13789',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:13',
+                'location_type_id' => NULL,
             ),
-            110 =>
+            112 =>
             array (
                 'id' => 533,
                 'name' => 'Kroger Pharmacy',
@@ -12850,8 +13504,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.18396',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:14',
+                'location_type_id' => NULL,
             ),
-            111 =>
+            113 =>
             array (
                 'id' => 534,
                 'name' => 'Kroger Pharmacy',
@@ -12871,8 +13526,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.73546',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:19',
+                'location_type_id' => NULL,
             ),
-            112 =>
+            114 =>
             array (
                 'id' => 537,
                 'name' => 'Kroger Pharmacy',
@@ -12892,8 +13548,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.27334',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:46',
+                'location_type_id' => NULL,
             ),
-            113 =>
+            115 =>
             array (
                 'id' => 539,
                 'name' => 'Kroger Pharmacy',
@@ -12913,8 +13570,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.46087',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:52',
+                'location_type_id' => NULL,
             ),
-            114 =>
+            116 =>
             array (
                 'id' => 540,
                 'name' => 'Kroger Pharmacy',
@@ -12934,8 +13592,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.10922',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:55',
+                'location_type_id' => NULL,
             ),
-            115 =>
+            117 =>
             array (
                 'id' => 541,
                 'name' => 'Kroger Pharmacy',
@@ -12955,8 +13614,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.994415',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:50:57',
+                'location_type_id' => NULL,
             ),
-            116 =>
+            118 =>
             array (
                 'id' => 542,
                 'name' => 'Kroger Pharmacy',
@@ -12976,8 +13636,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.28033',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:00',
+                'location_type_id' => NULL,
             ),
-            117 =>
+            119 =>
             array (
                 'id' => 543,
                 'name' => 'Kroger Pharmacy',
@@ -12997,8 +13658,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.474396',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:03',
+                'location_type_id' => NULL,
             ),
-            118 =>
+            120 =>
             array (
                 'id' => 544,
                 'name' => 'Kroger Pharmacy',
@@ -13018,8 +13680,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.562935',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:12',
+                'location_type_id' => NULL,
             ),
-            119 =>
+            121 =>
             array (
                 'id' => 549,
                 'name' => 'Kroger Pharmacy',
@@ -13039,8 +13702,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.70241',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:19',
+                'location_type_id' => NULL,
             ),
-            120 =>
+            122 =>
             array (
                 'id' => 550,
                 'name' => 'Kroger Pharmacy',
@@ -13060,8 +13724,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.757614',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:22',
+                'location_type_id' => NULL,
             ),
-            121 =>
+            123 =>
             array (
                 'id' => 551,
                 'name' => 'Kroger Pharmacy',
@@ -13081,8 +13746,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.31159',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:25',
+                'location_type_id' => NULL,
             ),
-            122 =>
+            124 =>
             array (
                 'id' => 552,
                 'name' => 'Kroger Pharmacy',
@@ -13102,8 +13768,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.976494',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:31',
+                'location_type_id' => NULL,
             ),
-            123 =>
+            125 =>
             array (
                 'id' => 554,
                 'name' => 'Kroger Pharmacy',
@@ -13123,8 +13790,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.85617',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:33',
+                'location_type_id' => NULL,
             ),
-            124 =>
+            126 =>
             array (
                 'id' => 556,
                 'name' => 'Kroger Pharmacy',
@@ -13144,8 +13812,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.83509',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:49',
+                'location_type_id' => NULL,
             ),
-            125 =>
+            127 =>
             array (
                 'id' => 557,
                 'name' => 'Kroger Pharmacy',
@@ -13165,8 +13834,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.22014',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:51',
+                'location_type_id' => NULL,
             ),
-            126 =>
+            128 =>
             array (
                 'id' => 558,
                 'name' => 'Kroger Pharmacy',
@@ -13186,8 +13856,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.34956',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:57',
+                'location_type_id' => NULL,
             ),
-            127 =>
+            129 =>
             array (
                 'id' => 559,
                 'name' => 'Kroger Pharmacy #776',
@@ -13207,8 +13878,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.42945',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:51:57',
+                'location_type_id' => NULL,
             ),
-            128 =>
+            130 =>
             array (
                 'id' => 561,
                 'name' => 'Lake County General Health District',
@@ -13228,8 +13900,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.3046',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:52:11',
+                'location_type_id' => NULL,
             ),
-            129 =>
+            131 =>
             array (
                 'id' => 562,
                 'name' => 'Lawrence County Health Dept',
@@ -13249,8 +13922,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.66665',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:52:22',
+                'location_type_id' => NULL,
             ),
-            130 =>
+            132 =>
             array (
                 'id' => 567,
                 'name' => 'Lima Memorial Hospital - Medical Park',
@@ -13270,8 +13944,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.16511',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:52:49',
+                'location_type_id' => NULL,
             ),
-            131 =>
+            133 =>
             array (
                 'id' => 568,
                 'name' => 'Lincoln Heights Health Center',
@@ -13291,8 +13966,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.453705',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:52:49',
+                'location_type_id' => NULL,
             ),
-            132 =>
+            134 =>
             array (
                 'id' => 569,
                 'name' => 'Lloyd McCoy Community Health Center',
@@ -13312,8 +13988,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.79676',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:52:57',
+                'location_type_id' => NULL,
             ),
-            133 =>
+            135 =>
             array (
                 'id' => 570,
                 'name' => 'Logan County Health District',
@@ -13333,8 +14010,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.76009',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:07',
+                'location_type_id' => NULL,
             ),
-            134 =>
+            136 =>
             array (
                 'id' => 564,
                 'name' => 'Licking Memorial Hospital COVID-19 Vaccine Clinic',
@@ -13354,134 +14032,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.44848',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:28:23',
-            ),
-            135 =>
-            array (
-                'id' => 582,
-                'name' => 'Marc\'s Pharmacy Mentor',
-                'bookinglink' => 'http://www.marcs.com',
-                'phone' => '(440) 951-1721',
-                'address' => '7353 Mentor Avenue|Mentor, OH 44060',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44060',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lake',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            136 =>
-            array (
-                'id' => 590,
-                'name' => 'Marcs Pharmacy Great Northern',
-                'bookinglink' => 'http://www.marcs.com',
-                'phone' => '(440) 777-2521',
-                'address' => '26393 Brookpark Road North Olmsted, OH 44070',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44070',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             137 =>
             array (
-                'id' => 596,
-                'name' => 'Marcs Pharmacy North Ridgeville',
-                'bookinglink' => 'http://www.marcs.com',
-                'phone' => '(440) 353-1601',
-                'address' => '34800 Center Ridge Road North Ridgeville, OH 44039',
+                'id' => 528,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '7385 Wooster Pike|Mariemont, OH 45227',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44039',
+                'zip' => '45227',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Hamilton',
+                'latitude' => '39.1416131',
+                'longitude' => '-84.3616806',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:29',
+                'location_type_id' => NULL,
             ),
             138 =>
             array (
-                'id' => 598,
-                'name' => 'Marcs Pharmacy Ravenna',
-                'bookinglink' => 'http://www.marcs.com',
-                'phone' => '(330) 298-3654',
-                'address' => '1145 East Main Street Ravenna, OH 44266',
+                'id' => 536,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '790 Market St|Tiffin, OH 44883',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44266',
+                'zip' => '44883',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Portage',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Seneca',
+                'latitude' => '41.1127288',
+                'longitude' => '-83.2086015',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:30',
+                'location_type_id' => NULL,
             ),
             139 =>
             array (
-                'id' => 600,
-                'name' => 'Marcs Pharmacy Salem',
-                'bookinglink' => 'http://www.marcs.com',
-                'phone' => '(330) 337-7358',
-                'address' => '2487 E Stat Street Salem, OH 44460',
+                'id' => 565,
+                'name' => 'Lima Memorial Hospital - Lincoln Family Practice',
+                'bookinglink' => 'http://www.limamemorial.org/vaccine',
+                'phone' => '(419) 998-4491',
+                'address' => '602 West Redskin Trail Wapakoneta, OH 45895',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44460',
+                'zip' => '45895',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Columbiana',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Auglaize',
+                'latitude' => '40.5857195',
+                'longitude' => '-84.2071955',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:31',
+                'location_type_id' => NULL,
             ),
             140 =>
-            array (
-                'id' => 613,
-                'name' => 'Massillon City Health Department',
-                'bookinglink' => 'http://www.massillonohio.gov',
-                'phone' => '(330) 830-1710',
-                'address' => '111 Tremont Ave SW Massillon, OH 44646',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44646',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            141 =>
             array (
                 'id' => 571,
                 'name' => 'Lorain County Health & Dentistry',
@@ -13501,8 +14120,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.17042',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:12',
+                'location_type_id' => NULL,
             ),
-            142 =>
+            141 =>
             array (
                 'id' => 572,
                 'name' => 'Lorain County Public Health',
@@ -13522,8 +14142,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.134514',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:23',
+                'location_type_id' => NULL,
             ),
-            143 =>
+            142 =>
             array (
                 'id' => 575,
                 'name' => 'Magruder Hospital',
@@ -13543,8 +14164,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.93378',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:26',
+                'location_type_id' => NULL,
             ),
-            144 =>
+            143 =>
             array (
                 'id' => 577,
                 'name' => 'Marc\'s Pharmacy Belden Village',
@@ -13564,8 +14186,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.434456',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:29',
+                'location_type_id' => NULL,
             ),
-            145 =>
+            144 =>
             array (
                 'id' => 578,
                 'name' => 'Marc\'s Pharmacy Brooklyn',
@@ -13585,8 +14208,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.7359',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:29',
+                'location_type_id' => NULL,
             ),
-            146 =>
+            145 =>
             array (
                 'id' => 579,
                 'name' => 'Marc\'s Pharmacy Chapel Hill',
@@ -13606,8 +14230,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.47633',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:30',
+                'location_type_id' => NULL,
             ),
-            147 =>
+            146 =>
             array (
                 'id' => 580,
                 'name' => 'Marc\'s Pharmacy Fairlawn',
@@ -13627,8 +14252,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.60624',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:37',
+                'location_type_id' => NULL,
             ),
-            148 =>
+            147 =>
             array (
                 'id' => 581,
                 'name' => 'Marc\'s Pharmacy Lakeshore',
@@ -13648,8 +14274,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52275',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:53:42',
+                'location_type_id' => NULL,
             ),
-            149 =>
+            148 =>
             array (
                 'id' => 583,
                 'name' => 'Marc\'s Pharmacy Rocky River',
@@ -13669,8 +14296,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86007',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:01',
+                'location_type_id' => NULL,
             ),
-            150 =>
+            149 =>
             array (
                 'id' => 584,
                 'name' => 'Marc\'s Pharmacy Solon',
@@ -13690,8 +14318,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43774',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:12',
+                'location_type_id' => NULL,
             ),
-            151 =>
+            150 =>
             array (
                 'id' => 586,
                 'name' => 'Marcs Pharmacy Aurora',
@@ -13711,8 +14340,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.35758',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:28',
+                'location_type_id' => NULL,
             ),
-            152 =>
+            151 =>
             array (
                 'id' => 587,
                 'name' => 'Marcs Pharmacy Brunswick',
@@ -13732,8 +14362,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.805885',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:39',
+                'location_type_id' => NULL,
             ),
-            153 =>
+            152 =>
             array (
                 'id' => 588,
                 'name' => 'Marcs Pharmacy Canton',
@@ -13753,8 +14384,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.3877',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:50',
+                'location_type_id' => NULL,
             ),
-            154 =>
+            153 =>
             array (
                 'id' => 589,
                 'name' => 'Marcs Pharmacy Garfield',
@@ -13774,8 +14406,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5964',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:54:55',
+                'location_type_id' => NULL,
             ),
-            155 =>
+            154 =>
             array (
                 'id' => 591,
                 'name' => 'Marcs Pharmacy Hartville',
@@ -13795,8 +14428,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.347015',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:55:03',
+                'location_type_id' => NULL,
             ),
-            156 =>
+            155 =>
             array (
                 'id' => 593,
                 'name' => 'Marcs Pharmacy Massillon',
@@ -13816,8 +14450,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.51663',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:55:25',
+                'location_type_id' => NULL,
             ),
-            157 =>
+            156 =>
             array (
                 'id' => 594,
                 'name' => 'Marcs Pharmacy Medina',
@@ -13837,8 +14472,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.862595',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:55:34',
+                'location_type_id' => NULL,
             ),
-            158 =>
+            157 =>
             array (
                 'id' => 595,
                 'name' => 'Marcs Pharmacy Midtown',
@@ -13858,8 +14494,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.6904',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:55:34',
+                'location_type_id' => NULL,
             ),
-            159 =>
+            158 =>
             array (
                 'id' => 597,
                 'name' => 'Marcs Pharmacy Parmatown',
@@ -13879,8 +14516,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.73608',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:55:47',
+                'location_type_id' => NULL,
             ),
-            160 =>
+            159 =>
             array (
                 'id' => 599,
                 'name' => 'Marcs Pharmacy Sagamore',
@@ -13900,8 +14538,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.557526',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:02',
+                'location_type_id' => NULL,
             ),
-            161 =>
+            160 =>
             array (
                 'id' => 601,
                 'name' => 'Marcs Pharmacy Sheffield',
@@ -13921,8 +14560,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.1491',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:13',
+                'location_type_id' => NULL,
             ),
-            162 =>
+            161 =>
             array (
                 'id' => 603,
                 'name' => 'Marcs Pharmacy Springfield',
@@ -13942,8 +14582,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.429855',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:33',
+                'location_type_id' => NULL,
             ),
-            163 =>
+            162 =>
             array (
                 'id' => 604,
                 'name' => 'Marcs Pharmacy Stow',
@@ -13963,8 +14604,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44039',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:39',
+                'location_type_id' => NULL,
             ),
-            164 =>
+            163 =>
             array (
                 'id' => 605,
                 'name' => 'Marcs Pharmacy Waterloo',
@@ -13984,8 +14626,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.513596',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:43',
+                'location_type_id' => NULL,
             ),
-            165 =>
+            164 =>
             array (
                 'id' => 606,
                 'name' => 'Marcs Pharmacy West Tusc',
@@ -14005,8 +14648,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.446686',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:56:54',
+                'location_type_id' => NULL,
             ),
-            166 =>
+            165 =>
             array (
                 'id' => 607,
                 'name' => 'Marcs Pharmacy Willowick',
@@ -14026,8 +14670,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.477974',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:05',
+                'location_type_id' => NULL,
             ),
-            167 =>
+            166 =>
             array (
                 'id' => 608,
                 'name' => 'Marcs Pharmacy Wooster',
@@ -14047,8 +14692,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.91397',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:07',
+                'location_type_id' => NULL,
             ),
-            168 =>
+            167 =>
             array (
                 'id' => 610,
                 'name' => 'Marietta/Belpre Health Department',
@@ -14068,8 +14714,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.45282',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:18',
+                'location_type_id' => NULL,
             ),
-            169 =>
+            168 =>
             array (
                 'id' => 611,
                 'name' => 'Marion Public Health',
@@ -14089,8 +14736,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.12874',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:28',
+                'location_type_id' => NULL,
             ),
-            170 =>
+            169 =>
             array (
                 'id' => 612,
                 'name' => 'Mary Rutan Hospital Health Center',
@@ -14110,50 +14758,141 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.75593',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:57:39',
+                'location_type_id' => NULL,
             ),
-            171 =>
+            170 =>
             array (
-                'id' => 634,
-                'name' => 'Mercy Health Defiance Hospital',
-                'bookinglink' => 'http://mercy.com',
-                'phone' => '(866) 624-0366',
-                'address' => '1404 East Second St Defiance, OH 43512',
+                'id' => 582,
+                'name' => 'Marc\'s Pharmacy Mentor',
+                'bookinglink' => 'http://www.marcs.com',
+                'phone' => '(440) 951-1721',
+                'address' => '7353 Mentor Avenue|Mentor, OH 44060',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43512',
+                'zip' => '44060',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Defiance',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Lake',
+                'latitude' => '41.6539004',
+                'longitude' => '-81.3785708',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:31',
+                'location_type_id' => NULL,
             ),
-            172 =>
+            171 =>
             array (
-                'id' => 639,
-                'name' => 'Mercy Health- Lorain',
-                'bookinglink' => 'http://mercy.com',
-                'phone' => '(866) 624-0366',
-                'address' => '1957 Cooper Foster Park Road Lorain, OH 44053',
+                'id' => 590,
+                'name' => 'Marcs Pharmacy Great Northern',
+                'bookinglink' => 'http://www.marcs.com',
+                'phone' => '(440) 777-2521',
+                'address' => '26393 Brookpark Road North Olmsted, OH 44070',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44053',
+                'zip' => '44070',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Cuyahoga',
+                'latitude' => '41.4188623',
+                'longitude' => '-81.9154457',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:31',
+                'location_type_id' => NULL,
+            ),
+            172 =>
+            array (
+                'id' => 596,
+                'name' => 'Marcs Pharmacy North Ridgeville',
+                'bookinglink' => 'http://www.marcs.com',
+                'phone' => '(440) 353-1601',
+                'address' => '34800 Center Ridge Road North Ridgeville, OH 44039',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44039',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '41.3967552',
+                'longitude' => '-82.0040958',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:32',
+                'location_type_id' => NULL,
             ),
             173 =>
+            array (
+                'id' => 598,
+                'name' => 'Marcs Pharmacy Ravenna',
+                'bookinglink' => 'http://www.marcs.com',
+                'phone' => '(330) 298-3654',
+                'address' => '1145 East Main Street Ravenna, OH 44266',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44266',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Portage',
+                'latitude' => '41.1584331',
+                'longitude' => '-81.2245166',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:32',
+                'location_type_id' => NULL,
+            ),
+            174 =>
+            array (
+                'id' => 600,
+                'name' => 'Marcs Pharmacy Salem',
+                'bookinglink' => 'http://www.marcs.com',
+                'phone' => '(330) 337-7358',
+                'address' => '2487 E Stat Street Salem, OH 44460',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44460',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Columbiana',
+                'latitude' => '40.8992976',
+                'longitude' => '-80.8254952',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:33',
+                'location_type_id' => NULL,
+            ),
+            175 =>
+            array (
+                'id' => 613,
+                'name' => 'Massillon City Health Department',
+                'bookinglink' => 'http://www.massillonohio.gov',
+                'phone' => '(330) 830-1710',
+                'address' => '111 Tremont Ave SW Massillon, OH 44646',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44646',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.7938081',
+                'longitude' => '-81.5234274',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:33',
+                'location_type_id' => NULL,
+            ),
+            176 =>
             array (
                 'id' => 621,
                 'name' => 'Memorial Health System Belpre Campus',
@@ -14173,8 +14912,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.610886',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:06',
+                'location_type_id' => NULL,
             ),
-            174 =>
+            177 =>
             array (
                 'id' => 622,
                 'name' => 'Memorial Health System Strecker Cancer Center',
@@ -14194,29 +14934,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.4648',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:06',
+                'location_type_id' => NULL,
             ),
-            175 =>
-            array (
-                'id' => 656,
-                'name' => 'Mount Carmel East',
-                'bookinglink' => 'http://www.mountcarmelhealth.com/',
-                'phone' => '(614) 234-6000',
-                'address' => '6001 East Broad Street Columbus, OH 43213',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43213',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            176 =>
+            178 =>
             array (
                 'id' => 626,
                 'name' => 'Mercy Fairfield Medical Arts Building',
@@ -14236,8 +14956,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.524',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:30',
+                'location_type_id' => NULL,
             ),
-            177 =>
+            179 =>
             array (
                 'id' => 627,
                 'name' => 'Mercy Health  Women\'s Care at Kenwood Towne Centre',
@@ -14257,8 +14978,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.37738',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:41',
+                'location_type_id' => NULL,
             ),
-            178 =>
+            180 =>
             array (
                 'id' => 628,
                 'name' => 'Mercy Health - Bay Meadows Family Medicine',
@@ -14278,8 +15000,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.45671',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:45',
+                'location_type_id' => NULL,
             ),
-            179 =>
+            181 =>
             array (
                 'id' => 629,
                 'name' => 'Mercy Health - St Vincent Medical Center',
@@ -14299,8 +15022,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.54189',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:50',
+                'location_type_id' => NULL,
             ),
-            180 =>
+            182 =>
             array (
                 'id' => 630,
                 'name' => 'Mercy Health - Waterville Primary Care',
@@ -14320,8 +15044,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.7476',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:50',
+                'location_type_id' => NULL,
             ),
-            181 =>
+            183 =>
             array (
                 'id' => 631,
                 'name' => 'Mercy Health - West Park Family Medicine',
@@ -14341,8 +15066,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.627754',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:51',
+                'location_type_id' => NULL,
             ),
-            182 =>
+            184 =>
             array (
                 'id' => 632,
                 'name' => 'Mercy Health Anderson Medical Office Building II',
@@ -14362,8 +15088,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.35086',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:51',
+                'location_type_id' => NULL,
             ),
-            183 =>
+            185 =>
             array (
                 'id' => 633,
                 'name' => 'Mercy Health Clermont Hospital',
@@ -14383,8 +15110,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.14973',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:58:51',
+                'location_type_id' => NULL,
             ),
-            184 =>
+            186 =>
             array (
                 'id' => 637,
                 'name' => 'Mercy Health Willard Hospital',
@@ -14404,8 +15132,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.70724',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:24',
+                'location_type_id' => NULL,
             ),
-            185 =>
+            187 =>
             array (
                 'id' => 638,
                 'name' => 'Mercy Health Youngstown Covid Vaccine Clinic',
@@ -14425,8 +15154,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.65575',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:27',
+                'location_type_id' => NULL,
             ),
-            186 =>
+            188 =>
             array (
                 'id' => 640,
                 'name' => 'Mercy Health- Perrysburg Hospital',
@@ -14446,8 +15176,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.637726',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:45',
+                'location_type_id' => NULL,
             ),
-            187 =>
+            189 =>
             array (
                 'id' => 641,
                 'name' => 'Mercy Health- St. Charles Hospital',
@@ -14467,8 +15198,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.48627',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:46',
+                'location_type_id' => NULL,
             ),
-            188 =>
+            190 =>
             array (
                 'id' => 642,
                 'name' => 'Mercy West Hospital Community Vaccine Clinic',
@@ -14488,8 +15220,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.60383',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:46',
+                'location_type_id' => NULL,
             ),
-            189 =>
+            191 =>
             array (
                 'id' => 643,
                 'name' => 'MercyHealth Tiffin Hospital',
@@ -14509,8 +15242,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.21704',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:46',
+                'location_type_id' => NULL,
             ),
-            190 =>
+            192 =>
             array (
                 'id' => 644,
                 'name' => 'MetroHealth Cleveland Heights Hospita',
@@ -14530,8 +15264,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.55404',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:47',
+                'location_type_id' => NULL,
             ),
-            191 =>
+            193 =>
             array (
                 'id' => 646,
                 'name' => 'MetroHealth Parma Hospital',
@@ -14551,8 +15286,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.77698',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:59:52',
+                'location_type_id' => NULL,
             ),
-            192 =>
+            194 =>
             array (
                 'id' => 647,
                 'name' => 'Miami & Erie Family Practice & Pediatrics',
@@ -14572,8 +15308,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.37705',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:00',
+                'location_type_id' => NULL,
             ),
-            193 =>
+            195 =>
             array (
                 'id' => 648,
                 'name' => 'Miami County Public Health',
@@ -14593,8 +15330,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.20749',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:01',
+                'location_type_id' => NULL,
             ),
-            194 =>
+            196 =>
             array (
                 'id' => 649,
             'name' => 'Miami Valley Hospital (Reach Out Building)',
@@ -14614,8 +15352,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.1881',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:02',
+                'location_type_id' => NULL,
             ),
-            195 =>
+            197 =>
             array (
                 'id' => 650,
                 'name' => 'Miami Valley Hospital North',
@@ -14635,8 +15374,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.271645',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:11',
+                'location_type_id' => NULL,
             ),
-            196 =>
+            198 =>
             array (
                 'id' => 651,
                 'name' => 'Miami Valley Hospital South',
@@ -14656,8 +15396,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.11296',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:12',
+                'location_type_id' => NULL,
             ),
-            197 =>
+            199 =>
             array (
                 'id' => 653,
                 'name' => 'Monroe County Health Department',
@@ -14677,8 +15418,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.108955',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:13',
+                'location_type_id' => NULL,
             ),
-            198 =>
+            200 =>
             array (
                 'id' => 654,
                 'name' => 'Morgan Health Department',
@@ -14698,8 +15440,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.85915',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:23',
+                'location_type_id' => NULL,
             ),
-            199 =>
+            201 =>
             array (
                 'id' => 655,
                 'name' => 'Morrow County Health District',
@@ -14719,8 +15462,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.849495',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:31',
+                'location_type_id' => NULL,
             ),
-            200 =>
+            202 =>
             array (
                 'id' => 657,
                 'name' => 'Mount Enon Baptist Church',
@@ -14740,8 +15484,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.2209',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:00:54',
+                'location_type_id' => NULL,
             ),
-            201 =>
+            203 =>
             array (
                 'id' => 659,
                 'name' => 'MVHC Adair',
@@ -14761,8 +15506,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.0119',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:06',
+                'location_type_id' => NULL,
             ),
-            202 =>
+            204 =>
             array (
                 'id' => 660,
                 'name' => 'MVHC Cambridge',
@@ -14782,8 +15528,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.57701',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:11',
+                'location_type_id' => NULL,
             ),
-            203 =>
+            205 =>
             array (
                 'id' => 661,
                 'name' => 'MVHC Coshocton',
@@ -14803,8 +15550,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.864914',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:12',
+                'location_type_id' => NULL,
             ),
-            204 =>
+            206 =>
             array (
                 'id' => 662,
                 'name' => 'MVHC Malta',
@@ -14824,8 +15572,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.864716',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:12',
+                'location_type_id' => NULL,
             ),
-            205 =>
+            207 =>
             array (
                 'id' => 663,
                 'name' => 'MVHC South',
@@ -14845,8 +15594,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.05109',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:15',
+                'location_type_id' => NULL,
             ),
-            206 =>
+            208 =>
             array (
                 'id' => 664,
                 'name' => 'My Community Health Center',
@@ -14866,8 +15616,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.40375',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:24',
+                'location_type_id' => NULL,
             ),
-            207 =>
+            209 =>
             array (
                 'id' => 665,
                 'name' => 'Neighborhood Family Practice Ridge Rd',
@@ -14887,8 +15638,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.73835',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:25',
+                'location_type_id' => NULL,
             ),
-            208 =>
+            210 =>
             array (
                 'id' => 636,
                 'name' => 'Mercy Health St. Rita\'s Medical Center',
@@ -14908,8 +15660,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.119415',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:07',
+                'location_type_id' => NULL,
             ),
-            209 =>
+            211 =>
             array (
                 'id' => 928,
                 'name' => 'The Kroger Co.',
@@ -14929,50 +15682,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.394226',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:37',
-            ),
-            210 =>
-            array (
-                'id' => 673,
-                'name' => 'Ohio Expo Center & State Fair - Celeste Center',
-                'bookinglink' => 'http://www.columbus.gov/publichealth/Coronavirus-Portal/',
-                'phone' => '(614) 645-1519',
-                'address' => '717 E 17th Ave Columbus, OH 43211',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43211',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            211 =>
-            array (
-                'id' => 674,
-                'name' => 'OhioHealth Blom Admin Campus COVID Vaccine Clinic',
-                'bookinglink' => 'http://www.ohiohealth.com/covid-19/covid-19-vaccinations',
-                'phone' => '(614) 533-6999',
-                'address' => '3430 Ohio Health Pkwy Columbus, OH 43202',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43202',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             212 =>
+            array (
+                'id' => 634,
+                'name' => 'Mercy Health Defiance Hospital',
+                'bookinglink' => 'http://mercy.com',
+                'phone' => '(866) 624-0366',
+                'address' => '1404 East Second St Defiance, OH 43512',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43512',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Defiance',
+                'latitude' => '41.2843919',
+                'longitude' => '-84.33944',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:34',
+                'location_type_id' => NULL,
+            ),
+            213 =>
+            array (
+                'id' => 639,
+                'name' => 'Mercy Health- Lorain',
+                'bookinglink' => 'http://mercy.com',
+                'phone' => '(866) 624-0366',
+                'address' => '1957 Cooper Foster Park Road Lorain, OH 44053',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44053',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lorain',
+                'latitude' => '41.4177816',
+                'longitude' => '-82.2045828',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:34',
+                'location_type_id' => NULL,
+            ),
+            214 =>
+            array (
+                'id' => 656,
+                'name' => 'Mount Carmel East',
+                'bookinglink' => 'http://www.mountcarmelhealth.com/',
+                'phone' => '(614) 234-6000',
+                'address' => '6001 East Broad Street Columbus, OH 43213',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43213',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '39.9774772',
+                'longitude' => '-82.8432199',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:34',
+                'location_type_id' => NULL,
+            ),
+            215 =>
             array (
                 'id' => 700,
                 'name' => 'PrimaryOne Health',
@@ -14992,69 +15770,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.98447',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:04',
-            ),
-            213 =>
-            array (
-                'id' => 692,
-                'name' => 'Perry County Health Department',
-                'bookinglink' => 'http://perrycountyhealth.info',
-                'phone' => '(740) 342-5179',
-                'address' => '409 Lincoln Park Dr|New Lexington, OH 43764',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43764',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Perry',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            214 =>
-            array (
-                'id' => 699,
-                'name' => 'PrimaryOne Health',
-                'bookinglink' => 'http://www.primaryonehealth.org/covid-19-vaccine-sched..',
-                'phone' => '(614) 859-1899',
-                'address' => '1905 Parson Avenue|Columbus, OH 43207',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43207',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            215 =>
-            array (
-                'id' => 705,
-                'name' => 'Proctorville Family Medical Center',
-                'bookinglink' => 'http://familymedicalcenters.org',
-                'phone' => '(740) 302-0541',
-                'address' => '10777 County Road 107|Proctorville, OH 45669',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45669',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lawrence',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             216 =>
             array (
@@ -15076,6 +15792,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.91884',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:18',
+                'location_type_id' => NULL,
             ),
             217 =>
             array (
@@ -15097,6 +15814,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.9814',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:29',
+                'location_type_id' => NULL,
             ),
             218 =>
             array (
@@ -15118,6 +15836,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5733',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:46',
+                'location_type_id' => NULL,
             ),
             219 =>
             array (
@@ -15139,6 +15858,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.02497',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:01:56',
+                'location_type_id' => NULL,
             ),
             220 =>
             array (
@@ -15160,6 +15880,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52193',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:15',
+                'location_type_id' => NULL,
             ),
             221 =>
             array (
@@ -15181,6 +15902,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.66211',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:23',
+                'location_type_id' => NULL,
             ),
             222 =>
             array (
@@ -15202,6 +15924,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.643974',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:26',
+                'location_type_id' => NULL,
             ),
             223 =>
             array (
@@ -15223,6 +15946,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.458275',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:28',
+                'location_type_id' => NULL,
             ),
             224 =>
             array (
@@ -15244,6 +15968,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.10048',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:02:56',
+                'location_type_id' => NULL,
             ),
             225 =>
             array (
@@ -15265,6 +15990,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.1237',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:00',
+                'location_type_id' => NULL,
             ),
             226 =>
             array (
@@ -15286,6 +16012,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.57737',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:12',
+                'location_type_id' => NULL,
             ),
             227 =>
             array (
@@ -15307,6 +16034,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.674736',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:12',
+                'location_type_id' => NULL,
             ),
             228 =>
             array (
@@ -15328,6 +16056,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.555046',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:13',
+                'location_type_id' => NULL,
             ),
             229 =>
             array (
@@ -15349,6 +16078,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.84389',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:21',
+                'location_type_id' => NULL,
             ),
             230 =>
             array (
@@ -15370,6 +16100,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.643425',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:34',
+                'location_type_id' => NULL,
             ),
             231 =>
             array (
@@ -15391,6 +16122,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.08733',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:45',
+                'location_type_id' => NULL,
             ),
             232 =>
             array (
@@ -15412,6 +16144,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.827835',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:51',
+                'location_type_id' => NULL,
             ),
             233 =>
             array (
@@ -15433,6 +16166,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.9127',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:03:57',
+                'location_type_id' => NULL,
             ),
             234 =>
             array (
@@ -15454,6 +16188,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.14967',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:04',
+                'location_type_id' => NULL,
             ),
             235 =>
             array (
@@ -15475,6 +16210,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.94903',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:28',
+                'location_type_id' => NULL,
             ),
             236 =>
             array (
@@ -15496,6 +16232,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.9843',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:29',
+                'location_type_id' => NULL,
             ),
             237 =>
             array (
@@ -15517,6 +16254,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.9209',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:32',
+                'location_type_id' => NULL,
             ),
             238 =>
             array (
@@ -15538,6 +16276,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.25606',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:33',
+                'location_type_id' => NULL,
             ),
             239 =>
             array (
@@ -15559,6 +16298,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99861',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:04:36',
+                'location_type_id' => NULL,
             ),
             240 =>
             array (
@@ -15580,6 +16320,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.483665',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:29',
+                'location_type_id' => NULL,
             ),
             241 =>
             array (
@@ -15601,6 +16342,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.060974',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:22:20',
+                'location_type_id' => NULL,
             ),
             242 =>
             array (
@@ -15622,6 +16364,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.94045',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:45',
+                'location_type_id' => NULL,
             ),
             243 =>
             array (
@@ -15643,6 +16386,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.89303',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:49',
+                'location_type_id' => NULL,
             ),
             244 =>
             array (
@@ -15664,6 +16408,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.60079',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:53',
+                'location_type_id' => NULL,
             ),
             245 =>
             array (
@@ -15685,6 +16430,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.57126',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:55',
+                'location_type_id' => NULL,
             ),
             246 =>
             array (
@@ -15706,29 +16452,97 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.93825',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:29:58',
+                'location_type_id' => NULL,
             ),
             247 =>
             array (
-                'id' => 734,
-                'name' => 'Rite Aid Store 01167',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(440) 466-3323',
-                'address' => '633 SOUTH BROADWAY|GENEVA, OH 44041',
+                'id' => 673,
+                'name' => 'Ohio Expo Center & State Fair - Celeste Center',
+                'bookinglink' => 'http://www.columbus.gov/publichealth/Coronavirus-Portal/',
+                'phone' => '(614) 645-1519',
+                'address' => '717 E 17th Ave Columbus, OH 43211',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44041',
+                'zip' => '43211',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Ashtabula',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0031207',
+                'longitude' => '-82.9917326',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:35',
+                'location_type_id' => NULL,
             ),
             248 =>
+            array (
+                'id' => 692,
+                'name' => 'Perry County Health Department',
+                'bookinglink' => 'http://perrycountyhealth.info',
+                'phone' => '(740) 342-5179',
+                'address' => '409 Lincoln Park Dr|New Lexington, OH 43764',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43764',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Perry',
+                'latitude' => '39.7206874',
+                'longitude' => '-82.2007179',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:35',
+                'location_type_id' => NULL,
+            ),
+            249 =>
+            array (
+                'id' => 699,
+                'name' => 'PrimaryOne Health',
+                'bookinglink' => 'http://www.primaryonehealth.org/covid-19-vaccine-sched..',
+                'phone' => '(614) 859-1899',
+                'address' => '1905 Parson Avenue|Columbus, OH 43207',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43207',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '39.9243114',
+                'longitude' => '-82.98457',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:36',
+                'location_type_id' => NULL,
+            ),
+            250 =>
+            array (
+                'id' => 705,
+                'name' => 'Proctorville Family Medical Center',
+                'bookinglink' => 'http://familymedicalcenters.org',
+                'phone' => '(740) 302-0541',
+                'address' => '10777 County Road 107|Proctorville, OH 45669',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45669',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lawrence',
+                'latitude' => '38.4635145',
+                'longitude' => '-82.3205587',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:36',
+                'location_type_id' => NULL,
+            ),
+            251 =>
             array (
                 'id' => 708,
                 'name' => 'ProMedica Flower Hospital',
@@ -15748,8 +16562,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.69439',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:33',
+                'location_type_id' => NULL,
             ),
-            249 =>
+            252 =>
             array (
                 'id' => 709,
                 'name' => 'ProMedica Memorial Hospital',
@@ -15769,8 +16584,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.13523',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:34',
+                'location_type_id' => NULL,
             ),
-            250 =>
+            253 =>
             array (
                 'id' => 710,
                 'name' => 'Public Health Clinic',
@@ -15790,8 +16606,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.50548',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:40',
+                'location_type_id' => NULL,
             ),
-            251 =>
+            254 =>
             array (
                 'id' => 711,
                 'name' => 'Putnam County Health Department',
@@ -15811,8 +16628,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.04641',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:41',
+                'location_type_id' => NULL,
             ),
-            252 =>
+            255 =>
             array (
                 'id' => 712,
                 'name' => 'Rams Health Center',
@@ -15832,8 +16650,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.676834',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:41',
+                'location_type_id' => NULL,
             ),
-            253 =>
+            256 =>
             array (
                 'id' => 713,
                 'name' => 'Reid Medical Building',
@@ -15853,8 +16672,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.6276',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:44',
+                'location_type_id' => NULL,
             ),
-            254 =>
+            257 =>
             array (
                 'id' => 714,
                 'name' => 'Richland Public Health / Corley Room',
@@ -15874,8 +16694,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.52844',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:50',
+                'location_type_id' => NULL,
             ),
-            255 =>
+            258 =>
             array (
                 'id' => 715,
                 'name' => 'Riesbeck\'s Pharmacy',
@@ -15895,8 +16716,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.01437',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:51',
+                'location_type_id' => NULL,
             ),
-            256 =>
+            259 =>
             array (
                 'id' => 716,
                 'name' => 'Riesbeck\'s Pharmacy',
@@ -15916,8 +16738,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.56525',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:52',
+                'location_type_id' => NULL,
             ),
-            257 =>
+            260 =>
             array (
                 'id' => 717,
                 'name' => 'Riesbecks Pharmacy',
@@ -15937,8 +16760,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.9174',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:05:52',
+                'location_type_id' => NULL,
             ),
-            258 =>
+            261 =>
             array (
                 'id' => 719,
                 'name' => 'Riesbecks Pharmacy',
@@ -15958,8 +16782,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.75487',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:04',
+                'location_type_id' => NULL,
             ),
-            259 =>
+            262 =>
             array (
                 'id' => 720,
                 'name' => 'Riesbecks Pharmacy',
@@ -15979,8 +16804,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.56525',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:05',
+                'location_type_id' => NULL,
             ),
-            260 =>
+            263 =>
             array (
                 'id' => 721,
                 'name' => 'Riesbecks Pharmacy',
@@ -16000,8 +16826,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.769104',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:05',
+                'location_type_id' => NULL,
             ),
-            261 =>
+            264 =>
             array (
                 'id' => 722,
                 'name' => 'Riesbecks Pharmacy',
@@ -16021,8 +16848,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.769104',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:16',
+                'location_type_id' => NULL,
             ),
-            262 =>
+            265 =>
             array (
                 'id' => 724,
                 'name' => 'Rite Aid Store 00193',
@@ -16042,8 +16870,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.571594',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:34',
+                'location_type_id' => NULL,
             ),
-            263 =>
+            266 =>
             array (
                 'id' => 726,
                 'name' => 'Rite Aid Store 00408',
@@ -16063,8 +16892,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.64436',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:41',
+                'location_type_id' => NULL,
             ),
-            264 =>
+            267 =>
             array (
                 'id' => 728,
                 'name' => 'Rite Aid Store 00703',
@@ -16084,8 +16914,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.665504',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:06:59',
+                'location_type_id' => NULL,
             ),
-            265 =>
+            268 =>
             array (
                 'id' => 729,
                 'name' => 'Rite Aid Store 00713',
@@ -16105,8 +16936,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.84793',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:01',
+                'location_type_id' => NULL,
             ),
-            266 =>
+            269 =>
             array (
                 'id' => 730,
                 'name' => 'Rite Aid Store 00794',
@@ -16126,8 +16958,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.31144',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:03',
+                'location_type_id' => NULL,
             ),
-            267 =>
+            270 =>
             array (
                 'id' => 731,
                 'name' => 'Rite Aid Store 00911',
@@ -16147,8 +16980,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.7636',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:09',
+                'location_type_id' => NULL,
             ),
-            268 =>
+            271 =>
             array (
                 'id' => 732,
                 'name' => 'Rite Aid Store 01006',
@@ -16168,8 +17002,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.94325',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:10',
+                'location_type_id' => NULL,
             ),
-            269 =>
+            272 =>
             array (
                 'id' => 736,
                 'name' => 'Rite Aid Store 01187',
@@ -16189,8 +17024,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.04721',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:30',
+                'location_type_id' => NULL,
             ),
-            270 =>
+            273 =>
             array (
                 'id' => 737,
                 'name' => 'Rite Aid Store 01217',
@@ -16210,8 +17046,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.62416',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:32',
+                'location_type_id' => NULL,
             ),
-            271 =>
+            274 =>
             array (
                 'id' => 738,
                 'name' => 'Rite Aid Store 01260',
@@ -16231,8 +17068,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.39113',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:43',
+                'location_type_id' => NULL,
             ),
-            272 =>
+            275 =>
             array (
                 'id' => 739,
                 'name' => 'Rite Aid Store 01282',
@@ -16252,8 +17090,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.65635',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:48',
+                'location_type_id' => NULL,
             ),
-            273 =>
+            276 =>
             array (
                 'id' => 740,
                 'name' => 'Rite Aid Store 01283',
@@ -16273,8 +17112,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.864',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:07:55',
+                'location_type_id' => NULL,
             ),
-            274 =>
+            277 =>
             array (
                 'id' => 741,
                 'name' => 'Rite Aid Store 01347',
@@ -16294,8 +17134,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.78155',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:00',
+                'location_type_id' => NULL,
             ),
-            275 =>
+            278 =>
             array (
                 'id' => 743,
                 'name' => 'Rite Aid Store 01433',
@@ -16315,8 +17156,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.61841',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:18',
+                'location_type_id' => NULL,
             ),
-            276 =>
+            279 =>
             array (
                 'id' => 746,
                 'name' => 'Rite Aid Store 01803',
@@ -16336,8 +17178,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.09861',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:20',
+                'location_type_id' => NULL,
             ),
-            277 =>
+            280 =>
             array (
                 'id' => 747,
                 'name' => 'Rite Aid Store 02077',
@@ -16357,8 +17200,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.70346',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:27',
+                'location_type_id' => NULL,
             ),
-            278 =>
+            281 =>
             array (
                 'id' => 748,
                 'name' => 'Rite Aid Store 02303',
@@ -16378,8 +17222,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.937546',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:33',
+                'location_type_id' => NULL,
             ),
-            279 =>
+            282 =>
             array (
                 'id' => 751,
                 'name' => 'Rite Aid Store 02310',
@@ -16399,8 +17244,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.522',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:47',
+                'location_type_id' => NULL,
             ),
-            280 =>
+            283 =>
             array (
                 'id' => 752,
                 'name' => 'Rite Aid Store 02314',
@@ -16420,8 +17266,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.556694',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:48',
+                'location_type_id' => NULL,
             ),
-            281 =>
+            284 =>
             array (
                 'id' => 723,
                 'name' => 'Rite Aid Store 00119',
@@ -16441,8 +17288,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.16018',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:30:10',
+                'location_type_id' => NULL,
             ),
-            282 =>
+            285 =>
             array (
                 'id' => 727,
                 'name' => 'Rite Aid Store 00449',
@@ -16462,8 +17310,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.3765',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:30:19',
+                'location_type_id' => NULL,
             ),
-            283 =>
+            286 =>
             array (
                 'id' => 742,
                 'name' => 'Rite Aid Store 01351',
@@ -16483,8 +17332,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43906',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:30:23',
+                'location_type_id' => NULL,
             ),
-            284 =>
+            287 =>
             array (
                 'id' => 750,
                 'name' => 'Rite Aid Store 02309',
@@ -16504,50 +17354,31 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.56665',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:30:26',
+                'location_type_id' => NULL,
             ),
-            285 =>
+            288 =>
             array (
-                'id' => 757,
-                'name' => 'Rite Aid Store 02320',
+                'id' => 734,
+                'name' => 'Rite Aid Store 01167',
                 'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 435-7716',
-                'address' => '113 NORTH COUNTYLINE STREET FOSTORIA, OH 44830',
+                'phone' => '(440) 466-3323',
+                'address' => '633 SOUTH BROADWAY|GENEVA, OH 44041',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44830',
+                'zip' => '44041',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Hancock',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Ashtabula',
+                'latitude' => '41.7966659',
+                'longitude' => '-80.9466055',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:37',
+                'location_type_id' => NULL,
             ),
-            286 =>
-            array (
-                'id' => 765,
-                'name' => 'Rite Aid Store 02346',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 729-2907',
-                'address' => '810 EAST MANHATTAN BLVD. TOLEDO, OH 43608',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43608',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lucas',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            287 =>
+            289 =>
             array (
                 'id' => 753,
                 'name' => 'Rite Aid Store 02316',
@@ -16567,29 +17398,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.62363',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:52',
+                'location_type_id' => NULL,
             ),
-            288 =>
-            array (
-                'id' => 773,
-                'name' => 'Rite Aid Store 02373',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 855-8363',
-                'address' => '21991 WEST STATE ROUTE 51|GENOA, OH 43430',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43430',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Ottawa',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            289 =>
+            290 =>
             array (
                 'id' => 754,
                 'name' => 'Rite Aid Store 02317',
@@ -16609,27 +17420,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.570755',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:08:54',
-            ),
-            290 =>
-            array (
-                'id' => 778,
-                'name' => 'Rite Aid Store 02393',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(330) 854-6618',
-                'address' => '2220 SOUTH LOCUST STREET CANAL FULTON, OH 44614',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44614',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             291 =>
             array (
@@ -16651,6 +17442,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.6657',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:01',
+                'location_type_id' => NULL,
             ),
             292 =>
             array (
@@ -16672,6 +17464,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.11057',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:11',
+                'location_type_id' => NULL,
             ),
             293 =>
             array (
@@ -16693,6 +17486,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.6022',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:20',
+                'location_type_id' => NULL,
             ),
             294 =>
             array (
@@ -16714,6 +17508,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.6196',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:21',
+                'location_type_id' => NULL,
             ),
             295 =>
             array (
@@ -16735,6 +17530,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.479',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:24',
+                'location_type_id' => NULL,
             ),
             296 =>
             array (
@@ -16756,6 +17552,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.49959',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:30',
+                'location_type_id' => NULL,
             ),
             297 =>
             array (
@@ -16777,6 +17574,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.602615',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:33',
+                'location_type_id' => NULL,
             ),
             298 =>
             array (
@@ -16798,6 +17596,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.701454',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:34',
+                'location_type_id' => NULL,
             ),
             299 =>
             array (
@@ -16819,6 +17618,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.713745',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:35',
+                'location_type_id' => NULL,
             ),
             300 =>
             array (
@@ -16840,6 +17640,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.10946',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:46',
+                'location_type_id' => NULL,
             ),
             301 =>
             array (
@@ -16861,6 +17662,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.70348',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:48',
+                'location_type_id' => NULL,
             ),
             302 =>
             array (
@@ -16882,6 +17684,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.888016',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:50',
+                'location_type_id' => NULL,
             ),
             303 =>
             array (
@@ -16903,6 +17706,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.829666',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:09:55',
+                'location_type_id' => NULL,
             ),
             304 =>
             array (
@@ -16924,6 +17728,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.650024',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:02',
+                'location_type_id' => NULL,
             ),
             305 =>
             array (
@@ -16945,6 +17750,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.07976',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:04',
+                'location_type_id' => NULL,
             ),
             306 =>
             array (
@@ -16966,6 +17772,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.36609',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:10',
+                'location_type_id' => NULL,
             ),
             307 =>
             array (
@@ -16987,6 +17794,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.47693',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:13',
+                'location_type_id' => NULL,
             ),
             308 =>
             array (
@@ -17008,6 +17816,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.45892',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:21',
+                'location_type_id' => NULL,
             ),
             309 =>
             array (
@@ -17029,6 +17838,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.73695',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:26',
+                'location_type_id' => NULL,
             ),
             310 =>
             array (
@@ -17050,6 +17860,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.47509',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:30',
+                'location_type_id' => NULL,
             ),
             311 =>
             array (
@@ -17071,6 +17882,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.319374',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:36',
+                'location_type_id' => NULL,
             ),
             312 =>
             array (
@@ -17092,6 +17904,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.10171',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:39',
+                'location_type_id' => NULL,
             ),
             313 =>
             array (
@@ -17113,6 +17926,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.40607',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:41',
+                'location_type_id' => NULL,
             ),
             314 =>
             array (
@@ -17134,6 +17948,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.534225',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:43',
+                'location_type_id' => NULL,
             ),
             315 =>
             array (
@@ -17155,6 +17970,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.424065',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:56',
+                'location_type_id' => NULL,
             ),
             316 =>
             array (
@@ -17176,6 +17992,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.77333',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:10:59',
+                'location_type_id' => NULL,
             ),
             317 =>
             array (
@@ -17197,6 +18014,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.84481',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:05',
+                'location_type_id' => NULL,
             ),
             318 =>
             array (
@@ -17218,6 +18036,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.26105',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:06',
+                'location_type_id' => NULL,
             ),
             319 =>
             array (
@@ -17239,6 +18058,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.73057',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:08',
+                'location_type_id' => NULL,
             ),
             320 =>
             array (
@@ -17260,6 +18080,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52291',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:19',
+                'location_type_id' => NULL,
             ),
             321 =>
             array (
@@ -17281,50 +18102,97 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.21743',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:01',
+                'location_type_id' => NULL,
             ),
             322 =>
             array (
-                'id' => 807,
-                'name' => 'Rite Aid Store 03043',
+                'id' => 757,
+                'name' => 'Rite Aid Store 02320',
                 'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(216) 721-2020',
-                'address' => '10090 CHESTER AVE|CLEVELAND, OH 44106',
+                'phone' => '(419) 435-7716',
+                'address' => '113 NORTH COUNTYLINE STREET FOSTORIA, OH 44830',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44106',
+                'zip' => '44830',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Hancock',
+                'latitude' => '41.1581147',
+                'longitude' => '-83.4216454',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:37',
+                'location_type_id' => NULL,
             ),
             323 =>
             array (
-                'id' => 819,
-                'name' => 'Rite Aid Store 03120',
+                'id' => 765,
+                'name' => 'Rite Aid Store 02346',
                 'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(330) 799-7313',
-                'address' => '2800 MAHONING AVENUE|YOUNGSTOWN, OH 44509',
+                'phone' => '(419) 729-2907',
+                'address' => '810 EAST MANHATTAN BLVD. TOLEDO, OH 43608',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44509',
+                'zip' => '43608',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Mahoning',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Lucas',
+                'latitude' => '41.6864714',
+                'longitude' => '-83.5261352',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:38',
+                'location_type_id' => NULL,
             ),
             324 =>
+            array (
+                'id' => 773,
+                'name' => 'Rite Aid Store 02373',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(419) 855-8363',
+                'address' => '21991 WEST STATE ROUTE 51|GENOA, OH 43430',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43430',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Ottawa',
+                'latitude' => '41.5311328',
+                'longitude' => '-83.3578593',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:38',
+                'location_type_id' => NULL,
+            ),
+            325 =>
+            array (
+                'id' => 778,
+                'name' => 'Rite Aid Store 02393',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(330) 854-6618',
+                'address' => '2220 SOUTH LOCUST STREET CANAL FULTON, OH 44614',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44614',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.8828716',
+                'longitude' => '-81.5718748',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:39',
+                'location_type_id' => NULL,
+            ),
+            326 =>
             array (
                 'id' => 796,
                 'name' => 'Rite Aid Store 02629',
@@ -17344,8 +18212,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.02502',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:37',
+                'location_type_id' => NULL,
             ),
-            325 =>
+            327 =>
             array (
                 'id' => 797,
                 'name' => 'Rite Aid Store 02637',
@@ -17365,8 +18234,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.53801',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:39',
+                'location_type_id' => NULL,
             ),
-            326 =>
+            328 =>
             array (
                 'id' => 798,
                 'name' => 'Rite Aid Store 02640',
@@ -17386,8 +18256,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.6528',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:40',
+                'location_type_id' => NULL,
             ),
-            327 =>
+            329 =>
             array (
                 'id' => 799,
                 'name' => 'Rite Aid Store 02654',
@@ -17407,8 +18278,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.21351',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:40',
+                'location_type_id' => NULL,
             ),
-            328 =>
+            330 =>
             array (
                 'id' => 800,
                 'name' => 'Rite Aid Store 02665',
@@ -17428,8 +18300,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.61541',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:43',
+                'location_type_id' => NULL,
             ),
-            329 =>
+            331 =>
             array (
                 'id' => 801,
                 'name' => 'Rite Aid Store 03011',
@@ -17449,8 +18322,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.42696',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:45',
+                'location_type_id' => NULL,
             ),
-            330 =>
+            332 =>
             array (
                 'id' => 803,
                 'name' => 'Rite Aid Store 03028',
@@ -17470,8 +18344,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.933914',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:11:54',
+                'location_type_id' => NULL,
             ),
-            331 =>
+            333 =>
             array (
                 'id' => 804,
                 'name' => 'Rite Aid Store 03030',
@@ -17491,8 +18366,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.158',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:01',
+                'location_type_id' => NULL,
             ),
-            332 =>
+            334 =>
             array (
                 'id' => 805,
                 'name' => 'Rite Aid Store 03031',
@@ -17512,8 +18388,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.199196',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:08',
+                'location_type_id' => NULL,
             ),
-            333 =>
+            335 =>
             array (
                 'id' => 806,
                 'name' => 'Rite Aid Store 03041',
@@ -17533,8 +18410,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.47737',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:12',
+                'location_type_id' => NULL,
             ),
-            334 =>
+            336 =>
             array (
                 'id' => 808,
                 'name' => 'Rite Aid Store 03053',
@@ -17554,8 +18432,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.71039',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:17',
+                'location_type_id' => NULL,
             ),
-            335 =>
+            337 =>
             array (
                 'id' => 809,
                 'name' => 'Rite Aid Store 03056',
@@ -17575,8 +18454,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.88264',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:25',
+                'location_type_id' => NULL,
             ),
-            336 =>
+            338 =>
             array (
                 'id' => 811,
                 'name' => 'Rite Aid Store 03062',
@@ -17596,8 +18476,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.79118',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:40',
+                'location_type_id' => NULL,
             ),
-            337 =>
+            339 =>
             array (
                 'id' => 812,
                 'name' => 'Rite Aid Store 03084',
@@ -17617,8 +18498,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.123405',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:40',
+                'location_type_id' => NULL,
             ),
-            338 =>
+            340 =>
             array (
                 'id' => 813,
                 'name' => 'Rite Aid Store 03088',
@@ -17638,8 +18520,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.22263',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:46',
+                'location_type_id' => NULL,
             ),
-            339 =>
+            341 =>
             array (
                 'id' => 814,
                 'name' => 'Rite Aid Store 03091',
@@ -17659,8 +18542,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.83523',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:48',
+                'location_type_id' => NULL,
             ),
-            340 =>
+            342 =>
             array (
                 'id' => 815,
                 'name' => 'Rite Aid Store 03095',
@@ -17680,8 +18564,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52608',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:51',
+                'location_type_id' => NULL,
             ),
-            341 =>
+            343 =>
             array (
                 'id' => 816,
                 'name' => 'Rite Aid Store 03102',
@@ -17701,8 +18586,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.79303',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:12:54',
+                'location_type_id' => NULL,
             ),
-            342 =>
+            344 =>
             array (
                 'id' => 818,
                 'name' => 'Rite Aid Store 03117',
@@ -17722,8 +18608,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.65753',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:07',
+                'location_type_id' => NULL,
             ),
-            343 =>
+            345 =>
             array (
                 'id' => 820,
                 'name' => 'Rite Aid Store 03123',
@@ -17743,8 +18630,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.67261',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:12',
+                'location_type_id' => NULL,
             ),
-            344 =>
+            346 =>
             array (
                 'id' => 821,
                 'name' => 'Rite Aid Store 03131',
@@ -17764,8 +18652,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.53591',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:23',
+                'location_type_id' => NULL,
             ),
-            345 =>
+            347 =>
             array (
                 'id' => 822,
                 'name' => 'Rite Aid Store 03134',
@@ -17785,8 +18674,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.19282',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:28',
+                'location_type_id' => NULL,
             ),
-            346 =>
+            348 =>
             array (
                 'id' => 823,
                 'name' => 'Rite Aid Store 03139',
@@ -17806,8 +18696,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.14379',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:32',
+                'location_type_id' => NULL,
             ),
-            347 =>
+            349 =>
             array (
                 'id' => 824,
                 'name' => 'Rite Aid Store 03143',
@@ -17827,8 +18718,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.421555',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:35',
+                'location_type_id' => NULL,
             ),
-            348 =>
+            350 =>
             array (
                 'id' => 825,
                 'name' => 'Rite Aid Store 03144',
@@ -17848,8 +18740,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.60929',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:40',
+                'location_type_id' => NULL,
             ),
-            349 =>
+            351 =>
             array (
                 'id' => 828,
                 'name' => 'Rite Aid Store 03148',
@@ -17869,8 +18762,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.70064',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:42',
+                'location_type_id' => NULL,
             ),
-            350 =>
+            352 =>
             array (
                 'id' => 830,
                 'name' => 'Rite Aid Store 03153',
@@ -17890,8 +18784,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.80335',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:52',
+                'location_type_id' => NULL,
             ),
-            351 =>
+            353 =>
             array (
                 'id' => 831,
                 'name' => 'Rite Aid Store 03155',
@@ -17911,8 +18806,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.94164',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:13:59',
+                'location_type_id' => NULL,
             ),
-            352 =>
+            354 =>
             array (
                 'id' => 832,
                 'name' => 'Rite Aid Store 03157',
@@ -17932,8 +18828,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.706604',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:14:01',
+                'location_type_id' => NULL,
             ),
-            353 =>
+            355 =>
             array (
                 'id' => 833,
                 'name' => 'Rite Aid Store 03163',
@@ -17953,8 +18850,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52769',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:14:19',
+                'location_type_id' => NULL,
             ),
-            354 =>
+            356 =>
             array (
                 'id' => 829,
                 'name' => 'Rite Aid Store 03151',
@@ -17974,8 +18872,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.51438',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:11',
+                'location_type_id' => NULL,
             ),
-            355 =>
+            357 =>
             array (
                 'id' => 834,
                 'name' => 'Rite Aid Store 03167',
@@ -17995,8 +18894,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.10116',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:13',
+                'location_type_id' => NULL,
             ),
-            356 =>
+            358 =>
             array (
                 'id' => 836,
                 'name' => 'Rite Aid Store 03174',
@@ -18016,8 +18916,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.36064',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:22',
+                'location_type_id' => NULL,
             ),
-            357 =>
+            359 =>
             array (
                 'id' => 837,
                 'name' => 'Rite Aid Store 03180',
@@ -18037,8 +18938,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.69744',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:22',
+                'location_type_id' => NULL,
             ),
-            358 =>
+            360 =>
             array (
                 'id' => 838,
                 'name' => 'Rite Aid Store 03181',
@@ -18058,155 +18960,53 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.69617',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:23',
-            ),
-            359 =>
-            array (
-                'id' => 841,
-                'name' => 'Rite Aid Store 03195',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(440) 352-0627',
-                'address' => '180 NORTH STATE STREET PAINESVILLE, OH 44077',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44077',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lake',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            360 =>
-            array (
-                'id' => 850,
-                'name' => 'Rite Aid Store 04010',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 884-6107',
-                'address' => '355 EAST MAIN STREET LEXINGTON, OH 44904',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44904',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Richland',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             361 =>
             array (
-                'id' => 852,
-                'name' => 'Rite Aid Store 04245',
+                'id' => 807,
+                'name' => 'Rite Aid Store 03043',
                 'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(440) 322-7780',
-                'address' => '142 BROAD STREET|ELYRIA, OH 44035',
+                'phone' => '(216) 721-2020',
+                'address' => '10090 CHESTER AVE|CLEVELAND, OH 44106',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44035',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            362 =>
-            array (
-                'id' => 854,
-                'name' => 'Rite Aid Store 04279',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(440) 632-5201',
-                'address' => '15596 WEST HIGH STREET MIDDLEFIELD, OH 44062',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44062',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Geauga',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            363 =>
-            array (
-                'id' => 873,
-                'name' => 'Rite Aid Store 06678',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 666-1583',
-                'address' => '801 DIXIE HIGHWAY|ROSSFORD, OH 43460',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43460',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Wood',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            364 =>
-            array (
-                'id' => 874,
-                'name' => 'Rite Aid Store 06679',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 893-5533',
-                'address' => '105 GOLDEN GATE PLAZA MAUMEE, OH 43537',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43537',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lucas',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            365 =>
-            array (
-                'id' => 881,
-                'name' => 'Rite Aid Store 07939',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(440) 461-1416',
-                'address' => '1233 SOM CENTER ROAD MAYFIELD HEIGHTS, OH 44126',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44126',
+                'zip' => '44106',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '41.5050262',
+                'longitude' => '-81.6176364',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:39',
+                'location_type_id' => NULL,
             ),
-            366 =>
+            362 =>
+            array (
+                'id' => 819,
+                'name' => 'Rite Aid Store 03120',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(330) 799-7313',
+                'address' => '2800 MAHONING AVENUE|YOUNGSTOWN, OH 44509',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44509',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Mahoning',
+                'latitude' => '41.1035264',
+                'longitude' => '-80.7005196',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:39',
+                'location_type_id' => NULL,
+            ),
+            363 =>
             array (
                 'id' => 842,
                 'name' => 'Rite Aid Store 03198',
@@ -18226,8 +19026,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.37434',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:32',
+                'location_type_id' => NULL,
             ),
-            367 =>
+            364 =>
             array (
                 'id' => 843,
                 'name' => 'Rite Aid Store 03246',
@@ -18247,8 +19048,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.14096',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:33',
+                'location_type_id' => NULL,
             ),
-            368 =>
+            365 =>
             array (
                 'id' => 844,
                 'name' => 'Rite Aid Store 03247',
@@ -18268,8 +19070,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.81757',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:39',
+                'location_type_id' => NULL,
             ),
-            369 =>
+            366 =>
             array (
                 'id' => 845,
                 'name' => 'Rite Aid Store 03266',
@@ -18289,8 +19092,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.540985',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:46',
+                'location_type_id' => NULL,
             ),
-            370 =>
+            367 =>
             array (
                 'id' => 846,
                 'name' => 'Rite Aid Store 03365',
@@ -18310,8 +19114,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.06387',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:47',
+                'location_type_id' => NULL,
             ),
-            371 =>
+            368 =>
             array (
                 'id' => 847,
                 'name' => 'Rite Aid Store 03486',
@@ -18331,8 +19136,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.769',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:48',
+                'location_type_id' => NULL,
             ),
-            372 =>
+            369 =>
             array (
                 'id' => 848,
                 'name' => 'Rite Aid Store 03580',
@@ -18352,8 +19158,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.15116',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:31:57',
+                'location_type_id' => NULL,
             ),
-            373 =>
+            370 =>
             array (
                 'id' => 851,
                 'name' => 'Rite Aid Store 04071',
@@ -18373,8 +19180,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.54993',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:09',
+                'location_type_id' => NULL,
             ),
-            374 =>
+            371 =>
             array (
                 'id' => 853,
                 'name' => 'Rite Aid Store 04278',
@@ -18394,8 +19202,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.81046',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:18',
+                'location_type_id' => NULL,
             ),
-            375 =>
+            372 =>
             array (
                 'id' => 855,
                 'name' => 'Rite Aid Store 04280',
@@ -18415,8 +19224,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.97852',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:20',
+                'location_type_id' => NULL,
             ),
-            376 =>
+            373 =>
             array (
                 'id' => 856,
                 'name' => 'Rite Aid Store 04296',
@@ -18436,8 +19246,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.638916',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:28',
+                'location_type_id' => NULL,
             ),
-            377 =>
+            374 =>
             array (
                 'id' => 857,
                 'name' => 'Rite Aid Store 04580',
@@ -18457,8 +19268,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.3468',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:36',
+                'location_type_id' => NULL,
             ),
-            378 =>
+            375 =>
             array (
                 'id' => 858,
                 'name' => 'Rite Aid Store 04605',
@@ -18478,8 +19290,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.766365',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:38',
+                'location_type_id' => NULL,
             ),
-            379 =>
+            376 =>
             array (
                 'id' => 860,
                 'name' => 'Rite Aid Store 04726',
@@ -18499,8 +19312,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.465614',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:45',
+                'location_type_id' => NULL,
             ),
-            380 =>
+            377 =>
             array (
                 'id' => 861,
                 'name' => 'Rite Aid Store 04748',
@@ -18520,8 +19334,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.25092',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:52',
+                'location_type_id' => NULL,
             ),
-            381 =>
+            378 =>
             array (
                 'id' => 862,
                 'name' => 'Rite Aid Store 04764',
@@ -18541,8 +19356,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.68458',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:54',
+                'location_type_id' => NULL,
             ),
-            382 =>
+            379 =>
             array (
                 'id' => 863,
                 'name' => 'Rite Aid Store 04766',
@@ -18562,8 +19378,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.12',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:32:55',
+                'location_type_id' => NULL,
             ),
-            383 =>
+            380 =>
             array (
                 'id' => 864,
                 'name' => 'Rite Aid Store 04784',
@@ -18583,8 +19400,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.47436',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:06',
+                'location_type_id' => NULL,
             ),
-            384 =>
+            381 =>
             array (
                 'id' => 865,
                 'name' => 'Rite Aid Store 04811',
@@ -18604,8 +19422,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.72882',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:09',
+                'location_type_id' => NULL,
             ),
-            385 =>
+            382 =>
             array (
                 'id' => 867,
                 'name' => 'Rite Aid Store 04825',
@@ -18625,8 +19444,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.15272',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:17',
+                'location_type_id' => NULL,
             ),
-            386 =>
+            383 =>
             array (
                 'id' => 868,
                 'name' => 'Rite Aid Store 04847',
@@ -18646,8 +19466,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.05001',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:20',
+                'location_type_id' => NULL,
             ),
-            387 =>
+            384 =>
             array (
                 'id' => 869,
                 'name' => 'Rite Aid Store 04937',
@@ -18667,8 +19488,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.70396',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:22',
+                'location_type_id' => NULL,
             ),
-            388 =>
+            385 =>
             array (
                 'id' => 870,
                 'name' => 'Rite Aid Store 04947',
@@ -18688,8 +19510,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.20935',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:23',
+                'location_type_id' => NULL,
             ),
-            389 =>
+            386 =>
             array (
                 'id' => 871,
                 'name' => 'Rite Aid Store 04953',
@@ -18709,8 +19532,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.82501',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:29',
+                'location_type_id' => NULL,
             ),
-            390 =>
+            387 =>
             array (
                 'id' => 872,
                 'name' => 'Rite Aid Store 04975',
@@ -18730,8 +19554,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.92097',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:32',
+                'location_type_id' => NULL,
             ),
-            391 =>
+            388 =>
             array (
                 'id' => 875,
                 'name' => 'Rite Aid Store 06681',
@@ -18751,8 +19576,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.6838',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:35',
+                'location_type_id' => NULL,
             ),
-            392 =>
+            389 =>
             array (
                 'id' => 877,
                 'name' => 'Rite Aid Store 07712',
@@ -18772,8 +19598,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.40711',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:36',
+                'location_type_id' => NULL,
             ),
-            393 =>
+            390 =>
             array (
                 'id' => 878,
                 'name' => 'Rite Aid Store 07728',
@@ -18793,8 +19620,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.650406',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:42',
+                'location_type_id' => NULL,
             ),
-            394 =>
+            391 =>
             array (
                 'id' => 879,
                 'name' => 'Rite Aid Store 07817',
@@ -18814,8 +19642,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.72317',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:45',
+                'location_type_id' => NULL,
             ),
-            395 =>
+            392 =>
             array (
                 'id' => 880,
                 'name' => 'Rite Aid Store 07928',
@@ -18835,8 +19664,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.16341',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:46',
+                'location_type_id' => NULL,
             ),
-            396 =>
+            393 =>
             array (
                 'id' => 882,
                 'name' => 'Rite Aid Store 07945',
@@ -18856,8 +19686,141 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.467514',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:56',
+                'location_type_id' => NULL,
+            ),
+            394 =>
+            array (
+                'id' => 841,
+                'name' => 'Rite Aid Store 03195',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(440) 352-0627',
+                'address' => '180 NORTH STATE STREET PAINESVILLE, OH 44077',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44077',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lake',
+                'latitude' => '41.7292832',
+                'longitude' => '-81.2425103',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:40',
+                'location_type_id' => NULL,
+            ),
+            395 =>
+            array (
+                'id' => 852,
+                'name' => 'Rite Aid Store 04245',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(440) 322-7780',
+                'address' => '142 BROAD STREET|ELYRIA, OH 44035',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44035',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lorain',
+                'latitude' => '41.3671559',
+                'longitude' => '-82.10139',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:41',
+                'location_type_id' => NULL,
+            ),
+            396 =>
+            array (
+                'id' => 854,
+                'name' => 'Rite Aid Store 04279',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(440) 632-5201',
+                'address' => '15596 WEST HIGH STREET MIDDLEFIELD, OH 44062',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44062',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Geauga',
+                'latitude' => '41.4633139',
+                'longitude' => '-81.085555',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:41',
+                'location_type_id' => NULL,
             ),
             397 =>
+            array (
+                'id' => 873,
+                'name' => 'Rite Aid Store 06678',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(419) 666-1583',
+                'address' => '801 DIXIE HIGHWAY|ROSSFORD, OH 43460',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43460',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Wood',
+                'latitude' => '41.6077028',
+                'longitude' => '-83.5612268',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:42',
+                'location_type_id' => NULL,
+            ),
+            398 =>
+            array (
+                'id' => 874,
+                'name' => 'Rite Aid Store 06679',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(419) 893-5533',
+                'address' => '105 GOLDEN GATE PLAZA MAUMEE, OH 43537',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43537',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lucas',
+                'latitude' => '41.5200318',
+                'longitude' => '-81.4490867',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:42',
+                'location_type_id' => NULL,
+            ),
+            399 =>
+            array (
+                'id' => 881,
+                'name' => 'Rite Aid Store 07939',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(440) 461-1416',
+                'address' => '1233 SOM CENTER ROAD MAYFIELD HEIGHTS, OH 44126',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44126',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Cuyahoga',
+                'latitude' => '41.5269529',
+                'longitude' => '-81.4379633',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:43',
+                'location_type_id' => NULL,
+            ),
+            400 =>
             array (
                 'id' => 910,
                 'name' => 'Southeast, Inc.',
@@ -18877,113 +19840,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.00199',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:41',
-            ),
-            398 =>
-            array (
-                'id' => 884,
-                'name' => 'Riverside Community Health Center',
-                'bookinglink' => 'http://www.facebook.com/hpwohio',
-                'phone' => '(419) 574-9868',
-                'address' => '05 Woodville Rd.|Toledo, OH 43615',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43615',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lucas',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            399 =>
-            array (
-                'id' => 891,
-                'name' => 'Sandusky County Public Health',
-                'bookinglink' => 'http://www.scpublichealth.com',
-                'phone' => '(419) 334-6377',
-                'address' => '2000 Countryside Drive|Fremont, OH 43420',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43420',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Sandusky',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            400 =>
-            array (
-                'id' => 892,
-                'name' => 'Schottenstein Center',
-                'bookinglink' => 'http://wexnermedical.osu.edu/features/coronavirus/patien..',
-                'phone' => '(614) 688-8299',
-                'address' => '555 Borror Drive|Columbus, OH 43210',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43210',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             401 =>
-            array (
-                'id' => 914,
-                'name' => 'Spartan Health Center',
-                'bookinglink' => 'http://www.facebook.com/hpwohio',
-                'phone' => '(419) 996-3436',
-                'address' => '1 Spartan Way|Lima, OH 45801',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45801',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Allen',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            402 =>
-            array (
-                'id' => 927,
-                'name' => 'The Jewish Hospital Deerfield Imaging Services',
-                'bookinglink' => 'http://www.mercy.com/mercy-health-monitoring-coronavir..',
-                'phone' => '(866) 624-0366',
-                'address' => '5075 Parkway Dr Suite 106|Mason, OH 45040',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45040',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Warren',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            403 =>
             array (
                 'id' => 885,
                 'name' => 'Rock Hill Family Medical Center',
@@ -19003,8 +19862,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.659515',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:57',
+                'location_type_id' => NULL,
             ),
-            404 =>
+            402 =>
             array (
                 'id' => 886,
                 'name' => 'Rocking Horse Community Health Center',
@@ -19024,8 +19884,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.8092',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:33:59',
+                'location_type_id' => NULL,
             ),
-            405 =>
+            403 =>
             array (
                 'id' => 887,
                 'name' => 'Ross County Health District',
@@ -19045,8 +19906,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97777',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:00',
+                'location_type_id' => NULL,
             ),
-            406 =>
+            404 =>
             array (
                 'id' => 888,
                 'name' => 'Salem City Health District',
@@ -19066,8 +19928,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.8517',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:02',
+                'location_type_id' => NULL,
             ),
-            407 =>
+            405 =>
             array (
                 'id' => 889,
                 'name' => 'Salem Regional Medical Center',
@@ -19087,8 +19950,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.83228',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:09',
+                'location_type_id' => NULL,
             ),
-            408 =>
+            406 =>
             array (
                 'id' => 890,
                 'name' => 'Sand Run Pharmacy',
@@ -19108,8 +19972,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.587654',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:12',
+                'location_type_id' => NULL,
             ),
-            409 =>
+            407 =>
             array (
                 'id' => 893,
                 'name' => 'Scioto County Courthouse Lobby',
@@ -19129,8 +19994,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.00044',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:14',
+                'location_type_id' => NULL,
             ),
-            410 =>
+            408 =>
             array (
                 'id' => 894,
                 'name' => 'Seneca County General Health District',
@@ -19150,8 +20016,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.17672',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:16',
+                'location_type_id' => NULL,
             ),
-            411 =>
+            409 =>
             array (
                 'id' => 895,
                 'name' => 'Shelby Health and Wellness',
@@ -19171,8 +20038,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.65711',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:17',
+                'location_type_id' => NULL,
             ),
-            412 =>
+            410 =>
             array (
                 'id' => 897,
                 'name' => 'Shrivers Pharmacy and Wellness',
@@ -19192,8 +20060,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.11898',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:19',
+                'location_type_id' => NULL,
             ),
-            413 =>
+            411 =>
             array (
                 'id' => 898,
                 'name' => 'Shrivers Pharmacy Crooksville',
@@ -19213,8 +20082,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.09961',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:19',
+                'location_type_id' => NULL,
             ),
-            414 =>
+            412 =>
             array (
                 'id' => 899,
                 'name' => 'Shrivers Pharmacy McArthur',
@@ -19234,8 +20104,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.47811',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:25',
+                'location_type_id' => NULL,
             ),
-            415 =>
+            413 =>
             array (
                 'id' => 900,
                 'name' => 'Shrivers Pharmacy McConnelsville',
@@ -19255,8 +20126,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.85317',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:26',
+                'location_type_id' => NULL,
             ),
-            416 =>
+            414 =>
             array (
                 'id' => 901,
                 'name' => 'Shrivers Pharmacy Nelsonville',
@@ -19276,8 +20148,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.22795',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:27',
+                'location_type_id' => NULL,
             ),
-            417 =>
+            415 =>
             array (
                 'id' => 903,
                 'name' => 'Sidney-Shelby County Health Department',
@@ -19297,8 +20170,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.15848',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:29',
+                'location_type_id' => NULL,
             ),
-            418 =>
+            416 =>
             array (
                 'id' => 904,
                 'name' => 'Signature Health Inc. Ashtabula',
@@ -19318,8 +20192,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.782646',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:30',
+                'location_type_id' => NULL,
             ),
-            419 =>
+            417 =>
             array (
                 'id' => 905,
                 'name' => 'Signature Health Inc. Beachwood',
@@ -19339,8 +20214,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.508896',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:33',
+                'location_type_id' => NULL,
             ),
-            420 =>
+            418 =>
             array (
                 'id' => 906,
                 'name' => 'Signature Health Inc. Maple Heights',
@@ -19360,8 +20236,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5311',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:33',
+                'location_type_id' => NULL,
             ),
-            421 =>
+            419 =>
             array (
                 'id' => 907,
                 'name' => 'Signature Health Inc. Painesville',
@@ -19381,8 +20258,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.25517',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:34',
+                'location_type_id' => NULL,
             ),
-            422 =>
+            420 =>
             array (
                 'id' => 908,
                 'name' => 'Signature Health Inc. Willoughby',
@@ -19402,8 +20280,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.38724',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:34',
+                'location_type_id' => NULL,
             ),
-            423 =>
+            421 =>
             array (
                 'id' => 911,
                 'name' => 'Southeastern Ohio Regional Medical Center',
@@ -19423,8 +20302,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.576996',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:35',
+                'location_type_id' => NULL,
             ),
-            424 =>
+            422 =>
             array (
                 'id' => 912,
                 'name' => 'Southern Ohio Medical Center Main Campus',
@@ -19444,8 +20324,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.97835',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:36',
+                'location_type_id' => NULL,
             ),
-            425 =>
+            423 =>
             array (
                 'id' => 913,
                 'name' => 'Southwest General',
@@ -19465,8 +20346,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.83263',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:41',
+                'location_type_id' => NULL,
             ),
-            426 =>
+            424 =>
             array (
                 'id' => 915,
                 'name' => 'Springdale Health Department',
@@ -19486,8 +20368,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.48591',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:45',
+                'location_type_id' => NULL,
             ),
-            427 =>
+            425 =>
             array (
                 'id' => 916,
                 'name' => 'St Vincent Charity Medical Center',
@@ -19507,8 +20390,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.67393',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:47',
+                'location_type_id' => NULL,
             ),
-            428 =>
+            426 =>
             array (
                 'id' => 917,
                 'name' => 'St. Elizabeth Boardman Hospital',
@@ -19528,8 +20412,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.662735',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:48',
+                'location_type_id' => NULL,
             ),
-            429 =>
+            427 =>
             array (
                 'id' => 918,
                 'name' => 'Stark County Health Department',
@@ -19549,8 +20434,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.422905',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:34:53',
+                'location_type_id' => NULL,
             ),
-            430 =>
+            428 =>
             array (
                 'id' => 920,
                 'name' => 'Summa Health Barberton Campus',
@@ -19570,8 +20456,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5898',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:01',
+                'location_type_id' => NULL,
             ),
-            431 =>
+            429 =>
             array (
                 'id' => 921,
                 'name' => 'Summit County Public Health',
@@ -19591,8 +20478,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.57544',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:12',
+                'location_type_id' => NULL,
             ),
-            432 =>
+            430 =>
             array (
                 'id' => 922,
                 'name' => 'Swisher and Lohse Drugs',
@@ -19612,8 +20500,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.0188',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:16',
+                'location_type_id' => NULL,
             ),
-            433 =>
+            431 =>
             array (
                 'id' => 923,
                 'name' => 'The Bellevue Hospital',
@@ -19633,8 +20522,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.88198',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:20',
+                'location_type_id' => NULL,
             ),
-            434 =>
+            432 =>
             array (
                 'id' => 925,
                 'name' => 'The Gym at Eagles Point',
@@ -19654,134 +20544,119 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.634766',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:26',
+                'location_type_id' => NULL,
+            ),
+            433 =>
+            array (
+                'id' => 892,
+                'name' => 'Schottenstein Center',
+                'bookinglink' => 'http://wexnermedical.osu.edu/features/coronavirus/patien..',
+                'phone' => '(614) 688-8299',
+                'address' => '555 Borror Drive|Columbus, OH 43210',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43210',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '40.0075992',
+                'longitude' => '-83.0248064',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:12:39',
+                'location_type_id' => NULL,
+            ),
+            434 =>
+            array (
+                'id' => 884,
+                'name' => 'Riverside Community Health Center',
+                'bookinglink' => 'http://www.facebook.com/hpwohio',
+                'phone' => '(419) 574-9868',
+                'address' => '05 Woodville Rd.|Toledo, OH 43615',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43615',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lucas',
+                'latitude' => '41.5685073',
+                'longitude' => '-83.4156227',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:43',
+                'location_type_id' => NULL,
             ),
             435 =>
             array (
-                'id' => 935,
-                'name' => 'Trinity Hospital West',
-                'bookinglink' => 'http://www.trinityhealth.com',
-                'phone' => '(740) 264-8322',
-                'address' => '4000 Johnson Ave|Steubenville, OH 43952',
+                'id' => 891,
+                'name' => 'Sandusky County Public Health',
+                'bookinglink' => 'http://www.scpublichealth.com',
+                'phone' => '(419) 334-6377',
+                'address' => '2000 Countryside Drive|Fremont, OH 43420',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43952',
+                'zip' => '43420',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Jefferson',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Sandusky',
+                'latitude' => '41.3590361',
+                'longitude' => '-83.0870525',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:44',
+                'location_type_id' => NULL,
             ),
             436 =>
             array (
-                'id' => 942,
-                'name' => 'Union County Fairgrounds',
-                'bookinglink' => 'http://unioncountycovid.org/',
-                'phone' => '(937) 642-2053',
-                'address' => '845 North Main Street Marysville, OH 43040',
+                'id' => 914,
+                'name' => 'Spartan Health Center',
+                'bookinglink' => 'http://www.facebook.com/hpwohio',
+                'phone' => '(419) 996-3436',
+                'address' => '1 Spartan Way|Lima, OH 45801',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43040',
+                'zip' => '45801',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Union',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Allen',
+                'latitude' => '40.7412485',
+                'longitude' => '-84.0964777',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:44',
+                'location_type_id' => NULL,
             ),
             437 =>
             array (
-                'id' => 945,
-                'name' => 'University Hospitals Home Care Services',
-                'bookinglink' => 'http://uhhospitals.org/vaccine',
-                'phone' => '(216) 844-3339',
-                'address' => '4510 Richmond Road Warrensville Heights, OH 44128',
+                'id' => 927,
+                'name' => 'The Jewish Hospital Deerfield Imaging Services',
+                'bookinglink' => 'http://www.mercy.com/mercy-health-monitoring-coronavir..',
+                'phone' => '(866) 624-0366',
+                'address' => '5075 Parkway Dr Suite 106|Mason, OH 45040',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44128',
+                'zip' => '45040',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Warren',
+                'latitude' => '39.3030343',
+                'longitude' => '-84.3148315',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:44',
+                'location_type_id' => NULL,
             ),
             438 =>
-            array (
-                'id' => 953,
-                'name' => 'Vinton County Health Depatment',
-                'bookinglink' => 'http://vintonohhealth.org',
-                'phone' => '(740) 596-5233',
-                'address' => '31927 State Route 93|McArthur, OH 45651',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45651',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Vinton',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            439 =>
-            array (
-                'id' => 957,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(800) 925-4733',
-                'address' => '1000 S MAIN ST|NORTH CANTON, OH 44720-3628',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44720-3628',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            440 =>
-            array (
-                'id' => 964,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(614) 751-1736',
-                'address' => '1101 HILL RD N PICKERINGTON, OH 43147-8887',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43147-8887',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Fairfield',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            441 =>
             array (
                 'id' => 929,
                 'name' => 'Third Street Family Health Services',
@@ -19801,8 +20676,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.53787',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:28',
+                'location_type_id' => NULL,
             ),
-            442 =>
+            439 =>
             array (
                 'id' => 931,
                 'name' => 'Tonys Pharmacy',
@@ -19822,8 +20698,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.7037',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:31',
+                'location_type_id' => NULL,
             ),
-            443 =>
+            440 =>
             array (
                 'id' => 932,
                 'name' => 'Toronto Apothecary',
@@ -19843,8 +20720,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.60739',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:32',
+                'location_type_id' => NULL,
             ),
-            444 =>
+            441 =>
             array (
                 'id' => 933,
                 'name' => 'TriHealth McCullough-Hyde Memorial Hospital',
@@ -19864,8 +20742,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.74081',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:34',
+                'location_type_id' => NULL,
             ),
-            445 =>
+            442 =>
             array (
                 'id' => 934,
                 'name' => 'Trinity Health -  Prime Time Senior Center',
@@ -19885,8 +20764,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.676414',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:35',
+                'location_type_id' => NULL,
             ),
-            446 =>
+            443 =>
             array (
                 'id' => 936,
                 'name' => 'TriPoint Medical Center',
@@ -19906,8 +20786,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.24528',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:36',
+                'location_type_id' => NULL,
             ),
-            447 =>
+            444 =>
             array (
                 'id' => 937,
                 'name' => 'Trumbull County Combined Health District',
@@ -19927,8 +20808,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.8091',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:37',
+                'location_type_id' => NULL,
             ),
-            448 =>
+            445 =>
             array (
                 'id' => 939,
                 'name' => 'Tuscarawas County Health Department',
@@ -19948,8 +20830,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.452934',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:43',
+                'location_type_id' => NULL,
             ),
-            449 =>
+            446 =>
             array (
                 'id' => 940,
                 'name' => 'UC Gardner Neuroscience Institute',
@@ -19969,8 +20852,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.50386',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:43',
+                'location_type_id' => NULL,
             ),
-            450 =>
+            447 =>
             array (
                 'id' => 941,
             'name' => 'UD Arena (Miami  Valley Hospital)',
@@ -19990,8 +20874,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.19929',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:44',
+                'location_type_id' => NULL,
             ),
-            451 =>
+            448 =>
             array (
                 'id' => 943,
                 'name' => 'Union County Health Department',
@@ -20011,8 +20896,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.37172',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:55',
+                'location_type_id' => NULL,
             ),
-            452 =>
+            449 =>
             array (
                 'id' => 944,
                 'name' => 'University Hospitals Cleveland Medical Center',
@@ -20032,8 +20918,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.608055',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:35:59',
+                'location_type_id' => NULL,
             ),
-            453 =>
+            450 =>
             array (
                 'id' => 947,
                 'name' => 'University of Toledo Medical Center',
@@ -20053,8 +20940,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.621086',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:20',
+                'location_type_id' => NULL,
             ),
-            454 =>
+            451 =>
             array (
                 'id' => 948,
                 'name' => 'Upper Valley Mall',
@@ -20074,8 +20962,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.85274',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:28',
+                'location_type_id' => NULL,
             ),
-            455 =>
+            452 =>
             array (
                 'id' => 949,
                 'name' => 'Upper Valley Medical Center',
@@ -20095,8 +20984,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.224266',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:32',
+                'location_type_id' => NULL,
             ),
-            456 =>
+            453 =>
             array (
                 'id' => 950,
                 'name' => 'Valley View Health Center-Waverly',
@@ -20116,8 +21006,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.004395',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:33',
+                'location_type_id' => NULL,
             ),
-            457 =>
+            454 =>
             array (
                 'id' => 951,
                 'name' => 'Van Wert County General Health District',
@@ -20137,8 +21028,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.594765',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:33',
+                'location_type_id' => NULL,
             ),
-            458 =>
+            455 =>
             array (
                 'id' => 952,
                 'name' => 'Victor Cassano health center',
@@ -20158,8 +21050,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.20557',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:33',
+                'location_type_id' => NULL,
             ),
-            459 =>
+            456 =>
             array (
                 'id' => 954,
                 'name' => 'Violet Township Services Center',
@@ -20179,8 +21072,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.74722',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:45',
+                'location_type_id' => NULL,
             ),
-            460 =>
+            457 =>
             array (
                 'id' => 955,
                 'name' => 'Walgreens Pharmacy',
@@ -20200,8 +21094,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.655815',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:46',
+                'location_type_id' => NULL,
             ),
-            461 =>
+            458 =>
             array (
                 'id' => 956,
                 'name' => 'Walgreens Pharmacy',
@@ -20221,8 +21116,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.55236',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:47',
+                'location_type_id' => NULL,
             ),
-            462 =>
+            459 =>
             array (
                 'id' => 958,
                 'name' => 'Walgreens Pharmacy',
@@ -20242,8 +21138,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.5875',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:48',
+                'location_type_id' => NULL,
             ),
-            463 =>
+            460 =>
             array (
                 'id' => 960,
                 'name' => 'Walgreens Pharmacy',
@@ -20263,8 +21160,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.79735',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:50',
+                'location_type_id' => NULL,
             ),
-            464 =>
+            461 =>
             array (
                 'id' => 961,
                 'name' => 'Walgreens Pharmacy',
@@ -20284,8 +21182,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.01835',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:51',
+                'location_type_id' => NULL,
             ),
-            465 =>
+            462 =>
             array (
                 'id' => 962,
                 'name' => 'Walgreens Pharmacy',
@@ -20305,8 +21204,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.60601',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:51',
+                'location_type_id' => NULL,
             ),
-            466 =>
+            463 =>
             array (
                 'id' => 963,
                 'name' => 'Walgreens Pharmacy',
@@ -20326,8 +21226,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.524345',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:52',
+                'location_type_id' => NULL,
             ),
-            467 =>
+            464 =>
             array (
                 'id' => 965,
                 'name' => 'Walgreens Pharmacy',
@@ -20347,8 +21248,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49124',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:55',
+                'location_type_id' => NULL,
             ),
-            468 =>
+            465 =>
             array (
                 'id' => 966,
                 'name' => 'Walgreens Pharmacy',
@@ -20368,8 +21270,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.60412',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:56',
+                'location_type_id' => NULL,
             ),
-            469 =>
+            466 =>
             array (
                 'id' => 968,
                 'name' => 'Walgreens Pharmacy',
@@ -20389,8 +21292,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.76887',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:57',
+                'location_type_id' => NULL,
             ),
-            470 =>
+            467 =>
             array (
                 'id' => 970,
                 'name' => 'Walgreens Pharmacy',
@@ -20410,8 +21314,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.37623',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:58',
+                'location_type_id' => NULL,
             ),
-            471 =>
+            468 =>
             array (
                 'id' => 1011,
                 'name' => 'Walgreens Pharmacy',
@@ -20431,8 +21336,119 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.52489',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:36:59',
+                'location_type_id' => NULL,
+            ),
+            469 =>
+            array (
+                'id' => 935,
+                'name' => 'Trinity Hospital West',
+                'bookinglink' => 'http://www.trinityhealth.com',
+                'phone' => '(740) 264-8322',
+                'address' => '4000 Johnson Ave|Steubenville, OH 43952',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43952',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Jefferson',
+                'latitude' => '40.3681352',
+                'longitude' => '-80.6579161',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:45',
+                'location_type_id' => NULL,
+            ),
+            470 =>
+            array (
+                'id' => 942,
+                'name' => 'Union County Fairgrounds',
+                'bookinglink' => 'http://unioncountycovid.org/',
+                'phone' => '(937) 642-2053',
+                'address' => '845 North Main Street Marysville, OH 43040',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43040',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Union',
+                'latitude' => '40.2469653',
+                'longitude' => '-83.3692934',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:45',
+                'location_type_id' => NULL,
+            ),
+            471 =>
+            array (
+                'id' => 945,
+                'name' => 'University Hospitals Home Care Services',
+                'bookinglink' => 'http://uhhospitals.org/vaccine',
+                'phone' => '(216) 844-3339',
+                'address' => '4510 Richmond Road Warrensville Heights, OH 44128',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44128',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Cuyahoga',
+                'latitude' => '41.4372729',
+                'longitude' => '-81.5001653',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:45',
+                'location_type_id' => NULL,
             ),
             472 =>
+            array (
+                'id' => 953,
+                'name' => 'Vinton County Health Depatment',
+                'bookinglink' => 'http://vintonohhealth.org',
+                'phone' => '(740) 596-5233',
+                'address' => '31927 State Route 93|McArthur, OH 45651',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '45651',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Vinton',
+                'latitude' => '39.2612878',
+                'longitude' => '-82.4774967',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:46',
+                'location_type_id' => NULL,
+            ),
+            473 =>
+            array (
+                'id' => 957,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(800) 925-4733',
+                'address' => '1000 S MAIN ST|NORTH CANTON, OH 44720-3628',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44720-3628',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.8686184',
+                'longitude' => '-81.3982758',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:46',
+                'location_type_id' => NULL,
+            ),
+            474 =>
             array (
                 'id' => 975,
                 'name' => 'Walgreens Pharmacy',
@@ -20452,8 +21468,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.090385',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:54',
+                'location_type_id' => NULL,
             ),
-            473 =>
+            475 =>
             array (
                 'id' => 1007,
                 'name' => 'Walgreens Pharmacy',
@@ -20473,48 +21490,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.05942',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:55',
-            ),
-            474 =>
-            array (
-                'id' => 987,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(419) 420-0084',
-                'address' => '15031 SR 224 E|FINDLAY, OH 45840-7764',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45840-7764',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hancock',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            475 =>
-            array (
-                'id' => 993,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(937) 578-0156',
-                'address' => '180 COLEMANS XING|MARYSVILLE, OH 43040-7080',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43040-7080',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Union',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'location_type_id' => NULL,
             ),
             476 =>
             array (
@@ -20536,6 +21512,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.95947',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:50:55',
+                'location_type_id' => NULL,
             ),
             477 =>
             array (
@@ -20557,6 +21534,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.04483',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:06',
+                'location_type_id' => NULL,
             ),
             478 =>
             array (
@@ -20578,6 +21556,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.427315',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 15:05:29',
+                'location_type_id' => NULL,
             ),
             479 =>
             array (
@@ -20599,6 +21578,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.26768',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:00',
+                'location_type_id' => NULL,
             ),
             480 =>
             array (
@@ -20620,6 +21600,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.683914',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:04',
+                'location_type_id' => NULL,
             ),
             481 =>
             array (
@@ -20641,6 +21622,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5948',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:06',
+                'location_type_id' => NULL,
             ),
             482 =>
             array (
@@ -20662,6 +21644,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.56891',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:07',
+                'location_type_id' => NULL,
             ),
             483 =>
             array (
@@ -20683,6 +21666,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.24849',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:07',
+                'location_type_id' => NULL,
             ),
             484 =>
             array (
@@ -20704,6 +21688,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.120514',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:07',
+                'location_type_id' => NULL,
             ),
             485 =>
             array (
@@ -20725,6 +21710,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.66465',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:09',
+                'location_type_id' => NULL,
             ),
             486 =>
             array (
@@ -20746,6 +21732,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.17621',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:09',
+                'location_type_id' => NULL,
             ),
             487 =>
             array (
@@ -20767,6 +21754,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.676674',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:10',
+                'location_type_id' => NULL,
             ),
             488 =>
             array (
@@ -20788,6 +21776,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.24278',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:11',
+                'location_type_id' => NULL,
             ),
             489 =>
             array (
@@ -20809,6 +21798,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.58087',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:17',
+                'location_type_id' => NULL,
             ),
             490 =>
             array (
@@ -20830,6 +21820,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.568886',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:18',
+                'location_type_id' => NULL,
             ),
             491 =>
             array (
@@ -20851,6 +21842,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.57417',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:28',
+                'location_type_id' => NULL,
             ),
             492 =>
             array (
@@ -20872,6 +21864,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.56637',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:35',
+                'location_type_id' => NULL,
             ),
             493 =>
             array (
@@ -20893,6 +21886,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.814644',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:37',
+                'location_type_id' => NULL,
             ),
             494 =>
             array (
@@ -20914,6 +21908,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.46407',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:37',
+                'location_type_id' => NULL,
             ),
             495 =>
             array (
@@ -20935,6 +21930,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.615456',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:38',
+                'location_type_id' => NULL,
             ),
             496 =>
             array (
@@ -20956,6 +21952,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.06924',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:38',
+                'location_type_id' => NULL,
             ),
             497 =>
             array (
@@ -20977,6 +21974,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86985',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:39',
+                'location_type_id' => NULL,
             ),
             498 =>
             array (
@@ -20998,6 +21996,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.13554',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:39',
+                'location_type_id' => NULL,
             ),
             499 =>
             array (
@@ -21019,6 +22018,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.57732',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:40',
+                'location_type_id' => NULL,
             ),
         ));
         \DB::table('locations')->insert(array (
@@ -21042,6 +22042,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.50321',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:41',
+                'location_type_id' => NULL,
             ),
             1 =>
             array (
@@ -21063,6 +22064,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.32205',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:43',
+                'location_type_id' => NULL,
             ),
             2 =>
             array (
@@ -21084,6 +22086,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.785126',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:43',
+                'location_type_id' => NULL,
             ),
             3 =>
             array (
@@ -21105,6 +22108,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.63712',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:44',
+                'location_type_id' => NULL,
             ),
             4 =>
             array (
@@ -21126,6 +22130,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.10589',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:45',
+                'location_type_id' => NULL,
             ),
             5 =>
             array (
@@ -21147,6 +22152,7 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.83129',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:47',
+                'location_type_id' => NULL,
             ),
             6 =>
             array (
@@ -21168,71 +22174,53 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.536285',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:47',
+                'location_type_id' => NULL,
             ),
             7 =>
             array (
-                'id' => 1012,
+                'id' => 987,
                 'name' => 'Walgreens Pharmacy',
                 'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(330) 544-7128',
-                'address' => '2249 YOUNGSTOWN WARREN RD NILES, OH 44446-4567',
+                'phone' => '(419) 420-0084',
+                'address' => '15031 SR 224 E|FINDLAY, OH 45840-7764',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44446-4567',
+                'zip' => '45840-7764',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Trumbull',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Hancock',
+                'latitude' => '41.004281',
+                'longitude' => '-84.1259415',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:47',
+                'location_type_id' => NULL,
             ),
             8 =>
             array (
-                'id' => 1014,
+                'id' => 993,
                 'name' => 'Walgreens Pharmacy',
                 'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(440) 716-0437',
-                'address' => '24590 Lorain Rd|North Olmsted, OH 44070-2169',
+                'phone' => '(937) 578-0156',
+                'address' => '180 COLEMANS XING|MARYSVILLE, OH 43040-7080',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '44070-2169',
+                'zip' => '43040-7080',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Union',
+                'latitude' => '40.2384384',
+                'longitude' => '-83.349342',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:48',
+                'location_type_id' => NULL,
             ),
             9 =>
-            array (
-                'id' => 1020,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(614) 866-8218',
-                'address' => '2615 BRICE RD|REYNOLDSBURG, OH 43068-3420',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43068-3420',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            10 =>
             array (
                 'id' => 1024,
                 'name' => 'Walgreens Pharmacy',
@@ -21252,29 +22240,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.07441',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:18',
+                'location_type_id' => NULL,
             ),
-            11 =>
-            array (
-                'id' => 1034,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(440) 992-3522',
-                'address' => '318 W PROSPECT RD ASHTABULA, OH 44004',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44004',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Ashtabula',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            12 =>
+            10 =>
             array (
                 'id' => 1029,
                 'name' => 'Walgreens Pharmacy',
@@ -21294,8 +22262,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.91579',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:25',
+                'location_type_id' => NULL,
             ),
-            13 =>
+            11 =>
             array (
                 'id' => 1031,
                 'name' => 'Walgreens Pharmacy',
@@ -21315,8 +22284,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.964096',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:27',
+                'location_type_id' => NULL,
             ),
-            14 =>
+            12 =>
             array (
                 'id' => 1033,
                 'name' => 'Walgreens Pharmacy',
@@ -21336,8 +22306,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.06128',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:28',
+                'location_type_id' => NULL,
             ),
-            15 =>
+            13 =>
             array (
                 'id' => 1040,
                 'name' => 'Walgreens Pharmacy',
@@ -21357,8 +22328,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.99662',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:29',
+                'location_type_id' => NULL,
             ),
-            16 =>
+            14 =>
             array (
                 'id' => 1042,
                 'name' => 'Walgreens Pharmacy',
@@ -21378,8 +22350,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.9055',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:31',
+                'location_type_id' => NULL,
             ),
-            17 =>
+            15 =>
             array (
                 'id' => 1013,
                 'name' => 'Walgreens Pharmacy',
@@ -21399,8 +22372,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.60541',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:37:56',
+                'location_type_id' => NULL,
             ),
-            18 =>
+            16 =>
             array (
                 'id' => 1015,
                 'name' => 'Walgreens Pharmacy',
@@ -21420,8 +22394,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.90329',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:04',
+                'location_type_id' => NULL,
             ),
-            19 =>
+            17 =>
             array (
                 'id' => 1016,
                 'name' => 'Walgreens Pharmacy',
@@ -21441,8 +22416,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.66545',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:05',
+                'location_type_id' => NULL,
             ),
-            20 =>
+            18 =>
             array (
                 'id' => 1017,
                 'name' => 'Walgreens Pharmacy',
@@ -21462,8 +22438,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.48727',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:05',
+                'location_type_id' => NULL,
             ),
-            21 =>
+            19 =>
             array (
                 'id' => 1018,
                 'name' => 'Walgreens Pharmacy',
@@ -21483,8 +22460,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.14119',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:07',
+                'location_type_id' => NULL,
             ),
-            22 =>
+            20 =>
             array (
                 'id' => 1019,
                 'name' => 'Walgreens Pharmacy',
@@ -21504,8 +22482,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.76918',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:08',
+                'location_type_id' => NULL,
             ),
-            23 =>
+            21 =>
             array (
                 'id' => 1021,
                 'name' => 'Walgreens Pharmacy',
@@ -21525,8 +22504,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.23514',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:16',
+                'location_type_id' => NULL,
             ),
-            24 =>
+            22 =>
             array (
                 'id' => 1022,
                 'name' => 'Walgreens Pharmacy',
@@ -21546,8 +22526,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.921524',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:18',
+                'location_type_id' => NULL,
             ),
-            25 =>
+            23 =>
             array (
                 'id' => 1025,
                 'name' => 'Walgreens Pharmacy',
@@ -21567,8 +22548,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.51058',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:19',
+                'location_type_id' => NULL,
             ),
-            26 =>
+            24 =>
             array (
                 'id' => 1026,
                 'name' => 'Walgreens Pharmacy',
@@ -21588,8 +22570,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.61569',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:19',
+                'location_type_id' => NULL,
             ),
-            27 =>
+            25 =>
             array (
                 'id' => 1027,
                 'name' => 'Walgreens Pharmacy',
@@ -21609,8 +22592,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44933',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:20',
+                'location_type_id' => NULL,
             ),
-            28 =>
+            26 =>
             array (
                 'id' => 1030,
                 'name' => 'Walgreens Pharmacy',
@@ -21630,8 +22614,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43927',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:25',
+                'location_type_id' => NULL,
             ),
-            29 =>
+            27 =>
             array (
                 'id' => 1032,
                 'name' => 'Walgreens Pharmacy',
@@ -21651,8 +22636,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.422104',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:27',
+                'location_type_id' => NULL,
             ),
-            30 =>
+            28 =>
             array (
                 'id' => 1035,
                 'name' => 'Walgreens Pharmacy',
@@ -21672,8 +22658,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.35821',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:34',
+                'location_type_id' => NULL,
             ),
-            31 =>
+            29 =>
             array (
                 'id' => 1036,
                 'name' => 'Walgreens Pharmacy',
@@ -21693,8 +22680,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.02087',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:35',
+                'location_type_id' => NULL,
             ),
-            32 =>
+            30 =>
             array (
                 'id' => 1039,
                 'name' => 'Walgreens Pharmacy',
@@ -21714,8 +22702,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.70659',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:37',
+                'location_type_id' => NULL,
             ),
-            33 =>
+            31 =>
             array (
                 'id' => 1041,
                 'name' => 'Walgreens Pharmacy',
@@ -21735,8 +22724,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43704',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:39',
+                'location_type_id' => NULL,
             ),
-            34 =>
+            32 =>
             array (
                 'id' => 1043,
                 'name' => 'Walgreens Pharmacy',
@@ -21756,8 +22746,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.51357',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:39',
+                'location_type_id' => NULL,
             ),
-            35 =>
+            33 =>
             array (
                 'id' => 1044,
                 'name' => 'Walgreens Pharmacy',
@@ -21777,8 +22768,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.71108',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:40',
+                'location_type_id' => NULL,
             ),
-            36 =>
+            34 =>
             array (
                 'id' => 1045,
                 'name' => 'Walgreens Pharmacy',
@@ -21798,8 +22790,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.42903',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:40',
+                'location_type_id' => NULL,
             ),
-            37 =>
+            35 =>
             array (
                 'id' => 1046,
                 'name' => 'Walgreens Pharmacy',
@@ -21819,8 +22812,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.61822',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:41',
+                'location_type_id' => NULL,
             ),
-            38 =>
+            36 =>
             array (
                 'id' => 1047,
                 'name' => 'Walgreens Pharmacy',
@@ -21840,8 +22834,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.619736',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:41',
+                'location_type_id' => NULL,
             ),
-            39 =>
+            37 =>
             array (
                 'id' => 1049,
                 'name' => 'Walgreens Pharmacy',
@@ -21861,8 +22856,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.70587',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:42',
+                'location_type_id' => NULL,
             ),
-            40 =>
+            38 =>
             array (
                 'id' => 1050,
                 'name' => 'Walgreens Pharmacy',
@@ -21882,8 +22878,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.42461',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:48',
+                'location_type_id' => NULL,
             ),
-            41 =>
+            39 =>
             array (
                 'id' => 1051,
                 'name' => 'Walgreens Pharmacy',
@@ -21903,8 +22900,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.56482',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:50',
+                'location_type_id' => NULL,
             ),
-            42 =>
+            40 =>
             array (
                 'id' => 1052,
                 'name' => 'Walgreens Pharmacy',
@@ -21924,50 +22922,75 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.39946',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:50',
+                'location_type_id' => NULL,
+            ),
+            41 =>
+            array (
+                'id' => 1012,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(330) 544-7128',
+                'address' => '2249 YOUNGSTOWN WARREN RD NILES, OH 44446-4567',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44446-4567',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Trumbull',
+                'latitude' => '41.1830006',
+                'longitude' => '-80.7177168',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:48',
+                'location_type_id' => NULL,
+            ),
+            42 =>
+            array (
+                'id' => 1014,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(440) 716-0437',
+                'address' => '24590 Lorain Rd|North Olmsted, OH 44070-2169',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '44070-2169',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Cuyahoga',
+                'latitude' => '41.4272436',
+                'longitude' => '-81.8949112',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:49',
+                'location_type_id' => NULL,
             ),
             43 =>
             array (
-                'id' => 1070,
+                'id' => 1034,
                 'name' => 'Walgreens Pharmacy',
                 'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(800) 925-4733',
-                'address' => '5555 NEW ALBANY RD|NEW ALBANY, OH 43054-8825',
+                'phone' => '(440) 992-3522',
+                'address' => '318 W PROSPECT RD ASHTABULA, OH 44004',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43054-8825',
+                'zip' => '44004',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Ashtabula',
+                'latitude' => '41.8701818',
+                'longitude' => '-80.7826481',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:49',
+                'location_type_id' => NULL,
             ),
             44 =>
-            array (
-                'id' => 1073,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(614) 870-7816',
-                'address' => '5690 W BROAD ST GALLOWAY, OH 43119-8127',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43119-8127',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            45 =>
             array (
                 'id' => 1055,
                 'name' => 'Walgreens Pharmacy',
@@ -21987,8 +23010,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.04962',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:34',
+                'location_type_id' => NULL,
             ),
-            46 =>
+            45 =>
             array (
                 'id' => 1058,
                 'name' => 'Walgreens Pharmacy',
@@ -22008,8 +23032,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.87465',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:36',
+                'location_type_id' => NULL,
             ),
-            47 =>
+            46 =>
             array (
                 'id' => 1062,
                 'name' => 'Walgreens Pharmacy',
@@ -22029,8 +23054,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.86318',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:58',
+                'location_type_id' => NULL,
             ),
-            48 =>
+            47 =>
             array (
                 'id' => 1065,
                 'name' => 'Walgreens Pharmacy',
@@ -22050,8 +23076,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.15997',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:51:58',
+                'location_type_id' => NULL,
             ),
-            49 =>
+            48 =>
             array (
                 'id' => 1086,
                 'name' => 'Walgreens Pharmacy',
@@ -22071,8 +23098,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.16042',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:52:19',
+                'location_type_id' => NULL,
             ),
-            50 =>
+            49 =>
             array (
                 'id' => 1059,
                 'name' => 'Walgreens Pharmacy',
@@ -22092,8 +23120,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.01951',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:22:35',
+                'location_type_id' => NULL,
             ),
-            51 =>
+            50 =>
             array (
                 'id' => 1079,
                 'name' => 'Walgreens Pharmacy',
@@ -22113,8 +23142,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.836624',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:22:44',
+                'location_type_id' => NULL,
             ),
-            52 =>
+            51 =>
             array (
                 'id' => 1053,
                 'name' => 'Walgreens Pharmacy',
@@ -22134,8 +23164,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.706924',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:51',
+                'location_type_id' => NULL,
             ),
-            53 =>
+            52 =>
             array (
                 'id' => 1054,
                 'name' => 'Walgreens Pharmacy',
@@ -22155,8 +23186,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.779884',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:51',
+                'location_type_id' => NULL,
             ),
-            54 =>
+            53 =>
             array (
                 'id' => 1056,
                 'name' => 'Walgreens Pharmacy',
@@ -22176,8 +23208,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.62261',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:52',
+                'location_type_id' => NULL,
             ),
-            55 =>
+            54 =>
             array (
                 'id' => 1057,
                 'name' => 'Walgreens Pharmacy',
@@ -22197,8 +23230,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.55881',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:52',
+                'location_type_id' => NULL,
             ),
-            56 =>
+            55 =>
             array (
                 'id' => 1060,
                 'name' => 'Walgreens Pharmacy',
@@ -22218,8 +23252,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.758194',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:53',
+                'location_type_id' => NULL,
             ),
-            57 =>
+            56 =>
             array (
                 'id' => 1061,
                 'name' => 'Walgreens Pharmacy',
@@ -22239,8 +23274,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.44667',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:54',
+                'location_type_id' => NULL,
             ),
-            58 =>
+            57 =>
             array (
                 'id' => 1063,
                 'name' => 'Walgreens Pharmacy',
@@ -22260,8 +23296,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.5408',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:55',
+                'location_type_id' => NULL,
             ),
-            59 =>
+            58 =>
             array (
                 'id' => 1064,
                 'name' => 'Walgreens Pharmacy',
@@ -22281,8 +23318,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.63033',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:55',
+                'location_type_id' => NULL,
             ),
-            60 =>
+            59 =>
             array (
                 'id' => 1066,
                 'name' => 'Walgreens Pharmacy',
@@ -22302,8 +23340,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.733734',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:56',
+                'location_type_id' => NULL,
             ),
-            61 =>
+            60 =>
             array (
                 'id' => 1067,
                 'name' => 'Walgreens Pharmacy',
@@ -22323,8 +23362,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.20887',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:56',
+                'location_type_id' => NULL,
             ),
-            62 =>
+            61 =>
             array (
                 'id' => 1068,
                 'name' => 'Walgreens Pharmacy',
@@ -22344,8 +23384,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.764145',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:57',
+                'location_type_id' => NULL,
             ),
-            63 =>
+            62 =>
             array (
                 'id' => 1069,
                 'name' => 'Walgreens Pharmacy',
@@ -22365,8 +23406,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.63018',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:58',
+                'location_type_id' => NULL,
             ),
-            64 =>
+            63 =>
             array (
                 'id' => 1071,
                 'name' => 'Walgreens Pharmacy',
@@ -22386,8 +23428,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.57284',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:38:59',
+                'location_type_id' => NULL,
             ),
-            65 =>
+            64 =>
             array (
                 'id' => 1072,
                 'name' => 'Walgreens Pharmacy',
@@ -22407,8 +23450,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.4761',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:00',
+                'location_type_id' => NULL,
             ),
-            66 =>
+            65 =>
             array (
                 'id' => 1074,
                 'name' => 'Walgreens Pharmacy',
@@ -22428,8 +23472,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.62419',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:07',
+                'location_type_id' => NULL,
             ),
-            67 =>
+            66 =>
             array (
                 'id' => 1076,
                 'name' => 'Walgreens Pharmacy',
@@ -22449,8 +23494,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.852936',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:10',
+                'location_type_id' => NULL,
             ),
-            68 =>
+            67 =>
             array (
                 'id' => 1077,
                 'name' => 'Walgreens Pharmacy',
@@ -22470,8 +23516,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.731155',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:11',
+                'location_type_id' => NULL,
             ),
-            69 =>
+            68 =>
             array (
                 'id' => 1081,
                 'name' => 'Walgreens Pharmacy',
@@ -22491,8 +23538,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.36385',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:11',
+                'location_type_id' => NULL,
             ),
-            70 =>
+            69 =>
             array (
                 'id' => 1082,
                 'name' => 'Walgreens Pharmacy',
@@ -22512,8 +23560,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.10995',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:12',
+                'location_type_id' => NULL,
             ),
-            71 =>
+            70 =>
             array (
                 'id' => 1083,
                 'name' => 'Walgreens Pharmacy',
@@ -22533,8 +23582,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.515335',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:13',
+                'location_type_id' => NULL,
             ),
-            72 =>
+            71 =>
             array (
                 'id' => 1084,
                 'name' => 'Walgreens Pharmacy',
@@ -22554,8 +23604,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.441345',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:13',
+                'location_type_id' => NULL,
             ),
-            73 =>
+            72 =>
             array (
                 'id' => 1085,
                 'name' => 'Walgreens Pharmacy',
@@ -22575,8 +23626,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.04822',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:14',
+                'location_type_id' => NULL,
             ),
-            74 =>
+            73 =>
             array (
                 'id' => 1088,
                 'name' => 'Walgreens Pharmacy',
@@ -22596,8 +23648,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.36335',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:15',
+                'location_type_id' => NULL,
             ),
-            75 =>
+            74 =>
             array (
                 'id' => 1089,
                 'name' => 'Walgreens Pharmacy',
@@ -22617,8 +23670,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.54945',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:16',
+                'location_type_id' => NULL,
             ),
-            76 =>
+            75 =>
             array (
                 'id' => 1090,
                 'name' => 'Walgreens Pharmacy',
@@ -22638,8 +23692,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.355385',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:17',
+                'location_type_id' => NULL,
             ),
-            77 =>
+            76 =>
             array (
                 'id' => 1092,
                 'name' => 'Walgreens Pharmacy',
@@ -22659,8 +23714,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.92474',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:17',
+                'location_type_id' => NULL,
             ),
-            78 =>
+            77 =>
             array (
                 'id' => 1093,
                 'name' => 'Walgreens Pharmacy',
@@ -22680,155 +23736,53 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.49716',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:20',
+                'location_type_id' => NULL,
             ),
-            79 =>
+            78 =>
             array (
-                'id' => 1096,
+                'id' => 1070,
                 'name' => 'Walgreens Pharmacy',
                 'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(614) 367-7923',
-                'address' => '7900 E BROAD ST BLACKLICK, OH 43004-8240',
+                'phone' => '(800) 925-4733',
+                'address' => '5555 NEW ALBANY RD|NEW ALBANY, OH 43054-8825',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => '43004-8240',
+                'zip' => '43054-8825',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Franklin',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '40.0977998',
+                'longitude' => '-82.8184097',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:50',
+                'location_type_id' => NULL,
+            ),
+            79 =>
+            array (
+                'id' => 1073,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(614) 870-7816',
+                'address' => '5690 W BROAD ST GALLOWAY, OH 43119-8127',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43119-8127',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '39.9516501',
+                'longitude' => '-83.1525881',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:50',
+                'location_type_id' => NULL,
             ),
             80 =>
-            array (
-                'id' => 1116,
-                'name' => 'Wapakoneta Primary Care',
-                'bookinglink' => 'http://www.grandlakehealth.org/',
-                'phone' => '(419) 300-1132',
-                'address' => '812 Redskin Trail|Wapakoneta, OH 45895',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '45895',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Auglaize',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            81 =>
-            array (
-                'id' => 1117,
-                'name' => 'Warren City Health District',
-                'bookinglink' => 'http://www.warren.org/living/departments/health',
-                'phone' => '(330) 841-2596',
-                'address' => '258 East Market Street Warren, OH 44481',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '44481',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Trumbull',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            82 =>
-            array (
-                'id' => 1125,
-                'name' => 'Wildcat Elementary Health Center',
-                'bookinglink' => 'http://www.facebook.com/hpwohio',
-                'phone' => '(419) 673-7248',
-                'address' => '631 Silver St.|Kenton, OH 43326',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => '43326',
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hardin',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            83 =>
-            array (
-                'id' => 63,
-                'name' => 'Clermont County Public Health',
-                'bookinglink' => 'http://www.ccphohio.org',
-                'phone' => '(513) 735-8500',
-                'address' => '2400 Clermont Center Drive Suite 200 ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Clermont',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            84 =>
-            array (
-                'id' => 472,
-                'name' => 'Kroger Pharmacy',
-                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
-                'phone' => '(866) 211-5320',
-                'address' => '4001 State Route 128 Hamilton Cleves Rd ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Hamilton',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            85 =>
-            array (
-                'id' => 645,
-                'name' => 'MetroHealth Medical Center',
-                'bookinglink' => 'http://www.metrohealth.org/get-vaccinated/covid-vaccine',
-                'phone' => '(216) 778-7800',
-                'address' => '2500 Metrohealth Drive Department Of Pharmacy..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Cuyahoga',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            86 =>
             array (
                 'id' => 1124,
                 'name' => 'whites pharmacy',
@@ -22848,8 +23802,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.88763',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:22:57',
+                'location_type_id' => NULL,
             ),
-            87 =>
+            81 =>
             array (
                 'id' => 1097,
                 'name' => 'Walgreens Pharmacy',
@@ -22869,8 +23824,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.829254',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:33',
+                'location_type_id' => NULL,
             ),
-            88 =>
+            82 =>
             array (
                 'id' => 1098,
                 'name' => 'Walgreens Pharmacy',
@@ -22890,8 +23846,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.86405',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:33',
+                'location_type_id' => NULL,
             ),
-            89 =>
+            83 =>
             array (
                 'id' => 1099,
                 'name' => 'Walgreens Pharmacy',
@@ -22911,8 +23868,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.31268',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:34',
+                'location_type_id' => NULL,
             ),
-            90 =>
+            84 =>
             array (
                 'id' => 1100,
                 'name' => 'Walgreens Pharmacy',
@@ -22932,8 +23890,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.54492',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:38',
+                'location_type_id' => NULL,
             ),
-            91 =>
+            85 =>
             array (
                 'id' => 1101,
                 'name' => 'Walgreens Pharmacy',
@@ -22953,8 +23912,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.46697',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:43',
+                'location_type_id' => NULL,
             ),
-            92 =>
+            86 =>
             array (
                 'id' => 1103,
                 'name' => 'Walgreens Pharmacy',
@@ -22974,8 +23934,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.61484',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:45',
+                'location_type_id' => NULL,
             ),
-            93 =>
+            87 =>
             array (
                 'id' => 1104,
                 'name' => 'Walgreens Pharmacy',
@@ -22995,8 +23956,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.46196',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:45',
+                'location_type_id' => NULL,
             ),
-            94 =>
+            88 =>
             array (
                 'id' => 1105,
                 'name' => 'Walgreens Pharmacy',
@@ -23016,8 +23978,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.62686',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:46',
+                'location_type_id' => NULL,
             ),
-            95 =>
+            89 =>
             array (
                 'id' => 1106,
                 'name' => 'Walgreens Pharmacy',
@@ -23037,8 +24000,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.50493',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:47',
+                'location_type_id' => NULL,
             ),
-            96 =>
+            90 =>
             array (
                 'id' => 1107,
                 'name' => 'Walgreens Pharmacy',
@@ -23058,8 +24022,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.62414',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:48',
+                'location_type_id' => NULL,
             ),
-            97 =>
+            91 =>
             array (
                 'id' => 1108,
                 'name' => 'Walgreens Pharmacy',
@@ -23079,8 +24044,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.158676',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:54',
+                'location_type_id' => NULL,
             ),
-            98 =>
+            92 =>
             array (
                 'id' => 1109,
                 'name' => 'Walgreens Pharmacy',
@@ -23100,8 +24066,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.440254',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:55',
+                'location_type_id' => NULL,
             ),
-            99 =>
+            93 =>
             array (
                 'id' => 1111,
                 'name' => 'Walgreens Pharmacy',
@@ -23121,8 +24088,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.15972',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:39:57',
+                'location_type_id' => NULL,
             ),
-            100 =>
+            94 =>
             array (
                 'id' => 1112,
                 'name' => 'Walgreens Pharmacy',
@@ -23142,8 +24110,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.34547',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:02',
+                'location_type_id' => NULL,
             ),
-            101 =>
+            95 =>
             array (
                 'id' => 1113,
                 'name' => 'Walgreens Pharmacy',
@@ -23163,8 +24132,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.5164',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:02',
+                'location_type_id' => NULL,
             ),
-            102 =>
+            96 =>
             array (
                 'id' => 1114,
                 'name' => 'Walgreens Pharmacy',
@@ -23184,8 +24154,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.34917',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:03',
+                'location_type_id' => NULL,
             ),
-            103 =>
+            97 =>
             array (
                 'id' => 1115,
                 'name' => 'Walgreens Pharmacy',
@@ -23205,8 +24176,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.29501',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:03',
+                'location_type_id' => NULL,
             ),
-            104 =>
+            98 =>
             array (
                 'id' => 1118,
                 'name' => 'Warren County Health District',
@@ -23226,8 +24198,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.20462',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:11',
+                'location_type_id' => NULL,
             ),
-            105 =>
+            99 =>
             array (
                 'id' => 1119,
                 'name' => 'Washington County Health Department',
@@ -23247,8 +24220,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.460075',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:12',
+                'location_type_id' => NULL,
             ),
-            106 =>
+            100 =>
             array (
                 'id' => 1121,
                 'name' => 'West Medical Center',
@@ -23268,8 +24242,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.43218',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:14',
+                'location_type_id' => NULL,
             ),
-            107 =>
+            101 =>
             array (
                 'id' => 1122,
                 'name' => 'Western Reserve Hospital',
@@ -23289,8 +24264,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.50985',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:15',
+                'location_type_id' => NULL,
             ),
-            108 =>
+            102 =>
             array (
                 'id' => 1123,
                 'name' => 'Whitehall Family Health',
@@ -23310,8 +24286,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.876625',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:17',
+                'location_type_id' => NULL,
             ),
-            109 =>
+            103 =>
             array (
                 'id' => 1126,
                 'name' => 'Williams County Health Department',
@@ -23331,8 +24308,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.59571',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:21',
+                'location_type_id' => NULL,
             ),
-            110 =>
+            104 =>
             array (
                 'id' => 1127,
                 'name' => 'Wilson Health',
@@ -23352,8 +24330,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.16899',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:31',
+                'location_type_id' => NULL,
             ),
-            111 =>
+            105 =>
             array (
                 'id' => 1128,
                 'name' => 'WinMed Health Services -Winton Hills',
@@ -23373,8 +24352,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-84.5147',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:33',
+                'location_type_id' => NULL,
             ),
-            112 =>
+            106 =>
             array (
                 'id' => 1129,
                 'name' => 'Wood County Hospital',
@@ -23394,8 +24374,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-83.664604',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:43',
+                'location_type_id' => NULL,
             ),
-            113 =>
+            107 =>
             array (
                 'id' => 1130,
                 'name' => 'Wooster Community Hospital',
@@ -23415,8 +24396,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.934235',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:44',
+                'location_type_id' => NULL,
             ),
-            114 =>
+            108 =>
             array (
                 'id' => 1132,
                 'name' => 'Youngstown City Health District',
@@ -23436,8 +24418,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.65084',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:57',
+                'location_type_id' => NULL,
             ),
-            115 =>
+            109 =>
             array (
                 'id' => 1133,
                 'name' => 'Youngstown Community Health Center',
@@ -23457,8 +24440,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-80.64238',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:58',
+                'location_type_id' => NULL,
             ),
-            116 =>
+            110 =>
             array (
                 'id' => 1134,
                 'name' => 'Zanesville-Muskingum County Health Department',
@@ -23478,56 +24462,81 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.003746',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:40:59',
+                'location_type_id' => NULL,
             ),
-            117 =>
+            111 =>
             array (
-                'id' => 652,
-                'name' => 'Molly Caren Agricultural Center',
-                'bookinglink' => 'http://covidvaccine.madisonph.org',
-                'phone' => '(740) 852-3065',
-                'address' => '135 Ohio 38 ENTER FROM ROUTE|40..',
+                'id' => 1096,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(614) 367-7923',
+                'address' => '7900 E BROAD ST BLACKLICK, OH 43004-8240',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => NULL,
+                'zip' => '43004-8240',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Madison',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Franklin',
+                'latitude' => '39.9859654',
+                'longitude' => '-82.7919242',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:51',
+                'location_type_id' => NULL,
             ),
-            118 =>
+            112 =>
             array (
-                'id' => 677,
-                'name' => 'OhioHealth Kenton COVID Vaccine Clinic',
-                'bookinglink' => 'http://www.ohiohealth.com/covid-19/covid-19-vaccinations',
-                'phone' => '(614) 533-6999',
-                'address' => '75 Washington Blvd. 75 Washington Blvd...',
+                'id' => 1116,
+                'name' => 'Wapakoneta Primary Care',
+                'bookinglink' => 'http://www.grandlakehealth.org/',
+                'phone' => '(419) 300-1132',
+                'address' => '812 Redskin Trail|Wapakoneta, OH 45895',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
-                'zip' => NULL,
+                'zip' => '45895',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Auglaize',
+                'latitude' => '40.5856403',
+                'longitude' => '-84.2071699',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:51',
+                'location_type_id' => NULL,
+            ),
+            113 =>
+            array (
+                'id' => 1125,
+                'name' => 'Wildcat Elementary Health Center',
+                'bookinglink' => 'http://www.facebook.com/hpwohio',
+                'phone' => '(419) 673-7248',
+                'address' => '631 Silver St.|Kenton, OH 43326',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43326',
                 'serves' => NULL,
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
                 'county' => 'Hardin',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'latitude' => '40.6643569',
+                'longitude' => '-83.5978635',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:52',
+                'location_type_id' => NULL,
             ),
-            119 =>
+            114 =>
             array (
-                'id' => 745,
-                'name' => 'Rite Aid Store 01659',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(937) 833-2174',
-                'address' => '437 NORTH WOLF CREEK STREET ..',
+                'id' => 63,
+                'name' => 'Clermont County Public Health',
+                'bookinglink' => 'http://www.ccphohio.org',
+                'phone' => '(513) 735-8500',
+                'address' => '2400 Clermont Center Drive Suite 200 ..',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
@@ -23536,19 +24545,20 @@ class LocationSeeder extends Seeder
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Montgomery',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Clermont',
+                'latitude' => '39.0829464',
+                'longitude' => '-84.1437748',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:52',
+                'location_type_id' => NULL,
             ),
-            120 =>
+            115 =>
             array (
-                'id' => 749,
-                'name' => 'Rite Aid Store 02305',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(937) 843-2048',
-                'address' => '120 WEST MAIN STREET P.O. BOX|89..',
+                'id' => 472,
+                'name' => 'Kroger Pharmacy',
+                'bookinglink' => 'http://www.kroger.com/rx/guest/get-vaccinated',
+                'phone' => '(866) 211-5320',
+                'address' => '4001 State Route 128 Hamilton Cleves Rd ..',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
@@ -23557,19 +24567,20 @@ class LocationSeeder extends Seeder
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Logan',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Hamilton',
+                'latitude' => '39.1721382',
+                'longitude' => '-84.760498',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:53',
+                'location_type_id' => NULL,
             ),
-            121 =>
+            116 =>
             array (
-                'id' => 767,
-                'name' => 'Rite Aid Store 02353',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 878-8384',
-                'address' => '8239 WATERVILLE SWANTON ROAD ..',
+                'id' => 645,
+                'name' => 'MetroHealth Medical Center',
+                'bookinglink' => 'http://www.metrohealth.org/get-vaccinated/covid-vaccine',
+                'phone' => '(216) 778-7800',
+                'address' => '2500 Metrohealth Drive Department Of Pharmacy..',
                 'address2' => NULL,
                 'city' => NULL,
                 'state' => NULL,
@@ -23578,181 +24589,14 @@ class LocationSeeder extends Seeder
                 'vaccinesoffered' => NULL,
                 'siteinstructions' => NULL,
                 'daysopen' => NULL,
-                'county' => 'Lucas',
-                'latitude' => NULL,
-                'longitude' => NULL,
+                'county' => 'Cuyahoga',
+                'latitude' => '41.4612658',
+                'longitude' => '-81.6975224',
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:53',
+                'location_type_id' => NULL,
             ),
-            122 =>
-            array (
-                'id' => 775,
-                'name' => 'Rite Aid Store 02389',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(330) 478-8129',
-                'address' => '3720 WEST TUSCARAWAS STREET ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            123 =>
-            array (
-                'id' => 787,
-                'name' => 'Rite Aid Store 02409',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(330) 484-3947',
-                'address' => '4042 CLEVELAND AVENUE SOUTH ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            124 =>
-            array (
-                'id' => 788,
-                'name' => 'Rite Aid Store 02413',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(330) 833-3194',
-                'address' => '2110 WALES AVENUE NORTHEAST ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Stark',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            125 =>
-            array (
-                'id' => 827,
-                'name' => 'Rite Aid Store 03147',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(330) 755-2421',
-                'address' => '4914 YOUNGSTOWN-POLAND ROAD ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Mahoning',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            126 =>
-            array (
-                'id' => 883,
-                'name' => 'Rite Aid Store 07946',
-                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
-                'phone' => '(419) 882-7241',
-                'address' => '8310 SYLVANIA METAMORA ROAD ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lucas',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            127 =>
-            array (
-                'id' => 971,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(740) 335-3180',
-                'address' => '1240 Columbus Ave|Washington Court House, OH 4316..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Fayette',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            128 =>
-            array (
-                'id' => 995,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(937) 878-2889',
-                'address' => '183 E DAYTON YELLOW SPRINGS RD ..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Greene',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            129 =>
-            array (
-                'id' => 1037,
-                'name' => 'Walgreens Pharmacy',
-                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
-                'phone' => '(440) 327-1330',
-                'address' => '33760 CENTER RIDGE RD|NORTH RIDGEVILLE, OH 44039-3..',
-                'address2' => NULL,
-                'city' => NULL,
-                'state' => NULL,
-                'zip' => NULL,
-                'serves' => NULL,
-                'vaccinesoffered' => NULL,
-                'siteinstructions' => NULL,
-                'daysopen' => NULL,
-                'county' => 'Lorain',
-                'latitude' => NULL,
-                'longitude' => NULL,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            130 =>
+            117 =>
             array (
                 'id' => 1080,
                 'name' => 'Walgreens Pharmacy',
@@ -23772,8 +24616,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-82.828476',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 14:52:58',
+                'location_type_id' => NULL,
             ),
-            131 =>
+            118 =>
             array (
                 'id' => 1028,
                 'name' => 'Walgreens Pharmacy',
@@ -23793,8 +24638,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.610855',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:41:11',
+                'location_type_id' => NULL,
             ),
-            132 =>
+            119 =>
             array (
                 'id' => 1078,
                 'name' => 'Walgreens Pharmacy',
@@ -23814,8 +24660,9 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.36128',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:41:13',
+                'location_type_id' => NULL,
             ),
-            133 =>
+            120 =>
             array (
                 'id' => 1091,
                 'name' => 'Walgreens Pharmacy',
@@ -23835,6 +24682,293 @@ class LocationSeeder extends Seeder
                 'longitude' => '-81.80439',
                 'created_at' => NULL,
                 'updated_at' => '2021-02-27 16:41:14',
+                'location_type_id' => NULL,
+            ),
+            121 =>
+            array (
+                'id' => 652,
+                'name' => 'Molly Caren Agricultural Center',
+                'bookinglink' => 'http://covidvaccine.madisonph.org',
+                'phone' => '(740) 852-3065',
+                'address' => '135 Ohio 38 ENTER FROM ROUTE|40..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Madison',
+                'latitude' => '39.9395264',
+                'longitude' => '-83.4494547',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:54',
+                'location_type_id' => NULL,
+            ),
+            122 =>
+            array (
+                'id' => 677,
+                'name' => 'OhioHealth Kenton COVID Vaccine Clinic',
+                'bookinglink' => 'http://www.ohiohealth.com/covid-19/covid-19-vaccinations',
+                'phone' => '(614) 533-6999',
+                'address' => '75 Washington Blvd. 75 Washington Blvd...',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Hardin',
+                'latitude' => '40.854128',
+                'longitude' => '-75.2101758',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:55',
+                'location_type_id' => NULL,
+            ),
+            123 =>
+            array (
+                'id' => 745,
+                'name' => 'Rite Aid Store 01659',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(937) 833-2174',
+                'address' => '437 NORTH WOLF CREEK STREET ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Montgomery',
+                'latitude' => '39.8396757',
+                'longitude' => '-84.4229375',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:55',
+                'location_type_id' => NULL,
+            ),
+            124 =>
+            array (
+                'id' => 767,
+                'name' => 'Rite Aid Store 02353',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(419) 878-8384',
+                'address' => '8239 WATERVILLE SWANTON ROAD ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lucas',
+                'latitude' => '41.5037436',
+                'longitude' => '-83.7388544',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:56',
+                'location_type_id' => NULL,
+            ),
+            125 =>
+            array (
+                'id' => 775,
+                'name' => 'Rite Aid Store 02389',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(330) 478-8129',
+                'address' => '3720 WEST TUSCARAWAS STREET ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.796819',
+                'longitude' => '-81.4180834',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:57',
+                'location_type_id' => NULL,
+            ),
+            126 =>
+            array (
+                'id' => 787,
+                'name' => 'Rite Aid Store 02409',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(330) 484-3947',
+                'address' => '4042 CLEVELAND AVENUE SOUTH ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.8436096',
+                'longitude' => '-81.3910555',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:57',
+                'location_type_id' => NULL,
+            ),
+            127 =>
+            array (
+                'id' => 788,
+                'name' => 'Rite Aid Store 02413',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(330) 833-3194',
+                'address' => '2110 WALES AVENUE NORTHEAST ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Stark',
+                'latitude' => '40.8233913',
+                'longitude' => '-81.501765',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:58',
+                'location_type_id' => NULL,
+            ),
+            128 =>
+            array (
+                'id' => 827,
+                'name' => 'Rite Aid Store 03147',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(330) 755-2421',
+                'address' => '4914 YOUNGSTOWN-POLAND ROAD ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Mahoning',
+                'latitude' => '41.0505828',
+                'longitude' => '-80.6163243',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:58',
+                'location_type_id' => NULL,
+            ),
+            129 =>
+            array (
+                'id' => 883,
+                'name' => 'Rite Aid Store 07946',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(419) 882-7241',
+                'address' => '8310 SYLVANIA METAMORA ROAD ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lucas',
+                'latitude' => '41.7176243',
+                'longitude' => '-83.7448976',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:59',
+                'location_type_id' => NULL,
+            ),
+            130 =>
+            array (
+                'id' => 971,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(740) 335-3180',
+                'address' => '1240 Columbus Ave|Washington Court House, OH 4316..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Fayette',
+                'latitude' => '39.5469188',
+                'longitude' => '-83.427403',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:14:59',
+                'location_type_id' => NULL,
+            ),
+            131 =>
+            array (
+                'id' => 995,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(937) 878-2889',
+                'address' => '183 E DAYTON YELLOW SPRINGS RD ..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Greene',
+                'latitude' => '39.7897996',
+                'longitude' => '-84.0201172',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:15:00',
+                'location_type_id' => NULL,
+            ),
+            132 =>
+            array (
+                'id' => 1037,
+                'name' => 'Walgreens Pharmacy',
+                'bookinglink' => 'http://www.walgreens.com/findcare/vaccination/covid-19',
+                'phone' => '(440) 327-1330',
+                'address' => '33760 CENTER RIDGE RD|NORTH RIDGEVILLE, OH 44039-3..',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => NULL,
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Lorain',
+                'latitude' => '41.4015336',
+                'longitude' => '-81.9909534',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:15:00',
+                'location_type_id' => NULL,
+            ),
+            133 =>
+            array (
+                'id' => 749,
+                'name' => 'Rite Aid Store 02305',
+                'bookinglink' => 'http://www.riteaid.com/pharmacy/covid-qualifier',
+                'phone' => '(937) 843-2048',
+                'address' => '120 W. Main Street|Logan, OH 43138',
+                'address2' => NULL,
+                'city' => NULL,
+                'state' => NULL,
+                'zip' => '43138',
+                'serves' => NULL,
+                'vaccinesoffered' => NULL,
+                'siteinstructions' => NULL,
+                'daysopen' => NULL,
+                'county' => 'Logan',
+                'latitude' => '39.5402718',
+                'longitude' => '-82.411043',
+                'created_at' => NULL,
+                'updated_at' => '2021-03-06 09:21:25',
+                'location_type_id' => NULL,
             ),
         ));
 
