@@ -18,7 +18,7 @@ use App\Http\Controllers\ApiController;
 */
 
 Route::get('/', function () {
-    $locations = App\Models\Location::orderBy('name')->take(10)->get();
+    $locations = App\Models\Location::closeToZip('43201')->take(10)->get();
     foreach($locations as $loc) {
         if(empty($loc->longitude)) {
             $loc->geocode();

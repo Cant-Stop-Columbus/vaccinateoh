@@ -2,7 +2,7 @@
     <div class="w-full md:h-full md:flex">
 
         <div id="map" class="h-screen flex-grow md:order-2"></div>
-        <div id="location-sidebar" class="h-screen md:w-72 flex-none md:overflow-y-auto md:order-1">
+        <div id="location-sidebar" class="h-screen md:w-80 flex-none md:overflow-y-auto md:order-1">
             <h1 class="text-center text-2xl">Vaccinate OH</h1>
 
             <div class="w-96 md:absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
@@ -25,7 +25,9 @@
                         <h3 class="font-bold">{{ loc.name }}</h3>
                         <div class="address text-sm text-gray-700" v-html="addressHtml(loc.address)"></div>
                         <div class="phone text-sm text-gray-500"><a :href="'tel:' + loc.phone">{{ loc.phone }}</a></div>
-                        <div class="appt-link"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink">Search Appointments</a></div>
+                        <div class="available my-1 text-sm text-green-500" v-if="loc.available">Next appointment: {{ formatDate(loc.available) }}</div>
+                        <div class="available my-1 text-sm text-gray-400" v-else>Availability Unknown</div>
+                        <div class="appt-link my-1"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink">Search Appointments</a></div>
                     </div>
                     <div class="location-distance w-8 px-1 pt-4 text-center flex-none">
                         <div class="text-xs text-gray-500" v-if="loc.distance">{{ round(loc.distance) }} mi</div>
@@ -154,8 +156,9 @@ export default {
                         let content = '<h3 class="font-bold">' + loc.name + '</h3>'
                             + '<div class="address text-sm text-gray-700">' + this.addressHtml(loc.address) + '</div>'
                             + '<div class="phone text-sm text-gray-500"><a href="tel:' + loc.phone + '">' + loc.phone + '</a></div>'
-                            + (!loc.distance ? '' : '<div class="text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
-                            + (!loc.bookinglink ? '' : '<div class="appt-link"><a href="' + loc.bookinglink + '" target="_blank">Search Appointments</a></div>');
+                            + (!loc.distance ? '' : '<div class="my-1 text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
+                            + (!loc.available ? '' : '<div class="my-1 text-xs text-green-500"> Next appointment: ' + this.formatDate(loc.available) + '</div>')
+                            + (!loc.bookinglink ? '' : '<div class="my-1 appt-link"><a href="' + loc.bookinglink + '" target="_blank">Search Appointments</a></div>');
                         this.map.infoWindow.setContent(content);
                         this.map.infoWindow.open(this.map.gmap, marker);
                     });
@@ -208,6 +211,9 @@ export default {
                 digits = 1;
             }
             return Math.round(num * Math.pow(10,digits)) / Math.pow(10, digits);
+        },
+        formatDate(date_string) {
+            return (new Date(date_string)).toDateString();
         },
         addressHtml(address) {
             return address.replace(/\||\r/,'<br>');
