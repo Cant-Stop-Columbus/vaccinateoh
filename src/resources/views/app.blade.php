@@ -16,6 +16,23 @@
         <!-- Scripts -->
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+@env('production')
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS5FH1S5NW"></script>
+@endenv
+        <script>
+@if(!App::environment('production'))
+            /* Google Analytics is disabled if not in production
+@endif
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JS5FH1S5NW');
+@if(!App::environment('production'))
+            */
+@endif
+        </script>
     </head>
     <body class="font-sans antialiased">
         @inertia
