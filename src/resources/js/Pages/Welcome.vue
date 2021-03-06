@@ -8,7 +8,7 @@
             <div class="w-96 md:absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
                 <div class="md:p-8">
                     <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
-                        <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="ZIP Code Search" v-model="search_q">
+                        <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
 
                         <div class="md:p-4 p-2">
                             <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-10 h-10 flex items-center justify-center" type="submit">
