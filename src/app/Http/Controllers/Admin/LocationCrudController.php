@@ -40,17 +40,27 @@ class LocationCrudController extends CrudController
     protected function setupListOperation()
     {
         CRUD::column('id');
-        CRUD::column('name')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('bookinglink')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('address')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('address2')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('city')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('name')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('bookinglink')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('address')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('address2')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('city')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('state');
-        CRUD::column('zip')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('county')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('serves')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('vaccinesoffered')->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('siteinstructions')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('zip')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('county')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('serves')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('vaccinesoffered')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('siteinstructions')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('daysopen');
         CRUD::column('latitude');
         CRUD::column('longitude');
@@ -74,7 +84,6 @@ class LocationCrudController extends CrudController
     {
         CRUD::setValidation(LocationRequest::class);
 
-        CRUD::field('id');
         CRUD::field('name');
         CRUD::field('bookinglink');
         CRUD::field('address');
@@ -89,8 +98,6 @@ class LocationCrudController extends CrudController
         CRUD::field('county');
         CRUD::field('latitude');
         CRUD::field('longitude');
-        CRUD::field('created_at');
-        CRUD::field('updated_at');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
@@ -108,6 +115,17 @@ class LocationCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
+    }
+
+    /**
+     * Define what happens when the Show operation is loaded.
+     *
+     * @see https://backpackforlaravel.com/docs/crud-operation-show
+     * @return void
+     */
+    protected function setupShowOperation()
+    {
+        $this->setupListOperation();
     }
 
     /**

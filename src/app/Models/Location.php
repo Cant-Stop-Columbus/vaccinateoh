@@ -17,6 +17,23 @@ class Location extends Model
         'available'
     ];
 
+    public $fillable = [
+        'name',
+        'bookinglink',
+        'address',
+        'address2',
+        'city',
+        'state',
+        'zip',
+        'serves',
+        'vaccinesoffered',
+        'siteinstructions',
+        'daysopen',
+        'county',
+        'latitude',
+        'longitude',
+    ];
+
     /**
      * Geocode and save this location based on its address field
      *
