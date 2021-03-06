@@ -39,8 +39,10 @@ class UserCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('name');
-        CRUD::column('email');
+        CRUD::column('name')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('email')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('is_admin');
 
         /**
@@ -83,5 +85,17 @@ class UserCrudController extends CrudController
         CRUD::field('name');
         CRUD::field('email');
         CRUD::field('is_admin');
+    }
+
+    /**
+     * Helper function for a case-insensitive search columns on the list view
+     *
+     * @param QueryBuilder $query
+     * @param array $column
+     * @param string $searchTerm
+     * @return void
+     */
+    static function searchCaseInsensitive($query, $column, $searchTerm) {
+        $query->orWhere($column['name'], 'ILIKE', '%'.$searchTerm.'%');
     }
 }

@@ -40,7 +40,15 @@ class AvailabilityCrudController extends CrudController
     protected function setupListOperation()
     {
         
-        CRUD::column('location')->type('relationship');
+        CRUD::addColumn([
+            'name' => 'location',
+            'type' => 'relationship',
+            'searchLogic' => function ($query, $column, $searchTerm) {
+                $query->orWhereHas('location',function($query2) use($searchTerm) {
+                    $query2->where('name', 'ILIKE', '%'.$searchTerm.'%');
+                });
+            }
+        ]);
         CRUD::column('doses');
         CRUD::column('availability_time');
 

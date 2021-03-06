@@ -40,18 +40,18 @@ class LocationCrudController extends CrudController
     protected function setupListOperation()
     {
         CRUD::column('id');
-        CRUD::column('name');
-        CRUD::column('bookinglink');
-        CRUD::column('address');
-        CRUD::column('address2');
-        CRUD::column('city');
+        CRUD::column('name')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('bookinglink')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('address')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('address2')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('city')->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('state');
-        CRUD::column('zip');
-        CRUD::column('serves');
-        CRUD::column('vaccinesoffered');
-        CRUD::column('siteinstructions');
+        CRUD::column('zip')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('county')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('serves')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('vaccinesoffered')->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('siteinstructions')->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('daysopen');
-        CRUD::column('county');
         CRUD::column('latitude');
         CRUD::column('longitude');
         CRUD::column('created_at');
@@ -108,5 +108,17 @@ class LocationCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
+    }
+
+    /**
+     * Helper function for a case-insensitive search columns on the list view
+     *
+     * @param QueryBuilder $query
+     * @param array $column
+     * @param string $searchTerm
+     * @return void
+     */
+    static function searchCaseInsensitive($query, $column, $searchTerm) {
+        $query->orWhere($column['name'], 'ILIKE', '%'.$searchTerm.'%');
     }
 }
