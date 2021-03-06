@@ -38,7 +38,7 @@
 
             <p class="p-2 text-xs">
                 Availability Preference: 
-                <select v-model="search_available" class="text-xs" @change="searchLocations(null)">
+                <select v-model="search_available" class="text-xs" @change="searchLocations()">
                     <option value="prefer">Prefer available; show both</option>
                     <option value="only">Show only available</option>
                     <option value="no">Show only unavailable</option>
@@ -109,7 +109,7 @@ export default {
             let q = typeof(event) === 'string' ? event : null;
 
             // if a search query isn't specified and we have the user location, search on it
-            if(!q && this.current_location) {
+            if(!q && !this.search_q && this.current_location) {
                 q = this.current_location.lat + ',' + this.current_location.lng;
             }
 
