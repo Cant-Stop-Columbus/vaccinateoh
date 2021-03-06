@@ -33,6 +33,15 @@
                     </div>
                 </li>
             </ul>
+
+            <p class="p-2 text-xs">
+                Availability Preference: 
+                <select v-model="search_available" class="text-xs" @change="searchLocations(null)">
+                    <option value="prefer">Prefer available; show both</option>
+                    <option value="only">Show only available</option>
+                    <option value="no">Show only unavailable</option>
+                </select>
+            </p>
         </div>
 
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -87,12 +96,22 @@ export default {
                 ],
             },
             search_q: '43210',
+            search_available: 'prefer',
             search_locations: [],
+            current_location: null,
         };
     },
     methods: {
-        searchLocations(q) {
-            axios.get('/api/locations?q=' + (q || this.search_q))
+        searchLocations(event) {
+            // don't try to use the first arg if it isn't a string
+            let q = typeof(event) === 'string' ? event : null;
+
+            // if a search query isn't specified and we have the user location, search on it
+            if(!q && this.current_location) {
+                q = this.current_location.lat + ',' + this.current_location.lng;
+            }
+
+            axios.get('/api/locations?q=' + (q || this.search_q) + '&available=' + this.search_available)
                 .then(resp => {
                     // If no locations are found, show a warning but don't clear the results;
                     if(!resp.data.total) {
@@ -163,21 +182,23 @@ export default {
                         };
                         console.log({currentPosition: position});
 
-                        if(this.map.current_location_marker) {
-                            this.map.current_location_marker.setMap(null);
+                        if(window.current_location_marker) {
+                            window.current_location_marker.setMap(null);
                         }
 
-                        this.map.current_location_marker = new google.maps.Marker({
+                        window.current_location_marker = new google.maps.Marker({
                             position: pos,
                             map: this.map.gmap,
                             title: 'Current Location',
                             icon: 'https://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png',
                         });
 
+                        this.map.current_location_marker = window.current_location_marker;
+
                         this.search_q = '';
-                        let q = pos.lat + ',' + pos.lng;
+                        this.current_location = { lat: pos.lat, lng: pos.lng };
                         toastr.info('Thanks for sharing your location. We\'re searching near you.');
-                        this.searchLocations(q);
+                        this.searchLocations();
                     }
                 );
             }

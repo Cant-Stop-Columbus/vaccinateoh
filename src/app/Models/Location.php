@@ -147,11 +147,27 @@ class Location extends Model
     }
 
     /**
-     * Number of doses available in the future
+     * Show locations with available future appointments first
      *
-     * @return int Number of doses
+     * @param [type] $query
+     * @return void
+     */
+    public function scopePreferAvailable($query) {
+        return $query->leftJoin(
+            \DB::raw('(SELECT min(availability_time),1 AS future_availability,location_id
+                FROM availabilities
+                WHERE availability_time > NOW()
+                GROUP BY location_id
+            ) AS a'), 'locations.id', '=', 'a.location_id')
+            ->orderBy(\DB::raw('COALESCE(a.future_availability,0)'),'desc');
+    }
+
+    /**
+     * Next available appointment time
+     *
+     * @return string DateTime of next appoingment (YYYY-mm-dd HH:ii:ss); null if none
      */
     public function getAvailableAttribute() {
-        return $this->futureAvailability()->sum('doses');
+        return $this->futureAvailability()->min('availability_time');
     }
 }
