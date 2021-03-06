@@ -123,7 +123,7 @@ export default {
                 if(loc.latitude && loc.longitude) {
                     let latLng = { lat: parseFloat(loc.latitude), lng: parseFloat(loc.longitude)};
 
-                    loc.marker = new google.maps.Marker({
+                    let marker = new google.maps.Marker({
                         position: latLng,
                         map: this.map.gmap,
                         title: loc.name,
@@ -131,17 +131,19 @@ export default {
                         icon: iconBase + (loc.available ? 'grn-stars.png' : 'wht-blank.png'),
                     });
 
-                    loc.marker.addListener("click", () => {
+                    marker.addListener("click", () => {
                         let content = '<h3 class="font-bold">' + loc.name + '</h3>'
                             + '<div class="address text-sm text-gray-700">' + this.addressHtml(loc.address) + '</div>'
                             + '<div class="phone text-sm text-gray-500"><a href="tel:' + loc.phone + '">' + loc.phone + '</a></div>'
                             + (!loc.distance ? '' : '<div class="text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
                             + (!loc.bookinglink ? '' : '<div class="appt-link"><a href="' + loc.bookinglink + '" target="_blank">Search Appointments</a></div>');
                         this.map.infoWindow.setContent(content);
-                        this.map.infoWindow.open(this.map.gmap, loc.marker);
+                        this.map.infoWindow.open(this.map.gmap, marker);
                     });
 
-                    window.markers.push(loc.marker);
+                    window.markers.push(marker);
+
+                    loc.marker = marker;
 
                     bounds.extend(latLng);
                 }
