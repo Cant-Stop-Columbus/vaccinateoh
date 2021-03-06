@@ -9,3 +9,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.search-box {
+    width: 300px;
+}

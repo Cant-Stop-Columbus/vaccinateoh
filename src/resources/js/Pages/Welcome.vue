@@ -5,8 +5,8 @@
         <div id="location-sidebar" class="h-screen md:w-80 flex-none md:overflow-y-auto md:order-1">
             <h1 class="text-center text-2xl">Vaccinate OH</h1>
 
-            <div class="w-96 md:absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 lg:px-8">
-                <div class="md:p-8">
+            <div class="search-box md:absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 md:px-0">
+                <div class="md:py-8">
                     <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
                         <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
 
