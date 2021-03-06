@@ -11,4 +11,8 @@ class Availability extends Model
     use HasFactory;
 
     public $guarded = [];
+
+    public function location() {
+        return $this->belongsTo('App\Models\Location', 'location_id');
+    }
 }

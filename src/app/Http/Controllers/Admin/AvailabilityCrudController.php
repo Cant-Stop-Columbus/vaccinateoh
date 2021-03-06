@@ -40,6 +40,11 @@ class AvailabilityCrudController extends CrudController
     protected function setupListOperation()
     {
         
+        CRUD::column('location')->type('relationship');
+        CRUD::column('doses');
+        CRUD::column('availability_time');
+
+        CRUD::denyAccess('show');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -58,7 +63,13 @@ class AvailabilityCrudController extends CrudController
     {
         CRUD::setValidation(AvailabilityRequest::class);
 
-        
+        CRUD::addField([
+            'name' => 'location_id',
+            'entity' => 'location',
+            'type' => 'relationship',
+        ]);
+        CRUD::field('availability_time');
+        CRUD::field('doses');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
