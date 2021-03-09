@@ -35,3 +35,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('api/locations', [ApiController::class, 'locations'])->name('api.locations');
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function() {
+    Route::post('api/locations/{location}/availability', [ApiController::class, 'updateAvailability'])->name('api.availability.update');
+});

@@ -189,4 +189,8 @@ class Location extends Model
     public function getAvailableAttribute() {
         return $this->futureAvailability()->min('availability_time');
     }
+
+    public function availabilities() {
+        return $this->hasMany('App\Models\Availability', 'location_id');
+    }
 }

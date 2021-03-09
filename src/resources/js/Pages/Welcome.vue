@@ -27,7 +27,8 @@
                         <div class="phone text-sm text-gray-500"><a :href="'tel:' + loc.phone">{{ loc.phone }}</a></div>
                         <div class="available my-1 text-sm text-green-500" v-if="loc.available">Next appointment: {{ formatDate(loc.available) }}</div>
                         <div class="available my-1 text-sm text-gray-400" v-else>Availability Unknown</div>
-                        <div class="appt-link my-1"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink">Search Appointments</a></div>
+                        <div class="my-1 text-xs text-gray-600" v-if="loc.updated_at">Last updated {{ formatDate(loc.updated_at) }} <span class="ml-2 underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</span></div>
+                        <div class="appt-link my-1"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold inline-block hover:text-white py-1 my-1 px-2 border border-blue-500 hover:border-transparent rounded">Search Appointments</a></div>
                     </div>
                     <div class="location-distance w-8 px-1 pt-4 text-center flex-none">
                         <div class="text-xs text-gray-500" v-if="loc.distance">{{ round(loc.distance) }} mi</div>
@@ -61,6 +62,34 @@
                 </inertia-link>
             </template>
         </div>
+
+        <div id="availability-modal" class="absolute t-0 l-0 w-full h-full" :class="{hidden: !update_input.show_modal}">
+            <div class="w-full h-full bg-gray-700 bg-opacity-50 p-20" @click.self="hideInputModal">
+                <div class="bg-white my-10 bg-white p-10 w-96 mx-auto">
+                    <p class="text-lg font-bold">{{ update_input.location.name }}</p>
+                    <p class="text-sm text-gray-900">{{ update_input.location.address }}</p>
+                    <p class="py-2"><input type="checkbox" name="no_availability" v-model="update_input.no_availability" value="true" /> No appointments currently availabile</p>
+                    <div v-if="!update_input.no_availability">
+                        <p class="py-2">
+                            Next availability date: &nbsp;
+                                <input v-model="update_input.date_next_available" placeholder="yyyy-mm-dd" id="datepicker" />
+                        </p>
+                        <p class="py-2">Vaccine Brand <span class="text-xs text-gray-600">(optional)</span>: &nbsp;
+                            <select v-model="update_input.brand">
+                                <option value="">-- Select Brand --</option>
+                                <option value="p">Pfizer</option>
+                                <option value="m">Moderna</option>
+                                <option value="j">Johnson & Johnson</option>
+                            </select>
+                        </p>
+                        <p class="py-2 text-xs italic"><input type="checkbox" name="clear_existing" v-model="update_input.clear_existing" value="true" /> Clear existing availability</p>
+                    </div>
+                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" @click="submitAvailability">
+                        Submit Availability
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -79,6 +108,13 @@ export default {
     },
     data() {
         return {
+            update_input: {
+                location: {},
+                date_next_available: null,
+                no_availability: false,
+                clear_existing: true,
+                show_modal: false,
+            },
             map: {
                 gmap: null,
                 options: {
@@ -158,7 +194,8 @@ export default {
                             + '<div class="phone text-sm text-gray-500"><a href="tel:' + loc.phone + '">' + loc.phone + '</a></div>'
                             + (!loc.distance ? '' : '<div class="my-1 text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
                             + (!loc.available ? '' : '<div class="my-1 text-xs text-green-500"> Next appointment: ' + this.formatDate(loc.available) + '</div>')
-                            + (!loc.bookinglink ? '' : '<div class="my-1 appt-link"><a href="' + loc.bookinglink + '" target="_blank">Search Appointments</a></div>');
+                            + (!this.$page.props.user ? '' : '<div class="my-1 text-xs text-gray-500 cursor-pointer" onclick="vaccine_vue.showInputModal(' + loc.id + ')">update now</div>')
+                            + (!loc.bookinglink ? '' : '<div class="my-1 appt-link"><a href="' + loc.bookinglink + '" target="_blank" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold inline-block hover:text-white py-1 my-1 px-2 border border-blue-500 hover:border-transparent rounded">Search Appointments</a></div>');
                         this.map.infoWindow.setContent(content);
                         this.map.infoWindow.open(this.map.gmap, marker);
                     });
@@ -171,6 +208,21 @@ export default {
                 }
             });
             this.map.gmap.fitBounds(bounds);
+        },
+        showInputModal(loc) {
+            if(typeof(loc) !== 'object') {
+                console.log('Searching for' + loc);
+                loc = this.search_locations.find(function(location) { return location.id == loc; });
+            }
+            this.update_input.location = loc;
+            this.update_input.date_next_available = null;
+            this.update_input.show_modal = true;
+        },
+        hideInputModal() {
+            this.update_input.location = false;
+            this.update_input.show_modal = false;
+            console.log('trying to hide');
+            console.log(this.update_input);
         },
         showLocationMarker(loc) {
             new google.maps.event.trigger( loc.marker, 'click' );
@@ -206,6 +258,28 @@ export default {
                 );
             }
         },
+        submitAvailability() {
+            let vue = this;
+            axios.post('/api/locations/' + this.update_input.location.id + '/availability', {
+                no_availability: this.update_input.no_availability,
+                availability_time: this.update_input.date_next_available,
+                brand: this.update_input.brand,
+                clear_existing: this.update_input.clear_existing,
+            }).then(function(response) {
+                if(response.data.error) {
+                    toastr.error(error, 'Availability Update Error');
+                    return;
+                }
+
+                toastr.success(response.data.location.name, 'Availability updated!');
+                vue.searchLocations();
+                vue.hideInputModal();
+
+                console.log(response);
+            }).catch(function(error) {
+                console.log(error);
+            });
+        },
         round(num, digits) {
             if(digits == null) {
                 digits = 1;
@@ -227,6 +301,7 @@ export default {
         });
 
         this.search_locations = this.locations;
+        window.vaccine_vue = this;
 
         loader
             .load()
