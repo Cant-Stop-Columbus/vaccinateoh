@@ -49,7 +49,7 @@ class LocationCrudController extends CrudController
                 return $query->leftJoin(
                     \DB::raw('(SELECT min(availability_time) as available,location_id
                         FROM availabilities
-                        WHERE availability_time > NOW()
+                        WHERE availability_time >= DATE(NOW()) AND doses > 0 AND deleted_at IS NULL
                         GROUP BY location_id
                     ) AS a'), 'locations.id', '=', 'a.location_id')
                 ->orderBy('a.available', $columnDirection);

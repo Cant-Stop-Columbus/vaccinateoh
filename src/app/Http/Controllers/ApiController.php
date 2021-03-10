@@ -50,7 +50,7 @@ class ApiController extends Controller
     public function updateAvailability(Request $request, Location $location) {
         $availability_time = $request->input('availability_time');
         $brand = $request->input('brand');
-        $clear_existing = $request->input('availability_time');
+        $clear_existing = $request->input('clear_existing');
         $no_availability = $request->input('no_availability');
         $brand = $request->input('brand');
 
@@ -75,14 +75,14 @@ class ApiController extends Controller
             ]);
         }
 
-        $availability->load('location');
-
         if($clear_existing) {
             $location->availabilities()->where('id','!=',$availability->id)->delete();
         }
 
         // Set the updated_at timestamp
         $location->touch();
+
+        $availability->load('location');
 
         return $availability;
     }

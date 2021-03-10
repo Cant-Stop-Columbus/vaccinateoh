@@ -173,7 +173,7 @@ class Location extends Model
      * @return QueryBuilder
      */
     public function futureAvailability() {
-        return $this->hasMany('App\Models\Availability', 'location_id')->where('availability_time', '>', date('Y-m-d H:i:s'));
+        return $this->hasMany('App\Models\Availability', 'location_id')->where('availability_time', '>=', date('Y-m-d'));
     }
 
     /**
@@ -184,9 +184,9 @@ class Location extends Model
      */
     public function scopePreferAvailable($query) {
         return $query->leftJoin(
-            \DB::raw('(SELECT min(availability_time),1 AS future_availability,location_id
+            \DB::raw('(SELECT min(availability_time), NOW() as now,1 AS future_availability,location_id
                 FROM availabilities
-                WHERE availability_time > NOW()
+                WHERE availability_time >= DATE(NOW()) AND doses > 0 AND deleted_at IS NULL
                 GROUP BY location_id
             ) AS a'), 'locations.id', '=', 'a.location_id')
             ->orderBy(\DB::raw('COALESCE(a.future_availability,0)'),'desc');
