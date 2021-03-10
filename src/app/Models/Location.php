@@ -17,6 +17,7 @@ class Location extends Model
 
     public $appends = [
         'available',
+        'unavailable_until',
         'name_address',
     ];
 
@@ -197,7 +198,16 @@ class Location extends Model
      * @return string DateTime of next appoingment (YYYY-mm-dd HH:ii:ss); null if none
      */
     public function getAvailableAttribute() {
-        return $this->futureAvailability()->min('availability_time');
+        return $this->futureAvailability()->where('doses', '>', 0)->min('availability_time');
+    }
+
+    /**
+     * Date in the future when no doses are available
+     *
+     * @return String datetime when appointments will still be unavailable
+     */
+    public function getUnavailableUntilAttribute() {
+        return $this->available ? null : $this->futureAvailability()->where('doses', '0')->min('availability_time');
     }
 
     public function availabilities() {
