@@ -43,6 +43,7 @@ class AvailabilityCrudController extends CrudController
         CRUD::addColumn([
             'name' => 'location',
             'type' => 'relationship',
+            'attribute' => 'name_address',
             'searchLogic' => function ($query, $column, $searchTerm) {
                 $query->orWhereHas('location',function($query2) use($searchTerm) {
                     $query2->where('name', 'ILIKE', '%'.$searchTerm.'%');
@@ -80,6 +81,7 @@ class AvailabilityCrudController extends CrudController
             'name' => 'location_id',
             'entity' => 'location',
             'type' => 'relationship',
+            'attribute' => 'name_address',
         ]);
         CRUD::field('availability_time');
         CRUD::field('doses');

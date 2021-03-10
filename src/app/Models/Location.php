@@ -16,7 +16,8 @@ class Location extends Model
     use SoftDeletes;
 
     public $appends = [
-        'available'
+        'available',
+        'name_address',
     ];
 
     public $fillable = [
@@ -35,6 +36,15 @@ class Location extends Model
         'latitude',
         'longitude',
     ];
+
+    /**
+     * Add a name_address accessor with the name and address for use in a Backpack admin
+     *
+     * @return void
+     */
+    public function getNameAddressAttribute() {
+        return $this->name . ' - ' . $this->address;
+    }
 
     /**
      * Geocode and save this location based on its address field
