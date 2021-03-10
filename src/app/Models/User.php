@@ -59,19 +59,4 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
-
-    /**
-    * Get the current user's personal team
-    *
-    * @return \App\Models\Team
-    */
-   public function personalTeam()
-   {
-       $personalTeam = $this->ownedTeams->where('personal_team', true)->first();
-       if(empty($personalTeam)) {
-           $teamName = $this->name."'s Team";
-           $personalTeam = Team::create([ 'user_id' => $this->id, 'name' => $teamName, 'personal_team' => true ]);
-       }
-       return $personalTeam;
-   }
 }
