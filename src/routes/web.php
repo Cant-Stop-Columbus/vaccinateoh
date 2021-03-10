@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -30,7 +31,9 @@ Route::get('/', function () {
     ]));
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (Request $request) {
+    // Redirect to the dashboard for admins or homepage for other authenticated users; eventually we'll have a user dashboard
+    return $request->user()->is_admin ? redirect('/admin/dashboard') : redirect('/');
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
