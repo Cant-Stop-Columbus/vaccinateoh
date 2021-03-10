@@ -31,6 +31,7 @@
     },
     "dependencies": {
         "@googlemaps/js-api-loader": "^1.11.1",
+        "dayjs": "^1.10.4",
         "toastr": "^2.1.4"
     }
 }

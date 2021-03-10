@@ -28,7 +28,7 @@
                         <div class="available my-1 text-sm text-green-500" v-if="loc.available">Next appointment: {{ formatDate(loc.available) }}</div>
                         <div class="available my-1 text-sm text-red-400" v-else-if="loc.unavailable_until">No appointments available</div>
                         <div class="available my-1 text-sm text-gray-400" v-else>Availability Unknown</div>
-                        <div class="my-1 text-xs text-gray-600" v-if="loc.updated_at">Last updated {{ formatDate(loc.updated_at) }} <span class="ml-2 underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</span></div>
+                        <div class="my-1 text-xs text-gray-600" v-if="loc.updated_at">Last updated {{ formatDateRelative(loc.updated_at) }} <span class="ml-2 underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</span></div>
                         <div class="appt-link my-1"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold inline-block hover:text-white py-1 my-1 px-2 border border-blue-500 hover:border-transparent rounded">Search Appointments</a></div>
                     </div>
                     <div class="location-distance w-8 px-1 pt-4 text-center flex-none">
@@ -103,6 +103,10 @@
 <script>
 import { Loader } from '@googlemaps/js-api-loader';
 import toastr from 'toastr';
+import * as dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
+dayjs.extend(relativeTime)
 
 export default {
     props: {
@@ -198,7 +202,9 @@ export default {
                             + (!loc.available ? '' : '<div class="my-1 text-xs text-green-500"> Next appointment: ' + this.formatDate(loc.available) + '</div>')
                             + (!loc.unavailable_until ? '' : '<div class="my-1 text-xs text-red-400"> No appointments available</div>')
                             + (loc.available || loc.unavailable_until ? '' : '<div class="my-1 text-xs text-gray-400"> Availability Unknown</div>')
-                            + (!this.$page.props.user ? '' : '<div class="my-1 text-xs text-gray-500 cursor-pointer underline" onclick="vaccine_vue.showInputModal(' + loc.id + ')">update now</div>')
+                            + '<div class="my-1 text-xs text-gray-600">Last updated ' + this.formatDateRelative(loc.updated_at)
+                            + (!this.$page.props.user ? '' : ' <span class="my-1 text-xs text-gray-500 cursor-pointer underline" onclick="vaccine_vue.showInputModal(' + loc.id + ')">update now</span>')
+                            + '</div>'
                             + (!loc.bookinglink ? '' : '<div class="my-1 appt-link"><a href="' + loc.bookinglink + '" target="_blank" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold inline-block hover:text-white py-1 my-1 px-2 border border-blue-500 hover:border-transparent rounded">Search Appointments</a></div>');
                         this.map.infoWindow.setContent(content);
                         this.map.infoWindow.open(this.map.gmap, marker);
@@ -291,7 +297,13 @@ export default {
             return Math.round(num * Math.pow(10,digits)) / Math.pow(10, digits);
         },
         formatDate(date_string) {
-            return (new Date(date_string)).toDateString();
+            return dayjs(date_string).format('M/D');
+        },
+        formatDateTime(date_string) {
+            return dayjs(date_string).format('M/D H:m a');
+        },
+        formatDateRelative(date_string) {
+            return dayjs(date_string).fromNow();
         },
         addressHtml(address) {
             return address.replace(/\||\r/,'<br>');
