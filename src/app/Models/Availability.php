@@ -17,4 +17,8 @@ class Availability extends Model
     public function location() {
         return $this->belongsTo('App\Models\Location', 'location_id');
     }
+
+    public function updated_by_user() {
+        return $this->belongsTo('App\Models\User', 'updated_by_user_id');
+    }
 }

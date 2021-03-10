@@ -60,6 +60,7 @@ class ApiController extends Controller
             $availability = $location->availabilities()->create([
                 'availability_time' => date('Y-m-d H:i:s', strtotime($availability_time)),
                 'doses' => 1,
+                'updated_by_user_id' => $request->user()->id,
             ]);
 
             if(!$availability) {

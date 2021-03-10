@@ -51,6 +51,11 @@ class AvailabilityCrudController extends CrudController
         ]);
         CRUD::column('doses');
         CRUD::column('availability_time');
+        CRUD::addColumn([
+            'name' => 'updated_by_user_id',
+            'entity' => 'updated_by_user',
+            'type' => 'relationship',
+        ]);
 
         CRUD::denyAccess('show');
 
