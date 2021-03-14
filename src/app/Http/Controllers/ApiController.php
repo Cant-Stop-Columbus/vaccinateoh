@@ -54,9 +54,9 @@ class ApiController extends Controller
         $no_availability = $request->input('no_availability');
         $brand = $request->input('brand');
 
-        // add 7 days if no_availability is being reported, assuming there will be no availability for the next 7 days
+        // add days if no_availability is being reported, assuming there will be no availability for the next X days
         if($no_availability) {
-            $availability_time .= ' +7 days';
+            $availability_time .= ' +3 days';
         }
 
         // Parse and standardize availability_time format
