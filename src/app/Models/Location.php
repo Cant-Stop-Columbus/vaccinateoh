@@ -192,6 +192,40 @@ class Location extends Model
             ->orderBy(\DB::raw('COALESCE(a.future_availability,0)'),'desc');
     }
 
+    public static function findByImportRow($row) {
+        // force all headers/keys to lowercase
+        $row = array_change_key_case($row);
+
+        if(!empty($row['id'])) {
+            // Case insensitive name search
+            $location = Location::whereId($id)->get();
+
+            if($location) {
+                return $location;
+            }
+        }
+
+        if(!empty($row['address'])) {
+            $locations = Location::where('address', 'LIKE', substr($row['address'],0,10).'%')->get();
+
+            if($locations) {
+                return $locations;
+            }
+        }
+
+        if(!empty($row['name'])) {
+            // Case insensitive name search
+            $locations = Location::where('name', 'ILIKE', $row['name'])->get();
+
+            // Could be multiple locations
+            if($locations) {
+                return $locations;
+            }
+        }
+
+        return collect();
+    }
+
     /**
      * Next available appointment time
      *

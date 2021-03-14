@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\LocationController;
+use App\Http\Controllers\Admin\LocationCrudController;
+
 // --------------------------
 // Custom Backpack Routes
 // --------------------------
@@ -17,4 +20,8 @@ Route::group([
     Route::crud('user', 'UserCrudController');
     Route::crud('location', 'LocationCrudController');
     Route::crud('availability', 'AvailabilityCrudController');
+
+    Route::get('location/import', [LocationController::class, 'import'])->name('admin.location.import');
+    Route::post('api/location/upload', [LocationController::class, 'uploadImportFile'])->name('api.admin.location.upload');
+    Route::post('api/location/import', [LocationController::class, 'processImport'])->name('api.admin.location.import');
 }); // this should be the absolute last line of this file

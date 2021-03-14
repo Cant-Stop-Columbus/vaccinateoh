@@ -4,3 +4,5 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('user') }}'><i class='nav-icon la la-user'></i> Users</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('location') }}'><i class='nav-icon la la-map-marker'></i> Locations</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('availability') }}'><i class='nav-icon la la-syringe'></i> Availabilities</a></li>
+<hr>
+<li class='nav-item'><a class='nav-link' href='{{ route('admin.location.import') }}'><i class='nav-icon la la-map-marker'></i> Location Import</a></li>
