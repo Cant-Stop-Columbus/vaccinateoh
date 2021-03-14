@@ -49,7 +49,7 @@
             </p>
         </div>
 
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+        <div class="fixed top-0 right-0 px-6 py-4 z-40">
             <inertia-link v-if="$page.props.user" href="/dashboard" class="text-sm text-gray-700 underline">
                 Dashboard
             </inertia-link>
@@ -65,7 +65,7 @@
             </template>
         </div>
 
-        <div id="availability-modal" class="fixed top-0 left-0 w-full h-full" :class="{hidden: !update_input.show_modal}">
+        <div id="availability-modal" class="fixed top-0 left-0 w-full h-full z-50" :class="{hidden: !update_input.show_modal}">
             <div class="w-full h-full bg-gray-700 bg-opacity-50 p-20" @click.self="hideInputModal">
                 <div class="bg-white my-10 bg-white p-10 w-96 mx-auto">
                     <p class="text-lg font-bold">{{ update_input.location.name }}</p>
