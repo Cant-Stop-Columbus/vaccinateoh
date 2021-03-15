@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+BASH_ENV=/tmp/cron-env
+
+* * * * * application cd /app && /usr/local/bin/php artisan schedule:run 2>&1 | logger

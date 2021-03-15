@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->command('import:kroger')->cron(env('KROGER_IMPORT_CRON','0,30 * * * *'));
     }
 
     /**
