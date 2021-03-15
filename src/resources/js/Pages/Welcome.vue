@@ -186,12 +186,21 @@ export default {
                 if(loc.latitude && loc.longitude) {
                     let latLng = { lat: parseFloat(loc.latitude), lng: parseFloat(loc.longitude)};
 
+                    let icon = iconBase;
+                    if(loc.unavailable_until) {
+                        icon = 'red-square-lv.png';
+                    } else if(loc.available) {
+                        icon = 'grn-stars.png';
+                    } else {
+                        icon = 'wht-blank-lv.png';
+                    }
+
                     let marker = new google.maps.Marker({
                         position: latLng,
                         map: this.map.gmap,
                         title: loc.name,
                         location_idx: index,
-                        icon: iconBase + (loc.available ? 'grn-stars.png' : 'wht-blank.png'),
+                        icon: iconBase + icon,
                     });
 
                     marker.addListener("click", () => {
