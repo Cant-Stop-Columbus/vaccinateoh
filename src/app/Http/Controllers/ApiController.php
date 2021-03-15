@@ -62,27 +62,18 @@ class ApiController extends Controller
         // Parse and standardize availability_time format
         $availability_time = date('Y-m-d H:i:s', strtotime($availability_time));
 
-        $availability = $location->availabilities()->create([
+        $availability = $location->updateAvailability([
             'availability_time' => $availability_time,
             'doses' => $no_availability ? 0 : 1,
             'updated_by_user_id' => $request->user()->id,
             'brand' => $brand,
-        ]);
+        ], $clear_existing);
 
         if(!$availability) {
             return response()->json([
                 'error' => 'Failed to save availability. Please try again',
             ]);
         }
-
-        if($clear_existing) {
-            $location->availabilities()->where('id','!=',$availability->id)->delete();
-        }
-
-        // Set the updated_at timestamp
-        $location->touch();
-
-        $availability->load('location');
 
         return $availability;
     }

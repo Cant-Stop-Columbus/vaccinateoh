@@ -206,7 +206,7 @@ class Location extends Model
         }
 
         if(!empty($row['address'])) {
-            $locations = Location::where('address', 'LIKE', substr($row['address'],0,10).'%')->get();
+            $locations = Location::where('address', 'ILIKE', substr($row['address'],0,10).'%')->get();
 
             if($locations) {
                 return $locations;
@@ -224,6 +224,37 @@ class Location extends Model
         }
 
         return collect();
+    }
+
+    public function clearAvailability($except_id = null) {
+        $cleared = $this->availabilities();
+
+        if($except_id) {
+            $cleared = $cleared->where('id','!=',$except_id);
+        }
+
+        return $cleared->delete();
+
+    }
+
+    public function updateAvailability($new_availability, $clear_existing) {
+
+        $availability = $this->availabilities()->create($new_availability);
+
+        if(!$availability) {
+            return false;
+        }
+
+        if($clear_existing) {
+            $this->clearAvailability($availability->id);
+        }
+
+        // Set the updated_at timestamp
+        $this->touch();
+
+        $availability->load('location');
+
+        return $availability;
     }
 
     /**
