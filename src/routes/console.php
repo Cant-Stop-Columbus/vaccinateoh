@@ -21,7 +21,7 @@ Artisan::command('import:kroger', function() {
     $location_count = $kroger_locations->count();
     $date_count = 0;
     $updates = $this->withProgressBar($kroger_locations, function($kroger_location) use (&$date_count) {
-        Kroger::updateAvailability($kroger_location);
+        $date_count += Kroger::updateAvailability($kroger_location);
     });
     $this->info("\n\nUpdated $date_count dates from $location_count locations.");
 });

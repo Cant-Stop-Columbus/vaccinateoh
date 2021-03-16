@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use DB;
 
+use App\Helpers\Address;
 use App\Helpers\Geo;
 
 class Location extends Model
@@ -239,6 +241,12 @@ class Location extends Model
 
     public function updateAvailability($new_availability, $clear_existing) {
 
+        // if the new availability is not newer than the latest availabilty for the location, skip
+        $old_availability = $this->availabilities()->where('availability_time', $new_availability['availability_time'])->first();
+        if($old_availability && $old_availability->updated_at->gte(Carbon::parse($new_availability['created_at']))) {
+            return false;
+        }
+
         $availability = $this->availabilities()->create($new_availability);
 
         if(!$availability) {
@@ -250,7 +258,12 @@ class Location extends Model
         }
 
         // Set the updated_at timestamp
-        $this->touch();
+        if(!empty($new_availability['created_at'])) {
+            $this->updated_at = $new_availability['created_at'];
+            $this->save();
+        } else {
+            $this->touch();
+        }
 
         $availability->load('location');
 
