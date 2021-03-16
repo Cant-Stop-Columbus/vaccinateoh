@@ -62,7 +62,7 @@ class Kroger
         $updated_at = Carbon::createFromTimestamp($kroger_location['kroger_location']->original_data_unix_time / 1000)->toDateTimeString();
 
         // Clear existing availability before inserting new
-        //$location->clearAvailability();
+        $location->clearAvailability();
 
         collect($dates)->each(function($date) use ($location, &$dates_updated, $updated_at) {
             $updated = $location->updateAvailability([
