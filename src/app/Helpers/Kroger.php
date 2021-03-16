@@ -31,7 +31,7 @@ class Kroger
         return $latest;
     }
 
-    public static function getMatchedLocations($since = null) {
+    public static function getMatchedLocations($since = null, $one_match_only = true) {
         $data = static::getLatest();
 
         $kroger_locations = collect();
@@ -46,9 +46,11 @@ class Kroger
         });
 
         // Filter to only locations with matches
-        $kroger_locations = $kroger_locations->filter(function($l) {
-            return count($l['location_matches']) > 0;
-        });
+        if($one_match_only) {
+            $kroger_locations = $kroger_locations->filter(function($l) {
+                return count($l['location_matches']) > 0;
+            });
+        }
 
         return $kroger_locations;
     }
@@ -60,17 +62,28 @@ class Kroger
         $updated_at = Carbon::createFromTimestamp($kroger_location['kroger_location']->original_data_unix_time / 1000)->toDateTimeString();
 
         // Clear existing availability before inserting new
-        $location->clearAvailability();
+        //$location->clearAvailability();
 
         collect($dates)->each(function($date) use ($location, &$dates_updated, $updated_at) {
-            $location->updateAvailability([
+            $updated = $location->updateAvailability([
                 'availability_time' => $date->date,
                 'doses' => count($date->slots),
-                'updated_at' => $updated_at,
+                'created_at' => $updated_at,
             ], false);
-            $dates_updated++;
+
+            if($updated) {
+                $dates_updated++;
+            }
         });
 
         return $dates_updated;
+    }
+
+    public static function findUnmatchedAddresses() {
+        $ml = static::getMatchedLocations(null, false);
+
+        return $ml->filter(function($l) {
+            return count($l['location_matches']) == 0;
+        })->pluck('address');
     }
 }

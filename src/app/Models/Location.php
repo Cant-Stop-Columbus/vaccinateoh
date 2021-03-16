@@ -291,4 +291,10 @@ class Location extends Model
     public function availabilities() {
         return $this->hasMany('App\Models\Availability', 'location_id');
     }
+
+    public static function standardizeAll() {
+        static::get()->each(function($l) {
+            $l->address = Address::standardize($l->address); $l->save();
+        });
+    }
 }

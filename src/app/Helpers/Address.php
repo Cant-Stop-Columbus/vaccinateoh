@@ -9,7 +9,11 @@ class Address {
         '/\b(S\.|South\b)/' => 'S',
         '/\b(E\.|East\b)/' => 'E',
         '/\b(W\.|West\b)/' => 'W',
+        '/\b(State|St\.?) (Route\b|Rt\.?)/' => 'SR',
+        '/\bSR./' => 'SR',
         '/\b(Rt\.|Route\b)/' => 'Rt',
+        '/\b(St\.|Street\b)/' => 'St',
+        '/\b(Rd\.|Road\b)/' => 'Rd',
     ];
 
     public static function standardize($address) {
