@@ -208,7 +208,7 @@ class Location extends Model
         }
 
         if(!empty($row['address'])) {
-            $locations = Location::where('address', 'ILIKE', substr($row['address'],0,10).'%')->get();
+            $locations = Location::where('address', 'ILIKE', substr($row['address'],0,8).'%')->get();
 
             if($locations) {
                 return $locations;
@@ -294,7 +294,8 @@ class Location extends Model
 
     public static function standardizeAll() {
         static::get()->each(function($l) {
-            $l->address = Address::standardize($l->address); $l->save();
+            $l->address = Address::standardize($l->address);
+            $l->save();
         });
     }
 }
