@@ -39,7 +39,7 @@ class ApiController extends Controller
             $locations->closeToAddress($q);
         }
 
-        $locations = $locations->paginate(30)->appends(compact([
+        $locations = $locations->paginate(env('LOCATION_PAGE_SIZE', 100))->appends(compact([
             'q',
             'available',
         ]));
