@@ -257,7 +257,7 @@ class Location extends Model
 
         // if the new availability is not newer than the latest availabilty for the location, skip
         $old_availability = $this->availabilities()->where('availability_time', $new_availability['availability_time'])->first();
-        if($old_availability && $old_availability->updated_at->gte(Carbon::parse($new_availability['created_at']))) {
+        if($old_availability && !empty($availability['created_at']) && $old_availability->updated_at->gte(Carbon::parse($new_availability['created_at']))) {
             return false;
         }
 
