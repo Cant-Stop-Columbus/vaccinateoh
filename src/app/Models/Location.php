@@ -58,7 +58,7 @@ class Location extends Model
     public function geocode($force = false) {
         // Don't try to geocode a location if it already has coordinates
         if(!$force && !empty($this->latitude)) {
-            return;
+            return false;
         }
 
         $address = str_replace('|',', ',$this->address);
@@ -71,6 +71,20 @@ class Location extends Model
 
             return [$this->latitude, $this->longitude];
         }
+
+        return null;
+    }
+
+    public static function geocodeMissing() {
+        $count = 0;
+
+        static::whereNull('latitude')->get()->each(function($l) use(&$count) {
+            if($l->geocode()) {
+                $count++;
+            }
+        });
+
+        return $count;
     }
 
     /**
