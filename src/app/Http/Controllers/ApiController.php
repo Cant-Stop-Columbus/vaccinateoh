@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Helpers\Geo;
 use App\Models\Location;
 
 use DB;
@@ -27,16 +28,27 @@ class ApiController extends Controller
         }
 
         $matches = [];
+        $lat = null;
+        $lng = null;
         if(preg_match('/^\d{5}(-\d{4})?$/',$q)) {
             $zip = $q;
-            $locations->closeToZip($zip);
+            $latlng = Geo::geocode_zip($zip);
+            if($latlng) {
+                list($lat, $lng) = $latlng;
+            }
         } else if(preg_match('/^(-?\d+\.?\d*),(-?\d+\.?\d*)$/',$q,$matches)) {
             $lat = $matches[1];
             $lng = $matches[2];
-            $locations->closeTo($lat,$lng);
         } else if(!empty($q)) {
             // Try geocoding the address
-            $locations->closeToAddress($q);
+            $latlng = Geo::geocode($q);
+            if($latlng) {
+                list($lat, $lng) = $latlng;
+            }
+        }
+
+        if($lat != null) {
+            $locations->closeTo($lat,$lng);
         }
 
         $locations = $locations->paginate(env('LOCATION_PAGE_SIZE', 100))->appends(compact([
@@ -44,7 +56,12 @@ class ApiController extends Controller
             'available',
         ]));
 
-        return response()->json($locations);
+        $q = $lat == null ? $q : compact(['lat','lng']);
+
+        return response()->json(compact([
+            'q',
+            'locations',
+        ]));
     }
 
     public function updateAvailability(Request $request, Location $location) {

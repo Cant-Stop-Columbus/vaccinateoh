@@ -4,6 +4,8 @@ namespace App\Helpers;
 
 use Illuminate\Support\Facades\Http;
 use Cache;
+use DB;
+use App\Models\Location;
 
 class Geo
 {
@@ -51,12 +53,23 @@ class Geo
             return $latlng;
         }
 
-        // cache hit not found; make API request
-        $result = Http::get('https://maps.googleapis.com/maps/api/geocode/json?'
-            . 'address='.$zip_code
-            . '&key=' . env('MIX_GOOGLE_MAPS_KEY'));
+        // look for zipcode in our locations
+        $location = Location::where('zip', $zip_code)
+            ->groupBy('zip')
+            ->selectRaw(DB::raw('AVG(latitude) AS latitude,AVG(longitude) AS longitude'))
+            ->whereNotNull('latitude')
+            ->first();
 
-        $latlng = static::parse_google_geocoder_result($result->json());
+        if(!empty($location)) {
+            $latlng = [$location->latitude, $location->longitude];
+        } else {
+            // cache hit and location not found; make API request
+            $result = Http::get('https://maps.googleapis.com/maps/api/geocode/json?'
+                . 'address='.$zip_code
+                . '&key=' . env('MIX_GOOGLE_MAPS_KEY'));
+
+            $latlng = static::parse_google_geocoder_result($result->json());
+        }
 
         // cache the result
         Cache::forever($cache_key, $latlng);

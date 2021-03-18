@@ -142,6 +142,10 @@ export default {
             search_q: '43210',
             search_available: 'prefer',
             search_locations: [],
+            search_center: {
+                lat:null,
+                lng:null
+            },
             current_location: null,
         };
     },
@@ -155,26 +159,34 @@ export default {
                 q = this.current_location.lat + ',' + this.current_location.lng;
             }
 
-            axios.get('/api/locations?q=' + (q || this.search_q) + '&available=' + this.search_available)
+            let search_term = q || this.search_q;
+
+            toastr.info('Locating vaccine appointments near ' + search_term, 'Searching', {
+                    closeButton: true,
+                    timeOut: 0,
+                    extendedTimeOut: 0,
+                });
+            axios.get('/api/locations?q=' + search_term + '&available=' + this.search_available)
                 .then(resp => {
                     // If no locations are found, show a warning but don't clear the results;
-                    if(!resp.data.total) {
+                    this.clearNotifications();
+                    if(!resp.data.locations.total) {
                         toastr.warning('No locations found. Try a different search.');
                         return;
                     }
-                    let this_page_count = resp.data.to - resp.data.from + 1;
+                    let this_page_count = resp.data.locations.to - resp.data.locations.from + 1;
                     if(resp.data.total > this_page_count) {
-                        toastr.success('We found ' + resp.data.total + ' locations. Showing the ' + this_page_count + ' closest.');
+                        toastr.success('We found ' + resp.data.locations.total + ' locations. Showing the ' + this_page_count + ' closest.');
                     } else {
                         toastr.success('We found ' + this_page_count + ' locations.');
                     }
-                    this.search_locations = resp.data.data;
+                    this.search_locations = resp.data.locations.data;
+                    this.search_center = resp.data.q;
                     document.querySelector('#location-sidebar').scrollTop = 0;
                     this.resetMarkers(this.search_locations);
                 });
         },
         resetMarkers(locations) {
-            let bounds = new google.maps.LatLngBounds();
             window.markers = window.markers || [];
             window.markers.forEach((marker) => {
                 marker.setMap(null);
@@ -223,10 +235,18 @@ export default {
 
                     loc.marker = marker;
 
-                    bounds.extend(latLng);
                 }
             });
-            this.map.gmap.fitBounds(bounds);
+
+            if(this.search_center.lat != null) {
+                let latlng = {
+                    lat: parseFloat(this.search_center.lat),
+                    lng: parseFloat(this.search_center.lng),
+                }
+                console.log(latlng);
+                this.map.gmap.setCenter(latlng);
+                this.map.gmap.setZoom(10);
+            }
         },
         showInputModal(loc) {
             if(typeof(loc) !== 'object') {
@@ -251,8 +271,8 @@ export default {
                 navigator.geolocation.getCurrentPosition(
                     (position) => {
                         const pos = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude,
+                            lat: Math.round(position.coords.latitude*1000)/1000,
+                            lng: Math.round(position.coords.longitude*1000)/1000,
                         };
                         console.log({currentPosition: position});
 
@@ -298,6 +318,9 @@ export default {
             }).catch(function(error) {
                 console.log(error);
             });
+        },
+        clearNotifications() {
+            toastr.clear();
         },
         round(num, digits) {
             if(digits == null) {
