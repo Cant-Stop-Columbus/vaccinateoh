@@ -1,19 +1,18 @@
 <template>
-    <app-layout>
-        <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Dashboard
-            </h2>
-        </template>
-
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <welcome />
-                </div>
-            </div>
-        </div>
-    </app-layout>
+    <h1 class="underline">Vaccinate Ohio Database Statistics:</h1>
+        Locations in the Database: {{ locationsCount }} <br>
+        Locations in the Database with Future Availability: {{ availableLocationsCount }} <br><br>
+    <h1 class="underline">Vaccinate Ohio Update Activity:</h1>
+        Updates in the last 24 hours: {{ last24Hrs }} <br>
+        Updates in the last 3 days: {{ last3Days }} <br>
+        Updates in the last week: {{ lastWeek }} <br><br>
+    <h1 class="underline">Top 10 Updaters:</h1>
+    <table>
+        <tr><td> Name </td><td> Updates </td></tr>
+        <tr v-for="updater in topUpdaters">
+            <td> {{updater.name}} </td><td> {{ updater.update_count }} </td>
+        </tr>
+    </table>
 </template>
 
 <script>
@@ -21,6 +20,14 @@
     import Welcome from '@/Jetstream/Welcome'
 
     export default {
+        props: {
+            locationsCount: Number,
+            availableLocationsCount: Number,
+            topUpdaters: Array,
+            last24Hrs: Number,
+            last3Days: Number,
+            lastWeek: Number,
+        },
         components: {
             AppLayout,
             Welcome,
