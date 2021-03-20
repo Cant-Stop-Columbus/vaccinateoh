@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\StatsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,14 +32,11 @@ Route::get('/', function () {
     ]));
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (Request $request) {
-    // Redirect to the dashboard for admins or homepage for other authenticated users; eventually we'll have a user dashboard
-    return $request->user()->is_admin ? redirect('/admin/dashboard') : redirect('/');
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+Route::get('/dashboard', [StatsController::class, 'getDashboard'])->name('dashboard');
 
 Route::get('api/locations', [ApiController::class, 'locations'])->name('api.locations');
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::post('api/locations/{location}/availability', [ApiController::class, 'updateAvailability'])->name('api.availability.update');
 });
+
