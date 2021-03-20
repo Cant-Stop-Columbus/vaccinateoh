@@ -4,8 +4,13 @@
         <div class="container mx-auto">
             <!-- Page Heading -->
             <header class="bg-white shadow">
-                <div class="py-6 px-4 sm:px-6 lg:px-8">
-                    <h1 class="text-2xl">VaccinateOH Stats</h1>
+                <div class="flex items-center justify-between">
+                    <div class="py-6 px-4 sm:px-6 lg:px-8">
+                        <h1 class="text-2xl">VaccinateOH Stats</h1>
+                    </div>
+                    <div>
+                        <a href="/">Take me to the map!</a>
+                    </div>
                 </div>
             </header>
 
