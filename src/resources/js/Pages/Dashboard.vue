@@ -21,7 +21,7 @@
                     <div>Updates in the last 24 hours: {{ last24Hrs }}</div>
                     <div>Updates in the last 3 days: {{ last3Days }}</div>
                     <div>Updates in the last week: {{ lastWeek }}</div>
-                    <div class="italic text-sm">Note: The above stats include manual <strong>and</strong> automated updates</div>
+                    <div class="italic text-sm">Note: The above stats include <strong>only</strong> manual updates</div>
                 </div>
                 
                 <div class="md:flex my-6">

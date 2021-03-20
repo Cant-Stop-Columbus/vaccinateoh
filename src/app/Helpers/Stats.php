@@ -61,6 +61,6 @@ class Stats {
      *
      */
     public static function updatesSince(string $since) {
-        return Availability::where('updated_at','>',$since)->count();
+        return Availability::withTrashed()->where('updated_at','>',$since)->whereNotNull('updated_by_user_id')->count();
     }
 }
