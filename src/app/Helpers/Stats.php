@@ -31,16 +31,27 @@ class Stats {
 		 * TODO: Limit this by time.
      *
      */
-    public static function topUpdaters(int $howMany) {
-        return DB::table('availabilities')
+    public static function topUpdaters(int $howMany = -1, $start = null, $end = null) {
+        $query = DB::table('availabilities')
             ->select('name', DB::raw('count(updated_by_user_id) as update_count'))
             ->join('users', 'availabilities.updated_by_user_id','=','users.id')
-            //->whereBetween('updated_at',$start,$end)
             ->groupBy('updated_by_user_id')
             ->groupBy('name')
-						->orderBy('update_count', 'desc')
-						->limit($howMany)
-            ->get();
+            ->orderBy('update_count', 'desc');
+
+        if($howMany) {
+            $query->limit($howMany);
+        }
+
+        if($start) {
+          $query->where('availabilities.created_at', '>=', $start);
+        }
+
+        if($end) {
+          $query->where('availabilities.created_at', '<=', $end);
+        }
+
+        return $query->get();
     }
 
     /**
