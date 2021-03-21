@@ -80,6 +80,8 @@ class LocationCrudController extends CrudController
         CRUD::column('created_at');
         CRUD::column('updated_at');
 
+        CRUD::addButtonFromModelFunction('line', 'availability', 'buttonUpdateAvailability', 'beginning');
+
         /**
          * Columns can be defined using the fluent syntax or array syntax:
          * - CRUD::column('price')->type('number');

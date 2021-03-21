@@ -312,4 +312,9 @@ class Location extends Model
             $l->save();
         });
     }
+
+    public function buttonUpdateAvailability() {
+        return '<a class="btn btn-sm btn-link" href="/admin/availability/create?location=' . $this->id .'" data-toggle="tooltip" title="Click to update location availability"><i class="la la-syringe"></i> Update Availability</a>';
+    }
+
 }

@@ -57,8 +57,38 @@ class AvailabilityCrudController extends CrudController
             'entity' => 'updated_by_user',
             'type' => 'relationship',
         ]);
+        CRUD::addColumn([
+            'name' => 'was_deleted',
+            'label' => 'Deleted?',
+            'type' => 'closure',
+            'function' => function($entry) {
+                return $entry->deleted_at ? 'Y' : '';
+            },
+        ]);
 
         CRUD::denyAccess('show');
+
+        CRUD::addFilter([
+            'type'  => 'simple',
+            'name'  => 'manual',
+            'label' => 'Show only manual updates'
+          ],
+          false,
+          function($values) { // if the filter is active
+              $this->crud->query = $this->crud->query->whereNotNull('updated_by_user_id');
+          }
+        );
+
+        CRUD::addFilter([
+            'type'  => 'simple',
+            'name'  => 'trashed',
+            'label' => 'Include old/deleted availability'
+          ],
+          false,
+          function($values) { // if the filter is active
+              $this->crud->query = $this->crud->query->withTrashed();
+          }
+        );
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -77,14 +107,38 @@ class AvailabilityCrudController extends CrudController
     {
         CRUD::setValidation(AvailabilityRequest::class);
 
+        $request = CRUD::getRequest();
+
         CRUD::addField([
             'name' => 'location_id',
             'entity' => 'location',
             'type' => 'relationship',
             'attribute' => 'name_address',
+            'default' => $request->get('location'),
+            'allow_nulls' => true,
         ]);
-        CRUD::field('availability_time');
-        CRUD::field('doses');
+        CRUD::field('availability_time')->default(\Carbon\Carbon::today()->addDays(3));
+        CRUD::addField([
+            'name' => 'doses',
+            'label' => 'Doses (0 = no future availability)',
+            'default' => 1,
+        ]);
+        CRUD::addField([
+            'name' => 'brand',
+            'type' => 'select_from_array',
+            'options' => [
+                'm' => 'Moderna',
+                'p' => 'Pfizer',
+                'j' => 'Jensen/Johnson & Johnson',
+            ]
+        ]);
+        CRUD::addField([
+            'name' => 'updated_by_user_id',
+            'entity' => 'updated_by_user',
+            'default' => \Auth::user()->id,
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
