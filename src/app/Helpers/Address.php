@@ -14,6 +14,7 @@ class Address {
         '/\b(Rt\.|Route\b)/' => 'Rt',
         '/\b(St\.|Street\b)/' => 'St',
         '/\b(Rd\.|Road\b)/' => 'Rd',
+        '/\b(Ct\.|Court\b)/' => 'Ct',
         '/\bU\.?S(\.|\b)/' => 'US',
     ];
 

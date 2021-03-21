@@ -41,6 +41,22 @@ class Location extends Model
     ];
 
     /**
+     * The "booted" method of the model.
+     *
+     * @return void
+     */
+    protected static function booted()
+    {
+        // Geocode address when created if latitude isn't set
+        static::saving(function ($location) {
+            if(!isset($location->latitude)) {
+                $location->geocode(false, false);
+            }
+            $location->address = Address::standardize($location->address);
+        });
+    }
+
+    /**
      * Add a name_address accessor with the name and address for use in a Backpack admin
      *
      * @return void
@@ -55,7 +71,7 @@ class Location extends Model
      * @param boolean $force Force re-geocoding if latitude is already populated
      * @return array [lat,lng]
      */
-    public function geocode($force = false) {
+    public function geocode($force = false, $save = true) {
         // Don't try to geocode a location if it already has coordinates
         if(!$force && !empty($this->latitude)) {
             return false;
