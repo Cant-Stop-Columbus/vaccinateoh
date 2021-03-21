@@ -58,6 +58,7 @@ class LocationCrudController extends CrudController
         CRUD::column('bookinglink')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('address')
+            ->type('textarea')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('address2')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
@@ -101,10 +102,12 @@ class LocationCrudController extends CrudController
 
         CRUD::field('name');
         CRUD::field('bookinglink');
-        CRUD::field('address');
-        CRUD::field('address2');
-        CRUD::field('city');
-        CRUD::field('state');
+        CRUD::field('address')
+            ->label('Full Address (all lines)')
+            ->type('textarea');
+        //CRUD::field('address2');
+        //CRUD::field('city');
+        //CRUD::field('state');
         CRUD::field('zip');
         CRUD::field('serves');
         CRUD::field('vaccinesoffered');
