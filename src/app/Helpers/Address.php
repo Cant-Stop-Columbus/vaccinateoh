@@ -5,17 +5,17 @@ namespace App\Helpers;
 class Address {
 
     private const REPLACEMENTS = [
-        '/\b(N\.|North\b)/' => 'N',
-        '/\b(S\.|South\b)/' => 'S',
-        '/\b(E\.|East\b)/' => 'E',
-        '/\b(W\.|West\b)/' => 'W',
-        '/\b(State|St\.?) (Route\b|Rt\.?)/' => 'SR',
-        '/\bSR\./' => 'SR',
-        '/\b(Rt\.|Route\b)/' => 'Rt',
-        '/\b(St\.|Street\b)/' => 'St',
-        '/\b(Rd\.|Road\b)/' => 'Rd',
-        '/\b(Ct\.|Court\b)/' => 'Ct',
-        '/\bU\.?S(\.|\b)/' => 'US',
+        '/\b(N\.|North\b)/i' => 'N',
+        '/\b(S\.|South\b)/i' => 'S',
+        '/\b(E\.|East\b)/i' => 'E',
+        '/\b(W\.|West\b)/i' => 'W',
+        '/\b(State|St\.?) (Route\b|Rt\.?)/i' => 'SR',
+        '/\bSR\./i' => 'SR',
+        '/\b(Rt\.|Route\b)/i' => 'Rt',
+        '/\b(St\.|Street\b)/i' => 'St',
+        '/\b(Rd\.|Road\b)/i' => 'Rd',
+        '/\b(Ct\.|Court\b)/i' => 'Ct',
+        '/\bU\.?S(\.|\b)/i' => 'US',
     ];
 
     public static function standardize($address) {
