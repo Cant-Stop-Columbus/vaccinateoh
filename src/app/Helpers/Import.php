@@ -58,23 +58,32 @@ class Import
     public static function updateAvailability($vax_location) {
         $dates_updated = 0;
         $location = $vax_location['location_matches'][0];
-        $dates = $vax_location['vax_location']->original_data->dates;
+        $dates = $vax_location['vax_location']->availability;
         $updated_at = Carbon::createFromTimestamp($vax_location['vax_location']->original_data_unix_time / 1000)->toDateTimeString();
 
         // Clear existing availability before inserting new
         $location->clearAvailability();
 
-        collect($dates)->each(function($date) use ($location, &$dates_updated, $updated_at) {
-            $updated = $location->updateAvailability([
-                'availability_time' => $date->date,
-                'doses' => count($date->slots),
+        // if there's no availability,update availability once for the end date
+        if(count($dates) == 0) {
+            $location->updateAvailability([
+                'availability_time' => $vax_location['vax_location']->end_date ?? Carbon::today()->addDays(7),
+                'doses' => 0,
                 'created_at' => $updated_at,
-            ], false);
+            ]);
+        } else {
+            collect($dates)->each(function($date) use ($location, &$dates_updated, $updated_at) {
+                $updated = $location->updateAvailability([
+                    'availability_time' => $date->availability_time,
+                    'doses' => 1,
+                    'created_at' => $updated_at,
+                ], false);
 
-            if($updated) {
-                $dates_updated++;
-            }
-        });
+                if($updated) {
+                    $dates_updated++;
+                }
+            });
+        }
 
         return $dates_updated;
     }

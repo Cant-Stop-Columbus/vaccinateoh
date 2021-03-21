@@ -253,7 +253,7 @@ class Location extends Model
 
     }
 
-    public function updateAvailability($new_availability, $clear_existing) {
+    public function updateAvailability($new_availability, $clear_existing = false) {
 
         // if the new availability is not newer than the latest availabilty for the location, skip
         $old_availability = $this->availabilities()->where('availability_time', $new_availability['availability_time'])->first();
