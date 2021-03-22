@@ -4,6 +4,7 @@ use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 
 use App\Helpers\Import;
+use App\Models\Location;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +32,10 @@ Artisan::command('import {store}', function($store) {
         });
         $this->info("\n\n$store: Updated $date_count dates from $location_count locations.\n");
     });
+});
+
+Artisan::command('standardize-addresses', function() {
+    $standardized = Location::standardizeAll();
+    dd($standardized);
+    //$this->info("Standardized $standardized addresses.");
 });

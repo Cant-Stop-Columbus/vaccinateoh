@@ -323,11 +323,34 @@ class Location extends Model
     }
 
     public static function standardizeAll() {
-        static::get()->each(function($l) {
-            $l->address = Address::standardize($l->address);
-            $l->save();
+        $changed = [];
+        static::get()->each(function($l) use (&$changed) {
+            $new_address = Address::standardize($l->address);
+            if($l->address != $new_address) {
+                $changed[$l->address] = $new_address;
+                $l->address = $new_address;
+                $l->save();
+            }
         });
+
+        // add linebreaks where needed
+        static::noLinebreak()->each(function($l) use(&$changed) {
+            $new_address = Address::addLinebreak($l->address);
+            if($l->address != $new_address) {
+                $changed[$l->address] = $new_address;
+                $l->address = $new_address;
+                $l->save();
+            }
+        });
+
+        //return $count;
+        return $changed;
     }
+
+    public static function scopeNoLinebreak($query) {
+        return $query->where('address','NOT LIKE',"%
+%");
+}
 
     public function buttonUpdateAvailability() {
         return '<a class="btn btn-sm btn-link" href="/admin/availability/create?location=' . $this->id .'" data-toggle="tooltip" title="Click to update location availability"><i class="la la-syringe"></i> Update Availability</a>';
