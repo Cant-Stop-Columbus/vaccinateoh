@@ -12,7 +12,10 @@ use DB;
 class ApiController extends Controller
 {
     public function locations(Request $request) {
+        $default_page_size = env('LOCATION_PAGE_SIZE', 100);
+
         $q = trim($request->input('q'));
+        $page_size = intval(trim($request->input('page_size')));
         $available = trim($request->input('available', 'preferred'));
 
         // Just set a default always true clause to initialize the QueryBuilder object
@@ -51,10 +54,21 @@ class ApiController extends Controller
             $locations->closeTo($lat,$lng);
         }
 
-        $locations = $locations->paginate(env('LOCATION_PAGE_SIZE', 100))->appends(compact([
-            'q',
-            'available',
-        ]));
+        /**
+         * If there is a page_size parameter, make our pages that size. Never
+         * give more than $default_page_size though!
+         */
+        if($page_size > 0) {
+            $page_size = min($page_size, $default_page_size);
+        } else {
+            $page_size = $default_page_size;
+        }
+
+        $locations = $locations->paginate($page_size)->appends(compact([
+                'q',
+                'page_size',
+                'available',
+            ]));
 
         $q = $lat == null ? $q : compact(['lat','lng']);
 
