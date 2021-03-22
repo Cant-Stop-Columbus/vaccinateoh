@@ -1,68 +1,107 @@
 <template>
     <div class="w-full md:h-full md:flex">
 
-        <div id="map" class="h-screen flex-grow md:order-2"></div>
-        <div id="location-sidebar" class="h-screen md:w-80 flex-none md:overflow-y-auto md:order-1">
-            <h1 class="text-center text-2xl">Vaccinate OH</h1>
+        <div id="page-wrapper" class="h-screen w-full flex flex-wrap">
+            <div class="bg-blue w-full text-center text-white p-1">
+                &nbsp;
+            </div>
+            <div class="border-b border-blue-500 w-full p-1">
+                <h1 class="logo float-left text-center text-2xl mx-auto my-1 ml-2">Vaccinate OH</h1>
 
-            <div class="search-box md:absolute top-0 inset-x-0 opacity-80 ml-1/2 z-50 mx-auto sm:px-6 md:px-0">
-                <div class="md:py-8">
-                    <form class="bg-white flex items-center rounded-full shadow-xl" @submit.prevent="searchLocations(null)">
-                        <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none active:outline-none border-0" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
+                <div class="float-right px-6 py-2 z-40">
 
-                        <div class="md:p-4 p-2">
-                            <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-10 h-10 flex items-center justify-center" type="submit">
-                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current text-white"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
-                            </button>
-                        </div>
-                    </form>
+                    <inertia-link href="/dashboard" class="text-sm text-gray-700 underline ml-4">Stats</inertia-link>
+
+                    <template v-if="!$page.props.user">
+                        <inertia-link :href="route('register')" class="ml-4 text-sm text-gray-700 underline ml-4">Register as a Volunteer</inertia-link>
+                        <inertia-link :href="route('login')" class="text-sm text-gray-700 underline ml-4">Log in</inertia-link>
+                    </template>
+                    <span v-else>
+                        <inertia-link  v-if="$page.props.user.is_admin" href="/admin/dashboard" class="text-sm text-gray-700 underline ml-4">Admin Dashboard</inertia-link>
+                        <inertia-link :href="route('logout')" method="post" class="text-sm text-gray-700 underline ml-4">Log out</inertia-link>
+                    </span>
                 </div>
             </div>
+            <div class="w-full md:flex">
+                <div id="location-sidebar" class="h-screen p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
 
-            <ul class="location-list">
-                <li class="location p-2 py-4 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
-                    <div class="location-details flex-grow">
-                        <h3 class="font-bold">{{ loc.name }}</h3>
-                        <div class="address text-sm text-gray-700" v-html="addressHtml(loc.address)"></div>
-                        <div class="phone text-sm text-gray-500"><a :href="'tel:' + loc.phone">{{ loc.phone }}</a></div>
-                        <div class="available my-1 text-sm text-green-500" v-if="loc.available">Next appointment: {{ formatDate(loc.available) }}</div>
-                        <div class="available my-1 text-sm text-red-400" v-else-if="loc.unavailable_until">No appointments available</div>
-                        <div class="available my-1 text-sm text-gray-400" v-else>Availability Unknown</div>
-                        <div class="my-1 text-xs text-gray-600" v-if="loc.updated_at">Last updated {{ formatDateRelative(loc.updated_at) }} <span class="ml-2 underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</span></div>
-                        <div class="appt-link my-1"><a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold inline-block hover:text-white py-1 my-1 px-2 border border-blue-500 hover:border-transparent rounded">Search Appointments</a></div>
+                    <div class="search-box">
+                        <h2 class="text-blue font-bold">Location</h2>
+                        <form @submit.prevent="searchLocations(null)" class="flex">
+                            <input class="border border-blue rounded w-full px-2 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
+
+                            <button class="bg-blue text-white font-bold rounded-2 py-1 px-3 hover:bg-blue-light rounded ml-1" type="submit">
+                                Search
+                            </button>
+                        </form>
                     </div>
-                    <div class="location-distance w-8 px-1 pt-4 text-center flex-none">
-                        <div class="text-xs text-gray-500" v-if="loc.distance">{{ round(loc.distance) }} mi</div>
-                        <div class="location-icon">&raquo; </div>
-                    </div>
-                </li>
-            </ul>
 
-            <p class="p-2 text-xs">
-                Availability Preference: 
-                <select v-model="search_available" class="text-xs" @change="searchLocations()">
-                    <option value="prefer">Prefer available; show both</option>
-                    <option value="all">No preference; show both</option>
-                    <option value="only">Show only available</option>
-                    <option value="no">Show only unavailable</option>
-                </select>
-            </p>
-        </div>
+                    <ul class="location-list">
+                        <h2 class="text-blue font-bold">Search Results</h2>
+                        <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
+                            <div class="location-details flex-grow">
+                                <h3 class="font-bold color-blue mr-28">{{ loc.name }}</h3>
+                                <div class="address text-sm pb-2" v-html="addressHtml(loc.address)"></div>
+                                <div class="text-xs" v-if="loc.distance">{{ round(loc.distance) }} miles away</div>
+                                <div class="text-xs pb-2">
+                                    <a
+                                        class="underline"
+                                        :href="'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loc.address)"
+                                        target="_blank">Get directions</a>
+                                </div>
+                                <div class="phone text-sm">
+                                    <a :href="'tel:' + loc.phone">
+                                        <img src="/img/phone.svg" alt="phone" class="inline" />
+                                        {{ loc.phone }}
+                                    </a>
+                                </div>
+                                <div class="appt-link my-2 float-right">
+                                    <a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink" class="bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded">Search Appointments</a>
+                                </div>
+                                <div class="my-2 text-xs text-gray-600 float-left" v-if="loc.updated_at">
+                                    Updated {{ formatDateRelative(loc.updated_at) }} 
+                                    <div class="underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</div>
+                                </div>
 
-        <div class="fixed top-0 right-0 px-6 py-4 z-40">
-            <inertia-link v-if="$page.props.user" href="/dashboard" class="text-sm text-gray-700 underline">
-                Dashboard
-            </inertia-link>
 
-            <template v-else>
-                <inertia-link :href="route('login')" class="text-sm text-gray-700 underline">
-                    Log in
-                </inertia-link>
+                                <div class="available absolute top-2 right-2 text-xs">
+                                    <div v-if="loc.available">
+                                        <span class="mr-1">Available {{ formatDate(loc.available) }}</span>
+                                        <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#039D40"/>
+                                            <path d="M9.17794 13.3117L6.80728 10.824L6 11.6652L9.17794 15L16 7.84116L15.1984 7L9.17794 13.3117Z" fill="#EEF7FF"/>
+                                        </svg>
+                                    </div>
+                                    <div v-else-if="loc.unavailable_until" title="No appointments available">
+                                        <span class="mr-1">Not Available</span>
+                                        <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#FF0000"/>
+                                            <path d="M16 7.00714L14.9929 6L11 9.99286L7.00714 6L6 7.00714L9.99286 11L6 14.9929L7.00714 16L11 12.0071L14.9929 16L16 14.9929L12.0071 11L16 7.00714Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div v-else>
+                                        <span class="mr-1">Unknown</span>
+                                        <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#CCCCCC"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-                <inertia-link :href="route('register')" class="ml-4 text-sm text-gray-700 underline">
-                    Register
-                </inertia-link>
-            </template>
+                    <p class="p-2 text-xs">
+                        Availability Preference: 
+                        <select v-model="search_available" class="text-xs" @change="searchLocations()">
+                            <option value="prefer">Prefer available; show both</option>
+                            <option value="all">No preference; show both</option>
+                            <option value="only">Show only available</option>
+                            <option value="no">Show only unavailable</option>
+                        </select>
+                    </p>
+                </div>
+                <div id="map" class="flex-grow md:order-2"></div>
+            </div>
         </div>
 
         <div id="availability-modal" class="fixed top-0 left-0 w-full h-full z-50" :class="{hidden: !update_input.show_modal}">
@@ -338,7 +377,7 @@ export default {
             return dayjs(date_string).fromNow();
         },
         addressHtml(address) {
-            return address.replace(/\||\r/,'<br>');
+            return address.replace(/\||\r\n?/,'<br>');
         },
     },
     mounted() {

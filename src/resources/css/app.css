@@ -13,3 +13,18 @@ body {
 .search-box {
     width: 300px;
 }
+
+h1.logo {
+    display: block;
+    width: 216px;
+    height: 33px;
+    text-indent: -9999px;
+    background: url('/img/logo.svg') no-repeat center center;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    #toast-container.toast-top-right {
+        top: 100px;
+    }
+}
