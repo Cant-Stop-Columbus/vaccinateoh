@@ -228,6 +228,12 @@ export default {
 
             let search_term = q || this.search_q;
 
+            if(window.gtag) {
+                gtag('event', 'search', {
+                    search_term: search_term
+                });
+            }
+
             toastr.info('Locating vaccine appointments near ' + search_term, 'Searching', {
                     closeButton: true,
                     timeOut: 0,
