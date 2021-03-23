@@ -36,10 +36,11 @@ Follow these steps to start your dev environment:
 ## Instructions for Windows Machine
 After following steps in First-Time Install before proceeding to Starting Your Environment, perform the below steps.
 
-1.Install the chocolatey package manager for Windows compatible to Windows 7+ / Windows Server 2003+
-[following instructions](https://chocolatey.org/install) using Powershell in Administrator mode
-1.`choco install make` in Powershell Window.
-1.Open Git Bash Window with path set to Build folder and follow steps in Starting Your Environment.
+
+1.Install the chocolatey package manager for Windows compatible to Windows 7+ / Windows Server 2003+ [following instructions](https://chocolatey.org/install) using Powershell in Administrator mode.
+2.`choco install make` in Powershell Window.
+3. Open Git Bash Window with path set to Build folder and follow steps in Starting Your Environment.
+
 
 While Executing make setup-environment on Windows we would get the following error.
 
