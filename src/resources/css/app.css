@@ -24,11 +24,15 @@ h1.logo {
 }
 
 .map-search-wrapper {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
 }
 
 @media (min-width: 768px) {
     #toast-container.toast-top-right {
         top: 100px;
+    }
+
+    .map-search-wrapper {
+        height: calc(100vh - 100px);
     }
 }

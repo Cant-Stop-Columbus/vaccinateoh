@@ -16,8 +16,8 @@
                      <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4">FAQ</a>
                 </div>
             </div>
-            <div class="w-full md:flex pb-22 map-search-wrapper">
-                <div id="location-sidebar" class="h-full p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
+            <div class="relative w-full md:flex map-search-wrapper">
+                <div id="location-sidebar" class="md:h-full p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
 
                     <div class="search-box">
                         <h2 class="text-blue font-bold">Vaccine Finder</h2>
@@ -32,7 +32,7 @@
                         </form>
                     </div>
 
-                    <ul class="location-list">
+                    <ul class="location-list w-full">
                         <h2 class="text-blue font-bold">Search Results</h2>
                         <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
                             <div class="location-details flex-grow">
@@ -96,9 +96,9 @@
                         </select>
                     </p>
                 </div>
-                <div id="map" class="flex-grow md:order-2"></div>
+                <div id="map" class="h-full md:h-auto flex-grow md:order-2"></div>
 
-                <div class="links absolute bottom-8 right-20">
+                <div class="links md:absolute bottom-8 right-20">
                     <template v-if="!$page.props.user">
                         <a :href="route('register')" class="ml-4 text-sm text-gray-700 underline ml-4">Register as a Volunteer</a>
                         <a :href="route('login')" class="text-sm text-gray-700 underline ml-4">Log in</a>
@@ -214,6 +214,7 @@ export default {
                 lng:null
             },
             current_location: null,
+            view: 'list',
         };
     },
     methods: {
