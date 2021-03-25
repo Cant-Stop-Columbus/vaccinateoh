@@ -23,6 +23,10 @@ h1.logo {
     background-size: contain;
 }
 
+.map-search-wrapper {
+    height: calc(100vh - 100px);
+}
+
 @media (min-width: 768px) {
     #toast-container.toast-top-right {
         top: 100px;
