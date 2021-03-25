@@ -32,3 +32,28 @@ Follow these steps to start your dev environment:
 
 - `make down` will stop all containers _except the `nginx-proxy` container_.
 - `make nginx-proxy-down` will stop the `nginx-proxy` container.
+
+### Instructions for Windows Machine
+
+After following steps in First-Time Install before proceeding to Starting Your Environment, perform the below steps.
+
+Using Powershell in Administrator mode.
+
+- Install the chocolatey package manager for Windows compatible to Windows 7+ / Windows Server 2003+ [following instructions](https://chocolatey.org/install) 
+- Run `choco install make` in Powershell Window.
+- Open Git Bash Window with path set to Build folder and follow steps in Starting Your Environment.
+
+
+While Executing make setup-environment on Windows if we get the below error follow resolution steps.
+
+`$ make setup-environment
+docker-compose exec --user=application web yarn install
+the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'
+make: *** [Makefile:164: install] Error 1`
+
+
+To fix this we can modify the Makefile in build folder as shown below.
+
+- DOCKER_WEB_EXEC=winpty docker-compose exec --user=application web
+- DOCKER_DB_EXEC=winpty docker-compose exec db
+- DOCKER_DB_COMMAND=winpty docker-compose exec -T db

@@ -20,12 +20,7 @@ use App\Http\Controllers\StatsController;
 */
 
 Route::get('/', function () {
-    $locations = App\Models\Location::closeToZip('43201')->take(10)->get();
-    foreach($locations as $loc) {
-        if(empty($loc->longitude)) {
-            $loc->geocode();
-        }
-    }
+    $locations = [];
 
     return Inertia::render('Welcome', compact([
         'locations',

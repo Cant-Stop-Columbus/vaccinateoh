@@ -9,24 +9,20 @@
                 <h1 class="logo float-left text-center text-2xl mx-auto my-1 ml-2">Vaccinate OH</h1>
 
                 <div class="float-right px-6 py-2 z-40">
+                    <a href="/" class="text-blue font-bold ml-4">Home</a>
 
-                    <inertia-link href="/dashboard" class="text-sm text-gray-700 underline ml-4">Stats</inertia-link>
+                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4">About Us</a>
 
-                    <template v-if="!$page.props.user">
-                        <inertia-link :href="route('register')" class="ml-4 text-sm text-gray-700 underline ml-4">Register as a Volunteer</inertia-link>
-                        <inertia-link :href="route('login')" class="text-sm text-gray-700 underline ml-4">Log in</inertia-link>
-                    </template>
-                    <span v-else>
-                        <inertia-link  v-if="$page.props.user.is_admin" href="/admin/dashboard" class="text-sm text-gray-700 underline ml-4">Admin Dashboard</inertia-link>
-                        <inertia-link :href="route('logout')" method="post" class="text-sm text-gray-700 underline ml-4">Log out</inertia-link>
-                    </span>
+                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4">FAQ</a>
                 </div>
             </div>
-            <div class="w-full md:flex">
-                <div id="location-sidebar" class="h-screen p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
+            <div class="w-full md:flex pb-22 map-search-wrapper">
+                <div id="location-sidebar" class="h-full p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
 
                     <div class="search-box">
-                        <h2 class="text-blue font-bold">Location</h2>
+                        <h2 class="text-blue font-bold">Vaccine Finder</h2>
+                        <p>Search vaccine appointment availability by entering in your zipcode.</p>
+                        <br>
                         <form @submit.prevent="searchLocations(null)" class="flex">
                             <input class="border border-blue rounded w-full px-2 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
 
@@ -101,6 +97,25 @@
                     </p>
                 </div>
                 <div id="map" class="flex-grow md:order-2"></div>
+
+                <div class="links absolute bottom-8 right-20">
+                    <template v-if="!$page.props.user">
+                        <a :href="route('register')" class="ml-4 text-sm text-gray-700 underline ml-4">Register as a Volunteer</a>
+                        <a :href="route('login')" class="text-sm text-gray-700 underline ml-4">Log in</a>
+                    </template>
+                    <span v-else>
+                        <a v-if="$page.props.user.is_admin" href="/admin/dashboard" class="text-sm text-gray-700 underline ml-4">Admin Dashboard</a>
+                        <inertia-link :href="route('logout')" method="post" class="text-sm text-gray-700 underline ml-4">Log out</inertia-link>
+                    </span>
+                </div>
+            </div>
+            <div class="fixed left-0 bottom-0 grid grid-cols-3 bg-blue w-full p-1">
+                <div class="col-span-2 text-left text-white text-xs">
+               For questions about COVID-19 please call the Ohio Department of Health call center: 1-833-4-ASK-ODH (1-833-427-5634)
+                </div>                
+                <div class="text-right text-white text-xs">
+               Made with <svg class="svg-inline--fa fa-heart" style="color: white;" aria-hidden="true" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg> by volunteers as part of Can't Stop Columbus"
+                </div>
             </div>
         </div>
 
@@ -136,6 +151,19 @@
 
 <style scoped>
 #map {
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+.svg-inline--fa.fa-w-18 {
+    width: 1.125em;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
 }
 </style>
 
@@ -178,7 +206,7 @@ export default {
                 markers: [
                 ],
             },
-            search_q: '43210',
+            search_q: '',
             search_available: 'prefer',
             search_locations: [],
             search_center: {
