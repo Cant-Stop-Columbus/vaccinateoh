@@ -98,7 +98,7 @@
                 </div>
                 <div id="map" class="flex-grow md:order-2"></div>
 
-                <div class="links absolute bottom-8 right-20">
+                <div class="links md:absolute bottom-8 right-20">
                     <template v-if="!$page.props.user">
                         <a :href="route('register')" class="ml-4 text-sm text-gray-700 underline ml-4">Register as a Volunteer</a>
                         <a :href="route('login')" class="text-sm text-gray-700 underline ml-4">Log in</a>
