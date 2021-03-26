@@ -15,6 +15,7 @@ class ApiController extends Controller
         $default_page_size = env('LOCATION_PAGE_SIZE', 100);
 
         $q = trim($request->input('q'));
+        $distance = $request->input('distance', -1);
         $page_size = intval(trim($request->input('page_size')));
         $available = trim($request->input('available', 'preferred'));
 
@@ -51,7 +52,7 @@ class ApiController extends Controller
         }
 
         if($lat != null) {
-            $locations->closeTo($lat,$lng);
+            $locations->closeTo($lat,$lng,$distance);
         }
 
         /**
@@ -68,6 +69,7 @@ class ApiController extends Controller
                 'q',
                 'page_size',
                 'available',
+                'distance',
             ]));
 
         $q = $lat == null ? $q : compact(['lat','lng']);

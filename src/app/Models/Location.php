@@ -111,7 +111,7 @@ class Location extends Model
      * @param decimal $lng
      * @return QueryBuilder
      */
-    public function scopeCloseTo($query, $lat, $lng) {
+    public function scopeCloseTo($query, $lat, $lng, $distance = null) {
         $lat = round($lat, 4);
         $lng = round($lng, 4);
         $dist_raw = '3959 * acos ( least(1, greatest(-1,
@@ -122,9 +122,14 @@ class Location extends Model
             * sin( radians( latitude ) )
         )))';
         $dist_q = DB::raw($dist_raw);
-        return $query->select('*')
+        $query->select('*')
             ->selectRaw(DB::raw($dist_raw . ' AS distance'))
             ->orderByRaw($dist_q);
+
+        if($distance > 0) {
+            $query->whereRaw(DB::raw($dist_raw . ' < ' . $distance));
+        }
+
     }
 
     /**
