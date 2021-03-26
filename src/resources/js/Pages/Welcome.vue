@@ -19,19 +19,45 @@
                 </div>
             </div>
             <div class="w-full md:flex pb-22 map-search-wrapper">
-                <div id="location-sidebar" class="h-full p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
+                <div id="location-sidebar" class="h-full p-2 flex-none md:overflow-y-auto md:order-1">
 
-                    <div class="search-box">
+                    <div class="search-box w-full">
                         <h2 class="text-blue font-bold">Vaccine Appointment Finder</h2>
-                        <p>Search vaccine appointment availability.</p>
+                        <p>Search vaccine appointment availability by entering in your city, or county, or zipcode.</p>
                         <br>
                         <form @submit.prevent="searchLocations(null)" class="flex">
-                            <input class="border border-blue rounded w-full px-2 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
+                            <input class="border border-blue rounded rounded-r-none w-full px-2 py-0 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
 
-                            <button class="bg-blue text-white font-bold rounded-2 py-1 px-3 hover:bg-blue-light rounded ml-1" type="submit">
-                                Search
+                            <button class="bg-blue text-white font-bold rounded-2 py-1 px-3 hover:bg-blue-light rounded rounded-l-none h-10 w-12" type="submit">
+                                <span class="sr-only">Search</span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0833 13.3333H14.1617L13.835 13.0183C14.9783 11.6883 15.6667 9.96167 15.6667 8.08333C15.6667 3.895 12.2717 0.5 8.08333 0.5C3.895 0.5 0.5 3.895 0.5 8.08333C0.5 12.2717 3.895 15.6667 8.08333 15.6667C9.96167 15.6667 11.6883 14.9783 13.0183 13.835L13.3333 14.1617V15.0833L19.1667 20.905L20.905 19.1667L15.0833 13.3333ZM8.08333 13.3333C5.17833 13.3333 2.83333 10.9883 2.83333 8.08333C2.83333 5.17833 5.17833 2.83333 8.08333 2.83333C10.9883 2.83333 13.3333 5.17833 13.3333 8.08333C13.3333 10.9883 10.9883 13.3333 8.08333 13.3333Z" fill="white"/>
+                                </svg>
                             </button>
+
+                        <div class="cursor-pointer flex flex-col text-sm ml-2 -my-2" @click="toggleFilters">
+                            <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto w-8">
+                                <path d="M29.97 15.12H19.425C19.018 13.08 17.316 11.56 15.318 11.56C13.32 11.56 11.618 13.08 11.211 15.12H0.925C0.407 15.12 0 15.56 0 16.12C0 16.68 0.407 17.12 0.925 17.12H11.211C11.618 19.16 13.32 20.68 15.318 20.68C17.316 20.68 19.018 19.16 19.425 17.12H29.97C30.488 17.12 30.895 16.68 30.895 16.12C30.895 15.6 30.451 15.12 29.97 15.12ZM15.318 18.68C14.023 18.68 12.95 17.52 12.95 16.12C12.95 14.72 14.023 13.56 15.318 13.56C16.613 13.56 17.686 14.72 17.686 16.12C17.686 17.52 16.613 18.68 15.318 18.68Z" fill="#0286FF"/>
+                                <path d="M4.25499 9.12C6.25299 9.12 7.95499 7.6 8.36199 5.56H29.933C30.451 5.56 30.858 5.12 30.858 4.56C30.858 4 30.451 3.56 29.933 3.56H8.36199C7.95499 1.52 6.25299 0 4.25499 0C1.92399 0 0.0369873 2.08 0.0369873 4.56C0.0369873 7.04 1.92399 9.12 4.25499 9.12ZM4.25499 2C5.54999 2 6.62299 3.16 6.62299 4.56C6.62299 5.96 5.54999 7.12 4.25499 7.12C2.95999 7.12 1.88699 5.96 1.88699 4.56C1.88699 3.16 2.95999 2 4.25499 2Z" fill="#0286FF"/>
+                                <path d="M26.64 23.2C24.642 23.2 22.977 24.72 22.533 26.72H0.925C0.407 26.72 0 27.16 0 27.72C0 28.28 0.407 28.72 0.925 28.72H22.533C22.94 30.76 24.642 32.32 26.64 32.32C28.971 32.32 30.858 30.28 30.858 27.76C30.858 25.24 28.934 23.2 26.64 23.2ZM26.64 30.28C25.345 30.28 24.272 29.12 24.272 27.72C24.272 26.32 25.345 25.16 26.64 25.16C27.935 25.16 29.008 26.32 29.008 27.72C29.008 29.12 27.935 30.28 26.64 30.28Z" fill="#0286FF"/>
+                            </svg>
+                            <span class="text-blue m-auto" :class="{showing: show_filters}">Filter/Sort</span>
+                        </div>
+
                         </form>
+
+                        <div class="filters-box" :class="{show: show_filters}">
+                            <p class="p-2 text-sm">
+                                <h4 class="text-blue">Filter by Availability:</h4>
+                                <radio v-model="search_available" name="search_available" class="text-xs" value="only" label="Available" />
+                                <radio v-model="search_available" name="search_available" class="text-xs" value="no" label="Not Available" />
+                                <radio v-model="search_available" name="search_available" class="text-xs" value="all" label="All" />
+                                <radio v-model="search_available" name="search_available" class="text-xs" value="prefer" label="All with Available First" />
+                            </p>
+                            <button class="float-right bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded" @click="searchLocations">
+                                Apply Filters
+                            </button>
+                        </div>
                     </div>
                     <br>
                     <ul class="location-list">
@@ -87,16 +113,6 @@
                             </div>
                         </li>
                     </ul>
-
-                    <p class="p-2 text-xs">
-                        Availability Preference: 
-                        <select v-model="search_available" class="text-xs" @change="searchLocations()">
-                            <option value="prefer">Prefer available; show both</option>
-                            <option value="all">No preference; show both</option>
-                            <option value="only">Show only available</option>
-                            <option value="no">Show only unavailable</option>
-                        </select>
-                    </p>
                 </div>
                 <div id="map" class="flex-grow md:order-2"></div>
 
@@ -174,10 +190,14 @@ import { Loader } from '@googlemaps/js-api-loader';
 import toastr from 'toastr';
 import * as dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import Radio from '../Components/Radio';
 
 dayjs.extend(relativeTime)
 
 export default {
+    components: {
+        Radio,
+    },
     props: {
         locations: Array,
     },
@@ -216,6 +236,7 @@ export default {
                 lng:null
             },
             current_location: null,
+            show_filters: false,
         };
     },
     methods: {
@@ -371,6 +392,9 @@ export default {
                     }
                 );
             }
+        },
+        toggleFilters() {
+            this.show_filters = !this.show_filters;
         },
         submitAvailability() {
             let vue = this;
