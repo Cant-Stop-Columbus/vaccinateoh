@@ -11,11 +11,11 @@
                 <div class="float-right px-6 py-2 z-40">
                     <a href="/" class="text-blue font-bold ml-4">Home</a>
 
-                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4" target="_blank" rel="noopener noreferrer">About Us</a>
+                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4"  rel="noopener noreferrer">About Us</a>
 
-                     <a href="https://info.vaccinateoh.org/providers/" class="text-blue font-bold ml-4" target="_blank" rel="noopener noreferrer">Providers</a>
+                     <a href="https://info.vaccinateoh.org/providers/" class="text-blue font-bold ml-4" rel="noopener noreferrer">Providers</a>
 
-                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4" target="_blank" rel="noopener noreferrer">FAQ</a>
+                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4" rel="noopener noreferrer">FAQ</a>
                 </div>
             </div>
             <div class="w-full md:flex pb-22 map-search-wrapper">
