@@ -182,7 +182,9 @@ class Location extends Model
      * @return QueryBuilder
      */
     public function scopeAvailable($query) {
-        return $query->has('futureAvailability');
+        return $query->whereHas('futureAvailability', function($q) {
+            $q->where('doses', '>', 0);
+        });
     }
 
     /**
@@ -192,6 +194,20 @@ class Location extends Model
      * @return QueryBuilder
      */
     public function scopeUnavailable($query) {
+        return $query->whereHas('futureAvailability', function($q) {
+            $q->where('doses', '<', 1);
+        })->whereHas('futureAvailability', function($q) {
+            $q->where('doses', '>', 0);
+        }, '<', 1);
+    }
+
+    /**
+     * Limit query results to locations with NO doses available in the future
+     *
+     * @param QueryBuilder $query
+     * @return QueryBuilder
+     */
+    public function scopeUnknownAvailable($query) {
         return $query->has('futureAvailability', '<', 1);
     }
 
