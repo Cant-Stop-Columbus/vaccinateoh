@@ -256,7 +256,7 @@ export default {
             search_q: '',
             search_filters: {
                 available: 'all',
-                distance: -1,
+                distance: 20,
                 /*
                 site_type: ['h','d','p'],
                 appt_type: ['web','phone','none'],
@@ -272,14 +272,15 @@ export default {
                     none: true,
                 },
             },
-            search_page_size: this.mobileCheck() ? 20 : 200,
+            search_page_size: this.mobileCheck() ? 20 : 2000,
             search_locations: [],
+            searching_current_location: false,
             search_center: {
                 lat:null,
                 lng:null
             },
             current_location: null,
-            show_filters: false,
+            show_filters: true,
         };
     },
     methods: {
@@ -290,9 +291,14 @@ export default {
             // if a search query isn't specified and we have the user location, search on it
             if(!q && !this.search_q && this.current_location) {
                 q = this.current_location.lat + ',' + this.current_location.lng;
+                this.searching_current_location = true;
+            } else {
+                this.searching_current_location = false;
             }
 
             let search_term = q || this.search_q;
+            let dist_string = this.getDistanceString(this.search_filters.distance);
+            let location_string = this.getSearchLocationString(search_term);
 
             if(window.gtag) {
                 gtag('event', 'search', {
@@ -305,7 +311,7 @@ export default {
                 + '&site_type=' + this.getFilterValues(this.search_filters.site_type).join(',')
                 + '&appt_type=' + this.getFilterValues(this.search_filters.appt_type).join(',')
 
-            toastr.info('Locating vaccine appointments near ' + search_term, 'Searching', {
+            toastr.info('Locating vaccine appointments' + dist_string + location_string, 'Searching', {
                 closeButton: true,
                 timeOut: 0,
                 extendedTimeOut: 0,
@@ -320,15 +326,21 @@ export default {
                     }
                     let this_page_count = resp.data.locations.to - resp.data.locations.from + 1;
                     if(resp.data.locations.total > this_page_count) {
-                        toastr.success('We found ' + resp.data.locations.total + ' locations. Showing the ' + this_page_count + ' closest.');
+                        toastr.success('We found ' + resp.data.locations.total + ' locations' + dist_string + location_string + '. Showing the ' + this_page_count + ' closest.');
                     } else {
-                        toastr.success('We found ' + this_page_count + ' locations.');
+                        toastr.success('We found ' + this_page_count + ' locations' + dist_string + location_string + '.');
                     }
                     this.search_locations = resp.data.locations.data;
                     this.search_center = resp.data.q;
                     document.querySelector('#location-sidebar').scrollTop = 0;
                     this.resetMarkers(this.search_locations);
                 });
+        },
+        getDistanceString(distance) {
+            return distance < 0 ? ' near ' : ' within ' + distance + ' miles of ';
+        },
+        getSearchLocationString(search_term) {
+            return this.searching_current_location ? 'your current location' : search_term;
         },
         getFilterValues(obj) {
             let vals = [];
