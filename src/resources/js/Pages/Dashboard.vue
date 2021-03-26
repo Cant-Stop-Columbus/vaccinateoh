@@ -20,6 +20,7 @@
                     <h2 class="underline text-lg">VaccinateOH Database Statistics:</h2>
                     <div>Locations in the Database: {{ locationsCount }}</div>
                     <div>Locations in the Database with Future Availability: {{ availableLocationsCount }}</div>
+                    <div>Locations never updated: {{ countNeverUpdated }}</div>
                 </div>
                 <div class="my-6">
                     <h2 class="underline text-lg">VaccinateOH Update Activity:</h2>
@@ -112,6 +113,7 @@ tbody tr:nth-child(odd) {
             last24Hrs: Number,
             last3Days: Number,
             lastWeek: Number,
+            countNeverUpdated: Number,
         },
         components: {
             Welcome
