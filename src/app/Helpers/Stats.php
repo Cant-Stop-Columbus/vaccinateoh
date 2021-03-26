@@ -24,6 +24,14 @@ class Stats {
     }
 
     /**
+     * Get the number of providers that have never had their data
+     * updated.
+     */
+    public static function countNeverUpdated() {
+        return Location::whereNull('updated_at')->count();
+    }
+
+    /**
      * Get a list of the top howMany most active updaters.
      *
      * @var howMany Specify the length of the top updaters list.
