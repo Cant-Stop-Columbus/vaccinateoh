@@ -11,17 +11,19 @@
                 <div class="float-right px-6 py-2 z-40">
                     <a href="/" class="text-blue font-bold ml-4">Home</a>
 
-                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4">About Us</a>
+                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4"  rel="noopener noreferrer">About Us</a>
 
-                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4">FAQ</a>
+                     <a href="https://info.vaccinateoh.org/providers/" class="text-blue font-bold ml-4" rel="noopener noreferrer">Providers</a>
+
+                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4" rel="noopener noreferrer">FAQ</a>
                 </div>
             </div>
             <div class="w-full md:flex pb-22 map-search-wrapper">
                 <div id="location-sidebar" class="h-full p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
 
                     <div class="search-box">
-                        <h2 class="text-blue font-bold">Vaccine Finder</h2>
-                        <p>Search vaccine appointment availability by entering in your zipcode.</p>
+                        <h2 class="text-blue font-bold">Vaccine Appointment Finder</h2>
+                        <p>Search vaccine appointment availability.</p>
                         <br>
                         <form @submit.prevent="searchLocations(null)" class="flex">
                             <input class="border border-blue rounded w-full px-2 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
@@ -31,7 +33,7 @@
                             </button>
                         </form>
                     </div>
-
+                    <br>
                     <ul class="location-list">
                         <h2 class="text-blue font-bold">Search Results</h2>
                         <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
