@@ -229,7 +229,7 @@ export default {
                 ],
             },
             search_q: '',
-            search_available: 'prefer',
+            search_available: 'all',
             search_locations: [],
             search_center: {
                 lat:null,
