@@ -67,3 +67,7 @@ input[type="radio"]:checked + span.radio {
 input[type="radio"]:checked + span + span {
    color: #3490DC;
 }
+
+input:checked + svg.checkmark {
+    display: block;
+  }

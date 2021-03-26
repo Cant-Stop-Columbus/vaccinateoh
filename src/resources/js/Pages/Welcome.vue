@@ -47,13 +47,34 @@
                         </form>
 
                         <div class="filters-box" :class="{show: show_filters}">
-                            <p class="p-2 text-sm">
-                                <h4 class="text-blue">Filter by Availability:</h4>
-                                <radio v-model="search_available" name="search_available" class="text-xs" value="only" label="Available" />
-                                <radio v-model="search_available" name="search_available" class="text-xs" value="no" label="Not Available" />
-                                <radio v-model="search_available" name="search_available" class="text-xs" value="all" label="All" />
-                                <radio v-model="search_available" name="search_available" class="text-xs" value="prefer" label="All with Available First" />
-                            </p>
+                            <h3 class="text-blue font-bold my-2"></h3>
+                            <div class="flex flex-wrap">
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Availability:</h4>
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="only" label="Available" />
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="no" label="Not Available" />
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="all" label="All" />
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="prefer" label="All with Available First" />
+                                </div>
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Distance:</h4>
+                                    <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="1" label="Within 1 mile" />
+                                    <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="20" label="Within 20 miles" />
+                                    <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="-1" label="Everywhere" />
+                                </div>
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Site Type:</h4>
+                                    <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" checked label="Healthcare Provider" />
+                                    <checkbox v-model="search_filters.site_type.d" name="search_site_type_d" class="text-xs" value="d" checked label="Local Health Department" />
+                                    <checkbox v-model="search_filters.site_type.p" name="search_site_type_p" class="text-xs" value="p" checked label="Pharmacies" />
+                                </div>
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Appointment Type:</h4>
+                                    <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" checked label="Schedule by web" />
+                                    <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" checked label="Schedule by phone" />
+                                    <checkbox v-model="search_filters.appt_type.none" name="search_appt_type_n" class="text-xs" value="none" checked label="Walk-ins" />
+                                </div>
+                            </div>
                             <button class="float-right bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded" @click="searchLocations">
                                 Apply Filters
                             </button>
@@ -191,11 +212,13 @@ import toastr from 'toastr';
 import * as dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import Radio from '../Components/Radio';
+import Checkbox from '../Components/Checkbox';
 
 dayjs.extend(relativeTime)
 
 export default {
     components: {
+        Checkbox,
         Radio,
     },
     props: {
@@ -229,7 +252,25 @@ export default {
                 ],
             },
             search_q: '',
-            search_available: 'all',
+            search_filters: {
+                available: 'all',
+                distance: -1,
+                /*
+                site_type: ['h','d','p'],
+                appt_type: ['web','phone','none'],
+                */
+                site_type: {
+                    h: true,
+                    d: true,
+                    p: true,
+                },
+                appt_type: {
+                    web: true,
+                    phone: true,
+                    none: true,
+                },
+            },
+            search_page_size: this.mobileCheck() ? 20 : 200,
             search_locations: [],
             search_center: {
                 lat:null,
@@ -257,12 +298,17 @@ export default {
                 });
             }
 
+            let filters = 'available=' + this.search_filters.available
+                + '&distance=' + this.search_filters.distance
+                + '&site_type=' + this.getFilterValues(this.search_filters.site_type).join(',')
+                + '&appt_type=' + this.getFilterValues(this.search_filters.appt_type).join(',')
+
             toastr.info('Locating vaccine appointments near ' + search_term, 'Searching', {
-                    closeButton: true,
-                    timeOut: 0,
-                    extendedTimeOut: 0,
-                });
-            axios.get('/api/locations?q=' + search_term + '&available=' + this.search_available)
+                closeButton: true,
+                timeOut: 0,
+                extendedTimeOut: 0,
+            });
+            axios.get('/api/locations?q=' + search_term + '&page_size=' + this.search_page_size + '&' + filters)
                 .then(resp => {
                     // If no locations are found, show a warning but don't clear the results;
                     this.clearNotifications();
