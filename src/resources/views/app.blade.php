@@ -32,10 +32,7 @@
             gtag('config', 'G-JS5FH1S5NW');
 @if(!App::environment('production'))
             */
-@endif
-        </script>
-        <script>
-@if(!App::environment('production'))
+
         /* Fullstory is disabled if not in production
 @endif
         window['_fs_debug'] = false;
@@ -64,6 +61,35 @@
         */
 @endif
 		</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+@if(!App::environment('production'))
+        /* FB Tracking disabled if not in production
+@endif
+fbq('init', '447078526514973');
+fbq('track', 'PageView');
+@if(!App::environment('production'))
+        */
+@endif
+</script>
+@if(!App::environment('production'))
+        <!--
+@endif
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=447078526514973&ev=PageView&noscript=1"
+/></noscript>
+@if(!App::environment('production'))
+        -->
+@endif
+<!-- End Facebook Pixel Code -->
     </head>
     <body class="font-sans antialiased">
         @inertia
