@@ -124,6 +124,24 @@ class LocationCrudController extends CrudController
         CRUD::field('longitude');
         CRUD::field('system_type');
         CRUD::addField([
+            'name' => 'appointmentTypes',
+            'entity' => 'appointmentTypes',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addField([
+            'name' => 'location_type_id',
+            'entity' => 'type',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addField([
+            'name' => 'location_type_id',
+            'entity' => 'type',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addField([
             'name' => 'location_source_id',
             'entity' => 'locationSource',
             'type' => 'relationship',

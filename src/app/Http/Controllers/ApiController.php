@@ -17,7 +17,9 @@ class ApiController extends Controller
         $q = trim($request->input('q'));
         $distance = $request->input('distance', -1);
         $page_size = intval(trim($request->input('page_size')));
-        $available = trim($request->input('available', 'preferred'));
+        $available = trim($request->input('available', 'all'));
+        $site_type = $request->input('site_type');
+        $appt_type = $request->input('appt_type');
 
         // Just set a default always true clause to initialize the QueryBuilder object
         $locations = Location::whereRaw(\DB::raw('1=1'));
@@ -30,6 +32,9 @@ class ApiController extends Controller
         } else if($available != 'all') {
             $locations->preferAvailable();
         }
+
+        $locations->locationTypes($site_type, true);
+        $locations->appointmentTypes($appt_type, true);
 
         $matches = [];
         $lat = null;
@@ -70,6 +75,8 @@ class ApiController extends Controller
                 'page_size',
                 'available',
                 'distance',
+                'site_type',
+                'appt_type',
             ]));
 
         $q = $lat == null ? $q : compact(['lat','lng']);

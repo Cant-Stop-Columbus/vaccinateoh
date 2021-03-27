@@ -203,6 +203,34 @@ class Location extends Model
         return $query->has('futureAvailability', '<', 1);
     }
 
+    public function scopeLocationTypes($query, $types, $include_null = false) {
+        if(!is_array($types)) {
+            $types = explode(',',$types);
+        }
+        return $query->where(function($q) use($types, $include_null) {
+            $q->whereHas('type', function($q) use($types) {
+                $q->whereIn('location_types.short',$types);
+            });
+            if($include_null) {
+                $q->orHas('type', '<', 1);
+            }
+        });
+    }
+
+    public function scopeAppointmentTypes($query, $types, $include_null) {
+        if(!is_array($types)) {
+            $types = explode(',',$types);
+        }
+        return $query->where(function($q) use($types, $include_null) {
+            $q->whereHas('appointmentTypes', function($q) use($types) {
+                $q->whereIn('appointment_types.short',$types);
+            });
+            if($include_null) {
+                $q->orHas('appointmentTypes', '<', 1);
+            }
+        });
+    }
+
     public function type() {
         return $this->belongsTo('App\Models\LocationType', 'location_type_id');
     }
@@ -217,7 +245,7 @@ class Location extends Model
     }
 
     public function appointmentTypes() {
-        return $this->hasMany('App\Models\AppointmentType', 'location_id');
+        return $this->belongsToMany('App\Models\AppointmentType', 'locations_appointment_types');
     }
 
     public function locationTypes() {
