@@ -106,12 +106,12 @@ package-app:
 	cd ../src && git archive HEAD > ../build/images/app.tar
 
 build-web:
-	docker build -t $(WEB_REPO_NAME) -f images/web.Dockerfile images
+	docker build -t $(WEB_IMAGE_NAME) -f images/web.Dockerfile images
 
 push: push-web
 
 push-web:
-	docker push $(WEB_REPO_NAME)
+	docker push $(WEB_IMAGE_NAME)
 
 release: build push
 
