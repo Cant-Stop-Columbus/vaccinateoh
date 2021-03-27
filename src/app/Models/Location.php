@@ -23,21 +23,8 @@ class Location extends Model
         'name_address',
     ];
 
-    public $fillable = [
-        'name',
-        'bookinglink',
-        'address',
-        'address2',
-        'city',
-        'state',
-        'zip',
-        'serves',
-        'vaccinesoffered',
-        'siteinstructions',
-        'daysopen',
-        'county',
-        'latitude',
-        'longitude',
+    public $guarded = [
+        'id',
     ];
 
     /**
@@ -227,6 +214,26 @@ class Location extends Model
      */
     public function futureAvailability() {
         return $this->hasMany('App\Models\Availability', 'location_id')->where('availability_time', '>=', date('Y-m-d'));
+    }
+
+    public function appointmentTypes() {
+        return $this->hasMany('App\Models\AppointmentType', 'location_id');
+    }
+
+    public function locationTypes() {
+        return $this->belongsTo('App\Models\LocationType', 'location_type_id');
+    }
+
+    public function locationSource() {
+        return $this->belongsTo('App\Models\LocationSource', 'location_source_id');
+    }
+
+    public function collectorUser() {
+        return $this->belongsTo('App\Models\User', 'collector_user_id');
+    }
+
+    public function dataUpdateMethod() {
+        return $this->belongsTo('App\Models\DataUpdateMethod', 'data_update_method_id');
     }
 
     /**

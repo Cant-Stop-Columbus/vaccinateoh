@@ -24,4 +24,7 @@ Route::group([
     Route::get('location/import', [LocationController::class, 'import'])->name('admin.location.import');
     Route::post('api/location/upload', [LocationController::class, 'uploadImportFile'])->name('api.admin.location.upload');
     Route::post('api/location/import', [LocationController::class, 'processImport'])->name('api.admin.location.import');
+    Route::crud('locationsource', 'LocationSourceCrudController');
+    Route::crud('appointmenttype', 'AppointmentTypeCrudController');
+    Route::crud('dataupdatemethod', 'DataUpdateMethodCrudController');
 }); // this should be the absolute last line of this file

@@ -101,9 +101,15 @@ class LocationCrudController extends CrudController
         CRUD::setValidation(LocationRequest::class);
 
         CRUD::field('name');
-        CRUD::field('bookinglink');
+        CRUD::field('bookinglink')->label('Booking URL');
+        CRUD::field('phone')->label('Booking Phone');
+        CRUD::field('provider_url')->label('Provider URL');
+        CRUD::field('provider_phone');
         CRUD::field('address')
             ->label('Full Address (all lines)')
+            ->type('textarea');
+        CRUD::field('alternate_addresses')
+            ->label('Alternate Addresses (first line of additional addresses for matching purposes only; one per line)')
             ->type('textarea');
         //CRUD::field('address2');
         //CRUD::field('city');
@@ -116,6 +122,25 @@ class LocationCrudController extends CrudController
         CRUD::field('county');
         CRUD::field('latitude');
         CRUD::field('longitude');
+        CRUD::field('system_type');
+        CRUD::addField([
+            'name' => 'location_source_id',
+            'entity' => 'locationSource',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addField([
+            'name' => 'data_update_method_id',
+            'entity' => 'dataUpdateMethod',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addField([
+            'name' => 'collector_user_id',
+            'entity' => 'collectorUser',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

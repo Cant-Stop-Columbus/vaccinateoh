@@ -15,7 +15,7 @@ class LocationTypeSeeder extends Seeder
      */
     public function run()
     {
-        LocationType::insert([
+        $data = [
             [
                 'name' => 'Healthcare',
                 'short' => 'h',
@@ -31,6 +31,14 @@ class LocationTypeSeeder extends Seeder
                 'short' => 'd',
                 'slug' => 'dept',
             ],
-        ]);
+        ];
+        foreach($data as $method) {
+            LocationType::firstOrCreate([
+                'name' => $method['name'],
+            ],[
+                'short' => $method['short'],
+                'slug' => $method['slug'],
+            ]);
+        }
     }
 }
