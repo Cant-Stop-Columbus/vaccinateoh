@@ -89,7 +89,7 @@ return [
     // ----
 
     // Body element classes.
-    'body_class' => 'app aside-menu-fixed sidebar-lg-show' . (config('app.environment') == 'production' ? '' : ' not-prod'),
+    'body_class' => 'app aside-menu-fixed sidebar-lg-show' . (config('app.env') == 'production' ? '' : ' not-prod'),
     // Try sidebar-hidden, sidebar-fixed, sidebar-compact, sidebar-lg-show
 
     // Sidebar element classes.
