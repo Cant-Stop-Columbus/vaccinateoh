@@ -8,6 +8,17 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: #fff;
+}
+
+body.not-prod {
+    background: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        #ffffff 10px,
+        #eeeeff 10px,
+        #eeeeff 20px
+    );
 }
 
 h1.logo {

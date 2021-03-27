@@ -93,7 +93,7 @@ src="https://www.facebook.com/tr?id=447078526514973&ev=PageView&noscript=1"
 @endif
 <!-- End Facebook Pixel Code -->
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased {{ config('app.env') == 'production' ? '' : 'not-' }}prod">
         @inertia
     </body>
 </html>
