@@ -20,6 +20,8 @@ class StatsController extends Controller
     public function getDashboard(Request $request) {
         $countNeverUpdated = Stats::countNeverUpdated();
 
+        $lastUpdatedHistogramData = Stats::lastUpdatedHistogramData();
+
         //Get the number of total available locations in the DB
         $locationsCount = Stats::countLocations();
         //Get the number of available locations with future availability from the DB
@@ -44,7 +46,8 @@ class StatsController extends Controller
           'last24Hrs',
           'last3Days',
           'lastWeek',
-          'countNeverUpdated'
+          'countNeverUpdated',
+          'lastUpdatedHistogramData'
         ]));
     }
 }
