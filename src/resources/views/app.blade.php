@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+        <meta property="og:image" content="{{ asset('img/vaccinateoh-screenshot.jpg') }}">
+        <meta name="description" content="Ohio's most complete and current COVID-19 vaccine appointment availability search. Protect your community... Find your vaccine appointment now!">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Laravel') }} | Ohio COVID-19 Vaccine Appointment Search</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
