@@ -266,9 +266,16 @@ class Location extends Model
         }
 
         if(!empty($row['address'])) {
-            $locations = Location::where('address', 'ILIKE', substr($row['address'],0,8).'%')->get();
+            $locations = Location::where('address', 'ILIKE', substr(Address::standardize($row['address']),0,8).'%')->get();
 
-            if($locations) {
+            if($locations->count()) {
+                return $locations;
+            }
+
+            // Check alternate addresses
+            $locations = Location::where('alternate_addresses', 'ILIKE', '%' . substr(Address::standardize($row['address']),0,8).'%')->get();
+
+            if($locations->count()) {
                 return $locations;
             }
         }
@@ -278,7 +285,7 @@ class Location extends Model
             $locations = Location::where('name', 'ILIKE', $row['name'])->get();
 
             // Could be multiple locations
-            if($locations) {
+            if($locations->count()) {
                 return $locations;
             }
         }

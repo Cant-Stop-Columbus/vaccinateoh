@@ -41,11 +41,22 @@ class LocationController extends Controller
                 ],
                 'phone' => [
                 ],
+                'provider_phone' => [
+                    'provider phone'
+                ],
                 //'Provider URL',
                 'bookinglink' => [
-                    'web site'
+                    'web site',
+                    'booking url',
+                    'booking link',
                 ],
-                //'Notes',
+                'provider_url' => [
+                    'provider url',
+                    'provider link',
+                ],
+                'siteinstructions' => [
+                    'notes',
+                ],
                 //'Provider List',
                 //'Provider Type',
                 //'System type',
