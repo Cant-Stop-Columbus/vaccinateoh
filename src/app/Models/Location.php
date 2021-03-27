@@ -310,7 +310,9 @@ class Location extends Model
 
         if(!empty($row['name'])) {
             // Case insensitive name search
-            $locations = Location::where('name', 'ILIKE', $row['name'])->get();
+            $locations = Location::where('name', 'ILIKE', $row['name'])
+                ->whereNotIn('name', ['Kroger Pharmacy', 'Rite Aid'])
+                ->get();
 
             // Could be multiple locations
             if($locations->count()) {
