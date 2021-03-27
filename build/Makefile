@@ -106,7 +106,7 @@ package-app:
 	cd ../src && git archive HEAD > ../build/images/app.tar
 
 build-web:
-	docker build -t $(WEB_REPO_NAME) -f images/web.Dockerfile --build-arg GOOGLE_MAPS_KEY=$(MIX_GOOGLE_MAPS_KEY) images
+	docker build -t $(WEB_REPO_NAME) -f images/web.Dockerfile images
 
 push: push-web
 

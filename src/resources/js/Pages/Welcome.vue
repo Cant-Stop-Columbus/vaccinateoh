@@ -225,6 +225,7 @@ export default {
     },
     props: {
         locations: Array,
+        google_maps_js_key: String,
     },
     data() {
         return {
@@ -516,7 +517,7 @@ export default {
     },
     mounted() {
         const loader = new Loader({
-            apiKey: process.env.MIX_GOOGLE_MAPS_KEY,
+            apiKey: this.google_maps_js_key,
             version: "weekly",
             libraries: []
         });
