@@ -143,7 +143,7 @@ nginx-proxy-down:
 composer-install:
 	$(DOCKER_WEB_EXEC) composer install
 
-setup-environment: install composer-install run-dev migrate seed
+setup-environment: install composer-install run-dev migrate seed seed-locations
 
 migrate:
 	$(DOCKER_WEB_EXEC) php artisan migrate
@@ -153,9 +153,6 @@ seed:
 
 seed-locations:
 	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationSeeder
-
-seed-location-types:
-	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationTypeSeeder
 
 tinker:
 	$(DOCKER_WEB_EXEC) php artisan tinker
