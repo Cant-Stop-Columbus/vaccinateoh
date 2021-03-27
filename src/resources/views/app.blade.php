@@ -6,6 +6,9 @@
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
         <meta property="og:image" content="{{ asset('img/vaccinateoh-screenshot.jpg') }}">
         <meta name="description" content="Ohio's most complete and current COVID-19 vaccine appointment availability search. Protect your community... Find your vaccine appointment now!">
+@if(!App::environment('production'))
+        <meta name="robots" content="noindex, nofollow">
+@endif
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }} | Ohio COVID-19 Vaccine Appointment Search</title>
