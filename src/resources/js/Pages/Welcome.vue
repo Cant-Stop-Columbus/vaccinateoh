@@ -13,7 +13,7 @@
 
                     <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4"  rel="noopener noreferrer">About Us</a>
 
-                     <a href="https://info.vaccinateoh.org/providers/" class="text-blue font-bold ml-4" rel="noopener noreferrer">Providers</a>
+                     <a href="https://info.vaccinateoh.org/providers/" class="text-blue font-bold ml-4" rel="noopener noreferrer">For Providers</a>
 
                      <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4" rel="noopener noreferrer">FAQ</a>
                 </div>
