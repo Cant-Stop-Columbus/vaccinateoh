@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Location;
-use App\Models\LocationType;
 use Storage;
 use Inertia\Inertia;
+
+use App\Models\AppointmentType;
+use App\Models\DataUpdateMethod;
+use App\Models\Location;
+use App\Models\LocationSource;
+use App\Models\LocationType;
+use App\Models\User;
 
 use Spatie\SimpleExcel\SimpleExcelReader;
 
@@ -41,6 +46,8 @@ class LocationController extends Controller
                 'county' => [
                 ],
                 'phone' => [
+                    'phone',
+                    'booking phone',
                 ],
                 'provider_phone' => [
                     'provider phone'
@@ -57,14 +64,25 @@ class LocationController extends Controller
                 'siteinstructions' => [
                     'notes',
                 ],
+                'system_type' => [
+                    'system type',
+                ],
                 'locationtype' => [
                     'provider type',
-                ]
-                //'System type',
-                //'Primary update method',
-                //'Scraper Developer',
-                //'Scraper Status',
-                //'Data collector(s) Assigned',
+                ],
+                'dataupdatemethod' => [
+                    'update method',
+                    'primary update method',
+                ],
+                'locationsource' => [
+                    'location data source',
+                ],
+                'appointmenttypes' => [
+                    'appointment types',
+                ],
+                'collectoruser' => [
+                    'data collector assigned',
+                ],
             ];
             $headers_all = [];
             foreach(array_merge($headers_required, $headers_optional) as $header => $aliases) {
@@ -135,6 +153,16 @@ class LocationController extends Controller
                         if($field_name == '-1') { // skip columns with a mapped column of -1
                         } else if($field_name == 'locationtype') {
                             $location['location']['location_type_id'] = LocationType::where('short',substr($field_value,0,1))->first()->id;
+                        } else if($field_name == 'dataupdatemethod') {
+                            $location['location']['data_update_method_id'] = DataUpdateMethod::where('name',$field_value)->first()->id;
+                        } else if($field_name == 'locationsource') {
+                            $location['location']['location_source_id'] = LocationSource::where('name',$field_value)->first()->id;
+                        } else if($field_name == 'collectoruser') {
+                            $location['location']['collector_user_id'] = User::where('name',$field_value)->first()->id;
+                        } else if($field_name == 'appointmenttypes') {
+                            // remove spaces and split on commas
+                            $methods = explode(',',preg_replace('/\s+/', '', $field_value));
+                            $location['appointmentTypes'] = AppointmentType::whereIn('short',$methods)->pluck('id');
                         } else {
                             $location['location'][$field_name] = $field_value;
                         }
