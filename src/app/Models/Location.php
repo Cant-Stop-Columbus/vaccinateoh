@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use DB;
+use Str;
 
 use App\Helpers\Address;
 use App\Helpers\Geo;
@@ -40,6 +41,7 @@ class Location extends Model
                 $location->geocode(false, false);
             }
             $location->address = Address::standardize($location->address);
+            $location->alternate_addresses = Address::standardize($location->alternate_addresses);
         });
     }
 
@@ -294,24 +296,31 @@ class Location extends Model
         }
 
         if(!empty($row['address'])) {
+            // Match the first 8 characters of the address
             $locations = Location::where('address', 'ILIKE', substr(Address::standardize($row['address']),0,8).'%')->get();
 
             if($locations->count()) {
-                return $locations;
+                return static::dedupByImportRow($row, $locations);
             }
 
             // Check alternate addresses
             $locations = Location::where('alternate_addresses', 'ILIKE', '%' . substr(Address::standardize($row['address']),0,8).'%')->get();
 
             if($locations->count()) {
-                return $locations;
+                return static::dedupByImportRow($row, $locations);
             }
         }
 
         if(!empty($row['name'])) {
             // Case insensitive name search
             $locations = Location::where('name', 'ILIKE', $row['name'])
-                ->whereNotIn('name', ['Kroger Pharmacy', 'Rite Aid'])
+                ->whereNotIn(DB::raw('LOWER(name)'), [
+                    'kroger pharmacy',
+                    'rite aid',
+                    'walmart',
+                    'walgreens pharmacy',
+                    'discount drug mart inc',
+                ])
                 ->get();
 
             // Could be multiple locations
@@ -321,6 +330,32 @@ class Location extends Model
         }
 
         return collect();
+    }
+
+    public static function dedupByImportRow($row, $locations) {
+        if($locations->count() < 2) {
+            return $locations;
+        }
+
+        // remove any with names that don't start with the same 8 characters (case insensitive)
+        $locations = $locations->filter(function($l) use($row) {
+            if(!empty($row['name'])) {
+                return strtolower(substr($l->name,0,8)) == strtolower(substr($row['name'],0,8));
+            }
+        })->values(); //values() resets the array keys to start with 0 even if 0 was filtered out
+
+        if($locations->count() < 2) {
+            return $locations;
+        }
+
+        // if we still have duplicates, check the end of the address
+        $locations = $locations->filter(function($l) use($row) {
+            if(!empty($row['name'])) {
+                return Str::of($l->name)->endsWith(substr($row['address'],-5));
+            }
+        })->values(); //values() resets the array keys to start with 0 even if 0 was filtered out
+
+        return $locations;
     }
 
     public function clearAvailability($except_id = null) {
@@ -394,6 +429,12 @@ class Location extends Model
             if($l->address != $new_address) {
                 $changed[$l->address] = $new_address;
                 $l->address = $new_address;
+                $l->save();
+            }
+            $new_altaddress = Address::standardize($l->alternate_addresses);
+            if($l->alternate_addresses != $new_altaddress) {
+                $changed[$l->alternate_addresses] = $new_altaddress;
+                $l->alternate_addresses = $new_altaddress;
                 $l->save();
             }
         });
