@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 
+use Str;
+
 class Address {
 
     private const REPLACEMENTS = [
@@ -18,7 +20,8 @@ class Address {
         '/\bU\.?S(\.|\b)/i' => 'US',
         '/\bOh\b/i' => 'OH',
         '/\bOhio(?= \d{5})/i' => 'OH', // replace 'Ohio' as the state with 'OH'
-        '/[\|\r\n]+/i' => "\n",  // replace a pipe with a line break
+        '/ (\w+)\n\s/i' => "\n$1 ",  // Fix addresses that got split in the middle of a 2-word city
+        '/\s*[\|\r\n]+\s*/i' => "\n",  // replace a pipe with a line break
     ];
 
     private const REPLACEMENTS_CAPITALIZE = [
@@ -49,7 +52,7 @@ class Address {
             );
         }
 
-        return $address;
+        return trim($address);
     }
 
     public static function parseState($address) {

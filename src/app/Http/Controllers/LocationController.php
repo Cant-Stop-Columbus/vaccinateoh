@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Location;
+use App\Models\LocationType;
 use Storage;
 use Inertia\Inertia;
 
@@ -44,7 +45,6 @@ class LocationController extends Controller
                 'provider_phone' => [
                     'provider phone'
                 ],
-                //'Provider URL',
                 'bookinglink' => [
                     'web site',
                     'booking url',
@@ -57,8 +57,9 @@ class LocationController extends Controller
                 'siteinstructions' => [
                     'notes',
                 ],
-                //'Provider List',
-                //'Provider Type',
+                'locationtype' => [
+                    'provider type',
+                ]
                 //'System type',
                 //'Primary update method',
                 //'Scraper Developer',
@@ -128,15 +129,30 @@ class LocationController extends Controller
            foreach($imported_data['rows'] as $row) {
                 if(count($row['locations']) == 0) {
                     //get the values and do the import
-                    $location = [];
+                    $location = ['location' => []];
                     foreach($map as $imported_column => $field_name) {
-                        $location[$field_name] = $row['data'][$imported_column];
+                        $field_value = $row['data'][$imported_column];
+                        if($field_name == '-1') { // skip columns with a mapped column of -1
+                        } else if($field_name == 'locationtype') {
+                            $location['location']['location_type_id'] = LocationType::where('short',substr($field_value,0,1))->first()->id;
+                        } else {
+                            $location['location'][$field_name] = $field_value;
+                        }
                     }
                     $locations[] = $location;
                 }
             }
 
-            Location::insert($locations);
+            foreach($locations as $location) {
+                $l = Location::create($location['location']);
+                if(!empty($location['appointmentTypes'])) {
+                    $location_type_ids = [];
+                    foreach($location['locationType'] as $lt_short) {
+                        $location_type_ids[] = LocationType::whereShort($lt_short)->first()->pluck('id');
+                    }
+                    $l->locationType()->sync($locationTypes);
+                }
+            }
         }
         
         return $this->processImportedFile($request);

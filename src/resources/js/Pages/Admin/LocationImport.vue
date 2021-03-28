@@ -196,6 +196,7 @@ export default {
                 vue.headers_all = response.data.headers_all;
 
                 vue.setDefaultHeaderMappings();
+                vue.refreshShowStatuses();
 
                 // Set 
                 toastr.success('Upload successful!' );
@@ -208,6 +209,7 @@ export default {
             });
         },
         setDefaultHeaderMappings() {
+          this.import_header_map = {};
           for(let i in this.headers_imported) {
             let header_imported = this.headers_imported[i];
 
@@ -217,7 +219,7 @@ export default {
             // If the header is a match for one of our importable headers, set it
             if(header_match) {
               this.import_header_map[header_imported] = header_match;
-            } else {
+            } else if(header_imported) {
               this.import_header_map[header_imported] = -1;
             }
           };
