@@ -57,14 +57,26 @@ class LocationCrudController extends CrudController
         ]);
         CRUD::column('bookinglink')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('phone')->label('Booking Phone');
+        CRUD::column('provider_url')->label('Provider URL')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('provider_phone');
         CRUD::column('address')
             ->type('textarea')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('address')
+            ->label('Full Address (all lines)')
+            ->type('textarea');
+        CRUD::column('alternate_addresses')
+            ->label('Alternate Addresses (first line of additional addresses for matching purposes only; one per line)')
+            ->type('textarea');
+            /*
         CRUD::column('address2')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('city')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('state');
+        */
         CRUD::column('zip')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('county')
@@ -75,6 +87,42 @@ class LocationCrudController extends CrudController
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('siteinstructions')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::addColumn([
+            'name' => 'appointmentTypes',
+            'entity' => 'appointmentTypes',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addColumn([
+            'name' => 'location_type_id',
+            'entity' => 'type',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addColumn([
+            'name' => 'location_type_id',
+            'entity' => 'type',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addColumn([
+            'name' => 'location_source_id',
+            'entity' => 'locationSource',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addColumn([
+            'name' => 'data_update_method_id',
+            'entity' => 'dataUpdateMethod',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
+        CRUD::addColumn([
+            'name' => 'collector_user_id',
+            'entity' => 'collectorUser',
+            'type' => 'relationship',
+            'attribute' => 'name',
+        ]);
         CRUD::column('daysopen');
         CRUD::column('latitude');
         CRUD::column('longitude');
@@ -105,12 +153,8 @@ class LocationCrudController extends CrudController
         CRUD::field('phone')->label('Booking Phone');
         CRUD::field('provider_url')->label('Provider URL');
         CRUD::field('provider_phone');
-        CRUD::field('address')
-            ->label('Full Address (all lines)')
-            ->type('textarea');
-        CRUD::field('alternate_addresses')
-            ->label('Alternate Addresses (first line of additional addresses for matching purposes only; one per line)')
-            ->type('textarea');
+        CRUD::field('address');
+        CRUD::field('alternate_addresses');
         //CRUD::field('address2');
         //CRUD::field('city');
         //CRUD::field('state');
@@ -175,7 +219,7 @@ class LocationCrudController extends CrudController
      */
     protected function setupUpdateOperation()
     {
-        $this->setupCreateOperation();
+        return $this->setupCreateOperation();
     }
 
     /**
