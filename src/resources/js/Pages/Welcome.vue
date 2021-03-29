@@ -62,7 +62,6 @@
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="20" label="Within 20 miles" />
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="-1" label="Everywhere" />
                                 </div>
-                                <!--
                                 <div class="p-2 text-sm md:w-1/2">
                                     <h4 class="text-blue">Sort by Site Type:</h4>
                                     <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" checked label="Healthcare Provider" />
@@ -75,7 +74,6 @@
                                     <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" checked label="Schedule by phone" />
                                     <checkbox v-model="search_filters.appt_type['walk-in']" name="search_appt_type_n" class="text-xs" value="walk-in" checked label="Walk-ins" />
                                 </div>
-                                -->
                             </div>
                             <button class="float-right bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded" @click="searchLocations">
                                 Apply Filters

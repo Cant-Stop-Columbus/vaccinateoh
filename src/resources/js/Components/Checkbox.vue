@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    emits: ['update:checked'],
+    emits: ['update:modelValue'],
 
     props: {
         checked: {
@@ -23,6 +23,7 @@ export default {
         value: {
             default: null,
         },
+        modelValue: Boolean,
     },
 
     computed: {
@@ -33,7 +34,7 @@ export default {
 
             set(val) {
                 console.log(val);
-                this.$emit("update:checked", val);
+                this.$emit("update:modelValue", val);
             },
         },
     },
