@@ -11,3 +11,4 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('dataupdatemethod') }}'><i class='nav-icon la la-list'></i> DataUpdateMethods</a></li>
 <hr>
 <li class='nav-item'><a class='nav-link' href='{{ route('admin.location.import') }}'><i class='nav-icon la la-map-marker'></i> Location Import</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ route('admin.location.export') }}'><i class='nav-icon la la-download'></i> Location Export</a></li>

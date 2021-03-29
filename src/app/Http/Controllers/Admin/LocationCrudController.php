@@ -41,6 +41,9 @@ class LocationCrudController extends CrudController
     {
         CRUD::column('name')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::column('address')
+            ->limit(255)
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::addColumn([
             'name' => 'available',
             'label' => 'Next Appointment',
@@ -55,21 +58,17 @@ class LocationCrudController extends CrudController
                 ->orderBy('a.available', $columnDirection);
             }
         ]);
+        CRUD::column('county')
+            ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('bookinglink')
+            ->limit(255)
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('phone')->label('Booking Phone');
         CRUD::column('provider_url')->label('Provider URL')
+            ->limit(255)
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('provider_phone');
-        CRUD::column('address')
-            ->type('textarea')
-            ->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('address')
-            ->label('Full Address (all lines)')
-            ->type('textarea');
-        CRUD::column('alternate_addresses')
-            ->label('Alternate Addresses (first line of additional addresses for matching purposes only; one per line)')
-            ->type('textarea');
+        CRUD::column('alternate_addresses')->limit(255);
             /*
         CRUD::column('address2')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
@@ -79,13 +78,12 @@ class LocationCrudController extends CrudController
         */
         CRUD::column('zip')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
-        CRUD::column('county')
-            ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('serves')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('vaccinesoffered')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('siteinstructions')
+            ->limit(255)
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::addColumn([
             'name' => 'appointmentTypes',
@@ -130,6 +128,7 @@ class LocationCrudController extends CrudController
         CRUD::column('updated_at');
 
         CRUD::addButtonFromModelFunction('line', 'availability', 'buttonUpdateAvailability', 'beginning');
+        CRUD::enableExportButtons();
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -153,8 +152,11 @@ class LocationCrudController extends CrudController
         CRUD::field('phone')->label('Booking Phone');
         CRUD::field('provider_url')->label('Provider URL');
         CRUD::field('provider_phone');
-        CRUD::field('address');
-        CRUD::field('alternate_addresses');
+        CRUD::field('address')
+            ->type('textarea');
+        CRUD::field('alternate_addresses')
+            ->label('Alternate Addresses (first line of additional addresses for matching purposes only; one per line)')
+            ->type('textarea');
         //CRUD::field('address2');
         //CRUD::field('city');
         //CRUD::field('state');

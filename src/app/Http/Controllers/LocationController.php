@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
+use App\Helpers\Export;
 use App\Helpers\Import;
 use App\Models\AppointmentType;
 use App\Models\DataUpdateMethod;
@@ -34,13 +35,13 @@ class LocationController extends Controller
         return Inertia::render('Admin/LocationImport');
     }
 
-    protected function processImport(Request $request) {
-        // insert missing rows
-        $errors = [];
-        if($request->has('missing')) {
-           $map = $request->input('import_header_map');
+    protected function export(Request $request) {
+        return Export::downloadLocations();
+    }
 
-           return Import::importMissingLocations($map);
-        }
+    protected function processImport(Request $request) {
+        $map = $request->input('import_header_map');
+        $match_count = $request->input('match_count');
+        return Import::importLocations($match_count, $map);
     }
 }

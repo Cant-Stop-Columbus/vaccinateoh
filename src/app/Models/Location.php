@@ -250,7 +250,7 @@ class Location extends Model
         return $this->belongsToMany('App\Models\AppointmentType', 'locations_appointment_types');
     }
 
-    public function locationTypes() {
+    public function locationType() {
         return $this->belongsTo('App\Models\LocationType', 'location_type_id');
     }
 
