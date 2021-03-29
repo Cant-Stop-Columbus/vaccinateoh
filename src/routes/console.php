@@ -39,3 +39,57 @@ Artisan::command('standardize-addresses', function() {
     dd($standardized);
     //$this->info("Standardized $standardized addresses.");
 });
+
+Artisan::command('set-location-types', function() {
+    $map = [
+        1 => [
+            'public health',
+            'department',
+            'health district',
+        ],
+        2 => [
+            'kroger',
+            'walgreens',
+            'walmart',
+            'rite aid',
+            'discount drug'
+        ],
+        3 => [
+            'hospital',
+            'dentistry',
+            'ohiohealth',
+            'healthsource',
+        ]
+    ];
+    foreach($map as $location_type_id => $strings) {
+        foreach($strings as $string) {
+            Location::whereNull('location_type_id')->where('name','ilike','%' . $string . '%')->get()->each(function($l) use($location_type_id) { $l->location_type_id = $location_type_id; $l->save(); });
+        }
+    }
+    $this->comment(Location::whereNull('location_type_id')->select('name')->distinct()->orderBy('name')->pluck('name'));
+    $this->info(Location::whereNull('location_type_id')->count());
+});
+
+
+Artisan::command('set-appointment-types', function() {
+    $updated = 0;
+    $locations = Location::has('appointmentTypes', '<', 1)->get();
+
+    $this->info('Found ' . $locations->count() . ' locations without appointment types indicated.');
+
+    $locations->each(function($l) use(&$updated) {
+        $atypes = [];
+        if($l->bookinglink) {
+            $atypes[] = 1; // 1 == Web
+        }
+
+        if($l->booking_phone) {
+            $atypes[] = 2; // 2 == Phone
+        }
+        if(count($atypes)) {
+            $l->appointmentTypes()->sync($atypes);
+            $updated++;
+        }
+    });
+    $this->info("Updated $updated locations with appointment types");
+});
