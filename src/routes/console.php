@@ -63,7 +63,12 @@ Artisan::command('set-location-types', function() {
     ];
     foreach($map as $location_type_id => $strings) {
         foreach($strings as $string) {
-            Location::whereNull('location_type_id')->where('name','ilike','%' . $string . '%')->get()->each(function($l) use($location_type_id) { $l->location_type_id = $location_type_id; $l->save(); });
+            Location::whereNull('location_type_id')
+                ->where('name','ilike','%' . $string . '%')
+                ->get()
+                ->each(function($l) use($location_type_id) {
+                    $l->location_type_id = $location_type_id; $l->save();
+                });
         }
     }
     $this->comment(Location::whereNull('location_type_id')->select('name')->distinct()->orderBy('name')->pluck('name'));
@@ -71,23 +76,30 @@ Artisan::command('set-location-types', function() {
 });
 
 
-Artisan::command('set-appointment-types', function() {
+Artisan::command('set-appointment-types {--force}', function() {
     $updated = 0;
-    $locations = Location::has('appointmentTypes', '<', 1)->get();
+    if($this->option('force')) {
+        $locations = Location::get();
+    } else {
+        $locations = Location::has('appointmentTypes', '<', 1)->get();
+    }
 
     $this->info('Found ' . $locations->count() . ' locations without appointment types indicated.');
 
     $locations->each(function($l) use(&$updated) {
-        $atypes = [];
-        if($l->bookinglink) {
-            $atypes[] = 1; // 1 == Web
+        $atypes = $l->appointmentTypes->pluck('id');
+        $updated_this = false;
+        if($l->bookinglink && !$atypes->contains(1)) {
+            $l->appointmentTypes()->attach(1); // 1 == Web
+            $updated_this = true;
         }
 
-        if($l->booking_phone) {
-            $atypes[] = 2; // 2 == Phone
+        if($l->phone && !$atypes->contains(2)) {
+            $l->appointmentTypes()->attach(2); // 2 == Phone
+            $updated_this = true;
         }
-        if(count($atypes)) {
-            $l->appointmentTypes()->sync($atypes);
+
+        if($updated_this) {
             $updated++;
         }
     });
