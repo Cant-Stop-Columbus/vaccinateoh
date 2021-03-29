@@ -73,7 +73,7 @@
                                     <h4 class="text-blue">Sort by Appointment Type:</h4>
                                     <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" checked label="Schedule by web" />
                                     <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" checked label="Schedule by phone" />
-                                    <checkbox v-model="search_filters.appt_type.none" name="search_appt_type_n" class="text-xs" value="none" checked label="Walk-ins" />
+                                    <checkbox v-model="search_filters.appt_type['walk-in']" name="search_appt_type_n" class="text-xs" value="walk-in" checked label="Walk-ins" />
                                 </div>
                                 -->
                             </div>
@@ -260,7 +260,7 @@ export default {
                 distance: 20,
                 /*
                 site_type: ['h','d','p'],
-                appt_type: ['web','phone','none'],
+                appt_type: ['web','phone','walk-in'],
                 */
                 site_type: {
                     h: true,
@@ -270,7 +270,7 @@ export default {
                 appt_type: {
                     web: true,
                     phone: true,
-                    none: true,
+                    'walk-in': true,
                 },
             },
             search_page_size: this.mobileCheck() ? 20 : 2000,

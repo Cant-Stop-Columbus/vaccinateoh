@@ -26,7 +26,7 @@ class AppointmentTypeSeeder extends Seeder
             ],
             [
                 'name' => 'Walk-in',
-                'short' => 'none',
+                'short' => 'walk-in',
             ],
         ];
 
