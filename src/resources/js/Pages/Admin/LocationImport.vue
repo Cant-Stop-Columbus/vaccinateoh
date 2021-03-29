@@ -50,9 +50,16 @@
         </fieldset>
       </div>
       <div class="col">
-        <button name="import_missing" @click.prevent="importMissing" class="btn btn-primary">
-          Import Missing Locations
-        </button>
+        <div class="mb-3">
+          <button name="import_missing" @click.prevent="importMatches(0)" class="btn btn-primary">
+            Import Missing Locations
+          </button>
+        </div>
+        <div class="mb-3">
+          <button name="import_matched" @click.prevent="importMatches(1)" class="btn btn-primary">
+            Import Matched Locations
+          </button>
+        </div>
       </div>
     </div>
 
@@ -148,10 +155,10 @@ export default {
         };
     },
     methods: {
-        importMissing() {
+        importMatches(match_count) {
             const vue = this;
             axios.post( '/admin/api/location/import', {
-              missing: true,
+              match_count: match_count,
               import_header_map: this.import_header_map,
             }).then(function(response){
                 vue.rows = response.data.rows;

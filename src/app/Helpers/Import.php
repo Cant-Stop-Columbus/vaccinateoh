@@ -139,53 +139,56 @@ class Import
         });
     }
 
-    public static function importMissingLocations($import_header_map, $import_path = null) {
+    public static function importLocations($match_count, $import_header_map, $import_path = null) {
 
         $imported_data = static::processImportedFile($import_path);
 
         $locations = [];
         $errors = [];
         foreach($imported_data['rows'] as $row) {
-            if($row['locations']->count() == 0) {
+            if($row['locations']->count() == $match_count) {
                 //get the values and do the import
                 $location = ['location' => []];
+                if(!empty($row['locations'][0])) {
+                    $location['location']['id'] = $row['locations'][0]->id;
+                }
                 foreach($import_header_map as $imported_column => $field_name) {
                     $field_value = $row['data'][$imported_column];
                     if($field_name == '-1') { // skip columns with a mapped column of -1
-                    } else if($field_name == 'locationtype') {
+                    } else if($field_name == 'locationtype' && $field_value) {
                         $lt = LocationType::where('short',substr($field_value,0,1))->first();
                         if(!$lt) {
                             $errors[] = "Location type $field_value not found";
                             continue;
                         }
                         $location['location']['location_type_id'] = $lt->id;
-                    } else if($field_name == 'dataupdatemethod') {
+                    } else if($field_name == 'dataupdatemethod' && $field_value) {
                         $dum = DataUpdateMethod::where('name',$field_value)->first();
                         if(!$dum) {
                             $errors[] = "Data Update Method $field_value not found";
                             continue;
                         }
                         $location['location']['data_update_method_id'] = $dum->id;
-                    } else if($field_name == 'locationsource') {
+                    } else if($field_name == 'locationsource' && $field_value) {
                         $ls = LocationSource::where('name',$field_value)->first();
                         if(!$ls) {
                             $errors[] = "Location Source $field_value not found";
                             continue;
                         }
                         $location['location']['location_source_id'] = $ls->id;
-                    } else if($field_name == 'collectoruser') {
+                    } else if($field_name == 'collectoruser' && $field_value) {
                         $u = User::where('name',$field_value)->first();
                         if(!$u) {
                             $errors[] = "Data Collector User $field_value not found";
                             continue;
                         }
                         $location['location']['collector_user_id'] = $u->id;
-                    } else if($field_name == 'appointmenttypes') {
+                    } else if($field_name == 'appointmenttypes' && $field_value) {
                         // remove spaces and split on commas
                         $methods = explode(',',preg_replace('/\s+/', '', $field_value));
                         $at = AppointmentType::whereIn('short',$methods)->pluck('id');
                         if($at->count() != count($methods)) {
-                            $errors[] = "Invalid appointment type included in  $field_value";
+                            $errors[] = "Invalid appointment type $field_value";
                             continue;
                         }
                         $location['appointmentTypes'] = $at;
@@ -198,7 +201,13 @@ class Import
         }
 
         foreach($locations as $location) {
-            $l = Location::create($location['location']);
+            if(!empty($location['location']['id'])) {
+                $l = Location::find($location['location']['id']);
+                $l->fill($location['location']);
+                $l->save();
+            } else {
+                $l = Location::create($location['location']);
+            }
             if(!empty($location['appointmentTypes'])) {
                 $l->appointmentTypes()->sync($location['appointmentTypes']);
             }
