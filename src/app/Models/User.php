@@ -59,4 +59,12 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function locations() {
+        return $this->hasMany('App\Models\Location', 'collector_user_id');
+    }
+
+    public function availabilities() {
+        return $this->hasMany('App\Models\Availability', 'updated_by_user_id');
+    }
 }

@@ -418,8 +418,20 @@ class Location extends Model
         return $this->available ? null : $this->futureAvailability()->where('doses', '0')->min('availability_time');
     }
 
+    public function getAvailabilityUpdatedAtAttribute() {
+        return empty($this->latestAvailability) ? null : $this->latestAvailability->updated_at;
+    }
+
     public function availabilities() {
         return $this->hasMany('App\Models\Availability', 'location_id');
+    }
+
+    public function alltimeAvailabilities() {
+        return $this->hasMany('App\Models\Availability', 'location_id')->withTrashed();
+    }
+
+    public function latestAvailability() {
+        return $this->hasOne('App\Models\Availability', 'location_id')->orderBy('updated_at','desc');
     }
 
     public static function standardizeAll() {
