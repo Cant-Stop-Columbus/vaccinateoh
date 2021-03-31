@@ -17,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:sanctum')->post('/armorvax', function (Request $request) {
+    $data = $request->all();
+    $data_string = json_encode($data, JSON_PRETTY_PRINT);
+    $path = sprintf('armorvax/u%d_%s.json', $request->user()->id, date('Y-m-d_his'));
+
+    // Write the full JSON data to a file on S3
+    \Storage::disk('s3')->write($path, $data_string);
+
+    // echo back the same json that was posted
+    return response()->json($data);
+});
