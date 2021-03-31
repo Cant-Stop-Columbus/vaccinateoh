@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->post('/armorvax', function (Request $request) {
     $data = $request->all();
     $data_string = json_encode($data, JSON_PRETTY_PRINT);
-    $path = sprintf('armorvax/u%d_%s.json', $request->user()->id, date('Y-m-d_his'));
+    $path = sprintf('armorvax/%s/u%d_%s.json', config('app.env'), $request->user()->id, date('Y-m-d_his'));
 
     // Write the full JSON data to a file on S3
     \Storage::disk('s3')->write($path, $data_string);
