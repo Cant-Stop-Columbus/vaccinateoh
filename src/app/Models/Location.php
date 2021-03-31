@@ -319,6 +319,7 @@ class Location extends Model
                     'rite aid',
                     'walmart',
                     'walgreens pharmacy',
+                    'giant eagle pharmacy',
                     'discount drug mart inc',
                 ])
                 ->get();
