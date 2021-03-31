@@ -33,8 +33,13 @@ class ApiController extends Controller
             $locations->preferAvailable();
         }
 
-        $locations->locationTypes($site_type, false);
-        $locations->appointmentTypes($appt_type, false);
+        if($site_type) {
+            $locations->locationTypes($site_type, false);
+        }
+
+        if($appt_type) {
+            $locations->appointmentTypes($appt_type, false);
+        }
 
         $matches = [];
         $lat = null;
