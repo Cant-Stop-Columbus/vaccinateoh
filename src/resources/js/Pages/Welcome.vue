@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="relative w-full md:flex pb-22 map-search-wrapper">
-                <div id="location-sidebar" class="h-full p-2 flex-none md:overflow-y-auto md:order-1">
+                <div id="location-sidebar" class="md:h-full p-2 flex-none md:overflow-y-auto md:order-1">
 
                     <div class="search-box w-full">
                         <h2 class="text-blue font-bold">Vaccine Appointment Finder</h2>
@@ -46,7 +46,6 @@
 
                         </form>
 
-                    <ul class="location-list">
                         <div class="filters-box" :class="{show: show_filters}">
                             <h3 class="text-blue font-bold my-2"></h3>
                             <div class="flex flex-wrap">
@@ -81,63 +80,96 @@
                             </button>
                         </div>
                     </div>
-                    <br>
-                    <ul class="location-list">
->>>>>>> main
+
+                    <div class="text-right view-toggle md:hidden my-2 cursor-pointer text-blue" @click="toggleView">
+                        <svg class="w-5 h-5 inline-block -mt-2 fill-current" v-if="view == 'list'" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512.032 512.032" style="enable-background:new 0 0 512.032 512.032;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M496.016,224c-8.832,0-16,7.168-16,16v181.184l-128,51.2V304c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16v168.352
+                                        l-128-51.2V167.648l74.144,29.664c8.096,3.264,17.504-0.704,20.8-8.928c3.296-8.192-0.704-17.504-8.928-20.8l-95.776-38.336
+                                        c0,0,0,0-0.032,0l-0.256-0.096c-3.808-1.536-8.064-1.536-11.872,0l-0.288,0.096c0,0,0,0-0.032,0L10.064,193.152
+                                        C4.016,195.584,0.016,201.44,0.016,208v288c0,5.312,2.656,10.272,7.04,13.248c2.688,1.824,5.792,2.752,8.96,2.752
+                                        c2.016,0,4.032-0.384,5.952-1.152l154.048-61.6l153.76,61.504c0,0,0,0,0.032,0l0.288,0.128c3.808,1.536,8.064,1.536,11.872,0
+                                        l0.288-0.128c0,0,0,0,0.032,0L502,446.88c6.016-2.464,10.016-8.32,10.016-14.88V240C512.016,231.168,504.848,224,496.016,224z
+                                        M160.016,421.152l-128,51.2V218.816l128-51.2V421.152z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M400.016,64c-26.464,0-48,21.536-48,48s21.536,48,48,48s48-21.536,48-48S426.48,64,400.016,64z M400.016,128
+                                        c-8.832,0-16-7.168-16-16c0-8.832,7.168-16,16-16c8.832,0,16,7.168,16,16C416.016,120.832,408.848,128,400.016,128z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M400.016,0c-61.76,0-112,50.24-112,112c0,57.472,89.856,159.264,100.096,170.688c3.04,3.36,7.36,5.312,11.904,5.312
+                                        s8.864-1.952,11.904-5.312C422.16,271.264,512.016,169.472,512.016,112C512.016,50.24,461.776,0,400.016,0z M400.016,247.584
+                                        c-34.944-41.44-80-105.056-80-135.584c0-44.096,35.904-80,80-80s80,35.904,80,80C480.016,142.496,434.96,206.144,400.016,247.584z
+                                        "/>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg class="w-5 h-5 inline-block -mt-1 fill-current" v-if="view == 'map'" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="m2.5 7c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/></g><g><path d="m2.5 15c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/></g><g><path d="m2.5 23c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/></g><g><path d="m23.5 5h-16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h16c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m23.5 13h-16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h16c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m23.5 21h-16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h16c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
+                        Show {{ view == 'list' ? 'Map' : 'List' }} View
+                    </div>
+                    <div class="search-results-wrapper md:block" :class="{hidden: view == 'map'}">
                         <h2 class="text-blue font-bold">Search Results</h2>
-                        <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
-                            <div class="location-details flex-grow">
-                                <h3 class="font-bold color-blue mr-28">{{ loc.name }}</h3>
-                                <div class="address text-sm pb-2" v-html="addressHtml(loc.address)"></div>
-                                <div class="text-xs" v-if="loc.distance">{{ round(loc.distance) }} miles away</div>
-                                <div class="text-xs pb-2">
-                                    <a
-                                        class="underline"
-                                        :href="'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loc.address)"
-                                        target="_blank">Get directions</a>
-                                </div>
-                                <div class="phone text-sm">
-                                    <a :href="'tel:' + loc.phone">
-                                        <img src="/img/phone.svg" alt="phone" class="inline" />
-                                        {{ loc.phone }}
-                                    </a>
-                                </div>
-                                <div class="appt-link my-2 float-right">
-                                    <a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink" class="bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded">Search Appointments</a>
-                                </div>
-                                <div class="my-2 text-xs text-gray-600 float-left" v-if="loc.updated_at">
-                                    Updated {{ formatDateRelative(loc.updated_at) }} 
-                                    <div class="underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</div>
-                                </div>
+                        <ul class="location-list">
+                            <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
+                                <div class="location-details flex-grow">
+                                    <h3 class="font-bold color-blue mr-28">{{ loc.name }}</h3>
+                                    <div class="address text-sm pb-2" v-html="addressHtml(loc.address)"></div>
+                                    <div class="text-xs" v-if="loc.distance">{{ round(loc.distance) }} miles away</div>
+                                    <div class="text-xs pb-2">
+                                        <a
+                                            class="underline"
+                                            :href="'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loc.address)"
+                                            target="_blank">Get directions</a>
+                                    </div>
+                                    <div class="phone text-sm">
+                                        <a :href="'tel:' + loc.phone">
+                                            <img src="/img/phone.svg" alt="phone" class="inline" />
+                                            {{ loc.phone }}
+                                        </a>
+                                    </div>
+                                    <div class="appt-link my-2 float-right">
+                                        <a :href="loc.bookinglink" target="_blank" v-if="loc.bookinglink" class="bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded">Search Appointments</a>
+                                    </div>
+                                    <div class="my-2 text-xs text-gray-600 float-left" v-if="loc.updated_at">
+                                        Updated {{ formatDateRelative(loc.updated_at) }} 
+                                        <div class="underline cursor-pointer" @click="showInputModal(loc)" v-if="$page.props.user">update now</div>
+                                    </div>
 
 
-                                <div class="available absolute top-2 right-2 text-xs">
-                                    <div v-if="loc.available">
-                                        <span class="mr-1">Available {{ formatDate(loc.available) }}</span>
-                                        <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#039D40"/>
-                                            <path d="M9.17794 13.3117L6.80728 10.824L6 11.6652L9.17794 15L16 7.84116L15.1984 7L9.17794 13.3117Z" fill="#EEF7FF"/>
-                                        </svg>
-                                    </div>
-                                    <div v-else-if="loc.unavailable_until" title="No appointments available">
-                                        <span class="mr-1">Not Available</span>
-                                        <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#FF0000"/>
-                                            <path d="M16 7.00714L14.9929 6L11 9.99286L7.00714 6L6 7.00714L9.99286 11L6 14.9929L7.00714 16L11 12.0071L14.9929 16L16 14.9929L12.0071 11L16 7.00714Z" fill="white"/>
-                                        </svg>
-                                    </div>
-                                    <div v-else>
-                                        <span class="mr-1">Unknown</span>
-                                        <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#CCCCCC"/>
-                                        </svg>
+                                    <div class="available absolute top-2 right-2 text-xs">
+                                        <div v-if="loc.available">
+                                            <span class="mr-1">Available {{ formatDate(loc.available) }}</span>
+                                            <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#039D40"/>
+                                                <path d="M9.17794 13.3117L6.80728 10.824L6 11.6652L9.17794 15L16 7.84116L15.1984 7L9.17794 13.3117Z" fill="#EEF7FF"/>
+                                            </svg>
+                                        </div>
+                                        <div v-else-if="loc.unavailable_until" title="No appointments available">
+                                            <span class="mr-1">Not Available</span>
+                                            <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#FF0000"/>
+                                                <path d="M16 7.00714L14.9929 6L11 9.99286L7.00714 6L6 7.00714L9.99286 11L6 14.9929L7.00714 16L11 12.0071L14.9929 16L16 14.9929L12.0071 11L16 7.00714Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div v-else>
+                                            <span class="mr-1">Unknown</span>
+                                            <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#CCCCCC"/>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="map" class="h-full md:h-auto flex-grow md:order-2"></div>
+                <div id="map" class="map h-full md:block md:h-auto flex-grow md:order-2" :class="{hidden: view == 'list'}"></div>
 
                 <div class="links md:absolute bottom-8 right-20">
                     <template v-if="!$page.props.user">
@@ -496,6 +528,9 @@ export default {
         },
         clearNotifications() {
             toastr.clear();
+        },
+        toggleView() {
+            this.view = this.view == 'list' ? 'map' : 'list';
         },
         round(num, digits) {
             if(digits == null) {

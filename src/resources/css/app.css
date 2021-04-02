@@ -44,6 +44,10 @@ h1.logo {
     max-height: 1000px;
 }
 
+.map {
+    height: calc(100vh - 350px);
+}
+
 @media (min-width: 768px) {
     #toast-container.toast-top-right {
         top: 100px;
