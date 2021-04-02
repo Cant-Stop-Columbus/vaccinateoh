@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 
+use Str;
+
 class Address {
 
     private const REPLACEMENTS = [
@@ -9,16 +11,22 @@ class Address {
         '/\b(S\.|South\b)/i' => 'S',
         '/\b(E\.|East\b)/i' => 'E',
         '/\b(W\.|West\b)/i' => 'W',
+        '/\b(NE\.|Northeast\b)/i' => 'NE',
+        '/\b(SE\.|Southeast\b)/i' => 'SE',
+        '/\b(NW\.|Northwest\b)/i' => 'NW',
+        '/\b(SW\.|Southwest\b)/i' => 'SW',
         '/\b(State|St\.?) (Route\b|Rt\.?)/i' => 'SR',
         '/\bSR\.|SR\b/i' => 'SR',
         '/\b(Rt\.|Route\b)/i' => 'Rt',
         '/\b(St\.|Street\b)/i' => 'St',
         '/\b(Rd\.|Road\b)/i' => 'Rd',
         '/\b(Ct\.|Court\b)/i' => 'Ct',
+        '/\b(Ave\.|Avenue\b)/i' => 'Ave',
         '/\bU\.?S(\.|\b)/i' => 'US',
         '/\bOh\b/i' => 'OH',
         '/\bOhio(?= \d{5})/i' => 'OH', // replace 'Ohio' as the state with 'OH'
-        '/[\|\r\n]+/i' => "\n",  // replace a pipe with a line break
+        '/ (\w+)\n\s/i' => "\n$1 ",  // Fix addresses that got split in the middle of a 2-word city
+        '/\s*[\|\r\n]+\s*/i' => "\n",  // replace a pipe with a line break
     ];
 
     private const REPLACEMENTS_CAPITALIZE = [
@@ -49,7 +57,7 @@ class Address {
             );
         }
 
-        return $address;
+        return trim($address);
     }
 
     public static function parseState($address) {

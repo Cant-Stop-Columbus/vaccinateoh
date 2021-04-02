@@ -50,9 +50,16 @@
         </fieldset>
       </div>
       <div class="col">
-        <button name="import_missing" @click.prevent="importMissing" class="btn btn-primary">
-          Import Missing Locations
-        </button>
+        <div class="mb-3">
+          <button name="import_missing" @click.prevent="importMatches(0)" class="btn btn-primary">
+            Import Missing Locations
+          </button>
+        </div>
+        <div class="mb-3">
+          <button name="import_matched" @click.prevent="importMatches(1)" class="btn btn-primary">
+            Import Matched Locations
+          </button>
+        </div>
       </div>
     </div>
 
@@ -148,10 +155,10 @@ export default {
         };
     },
     methods: {
-        importMissing() {
+        importMatches(match_count) {
             const vue = this;
             axios.post( '/admin/api/location/import', {
-              missing: true,
+              match_count: match_count,
               import_header_map: this.import_header_map,
             }).then(function(response){
                 vue.rows = response.data.rows;
@@ -196,6 +203,7 @@ export default {
                 vue.headers_all = response.data.headers_all;
 
                 vue.setDefaultHeaderMappings();
+                vue.refreshShowStatuses();
 
                 // Set 
                 toastr.success('Upload successful!' );
@@ -208,6 +216,7 @@ export default {
             });
         },
         setDefaultHeaderMappings() {
+          this.import_header_map = {};
           for(let i in this.headers_imported) {
             let header_imported = this.headers_imported[i];
 
@@ -217,7 +226,7 @@ export default {
             // If the header is a match for one of our importable headers, set it
             if(header_match) {
               this.import_header_map[header_imported] = header_match;
-            } else {
+            } else if(header_imported) {
               this.import_header_map[header_imported] = -1;
             }
           };

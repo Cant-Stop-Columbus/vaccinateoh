@@ -66,7 +66,7 @@ class Geo
             // cache hit and location not found; make API request
             $result = Http::get('https://maps.googleapis.com/maps/api/geocode/json?'
                 . 'address='.$zip_code
-                . '&key=' . env('MIX_GOOGLE_MAPS_KEY'));
+                . '&key=' . env('GOOGLE_MAPS_GEOCODING_KEY'));
 
             $latlng = static::parse_google_geocoder_result($result->json());
         }
@@ -119,7 +119,7 @@ class Geo
         // cache hit not found; make API request
         $result = Http::get('https://maps.googleapis.com/maps/api/geocode/json?'
             . 'address='.$address
-            . '&key=' . env('MIX_GOOGLE_MAPS_KEY'));
+            . '&key=' . env('GOOGLE_MAPS_GEOCODING_KEY'));
 
         $latlng = static::parse_google_geocoder_result($result->json());
 

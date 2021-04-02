@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use DB;
+use Str;
 
 use App\Helpers\Address;
 use App\Helpers\Geo;
@@ -23,21 +24,8 @@ class Location extends Model
         'name_address',
     ];
 
-    public $fillable = [
-        'name',
-        'bookinglink',
-        'address',
-        'address2',
-        'city',
-        'state',
-        'zip',
-        'serves',
-        'vaccinesoffered',
-        'siteinstructions',
-        'daysopen',
-        'county',
-        'latitude',
-        'longitude',
+    public $guarded = [
+        'id',
     ];
 
     /**
@@ -53,6 +41,7 @@ class Location extends Model
                 $location->geocode(false, false);
             }
             $location->address = Address::standardize($location->address);
+            $location->alternate_addresses = Address::standardize($location->alternate_addresses);
         });
     }
 
@@ -111,7 +100,7 @@ class Location extends Model
      * @param decimal $lng
      * @return QueryBuilder
      */
-    public function scopeCloseTo($query, $lat, $lng) {
+    public function scopeCloseTo($query, $lat, $lng, $distance = null) {
         $lat = round($lat, 4);
         $lng = round($lng, 4);
         $dist_raw = '3959 * acos ( least(1, greatest(-1,
@@ -122,9 +111,14 @@ class Location extends Model
             * sin( radians( latitude ) )
         )))';
         $dist_q = DB::raw($dist_raw);
-        return $query->select('*')
+        $query->select('*')
             ->selectRaw(DB::raw($dist_raw . ' AS distance'))
             ->orderByRaw($dist_q);
+
+        if($distance > 0) {
+            $query->whereRaw(DB::raw($dist_raw . ' < ' . $distance));
+        }
+
     }
 
     /**
@@ -182,7 +176,9 @@ class Location extends Model
      * @return QueryBuilder
      */
     public function scopeAvailable($query) {
-        return $query->has('futureAvailability');
+        return $query->whereHas('futureAvailability', function($q) {
+            $q->where('doses', '>', 0);
+        });
     }
 
     /**
@@ -192,7 +188,49 @@ class Location extends Model
      * @return QueryBuilder
      */
     public function scopeUnavailable($query) {
+        return $query->whereHas('futureAvailability', function($q) {
+            $q->where('doses', '<', 1);
+        })->whereHas('futureAvailability', function($q) {
+            $q->where('doses', '>', 0);
+        }, '<', 1);
+    }
+
+    /**
+     * Limit query results to locations with NO doses available in the future
+     *
+     * @param QueryBuilder $query
+     * @return QueryBuilder
+     */
+    public function scopeUnknownAvailable($query) {
         return $query->has('futureAvailability', '<', 1);
+    }
+
+    public function scopeLocationTypes($query, $types, $include_null = false) {
+        if(!is_array($types)) {
+            $types = explode(',',$types);
+        }
+        return $query->where(function($q) use($types, $include_null) {
+            $q->whereHas('type', function($q) use($types) {
+                $q->whereIn('location_types.short',$types);
+            });
+            if($include_null) {
+                $q->orHas('type', '<', 1);
+            }
+        });
+    }
+
+    public function scopeAppointmentTypes($query, $types, $include_null) {
+        if(!is_array($types)) {
+            $types = explode(',',$types);
+        }
+        return $query->where(function($q) use($types, $include_null) {
+            $q->whereHas('appointmentTypes', function($q) use($types) {
+                $q->whereIn('appointment_types.short',$types);
+            });
+            if($include_null) {
+                $q->orHas('appointmentTypes', '<', 1);
+            }
+        });
     }
 
     public function type() {
@@ -206,6 +244,26 @@ class Location extends Model
      */
     public function futureAvailability() {
         return $this->hasMany('App\Models\Availability', 'location_id')->where('availability_time', '>=', date('Y-m-d'));
+    }
+
+    public function appointmentTypes() {
+        return $this->belongsToMany('App\Models\AppointmentType', 'locations_appointment_types');
+    }
+
+    public function locationType() {
+        return $this->belongsTo('App\Models\LocationType', 'location_type_id');
+    }
+
+    public function locationSource() {
+        return $this->belongsTo('App\Models\LocationSource', 'location_source_id');
+    }
+
+    public function collectorUser() {
+        return $this->belongsTo('App\Models\User', 'collector_user_id');
+    }
+
+    public function dataUpdateMethod() {
+        return $this->belongsTo('App\Models\DataUpdateMethod', 'data_update_method_id');
     }
 
     /**
@@ -238,24 +296,67 @@ class Location extends Model
         }
 
         if(!empty($row['address'])) {
-            $locations = Location::where('address', 'ILIKE', substr($row['address'],0,8).'%')->get();
+            // Match the first 8 characters of the address
+            $locations = Location::where('address', 'ILIKE', substr(Address::standardize($row['address']),0,8).'%')->get();
 
-            if($locations) {
-                return $locations;
+            if($locations->count()) {
+                return static::dedupByImportRow($row, $locations);
+            }
+
+            // Check alternate addresses
+            $locations = Location::where('alternate_addresses', 'ILIKE', '%' . substr(Address::standardize($row['address']),0,8).'%')->get();
+
+            if($locations->count()) {
+                return static::dedupByImportRow($row, $locations);
             }
         }
 
         if(!empty($row['name'])) {
             // Case insensitive name search
-            $locations = Location::where('name', 'ILIKE', $row['name'])->get();
+            $locations = Location::where('name', 'ILIKE', $row['name'])
+                ->whereNotIn(DB::raw('LOWER(name)'), [
+                    'kroger pharmacy',
+                    'rite aid',
+                    'walmart',
+                    'walgreens pharmacy',
+                    'giant eagle pharmacy',
+                    'discount drug mart inc',
+                ])
+                ->get();
 
             // Could be multiple locations
-            if($locations) {
+            if($locations->count()) {
                 return $locations;
             }
         }
 
         return collect();
+    }
+
+    public static function dedupByImportRow($row, $locations) {
+        if($locations->count() < 2) {
+            return $locations;
+        }
+
+        // remove any with names that don't start with the same 8 characters (case insensitive)
+        $locations = $locations->filter(function($l) use($row) {
+            if(!empty($row['name'])) {
+                return strtolower(substr($l->name,0,8)) == strtolower(substr($row['name'],0,8));
+            }
+        })->values(); //values() resets the array keys to start with 0 even if 0 was filtered out
+
+        if($locations->count() < 2) {
+            return $locations;
+        }
+
+        // if we still have duplicates, check the end of the address
+        $locations = $locations->filter(function($l) use($row) {
+            if(!empty($row['name'])) {
+                return Str::of($l->name)->endsWith(substr($row['address'],-5));
+            }
+        })->values(); //values() resets the array keys to start with 0 even if 0 was filtered out
+
+        return $locations;
     }
 
     public function clearAvailability($except_id = null) {
@@ -318,8 +419,20 @@ class Location extends Model
         return $this->available ? null : $this->futureAvailability()->where('doses', '0')->min('availability_time');
     }
 
+    public function getAvailabilityUpdatedAtAttribute() {
+        return empty($this->latestAvailability) ? null : $this->latestAvailability->updated_at;
+    }
+
     public function availabilities() {
         return $this->hasMany('App\Models\Availability', 'location_id');
+    }
+
+    public function alltimeAvailabilities() {
+        return $this->hasMany('App\Models\Availability', 'location_id')->withTrashed();
+    }
+
+    public function latestAvailability() {
+        return $this->hasOne('App\Models\Availability', 'location_id')->orderBy('updated_at','desc');
     }
 
     public static function standardizeAll() {
@@ -329,6 +442,12 @@ class Location extends Model
             if($l->address != $new_address) {
                 $changed[$l->address] = $new_address;
                 $l->address = $new_address;
+                $l->save();
+            }
+            $new_altaddress = Address::standardize($l->alternate_addresses);
+            if($l->alternate_addresses != $new_altaddress) {
+                $changed[$l->alternate_addresses] = $new_altaddress;
+                $l->alternate_addresses = $new_altaddress;
                 $l->save();
             }
         });

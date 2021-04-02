@@ -8,10 +8,17 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: #fff;
 }
 
-.search-box {
-    width: 300px;
+body.not-prod {
+    background: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        #ffffff 10px,
+        #eeeeff 10px,
+        #eeeeff 20px
+    );
 }
 
 h1.logo {
@@ -27,6 +34,16 @@ h1.logo {
     min-height: calc(100vh - 100px);
 }
 
+.filters-box {
+    max-height: 0;
+    transition: max-height .5s;
+    overflow: hidden;
+}
+
+.filters-box.show {
+    max-height: 1000px;
+}
+
 @media (min-width: 768px) {
     #toast-container.toast-top-right {
         top: 100px;
@@ -35,4 +52,38 @@ h1.logo {
     .map-search-wrapper {
         height: calc(100vh - 100px);
     }
+
+    #location-sidebar {
+        width: 30rem;
+    }
 }
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    
+   }
+
+input[type="radio"] + span.radio {
+    transition: background .2s,
+      transform .2s;
+}
+
+label.radio span.radio:hover,
+label.radio:hover span.radio {
+  transform: scale(1.2);
+}
+
+input[type="radio"]:checked + span.radio {
+  background-color: #3490DC;
+  box-shadow: 0px 0px 0px 6px white inset;
+}
+
+input[type="radio"]:checked + span + span {
+   color: #3490DC;
+}
+
+input:checked + svg.checkmark {
+    display: block;
+  }

@@ -11,28 +11,79 @@
                 <div class="float-right px-6 py-2 z-40">
                     <a href="/" class="text-blue font-bold ml-4">Home</a>
 
-                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4">About Us</a>
+                    <a href="https://info.vaccinateoh.org" class="text-blue font-bold ml-4"  rel="noopener noreferrer">About Us</a>
 
-                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4">FAQ</a>
+                     <a href="https://info.vaccinateoh.org/providers/" class="text-blue font-bold ml-4" rel="noopener noreferrer">For Providers</a>
+
+                     <a href="https://info.vaccinateoh.org/faq" class="text-blue font-bold ml-4" rel="noopener noreferrer">FAQ</a>
                 </div>
             </div>
-            <div class="relative w-full md:flex map-search-wrapper">
-                <div id="location-sidebar" class="md:h-full p-2 md:w-96 flex-none md:overflow-y-auto md:order-1">
+            <div class="relative w-full md:flex pb-22 map-search-wrapper">
+                <div id="location-sidebar" class="h-full p-2 flex-none md:overflow-y-auto md:order-1">
 
-                    <div class="search-box">
-                        <h2 class="text-blue font-bold">Vaccine Finder</h2>
-                        <p>Search vaccine appointment availability by entering in your zipcode.</p>
+                    <div class="search-box w-full">
+                        <h2 class="text-blue font-bold">Vaccine Appointment Finder</h2>
+                        <p>Search vaccine appointment availability by entering in your city, or county, or zipcode.</p>
                         <br>
                         <form @submit.prevent="searchLocations(null)" class="flex">
-                            <input class="border border-blue rounded w-full px-2 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
+                            <input class="border border-blue rounded rounded-r-none w-full px-2 py-0 text-gray-700 leading-tight focus:outline-none active:outline-none" id="search" type="text" placeholder="Address/City/Zip Search" v-model="search_q">
 
-                            <button class="bg-blue text-white font-bold rounded-2 py-1 px-3 hover:bg-blue-light rounded ml-1" type="submit">
-                                Search
+                            <button class="bg-blue text-white font-bold rounded-2 py-1 px-3 hover:bg-blue-light rounded rounded-l-none h-10 w-12" type="submit">
+                                <span class="sr-only">Search</span>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0833 13.3333H14.1617L13.835 13.0183C14.9783 11.6883 15.6667 9.96167 15.6667 8.08333C15.6667 3.895 12.2717 0.5 8.08333 0.5C3.895 0.5 0.5 3.895 0.5 8.08333C0.5 12.2717 3.895 15.6667 8.08333 15.6667C9.96167 15.6667 11.6883 14.9783 13.0183 13.835L13.3333 14.1617V15.0833L19.1667 20.905L20.905 19.1667L15.0833 13.3333ZM8.08333 13.3333C5.17833 13.3333 2.83333 10.9883 2.83333 8.08333C2.83333 5.17833 5.17833 2.83333 8.08333 2.83333C10.9883 2.83333 13.3333 5.17833 13.3333 8.08333C13.3333 10.9883 10.9883 13.3333 8.08333 13.3333Z" fill="white"/>
+                                </svg>
                             </button>
-                        </form>
-                    </div>
 
-                    <ul class="location-list w-full">
+                        <div class="cursor-pointer flex flex-col text-sm ml-2 -my-2" @click="toggleFilters">
+                            <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-auto w-8">
+                                <path d="M29.97 15.12H19.425C19.018 13.08 17.316 11.56 15.318 11.56C13.32 11.56 11.618 13.08 11.211 15.12H0.925C0.407 15.12 0 15.56 0 16.12C0 16.68 0.407 17.12 0.925 17.12H11.211C11.618 19.16 13.32 20.68 15.318 20.68C17.316 20.68 19.018 19.16 19.425 17.12H29.97C30.488 17.12 30.895 16.68 30.895 16.12C30.895 15.6 30.451 15.12 29.97 15.12ZM15.318 18.68C14.023 18.68 12.95 17.52 12.95 16.12C12.95 14.72 14.023 13.56 15.318 13.56C16.613 13.56 17.686 14.72 17.686 16.12C17.686 17.52 16.613 18.68 15.318 18.68Z" fill="#0286FF"/>
+                                <path d="M4.25499 9.12C6.25299 9.12 7.95499 7.6 8.36199 5.56H29.933C30.451 5.56 30.858 5.12 30.858 4.56C30.858 4 30.451 3.56 29.933 3.56H8.36199C7.95499 1.52 6.25299 0 4.25499 0C1.92399 0 0.0369873 2.08 0.0369873 4.56C0.0369873 7.04 1.92399 9.12 4.25499 9.12ZM4.25499 2C5.54999 2 6.62299 3.16 6.62299 4.56C6.62299 5.96 5.54999 7.12 4.25499 7.12C2.95999 7.12 1.88699 5.96 1.88699 4.56C1.88699 3.16 2.95999 2 4.25499 2Z" fill="#0286FF"/>
+                                <path d="M26.64 23.2C24.642 23.2 22.977 24.72 22.533 26.72H0.925C0.407 26.72 0 27.16 0 27.72C0 28.28 0.407 28.72 0.925 28.72H22.533C22.94 30.76 24.642 32.32 26.64 32.32C28.971 32.32 30.858 30.28 30.858 27.76C30.858 25.24 28.934 23.2 26.64 23.2ZM26.64 30.28C25.345 30.28 24.272 29.12 24.272 27.72C24.272 26.32 25.345 25.16 26.64 25.16C27.935 25.16 29.008 26.32 29.008 27.72C29.008 29.12 27.935 30.28 26.64 30.28Z" fill="#0286FF"/>
+                            </svg>
+                            <span class="text-blue m-auto" :class="{showing: show_filters}">Filter/Sort</span>
+                        </div>
+
+                        </form>
+
+                    <ul class="location-list">
+                        <div class="filters-box" :class="{show: show_filters}">
+                            <h3 class="text-blue font-bold my-2"></h3>
+                            <div class="flex flex-wrap">
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Availability:</h4>
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="only" label="Available" />
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="no" label="Not Available" />
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="all" label="All" />
+                                    <radio v-model="search_filters.available" name="search_available" class="text-xs" value="prefer" label="All with Available First" />
+                                </div>
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Distance:</h4>
+                                    <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="1" label="Within 1 mile" />
+                                    <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="20" label="Within 20 miles" />
+                                    <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="-1" label="Everywhere" />
+                                </div>
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Site Type:</h4>
+                                    <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" checked label="Healthcare Provider" />
+                                    <checkbox v-model="search_filters.site_type.d" name="search_site_type_d" class="text-xs" value="d" checked label="Local Health Department" />
+                                    <checkbox v-model="search_filters.site_type.p" name="search_site_type_p" class="text-xs" value="p" checked label="Pharmacies" />
+                                </div>
+                                <div class="p-2 text-sm md:w-1/2">
+                                    <h4 class="text-blue">Sort by Appointment Type:</h4>
+                                    <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" checked label="Schedule by web" />
+                                    <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" checked label="Schedule by phone" />
+                                    <checkbox v-model="search_filters.appt_type['walk-in']" name="search_appt_type_n" class="text-xs" value="walk-in" checked label="Walk-ins" />
+                                </div>
+                            </div>
+                            <button class="float-right bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded" @click="searchLocations">
+                                Apply Filters
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <ul class="location-list">
+>>>>>>> main
                         <h2 class="text-blue font-bold">Search Results</h2>
                         <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
                             <div class="location-details flex-grow">
@@ -85,16 +136,6 @@
                             </div>
                         </li>
                     </ul>
-
-                    <p class="p-2 text-xs">
-                        Availability Preference: 
-                        <select v-model="search_available" class="text-xs" @change="searchLocations()">
-                            <option value="prefer">Prefer available; show both</option>
-                            <option value="all">No preference; show both</option>
-                            <option value="only">Show only available</option>
-                            <option value="no">Show only unavailable</option>
-                        </select>
-                    </p>
                 </div>
                 <div id="map" class="h-full md:h-auto flex-grow md:order-2"></div>
 
@@ -114,7 +155,7 @@
                For questions about COVID-19 please call the Ohio Department of Health call center: 1-833-4-ASK-ODH (1-833-427-5634)
                 </div>                
                 <div class="text-right text-white text-xs">
-               Made with <svg class="svg-inline--fa fa-heart" style="color: white;" aria-hidden="true" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg> by volunteers as part of Can't Stop Columbus"
+               Made with <svg class="svg-inline--fa fa-heart" style="color: white;" aria-hidden="true" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg> by volunteers as part of Can't Stop Columbus
                 </div>
             </div>
         </div>
@@ -172,12 +213,19 @@ import { Loader } from '@googlemaps/js-api-loader';
 import toastr from 'toastr';
 import * as dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import Radio from '../Components/Radio';
+import Checkbox from '../Components/Checkbox';
 
 dayjs.extend(relativeTime)
 
 export default {
+    components: {
+        Checkbox,
+        Radio,
+    },
     props: {
         locations: Array,
+        google_maps_js_key: String,
     },
     data() {
         return {
@@ -207,14 +255,34 @@ export default {
                 ],
             },
             search_q: '',
-            search_available: 'prefer',
+            search_filters: {
+                available: 'all',
+                distance: 20,
+                /*
+                site_type: ['h','d','p'],
+                appt_type: ['web','phone','walk-in'],
+                */
+                site_type: {
+                    h: true,
+                    d: true,
+                    p: true,
+                },
+                appt_type: {
+                    web: true,
+                    phone: true,
+                    'walk-in': true,
+                },
+            },
+            search_page_size: this.mobileCheck() ? 20 : 2000,
             search_locations: [],
+            searching_current_location: false,
             search_center: {
                 lat:null,
                 lng:null
             },
             current_location: null,
             view: 'list',
+            show_filters: false,
         };
     },
     methods: {
@@ -225,9 +293,14 @@ export default {
             // if a search query isn't specified and we have the user location, search on it
             if(!q && !this.search_q && this.current_location) {
                 q = this.current_location.lat + ',' + this.current_location.lng;
+                this.searching_current_location = true;
+            } else {
+                this.searching_current_location = false;
             }
 
             let search_term = q || this.search_q;
+            let dist_string = this.getDistanceString(this.search_filters.distance);
+            let location_string = this.getSearchLocationString(search_term);
 
             if(window.gtag) {
                 gtag('event', 'search', {
@@ -235,12 +308,17 @@ export default {
                 });
             }
 
-            toastr.info('Locating vaccine appointments near ' + search_term, 'Searching', {
-                    closeButton: true,
-                    timeOut: 0,
-                    extendedTimeOut: 0,
-                });
-            axios.get('/api/locations?q=' + search_term + '&available=' + this.search_available)
+            let filters = 'available=' + this.search_filters.available
+                + '&distance=' + this.search_filters.distance
+                + '&site_type=' + this.getFilterValues(this.search_filters.site_type).join(',')
+                + '&appt_type=' + this.getFilterValues(this.search_filters.appt_type).join(',')
+
+            toastr.info('Locating vaccine appointments' + dist_string + location_string, 'Searching', {
+                closeButton: true,
+                timeOut: 0,
+                extendedTimeOut: 0,
+            });
+            axios.get('/api/locations?q=' + search_term + '&page_size=' + this.search_page_size + '&' + filters)
                 .then(resp => {
                     // If no locations are found, show a warning but don't clear the results;
                     this.clearNotifications();
@@ -249,16 +327,36 @@ export default {
                         return;
                     }
                     let this_page_count = resp.data.locations.to - resp.data.locations.from + 1;
-                    if(resp.data.total > this_page_count) {
-                        toastr.success('We found ' + resp.data.locations.total + ' locations. Showing the ' + this_page_count + ' closest.');
+                    if(resp.data.locations.total > this_page_count) {
+                        toastr.success('We found ' + resp.data.locations.total + ' locations' + dist_string + location_string + '. Showing the ' + this_page_count + ' closest.');
                     } else {
-                        toastr.success('We found ' + this_page_count + ' locations.');
+                        toastr.success('We found ' + this_page_count + ' locations' + dist_string + location_string + '.');
                     }
                     this.search_locations = resp.data.locations.data;
                     this.search_center = resp.data.q;
                     document.querySelector('#location-sidebar').scrollTop = 0;
                     this.resetMarkers(this.search_locations);
                 });
+        },
+        getDistanceString(distance) {
+            return distance < 0 ? ' near ' : ' within ' + distance + ' miles of ';
+        },
+        getSearchLocationString(search_term) {
+            return this.searching_current_location ? 'your current location' : search_term;
+        },
+        getFilterValues(obj) {
+            let vals = [];
+            for(let i in obj) {
+                if(obj[i]) {
+                    vals.push(i);
+                }
+            }
+            return vals;
+        },
+        mobileCheck() {
+            let check = false;
+            (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+            return check;
         },
         resetMarkers(locations) {
             window.markers = window.markers || [];
@@ -371,6 +469,9 @@ export default {
                 );
             }
         },
+        toggleFilters() {
+            this.show_filters = !this.show_filters;
+        },
         submitAvailability() {
             let vue = this;
             axios.post('/api/locations/' + this.update_input.location.id + '/availability', {
@@ -417,7 +518,7 @@ export default {
     },
     mounted() {
         const loader = new Loader({
-            apiKey: process.env.MIX_GOOGLE_MAPS_KEY,
+            apiKey: this.google_maps_js_key,
             version: "weekly",
             libraries: []
         });

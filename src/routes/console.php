@@ -39,3 +39,69 @@ Artisan::command('standardize-addresses', function() {
     dd($standardized);
     //$this->info("Standardized $standardized addresses.");
 });
+
+Artisan::command('set-location-types', function() {
+    $map = [
+        1 => [
+            'public health',
+            'department',
+            'health district',
+        ],
+        2 => [
+            'kroger',
+            'walgreens',
+            'walmart',
+            'rite aid',
+            'discount drug'
+        ],
+        3 => [
+            'hospital',
+            'dentistry',
+            'ohiohealth',
+            'healthsource',
+        ]
+    ];
+    foreach($map as $location_type_id => $strings) {
+        foreach($strings as $string) {
+            Location::whereNull('location_type_id')
+                ->where('name','ilike','%' . $string . '%')
+                ->get()
+                ->each(function($l) use($location_type_id) {
+                    $l->location_type_id = $location_type_id; $l->save();
+                });
+        }
+    }
+    $this->comment(Location::whereNull('location_type_id')->select('name')->distinct()->orderBy('name')->pluck('name'));
+    $this->info(Location::whereNull('location_type_id')->count());
+});
+
+
+Artisan::command('set-appointment-types {--force}', function() {
+    $updated = 0;
+    if($this->option('force')) {
+        $locations = Location::get();
+    } else {
+        $locations = Location::has('appointmentTypes', '<', 1)->get();
+    }
+
+    $this->info('Found ' . $locations->count() . ' locations without appointment types indicated.');
+
+    $locations->each(function($l) use(&$updated) {
+        $atypes = $l->appointmentTypes->pluck('id');
+        $updated_this = false;
+        if($l->bookinglink && !$atypes->contains(1)) {
+            $l->appointmentTypes()->attach(1); // 1 == Web
+            $updated_this = true;
+        }
+
+        if($l->phone && !$atypes->contains(2)) {
+            $l->appointmentTypes()->attach(2); // 2 == Phone
+            $updated_this = true;
+        }
+
+        if($updated_this) {
+            $updated++;
+        }
+    });
+    $this->info("Updated $updated locations with appointment types");
+});

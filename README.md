@@ -52,7 +52,7 @@ the input device is not a TTY.  If you are using mintty, try prefixing the comma
 make: *** [Makefile:164: install] Error 1`
 
 
-To fix this we can modify the Makefile in build folder as shown below.
+To fix this we can modify the `build/env.mk` file in build folder and add below commands to the environment make file which is specific to developer.
 
 - DOCKER_WEB_EXEC=winpty docker-compose exec --user=application web
 - DOCKER_DB_EXEC=winpty docker-compose exec db

@@ -21,9 +21,11 @@ use App\Http\Controllers\StatsController;
 
 Route::get('/', function () {
     $locations = [];
+    $google_maps_js_key = env('GOOGLE_MAPS_JS_KEY');
 
     return Inertia::render('Welcome', compact([
         'locations',
+        'google_maps_js_key',
     ]));
 });
 

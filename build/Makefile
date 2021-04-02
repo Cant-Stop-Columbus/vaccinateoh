@@ -106,12 +106,12 @@ package-app:
 	cd ../src && git archive HEAD > ../build/images/app.tar
 
 build-web:
-	docker build -t $(WEB_REPO_NAME) -f images/web.Dockerfile --build-arg GOOGLE_MAPS_KEY=$(MIX_GOOGLE_MAPS_KEY) images
+	docker build -t $(WEB_IMAGE_NAME) -f images/web.Dockerfile images
 
 push: push-web
 
 push-web:
-	docker push $(WEB_REPO_NAME)
+	docker push $(WEB_IMAGE_NAME)
 
 release: build push
 
@@ -143,7 +143,7 @@ nginx-proxy-down:
 composer-install:
 	$(DOCKER_WEB_EXEC) composer install
 
-setup-environment: install composer-install run-dev migrate seed
+setup-environment: install composer-install run-dev migrate seed seed-locations
 
 migrate:
 	$(DOCKER_WEB_EXEC) php artisan migrate
@@ -153,9 +153,6 @@ seed:
 
 seed-locations:
 	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationSeeder
-
-seed-location-types:
-	$(DOCKER_WEB_EXEC) php artisan db:seed --class=LocationTypeSeeder
 
 tinker:
 	$(DOCKER_WEB_EXEC) php artisan tinker

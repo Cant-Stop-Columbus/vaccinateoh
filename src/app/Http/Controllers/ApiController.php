@@ -15,8 +15,11 @@ class ApiController extends Controller
         $default_page_size = env('LOCATION_PAGE_SIZE', 100);
 
         $q = trim($request->input('q'));
+        $distance = $request->input('distance', -1);
         $page_size = intval(trim($request->input('page_size')));
-        $available = trim($request->input('available', 'preferred'));
+        $available = trim($request->input('available', 'all'));
+        $site_type = $request->input('site_type');
+        $appt_type = $request->input('appt_type');
 
         // Just set a default always true clause to initialize the QueryBuilder object
         $locations = Location::whereRaw(\DB::raw('1=1'));
@@ -28,6 +31,14 @@ class ApiController extends Controller
             $locations->unavailable();
         } else if($available != 'all') {
             $locations->preferAvailable();
+        }
+
+        if($site_type) {
+            $locations->locationTypes($site_type, false);
+        }
+
+        if($appt_type) {
+            $locations->appointmentTypes($appt_type, false);
         }
 
         $matches = [];
@@ -51,7 +62,7 @@ class ApiController extends Controller
         }
 
         if($lat != null) {
-            $locations->closeTo($lat,$lng);
+            $locations->closeTo($lat,$lng,$distance);
         }
 
         /**
@@ -68,6 +79,9 @@ class ApiController extends Controller
                 'q',
                 'page_size',
                 'available',
+                'distance',
+                'site_type',
+                'appt_type',
             ]));
 
         $q = $lat == null ? $q : compact(['lat','lng']);
@@ -107,5 +121,17 @@ class ApiController extends Controller
         }
 
         return $availability;
+    }
+
+    public function armorvax(Request $request) {
+        $data = $request->all();
+        $data_string = json_encode($data, JSON_PRETTY_PRINT);
+        $path = sprintf('armorvax/%s/u%d_%s.json', config('app.env'), $request->user()->id, date('Y-m-d_his'));
+
+        // Write the full JSON data to a file on S3
+        \Storage::disk('s3')->write($path, $data_string);
+
+        // echo back the same json that was posted
+        return response()->json($data);
     }
 }
