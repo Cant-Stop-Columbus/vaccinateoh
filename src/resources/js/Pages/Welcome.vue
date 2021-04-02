@@ -114,8 +114,15 @@
                         Show {{ view == 'list' ? 'Map' : 'List' }} View
                     </div>
                     <div class="search-results-wrapper md:block" :class="{hidden: view == 'map'}">
-                        <h2 class="text-blue font-bold">Search Results</h2>
-                        <ul class="location-list">
+                        <h2 class="text-blue">Search Results</h2>
+                        <div class="text-blue text-2xl text-center" :class="{hidden: !searching}">
+                            <svg class="animate-spin -mt-1 h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            Searching...
+                        </div>
+                        <ul class="location-list" :class="{'opacity-70': searching}">
                             <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
                                 <div class="location-details flex-grow">
                                     <h3 class="font-bold color-blue mr-28">{{ loc.name }}</h3>
@@ -171,7 +178,7 @@
                 </div>
                 <div id="map" class="map h-full md:block md:h-auto flex-grow md:order-2" :class="{hidden: view == 'list'}"></div>
 
-                <div class="links md:absolute bottom-8 right-20">
+                <div class="links relative md:absolute bottom-8 right-5 md:right-20 text-right">
                     <template v-if="!$page.props.user">
                         <a :href="route('register')" class="ml-4 text-sm text-gray-700 underline ml-4">Register as a Volunteer</a>
                         <a :href="route('login')" class="text-sm text-gray-700 underline ml-4">Log in</a>
@@ -307,6 +314,7 @@ export default {
             },
             search_page_size: this.mobileCheck() ? 20 : 2000,
             search_locations: [],
+            searching: false,
             searching_current_location: false,
             search_center: {
                 lat:null,
@@ -319,6 +327,7 @@ export default {
     },
     methods: {
         searchLocations(event) {
+            this.searching = true;
             // don't try to use the first arg if it isn't a string
             let q = typeof(event) === 'string' ? event : null;
 
@@ -352,6 +361,7 @@ export default {
             });
             axios.get('/api/locations?q=' + search_term + '&page_size=' + this.search_page_size + '&' + filters)
                 .then(resp => {
+                    this.searching = false;
                     // If no locations are found, show a warning but don't clear the results;
                     this.clearNotifications();
                     if(!resp.data.locations.total) {
