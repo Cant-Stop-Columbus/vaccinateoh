@@ -235,7 +235,7 @@ class LocationCrudController extends CrudController
             'type'  => 'select2',
             'label' => 'Collector User'
         ], function () {
-            return User::has('locations')->pluck('name', 'id')->prepend('-- None --',0)->toArray();
+            return User::has('locations')->orderBy('name')->pluck('name', 'id')->prepend('-- None --',0)->toArray();
         }, function ($value) { // if the filter is active
             if($value == 0) {
                 CRUD::addClause('whereNull', 'collector_user_id');

@@ -6,6 +6,8 @@ use App\Http\Requests\AvailabilityRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
+use App\Models\User;
+
 /**
  * Class AvailabilityCrudController
  * @package App\Http\Controllers\Admin
@@ -48,6 +50,12 @@ class AvailabilityCrudController extends CrudController
                 $query->orWhereHas('location',function($query2) use($searchTerm) {
                     $query2->where('name', 'ILIKE', '%'.$searchTerm.'%');
                 });
+            },
+            'orderable' => true,
+            'orderLogic' => function ($query, $column, $columnDirection) {
+                return $query->leftJoin('locations', 'locations.id', '=', 'availabilities.location_id')
+                ->orderBy('locations.name', $columnDirection)
+                ->orderBy('locations.address', $columnDirection);
             }
         ]);
         CRUD::column('doses');
@@ -89,6 +97,33 @@ class AvailabilityCrudController extends CrudController
               $this->crud->query = $this->crud->query->withTrashed();
           }
         );
+
+        CRUD::addFilter([
+            'type'  => 'simple',
+            'name'  => 'multiple_future',
+            'label' => 'Has multiple future availabilities'
+          ],
+          false,
+          function($values) { // if the filter is active
+              $this->crud->query = $this->crud->query->whereHas('location', function($q) {
+                  $q->has('futureAvailability', '>', 1);
+              });
+          }
+        );
+
+        $this->crud->addFilter([
+            'name'  => 'updated_by_user_id',
+            'type'  => 'select2',
+            'label' => 'Updated By User'
+        ], function () {
+            return User::has('availabilities')->orderBy('name')->pluck('name', 'id')->prepend('-- None --',0)->toArray();
+        }, function ($value) { // if the filter is active
+            if($value == 0) {
+                CRUD::addClause('whereNull', 'updated_by_user_id');
+            } else {
+                CRUD::addClause('where', 'updated_by_user_id', $value);
+            }
+        });
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -138,6 +173,12 @@ class AvailabilityCrudController extends CrudController
             'default' => \Auth::user()->id,
             'type' => 'relationship',
             'attribute' => 'name',
+        ]);
+        CRUD::addField([
+            'name' => 'clear_existing',
+            'label' => 'Clear existing future availability',
+            'default' => true,
+            'type' => 'checkbox',
         ]);
 
         /**
