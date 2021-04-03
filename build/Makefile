@@ -135,8 +135,8 @@ nginx-proxy: init-proxy-network certs/default.key certs/default.crt
 	docker pull jwilder/nginx-proxy
 	docker run -d --name nginx-proxy -p 80:80 -p 443:443 \
 	-v /var/run/docker.sock:/tmp/docker.sock:ro \
-	-v $(PWD)/certs:/etc/nginx/certs \
-	-v $(PWD)/conf/custom.conf:/etc/nginx/conf.d/custom.conf \
+	-v "$(PWD)/certs:/etc/nginx/certs" \
+	-v "$(PWD)/conf/custom.conf:/etc/nginx/conf.d/custom.conf" \
 	--restart=unless-stopped \
 	--network=proxy-network jwilder/nginx-proxy
 
