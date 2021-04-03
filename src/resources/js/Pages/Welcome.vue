@@ -312,7 +312,7 @@ export default {
                     'walk-in': true,
                 },
             },
-            search_page_size: this.mobileCheck() ? 20 : 2000,
+            search_page_size: 2000,
             search_locations: [],
             searching: false,
             searching_current_location: false,
