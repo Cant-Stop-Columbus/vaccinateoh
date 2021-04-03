@@ -29,11 +29,12 @@ export default {
     computed: {
         proxyChecked: {
             get(param) {
-                return this.checked;
+                return this.modelValue;
             },
 
             set(val) {
                 console.log(val);
+                this.modelValue = val;
                 this.$emit("update:modelValue", val);
             },
         },

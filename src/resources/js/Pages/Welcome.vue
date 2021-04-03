@@ -64,15 +64,15 @@
                                 </div>
                                 <div class="p-2 text-sm md:w-1/2">
                                     <h4 class="text-blue">Sort by Site Type:</h4>
-                                    <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" checked label="Healthcare Provider" />
-                                    <checkbox v-model="search_filters.site_type.d" name="search_site_type_d" class="text-xs" value="d" checked label="Local Health Department" />
-                                    <checkbox v-model="search_filters.site_type.p" name="search_site_type_p" class="text-xs" value="p" checked label="Pharmacies" />
+                                    <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" label="Healthcare Provider" />
+                                    <checkbox v-model="search_filters.site_type.d" name="search_site_type_d" class="text-xs" value="d" label="Local Health Department" />
+                                    <checkbox v-model="search_filters.site_type.p" name="search_site_type_p" class="text-xs" value="p" label="Pharmacies" />
                                 </div>
                                 <div class="p-2 text-sm md:w-1/2">
                                     <h4 class="text-blue">Sort by Appointment Type:</h4>
-                                    <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" checked label="Schedule by web" />
-                                    <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" checked label="Schedule by phone" />
-                                    <checkbox v-model="search_filters.appt_type['walk-in']" name="search_appt_type_n" class="text-xs" value="walk-in" checked label="Walk-ins" />
+                                    <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" label="Schedule by web" />
+                                    <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" label="Schedule by phone" />
+                                    <checkbox v-model="search_filters.appt_type['walk-in']" name="search_appt_type_n" class="text-xs" value="walk-in" label="Walk-ins" />
                                 </div>
                             </div>
                             <button class="float-right bg-blue hover:bg-blue-light text-white font-bold py-1 my-1 px-2 rounded" @click="searchLocations">
@@ -352,7 +352,9 @@ export default {
             let filters = 'available=' + this.search_filters.available
                 + '&distance=' + this.search_filters.distance
                 + '&site_type=' + this.getFilterValues(this.search_filters.site_type).join(',')
-                + '&appt_type=' + this.getFilterValues(this.search_filters.appt_type).join(',')
+                + '&appt_type=' + this.getFilterValues(this.search_filters.appt_type).join(',');
+
+            this.storeSearchPrefs();
 
             toastr.info('Locating vaccine appointments' + dist_string + location_string, 'Searching', {
                 closeButton: true,
@@ -379,6 +381,28 @@ export default {
                     document.querySelector('#location-sidebar').scrollTop = 0;
                     this.resetMarkers(this.search_locations);
                 });
+        },
+        loadSearchPrefs() {
+            let ls = window.localStorage['search_prefs'];
+            if(!ls) {
+                return false;
+            }
+            let search_prefs = JSON.parse(window.localStorage['search_prefs']);
+            this.search_filters = search_prefs.search_filters;
+            this.search_q = search_prefs.search_q;
+            this.view = search_prefs.view;
+            this.show_filters = search_prefs.show_filters;
+
+            return search_prefs;
+        },
+        storeSearchPrefs() {
+            let search_prefs = {
+                search_filters: this.search_filters,
+                search_q: this.search_q,
+                view: this.view,
+                show_filters: this.show_filters,
+            };
+            window.localStorage['search_prefs'] = JSON.stringify(search_prefs);
         },
         getDistanceString(distance) {
             return distance < 0 ? ' near ' : ' within ' + distance + ' miles of ';
@@ -457,7 +481,6 @@ export default {
                     lat: parseFloat(this.search_center.lat),
                     lng: parseFloat(this.search_center.lng),
                 }
-                console.log(latlng);
                 this.map.gmap.setCenter(latlng);
                 this.map.gmap.setZoom(10);
             }
@@ -541,6 +564,7 @@ export default {
         },
         toggleView() {
             this.view = this.view == 'list' ? 'map' : 'list';
+            this.storeSearchPrefs();
         },
         round(num, digits) {
             if(digits == null) {
@@ -568,6 +592,8 @@ export default {
             libraries: []
         });
 
+        this.loadSearchPrefs();
+
         this.search_locations = this.locations;
         window.vaccine_vue = this;
 
@@ -586,7 +612,11 @@ export default {
                 window.infoWindow = this.map.infoWindow;
 
                 this.resetMarkers(this.locations);
-                this.updateCurrentLocation();
+                if(this.search_q) {
+                    this.searchLocations();
+                } else {
+                    this.updateCurrentLocation();
+                }
             });
     },
 };
