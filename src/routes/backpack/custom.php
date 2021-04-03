@@ -28,4 +28,5 @@ Route::group([
     Route::crud('locationsource', 'LocationSourceCrudController');
     Route::crud('appointmenttype', 'AppointmentTypeCrudController');
     Route::crud('dataupdatemethod', 'DataUpdateMethodCrudController');
+    Route::crud('locationtype', 'LocationTypeCrudController');
 }); // this should be the absolute last line of this file

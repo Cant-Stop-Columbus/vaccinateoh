@@ -6,9 +6,10 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('location') }}'><i class='nav-icon la la-map-marker'></i> Locations</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('availability') }}'><i class='nav-icon la la-syringe'></i> Availabilities</a></li>
 <hr>
-<li class='nav-item'><a class='nav-link' href='{{ backpack_url('locationsource') }}'><i class='nav-icon la la-list'></i> LocationSources</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('appointmenttype') }}'><i class='nav-icon la la-list'></i> AppointmentTypes</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('dataupdatemethod') }}'><i class='nav-icon la la-list'></i> DataUpdateMethods</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('locationsource') }}'><i class='nav-icon la la-list'></i> LocationSources</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('locationtype') }}'><i class='nav-icon la la-list'></i> LocationTypes</a></li>
 <hr>
 <li class='nav-item'><a class='nav-link' href='{{ route('admin.location.import') }}'><i class='nav-icon la la-map-marker'></i> Location Import</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ route('admin.location.export') }}'><i class='nav-icon la la-download'></i> Location Export</a></li>

@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class LocationType extends Model
 {
+    use \Backpack\CRUD\app\Models\Traits\CrudTrait;
     use HasFactory;
 }
