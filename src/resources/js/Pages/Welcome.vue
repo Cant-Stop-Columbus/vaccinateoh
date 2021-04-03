@@ -46,29 +46,54 @@
 
                         </form>
 
+                        <div class="filter-preview w-full inline-block text-sm">
+                            <span @click="toggleFilters" class="cursor-pointer">Filters Applied: </span>
+                            <ul>
+                                <li class="none" v-if="!getFilterValueName('available') && !getFilterValueName('distance') && !getFilterValueName('site_type') && !getFilterValueName('appt_type')">
+                                    <span class="">None</span>
+                                </li>
+                                <li class="cursor-pointer" @click="removeFilter('available')" v-if="getFilterValueName('available')">
+                                    <span class="sr-only">Remove Availability Filter</span>
+                                    <span class="">{{ getFilterValueName('available') }}</span>
+                                </li>
+                                <li class="cursor-pointer" @click="removeFilter('distance')" v-if="getFilterValueName('distance')">
+                                    <span class="sr-only">Remove Distance Filter</span>
+                                    <span class="">{{ getFilterValueName('distance') }}</span>
+                                </li>
+                                <li class="cursor-pointer" @click="removeFilter('site_type')" v-if="getFilterValueName('site_type')">
+                                    <span class="sr-only">Remove Site Type Filter</span>
+                                    <span class="">{{ getFilterValueName('site_type') }}</span>
+                                </li>
+                                <li class="cursor-pointer" @click="removeFilter('appt_type')" v-if="getFilterValueName('appt_type')">
+                                    <span class="sr-only">Remove Appointment Type Filter</span>
+                                    <span class="">{{ getFilterValueName('appt_type') }}</span>
+                                </li>
+                            </ul>
+                        </div>
+
                         <div class="filters-box" :class="{show: show_filters}">
                             <h3 class="text-blue font-bold my-2"></h3>
-                            <div class="flex flex-wrap">
-                                <div class="p-2 text-sm md:w-1/2">
+                            <div class="flex flex-wrap text-sm">
+                                <div class="p-2 w-full sm:w-1/2">
                                     <h4 class="text-blue">Sort by Availability:</h4>
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="only" label="Available" />
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="no" label="Not Available" />
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="all" label="All" />
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="prefer" label="All with Available First" />
                                 </div>
-                                <div class="p-2 text-sm md:w-1/2">
+                                <div class="p-2 w-full sm:w-1/2">
                                     <h4 class="text-blue">Sort by Distance:</h4>
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="1" label="Within 1 mile" />
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="20" label="Within 20 miles" />
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="-1" label="Everywhere" />
                                 </div>
-                                <div class="p-2 text-sm md:w-1/2">
+                                <div class="p-2 w-full sm:w-1/2">
                                     <h4 class="text-blue">Sort by Site Type:</h4>
                                     <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" label="Healthcare Provider" />
                                     <checkbox v-model="search_filters.site_type.d" name="search_site_type_d" class="text-xs" value="d" label="Local Health Department" />
                                     <checkbox v-model="search_filters.site_type.p" name="search_site_type_p" class="text-xs" value="p" label="Pharmacies" />
                                 </div>
-                                <div class="p-2 text-sm md:w-1/2">
+                                <div class="p-2 w-full sm:w-1/2">
                                     <h4 class="text-blue">Sort by Appointment Type:</h4>
                                     <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" label="Schedule by web" />
                                     <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" label="Schedule by phone" />
@@ -113,15 +138,15 @@
                         <svg class="w-5 h-5 inline-block -mt-1 fill-current" v-if="view == 'map'" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="m2.5 7c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/></g><g><path d="m2.5 15c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/></g><g><path d="m2.5 23c-1.379 0-2.5-1.121-2.5-2.5s1.121-2.5 2.5-2.5 2.5 1.121 2.5 2.5-1.121 2.5-2.5 2.5zm0-4c-.827 0-1.5.673-1.5 1.5s.673 1.5 1.5 1.5 1.5-.673 1.5-1.5-.673-1.5-1.5-1.5z"/></g><g><path d="m23.5 5h-16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h16c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m23.5 13h-16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h16c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g><g><path d="m23.5 21h-16c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h16c.276 0 .5.224.5.5s-.224.5-.5.5z"/></g></svg>
                         Show {{ view == 'list' ? 'Map' : 'List' }} View
                     </div>
+                    <div class="text-blue text-2xl text-center" :class="{hidden: !searching}">
+                        <svg class="animate-spin -mt-1 h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Searching...
+                    </div>
                     <div class="search-results-wrapper md:block" :class="{hidden: view == 'map'}">
-                        <h2 class="text-blue">Search Results</h2>
-                        <div class="text-blue text-2xl text-center" :class="{hidden: !searching}">
-                            <svg class="animate-spin -mt-1 h-5 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                            </svg>
-                            Searching...
-                        </div>
+                        <h2 class="text-blue" v-if="search_locations">Search Results</h2>
                         <ul class="location-list" :class="{'opacity-70': searching}">
                             <li class="location relative bg-bluegray rounded p-2 my-2 flex" v-for="loc in (search_locations)" @mouseover="showLocationMarker(loc)">
                                 <div class="location-details flex-grow">
@@ -418,6 +443,78 @@ export default {
                 }
             }
             return vals;
+        },
+        removeFilter(filter_key) {
+            if(filter_key == 'available') {
+                this.search_filters.available = 'all';
+            } else if(filter_key == 'distance') {
+                this.search_filters.distance = -1;
+            } else if(filter_key == 'site_type') {
+                let vals = this.getFilterValues(this.search_filters.site_type)
+                for(let i in this.search_filters.site_type) {
+                    this.search_filters.site_type[i] = true;
+                }
+            } else if(filter_key == 'appt_type') {
+                let vals = this.getFilterValues(this.search_filters.appt_type)
+                for(let i in this.search_filters.appt_type) {
+                    this.search_filters.appt_type[i] = true;
+                }
+            }
+        },
+        getFilterValueName(filter_key) {
+            let filter_value = this.search_filters[filter_key];
+            if(filter_value == null) {
+                return '';
+            }
+            if(filter_key == 'available') {
+                let map = {
+                    only: 'Available',
+                    no: 'Unavailable',
+                    all: '',
+                    prefer: 'Available First',
+                };
+                return map[filter_value];
+            } else if(filter_key == 'distance') {
+                return filter_value == -1 ? '' : (filter_value + ' mi');
+            } else if(filter_key == 'site_type') {
+                let vals = this.getFilterValues(this.search_filters.site_type)
+                let map = {
+                    h: 'Healthcare',
+                    d: 'Health Dept.',
+                    p: 'Pharmacy',
+                };
+
+                // If all are selected, no filter is applied
+                if(vals.length == 3) {
+                    return '';
+                }
+
+                let names = [];
+                for(let i in vals) {
+                    names.push(map[vals[i]]);
+                }
+                return names.join(', ');
+            } else if(filter_key == 'appt_type') {
+                let vals = this.getFilterValues(this.search_filters.appt_type)
+                let map = {
+                    'web': 'Web',
+                    'phone': 'Phone',
+                    'walk-in': 'Walk-in',
+                };
+
+                // If all are selected, no filter is applied
+                if(vals.length == 3) {
+                    return '';
+                }
+
+                let names = [];
+                for(let i in vals) {
+                    names.push(map[vals[i]]);
+                }
+                return names.join(', ');
+            }
+
+            return '';
         },
         mobileCheck() {
             let check = false;

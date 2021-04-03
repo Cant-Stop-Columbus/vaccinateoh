@@ -44,6 +44,31 @@ h1.logo {
     max-height: 1000px;
 }
 
+.filter-preview {
+    @apply text-blue;
+}
+
+.filter-preview ul {
+    @apply inline-block;
+}
+
+.filter-preview li {
+    @apply inline-block bg-blue py-1 px-3 rounded-xl m-2 text-white;
+}
+
+.filter-preview li.none {
+    @apply bg-blue-lighter text-gray-700;
+}
+
+.filter-preview li:after {
+    @apply ml-2;
+    content: "\2715";
+}
+
+.filter-preview li.none:after {
+    content: "";
+}
+
 .map {
     height: calc(100vh - 350px);
 }
