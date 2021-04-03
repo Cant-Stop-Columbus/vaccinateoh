@@ -124,14 +124,18 @@ release: build push
 initial-commit:
 	git add --all && git ci -m 'Initial Commit'
 
+certs/default.key certs/default.crt:
+	openssl req -new -newkey rsa:2048 -sha256 -days 3650 -nodes -x509 -subj "/C=US/ST=Ohio/L=New Albany/O=Buckeye Innovation, LLC/CN=buckeye-innovation" -keyout certs/default.key -out certs/default.crt
+
 init-proxy-network:
 	-docker network create -d bridge proxy-network
 
-nginx-proxy: init-proxy-network
+nginx-proxy: init-proxy-network certs/default.key certs/default.crt
 	-docker rm nginx-proxy
 	docker pull jwilder/nginx-proxy
 	docker run -d --name nginx-proxy -p 80:80 -p 443:443 \
 	-v /var/run/docker.sock:/tmp/docker.sock:ro \
+	-v $(PWD)/certs:/etc/nginx/certs \
 	-v $(PWD)/conf/custom.conf:/etc/nginx/conf.d/custom.conf \
 	--restart=unless-stopped \
 	--network=proxy-network jwilder/nginx-proxy
