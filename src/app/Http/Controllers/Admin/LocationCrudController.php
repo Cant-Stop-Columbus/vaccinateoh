@@ -8,6 +8,7 @@ use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 use App\Models\AppointmentType;
 use App\Models\DataUpdateMethod;
+use App\Models\Location;
 use App\Models\LocationType;
 use App\Models\LocationSource;
 use App\Models\User;
@@ -204,29 +205,37 @@ class LocationCrudController extends CrudController
 
         $this->crud->addFilter([
             'name'  => 'data_update_method_id',
-            'type'  => 'select2',
+            'type'  => 'select2_multiple',
             'label' => 'Update Method'
         ], function () {
             return DataUpdateMethod::pluck('name', 'id')->prepend('-- None --',0)->toArray();
         }, function ($value) { // if the filter is active
-            if($value == 0) {
-                CRUD::addClause('whereNull', 'location_type_id');
+            $data_update_method_ids = json_decode($value);
+            if(in_array(0,$data_update_method_ids)) {
+                CRUD::addClause('where', function($q) use($data_update_method_ids) {
+                    $q->whereIn('data_update_method_id', $data_update_method_ids)
+                        ->orWhereNull('data_update_method_id');
+                });
             } else {
-                CRUD::addClause('where', 'data_update_method_id', $value);
+                CRUD::addClause('whereIn', 'data_update_method_id', $data_update_method_ids);
             }
         });
 
         $this->crud->addFilter([
             'name'  => 'location_type_id',
-            'type'  => 'select2',
+            'type'  => 'select2_multiple',
             'label' => 'Location Type'
         ], function () {
             return LocationType::pluck('name', 'id')->prepend('-- None --',0)->toArray();
         }, function ($value) { // if the filter is active
-            if($value == 0) {
-                CRUD::addClause('whereNull', 'location_type_id');
+            $location_type_ids = json_decode($value);
+            if(in_array(0,$location_type_ids)) {
+                CRUD::addClause('where', function($q) use($location_type_ids) {
+                    $q->whereIn('location_type_id', $location_type_ids)
+                        ->orWhereNull('location_type_id');
+                });
             } else {
-                CRUD::addClause('where', 'location_type_id', $value);
+                CRUD::addClause('whereIn', 'location_type_id', $location_type_ids);
             }
         });
 
@@ -246,15 +255,37 @@ class LocationCrudController extends CrudController
 
         $this->crud->addFilter([
             'name'  => 'location_source_id',
-            'type'  => 'select2',
+            'type'  => 'select2_multiple',
             'label' => 'Location Source'
         ], function () {
             return LocationSource::pluck('name', 'id')->prepend('-- None --',0)->toArray();
         }, function ($value) { // if the filter is active
-            if($value == 0) {
-                CRUD::addClause('whereNull', 'location_source_id');
+            $location_source_ids = json_decode($value);
+            if(in_array(0,$location_source_ids)) {
+                CRUD::addClause('where', function($q) use($location_source_ids) {
+                    $q->whereIn('location_source_id', $location_source_ids)
+                        ->orWhereNull('location_source_id');
+                });
             } else {
-                CRUD::addClause('where', 'location_source_id', $value);
+                CRUD::addClause('whereIn', 'location_source_id', $location_source_ids);
+            }
+        });
+
+        $this->crud->addFilter([
+            'name'  => 'county',
+            'type'  => 'select2_multiple',
+            'label' => 'County'
+        ], function () {
+            return Location::select(\DB::raw('DISTINCT county'))->orderBy('county')->pluck('county')->prepend('-- None --',0)->toArray();
+        }, function ($value) { // if the filter is active
+            $counties = json_decode($value);
+            if(in_array(0,$counties)) {
+                CRUD::addClause('where', function($q) use($counties) {
+                    $q->whereIn('county', $counties)
+                        ->orWhereNull('county');
+                });
+            } else {
+                CRUD::addClause('whereIn', 'county', $counties);
             }
         });
 
