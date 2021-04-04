@@ -74,26 +74,26 @@
                         <div class="filters-box" :class="{show: show_filters}">
                             <h3 class="text-blue font-bold my-2"></h3>
                             <div class="flex flex-wrap text-sm">
-                                <div class="p-2 w-full sm:w-1/2">
+                                <div class="p-2 w-1/2">
                                     <h4 class="text-blue">Sort by Availability:</h4>
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="only" label="Available" />
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="no" label="Not Available" />
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="all" label="All" />
                                     <radio v-model="search_filters.available" name="search_available" class="text-xs" value="prefer" label="All with Available First" />
                                 </div>
-                                <div class="p-2 w-full sm:w-1/2">
+                                <div class="p-2 w-1/2">
                                     <h4 class="text-blue">Sort by Distance:</h4>
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="1" label="Within 1 mile" />
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="20" label="Within 20 miles" />
                                     <radio v-model="search_filters.distance" name="search_distance" class="text-xs" value="-1" label="Everywhere" />
                                 </div>
-                                <div class="p-2 w-full sm:w-1/2">
+                                <div class="p-2 w-1/2">
                                     <h4 class="text-blue">Sort by Site Type:</h4>
                                     <checkbox v-model="search_filters.site_type.h" name="search_site_type_h" class="text-xs" value="h" label="Healthcare Provider" />
                                     <checkbox v-model="search_filters.site_type.d" name="search_site_type_d" class="text-xs" value="d" label="Local Health Department" />
                                     <checkbox v-model="search_filters.site_type.p" name="search_site_type_p" class="text-xs" value="p" label="Pharmacies" />
                                 </div>
-                                <div class="p-2 w-full sm:w-1/2">
+                                <div class="p-2 w-1/2">
                                     <h4 class="text-blue">Sort by Appointment Type:</h4>
                                     <checkbox v-model="search_filters.appt_type.web" name="search_appt_type_w" class="text-xs" value="web" label="Schedule by web" />
                                     <checkbox v-model="search_filters.appt_type.phone" name="search_appt_type_p" class="text-xs" value="phone" label="Schedule by phone" />
