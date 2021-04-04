@@ -10,6 +10,7 @@ use Str;
 
 use App\Helpers\Address;
 use App\Models\AppointmentType;
+use App\Models\Availability;
 use App\Models\DataUpdateMethod;
 use App\Models\Location;
 use App\Models\LocationSource;
@@ -40,8 +41,9 @@ class Import
         "Scraper Status" => -1,
     ];
 
-    public static function getLatestScrapedFile($prefix, $all_states = false) {
-        $latest_file = collect(Storage::disk('s3')->files())
+    public static function getLatestImportFile($prefix, $directory = '', $all_states = false) {
+        $prefix = (empty($directory) ? '' : $directory . '/') . $prefix;
+        $latest_file = collect(Storage::disk('s3')->files($directory))
             ->filter(function($filename) use($prefix) {
                 return Str::startsWith($filename,$prefix);
             })
@@ -61,7 +63,7 @@ class Import
     }
 
     public static function getMatchedLocations($prefix, $since = null, $one_match_only = true) {
-        $data = static::getLatestScrapedFile($prefix);
+        $data = static::getLatestImportFile($prefix);
 
         $vax_locations = collect();
         $data->each(function($vax_location) use(&$vax_locations) {
@@ -321,6 +323,109 @@ class Import
             'rows',
         ]);
 
+    }
+
+    public static function processArmorVax($data) {
+        $data_collection = collect($data);
+
+        $web_appointment_type = AppointmentType::firstOrCreate([
+            'name' => 'Web',
+            'short' => 'web'
+        ]);
+        $armorvax_location_source = LocationSource::firstOrCreate([
+            'name' => 'ArmorVax'
+        ]);
+        // Hardcoded -- boo. This is for Local Health Department.
+        $lhd_location_type_id = 3;
+
+        /**
+         * First things first: delete all the existing availabilities
+         * associated with the ArmorVax sites.
+         */
+        Location::bySource('ArmorVax')->each(
+        function ($location, $location_key) {
+            $location->availabilities->each(function ($availability, $key) {
+                // Delete the availabilities associated with each of the
+                // ArmorVax sites already in the database.
+                $availability->delete();
+            });
+        });
+
+        // For each of the entries in the posted JSON array ...
+        $data_collection->each(
+            function ($location_raw, $location_raw_key)
+                use ($armorvax_location_source,
+                     $web_appointment_type,
+                     $lhd_location_type_id) {
+                 // ... For each of the locations in each of the entries ...
+                collect($location_raw->AvailabilitiesByLocation)->each(
+                    function ($availability_raw, $availability_raw_key)
+                        use ($armorvax_location_source,
+                             $web_appointment_type,
+                             $lhd_location_type_id) {
+                        $name = $availability_raw->LocationName;
+                        $address = Address::standardize(
+                            $availability_raw->LocationAddress->AddressLine1 ."\n".
+                            $availability_raw->LocationAddress->City . ", " .
+                            $availability_raw->LocationAddress->State . " " .
+                            $availability_raw->LocationAddress->Zip);
+                        $address2 = Address::standardize(
+                            $availability_raw->LocationAddress->AddressLine2);
+                        $city = $availability_raw->LocationAddress->City;
+                        $state = $availability_raw->LocationAddress->State;
+                        $zip = $availability_raw->LocationAddress->Zip;
+                        $county = $availability_raw->LocationAddress->County;
+                        $bookinglink = "https://app.armorvax.com";
+                        $location_source_id = $armorvax_location_source->id;
+                        $location_type_id = $lhd_location_type_id;
+
+                        /**
+                         * ... Either find the location that matches or create a
+                         * new one ...
+                         */
+                        $location = Location::firstOrCreate(compact([
+                            'name',
+                            'county',
+                            'zip',
+                            'state',
+                            'address',
+                            'address2',
+                            'bookinglink',
+                            'location_source_id',
+                            'location_type_id',
+                        ]));
+
+                        /**
+                         * If the location has no appointment type
+                         * information associated with it, then
+                         * we will want to associate it with the
+                         * web appointment type.
+                         */
+                        if (!$location->appointmentTypes()->count()) {
+                            $location->appointmentTypes()->attach($web_appointment_type->id);
+                        }
+
+                        /**
+                         * ... For each of the the appointment slots
+                         * available at this location ...
+                         */
+                        collect($availability_raw->AppointmentAvailability)->each(
+                            function ($appointment_raw, $appointment_raw_key)
+                                use ($location) {
+                                $time = $appointment_raw->Date;
+                                $doses = $appointment_raw->NumberOfAppointments;
+
+                                /**
+                                 * Create an availability.
+                                 */
+                                $availability = Availability::firstOrCreate([
+                                    'location_id' => $location->id,
+                                    'doses' => $doses,
+                                    'availability_time' => $time,
+                                ]);
+                        });
+                    });
+        });
     }
 }
 
