@@ -25,7 +25,6 @@ class Address {
         '/\bU\.?S(\.|\b)/i' => 'US',
         '/\bOh\b/i' => 'OH',
         '/\bOhio(?= \d{5})/i' => 'OH', // replace 'Ohio' as the state with 'OH'
-        '/ (\w+)\n\s/i' => "\n$1 ",  // Fix addresses that got split in the middle of a 2-word city
         '/\s*[\|\r\n]+\s*/i' => "\n",  // replace a pipe with a line break
     ];
 
