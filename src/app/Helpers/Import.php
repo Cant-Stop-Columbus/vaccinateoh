@@ -41,8 +41,9 @@ class Import
         "Scraper Status" => -1,
     ];
 
-    public static function getLatestScrapedFile($prefix, $all_states = false) {
-        $latest_file = collect(Storage::disk('s3')->files())
+    public static function getLatestImportFile($prefix, $directory = '', $all_states = false) {
+        $prefix = (empty($directory) ? '' : $directory . '/') . $prefix;
+        $latest_file = collect(Storage::disk('s3')->files($directory))
             ->filter(function($filename) use($prefix) {
                 return Str::startsWith($filename,$prefix);
             })
