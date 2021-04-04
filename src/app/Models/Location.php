@@ -93,6 +93,20 @@ class Location extends Model
     }
 
     /**
+     * Scope query results by a particular source $source.
+     *
+     * @param QueryBuilder $query
+     * @param string $scope
+     * 
+     * @return QueryBuilder
+     */
+    public function scopeBySource($query, $source) {
+        return $query->whereHas('locationSource', function ($s) use($source) {
+            $s->where('name', '=', $source);
+        });
+    }
+
+    /**
      * Scope query results to order locations by proximity to the provided lat/lng coordinate pair
      *
      * @param QueryBuilder $query
