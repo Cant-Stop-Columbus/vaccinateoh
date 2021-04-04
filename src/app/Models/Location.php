@@ -318,6 +318,7 @@ class Location extends Model
                     'kroger pharmacy',
                     'rite aid',
                     'walmart',
+                    'walmart pharmacy',
                     'walgreens pharmacy',
                     'giant eagle pharmacy',
                     'discount drug mart inc',
@@ -342,6 +343,8 @@ class Location extends Model
         $locations = $locations->filter(function($l) use($row) {
             if(!empty($row['name'])) {
                 return strtolower(substr($l->name,0,8)) == strtolower(substr($row['name'],0,8));
+            } else {
+                return true;
             }
         })->values(); //values() resets the array keys to start with 0 even if 0 was filtered out
 
@@ -351,9 +354,7 @@ class Location extends Model
 
         // if we still have duplicates, check the end of the address
         $locations = $locations->filter(function($l) use($row) {
-            if(!empty($row['name'])) {
-                return Str::of($l->name)->endsWith(substr($row['address'],-5));
-            }
+            return Str::of($l->address)->endsWith(substr($row['address'],-5));
         })->values(); //values() resets the array keys to start with 0 even if 0 was filtered out
 
         return $locations;
