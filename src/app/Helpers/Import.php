@@ -88,7 +88,11 @@ class Import
         $dates_updated = 0;
         $location = $vax_location['location_matches'][0];
         $dates = $vax_location['vax_location']->availability;
-        $updated_at = Carbon::createFromTimestamp($vax_location['vax_location']->original_data_unix_time / 1000)->toDateTimeString();
+        if(is_numeric($vax_location['vax_location']->original_data_unix_time)) {
+            $updated_at = Carbon::createFromTimestamp($vax_location['vax_location']->original_data_unix_time / 1000)->toDateTimeString();
+        } else {
+            $updated_at = Carbon::parse($vax_location['vax_location']->original_data_unix_time)->toDateTimeString();
+        }
 
         // Clear existing availability before inserting new
         $location->clearAvailability();
