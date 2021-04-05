@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Helpers\Geo;
+use App\Helpers\Import;
 use App\Models\Location;
 
 use DB;
@@ -124,6 +125,24 @@ class ApiController extends Controller
     }
 
     public function armorvax(Request $request) {
+        /**
+         * If the user has a configuration for using s3, then we want to
+         * backup the data that we just received to s3.
+         */
+        try {
+            if (config('filesystems.disks.s3.key')) {
+                $path = sprintf('armorvax/%s/u%d_%s.json', config('app.env'), $request->user()->id, date('Y-m-d_his'));
+                $raw_data = file_get_contents('php://input');
+                \Storage::disk('s3')->write($path, $raw_data);
+            }
+        } catch (Exception $e) {
+            /*
+             * We are going to catch any exceptions that happen so that the
+             * database update does not fail if a transient error occurs while
+             * saving to AWS.
+             */
+        }
+
         $data = $request->all();
         $data_string = json_encode($data, JSON_PRETTY_PRINT);
         $data_decoded = json_decode($data_string);
@@ -137,24 +156,7 @@ class ApiController extends Controller
             return response('Unable to parse input', 500);
         }
 
-        /**
-         * If the user has a configuration for using s3, then we want to
-         * backup the data that we just received to s3.
-         */
-        try {
-            if (config('filesystems.s3.key')) {
-                $path = sprintf('armorvax/%s/u%d_%s.json', config('app.env'), $request->user()->id, date('Y-m-d_his'));
-                \Storage::disk('s3')->write($path, $data_string);
-            }
-        } catch (Exception $e) {
-            /*
-             * We are going to catch any exceptions that happen so that the
-             * database update does not fail if a transient error occurs while
-             * saving to AWS.
-             */
-        }
-
-        Import::processArmorVax($data);
+        Import::processArmorVax($data_decoded);
 
         /**
          * Finally, just return back what they sent us.
