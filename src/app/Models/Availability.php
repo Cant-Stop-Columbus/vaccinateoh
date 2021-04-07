@@ -29,8 +29,8 @@ class Availability extends Model
         static::saving(function ($availability) {
             if(!empty($availability->clear_existing)) {
                 $availability->location->clearAvailability(empty($availability->id) ? null : $availability->id);
-                unset($availability->clear_existing);
             }
+            unset($availability->clear_existing);
 
             if(empty($availability->availability_time)) {
                 $availability->availability_time = Carbon::today()->addDays(3);
