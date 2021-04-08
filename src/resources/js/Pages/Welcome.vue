@@ -152,6 +152,7 @@
                                 <div class="location-details flex-grow">
                                     <h3 class="font-bold color-blue mr-28">{{ loc.name }}</h3>
                                     <div class="address text-sm pb-2" v-html="addressHtml(loc.address)"></div>
+                                    <div v-if="loc.siteinstructions" class="text-sm pb-2" v-html="'Note: ' + newlineToBr(loc.siteinstructions)"/>
                                     <div class="text-xs" v-if="loc.distance">{{ round(loc.distance) }} miles away</div>
                                     <div class="text-xs pb-2">
                                         <a
@@ -553,6 +554,7 @@ export default {
                     marker.addListener("click", () => {
                         let content = '<h3 class="font-bold">' + loc.name + '</h3>'
                             + '<div class="address text-sm text-gray-700">' + this.addressHtml(loc.address) + '</div>'
+                            + (!loc.siteinstructions ? '' : '<div class="text-sm text-gray-700">Note: ' + this.newlineToBr(loc.siteinstructions) + '</div>')
                             + '<div class="phone text-sm text-gray-500"><a href="tel:' + loc.phone + '">' + loc.phone + '</a></div>'
                             + (!loc.distance ? '' : '<div class="my-1 text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
                             + (!loc.available ? '' : '<div class="my-1 text-xs text-green-500"> Next appointment: ' + this.formatDate(loc.available) + '</div>')
@@ -680,6 +682,9 @@ export default {
         },
         addressHtml(address) {
             return address.replace(/\||\r\n?/,'<br>');
+        },
+        newlineToBr(line) {
+            return line.replace(/\n|\r\n?/g,'<br>');
         },
     },
     mounted() {
