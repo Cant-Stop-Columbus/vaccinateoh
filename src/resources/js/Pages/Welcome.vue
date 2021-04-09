@@ -235,6 +235,10 @@
                             Next availability date: &nbsp;
                                 <input v-model="update_input.date_next_available" placeholder="yyyy-mm-dd" id="datepicker" />
                         </p>
+                        <p class="py-2">
+                            Number of doses: &nbsp;
+                                <input v-model="update_input.doses" />
+                        </p>
                         <p class="py-2">Vaccine Brand <span class="text-xs text-gray-600">(optional)</span>: &nbsp;
                             <select v-model="update_input.brand">
                                 <option value="">-- Select Brand --</option>
@@ -299,6 +303,7 @@ export default {
                 no_availability: false,
                 clear_existing: true,
                 show_modal: false,
+                doses: 1,
             },
             map: {
                 gmap: null,
@@ -641,6 +646,7 @@ export default {
                 availability_time: this.update_input.date_next_available,
                 brand: this.update_input.brand,
                 clear_existing: this.update_input.clear_existing,
+                doses: this.update_input.doses,
             }).then(function(response) {
                 if(response.data.error) {
                     toastr.error(error, 'Availability Update Error');
