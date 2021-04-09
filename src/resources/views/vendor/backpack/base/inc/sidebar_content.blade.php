@@ -15,6 +15,7 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('locationsource') }}'><i class='nav-icon la la-list'></i> LocationSources</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('locationtype') }}'><i class='nav-icon la la-list'></i> LocationTypes</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('county') }}'><i class='nav-icon la la-map-signs'></i> Counties</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('tag') }}'><i class='nav-icon la la-tags'></i> Tags</a></li>
 <hr>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('user') }}'><i class='nav-icon la la-user'></i> Users</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ route('admin.location.import') }}'><i class='nav-icon la la-map-marker'></i> Location Import</a></li>

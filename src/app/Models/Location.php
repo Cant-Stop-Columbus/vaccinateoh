@@ -247,6 +247,10 @@ class Location extends Model
         });
     }
 
+    public function tags() {
+        return $this->belongsToMany('App\Models\Tag');
+    }
+
     public function type() {
         return $this->belongsTo('App\Models\LocationType', 'location_type_id');
     }

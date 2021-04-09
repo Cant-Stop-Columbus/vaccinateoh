@@ -12,6 +12,7 @@ use App\Models\DataUpdateMethod;
 use App\Models\Location;
 use App\Models\LocationType;
 use App\Models\LocationSource;
+use App\Models\Tag;
 use App\Models\User;
 
 /**
@@ -142,6 +143,7 @@ class LocationCrudController extends CrudController
             'type' => 'relationship',
             'attribute' => 'name',
         ]);
+        CRUD::column('tags');
         CRUD::column('daysopen');
         CRUD::column('latitude');
         CRUD::column('longitude');
@@ -302,6 +304,19 @@ class LocationCrudController extends CrudController
             CRUD::addClause('whereIn', 'county', $counties);
         });
 
+        $this->crud->addFilter([
+            'name'  => 'tags',
+            'type'  => 'select2_multiple',
+            'label' => 'Tags',
+        ], function () {
+            return Tag::orderBy('name')->pluck('name','id')->toArray();
+        }, function ($value) { // if the filter is active
+            $tags = json_decode($value);
+            CRUD::addClause('whereHas', 'tags', function($q) use($tags) {
+                return $q->whereIn('tags.id',$tags);
+            });
+        });
+
         /**
          * Columns can be defined using the fluent syntax or array syntax:
          * - CRUD::column('price')->type('number');
@@ -377,6 +392,7 @@ class LocationCrudController extends CrudController
             'type' => 'relationship',
             'attribute' => 'name',
         ]);
+        CRUD::field('tags');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
