@@ -105,3 +105,26 @@ Artisan::command('set-appointment-types {--force}', function() {
     });
     $this->info("Updated $updated locations with appointment types");
 });
+
+Artisan::command('update-tags', function() {
+    $p1_matches = Location::whereIn('location_type_id',[1,3])
+        ->where(function($q) {
+            return $q->whereNull('location_source_id')
+                ->orWhere('location_source_id',1);
+        })
+        ->whereIn('data_update_method_id',[2,3,4])
+        ->get()
+        ->each(function($l) {
+            $l->tags()->attach(1); // 1 == P1
+        })
+        ->pluck('id');
+    // remove P1 tag from other locations that had it
+    Location::whereNotIn('id',$p1_matches)
+        ->whereHas('tags', function($q) { $q->where('id',1); })
+        ->each(function($l) {
+            $l->tags()->detach(1);
+        });
+
+    $p1_count = $p1_matches->count();
+    $this->info("Set P1 tag on $p1_count locations");
+});
