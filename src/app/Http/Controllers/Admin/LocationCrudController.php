@@ -7,6 +7,7 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 use App\Models\AppointmentType;
+use App\Models\County;
 use App\Models\DataUpdateMethod;
 use App\Models\Location;
 use App\Models\LocationType;
@@ -287,6 +288,18 @@ class LocationCrudController extends CrudController
             } else {
                 CRUD::addClause('whereIn', 'county', $counties);
             }
+        });
+
+        $this->crud->addFilter([
+            'name'  => 'region',
+            'type'  => 'select2_multiple',
+            'label' => 'Region'
+        ], function () {
+            return County::select(\DB::raw('DISTINCT region'))->orderBy('region')->pluck('region','region')->toArray();
+        }, function ($value) { // if the filter is active
+            $regions = json_decode($value);
+            $counties = County::whereIn('region', $regions)->pluck('name');
+            CRUD::addClause('whereIn', 'county', $counties);
         });
 
         /**

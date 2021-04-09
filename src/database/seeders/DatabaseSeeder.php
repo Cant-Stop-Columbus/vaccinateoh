@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(DataUpdateMethodSeeder::class);
         $this->call(AppointmentTypeSeeder::class);
         $this->call(LocationSourceSeeder::class);
+        $this->call(CountySeeder::class);
     }
 }
