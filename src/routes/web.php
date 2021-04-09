@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\StatsController;
 
 /*
@@ -32,6 +33,10 @@ Route::get('/', function () {
 Route::get('/dashboard', [StatsController::class, 'getDashboard'])->name('dashboard');
 
 Route::get('api/locations', [ApiController::class, 'locations'])->name('api.locations');
+Route::get('api/locations/{id}', [ApiController::class, 'showLocation'])->name('api.locations.show');
+
+Route::get('locations/{key}/provider-availability', [LocationController::class, 'showProviderUpdate'])->name('locations.show-provider-update');
+Route::post('api/locations/{key}/provider-availability', [ApiController::class, 'providerUpdate'])->name('api.locations.provider-update');
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::post('api/locations/{location}/availability', [ApiController::class, 'updateAvailability'])->name('api.availability.update');

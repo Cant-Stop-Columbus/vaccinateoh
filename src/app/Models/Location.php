@@ -22,6 +22,7 @@ class Location extends Model
         'available',
         'unavailable_until',
         'name_address',
+        'key',
     ];
 
     public $guarded = [
@@ -52,6 +53,14 @@ class Location extends Model
      */
     public function getNameAddressAttribute() {
         return $this->name . ' - ' . $this->address;
+    }
+
+    public function getKeyAttribute() {
+        return md5($this->id);
+    }
+
+    public function getProviderUpdateUrlAttribute() {
+        return route('locations.show-provider-update', ['key'=>$this->key]);
     }
 
     /**
@@ -488,7 +497,11 @@ class Location extends Model
     public static function scopeNoLinebreak($query) {
         return $query->where('address','NOT LIKE',"%
 %");
-}
+    }
+
+    public function scopeKey($query, $key) {
+        $query->where(DB::raw('md5(id::varchar(20))'),$key);
+    }
 
     public function buttonUpdateAvailability() {
         return '<a class="btn btn-sm btn-link" href="/admin/availability/create?location=' . $this->id .'" data-toggle="tooltip" title="Click to update location availability"><i class="la la-syringe"></i> Update Availability</a>';

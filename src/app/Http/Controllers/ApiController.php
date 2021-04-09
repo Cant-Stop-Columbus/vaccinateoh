@@ -9,9 +9,20 @@ use App\Helpers\Import;
 use App\Models\Location;
 
 use DB;
+use Inertia\Inertia;
 
 class ApiController extends Controller
 {
+    public function showLocation(Request $request, $id) {
+        $location = Location::with(['locationType','appointmentTypes'])->findOrFail($id);
+        return response()->json($location);
+    }
+
+    public function providerUpdate(Request $request, $key) {
+        $location = Location::key($key)->firstOrFail();
+        return self::updateAvailability($request, $location, true, true);
+    }
+
     public function locations(Request $request) {
         $default_page_size = env('LOCATION_PAGE_SIZE', 100);
 
@@ -93,10 +104,13 @@ class ApiController extends Controller
         ]));
     }
 
-    public function updateAvailability(Request $request, Location $location) {
+    public function updateAvailability(Request $request, Location $location, $clear_existing = false, $is_provider_update = false) {
         $availability_time = $request->input('availability_time');
         $brand = $request->input('brand');
-        $clear_existing = $request->input('clear_existing');
+        $doses = $request->input('doses', 1);
+        if($request->has('clear_existing')) {
+            $clear_existing = $request->input('clear_existing');
+        }
         $no_availability = $request->input('no_availability');
         $brand = $request->input('brand');
 
@@ -110,9 +124,10 @@ class ApiController extends Controller
 
         $availability = $location->updateAvailability([
             'availability_time' => $availability_time,
-            'doses' => $no_availability ? 0 : 1,
-            'updated_by_user_id' => $request->user()->id,
+            'doses' => $no_availability ? 0 : $doses,
+            'updated_by_user_id' => $request->user() ? $request->user()->id : null,
             'brand' => $brand,
+            'is_provider_update' => $is_provider_update,
         ], $clear_existing);
 
         if(!$availability) {

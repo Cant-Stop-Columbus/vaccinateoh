@@ -65,6 +65,7 @@ class AvailabilityCrudController extends CrudController
             'entity' => 'updated_by_user',
             'type' => 'relationship',
         ]);
+        CRUD::column('is_provider_update');
         CRUD::addColumn([
             'name' => 'was_deleted',
             'label' => 'Deleted?',
@@ -79,7 +80,7 @@ class AvailabilityCrudController extends CrudController
         CRUD::addFilter([
             'type'  => 'simple',
             'name'  => 'manual',
-            'label' => 'Show only manual updates'
+            'label' => 'Volunteer updates'
           ],
           false,
           function($values) { // if the filter is active
@@ -89,8 +90,19 @@ class AvailabilityCrudController extends CrudController
 
         CRUD::addFilter([
             'type'  => 'simple',
+            'name'  => 'provider',
+            'label' => 'Provider updates'
+          ],
+          false,
+          function($values) { // if the filter is active
+              $this->crud->query = $this->crud->query->where('is_provider_update', true);
+          }
+        );
+
+        CRUD::addFilter([
+            'type'  => 'simple',
             'name'  => 'trashed',
-            'label' => 'Include old/deleted availability'
+            'label' => 'Include old/deleted'
           ],
           false,
           function($values) { // if the filter is active
@@ -101,7 +113,7 @@ class AvailabilityCrudController extends CrudController
         CRUD::addFilter([
             'type'  => 'simple',
             'name'  => 'multiple_future',
-            'label' => 'Has multiple future availabilities'
+            'label' => 'Has multiple future'
           ],
           false,
           function($values) { // if the filter is active

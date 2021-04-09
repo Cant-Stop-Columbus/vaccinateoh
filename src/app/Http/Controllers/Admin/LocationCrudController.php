@@ -69,7 +69,7 @@ class LocationCrudController extends CrudController
         ]);
         CRUD::addColumn([
             'name' => 'availability_updated_at',
-            'label' => 'Avaialbility Updated',
+            'label' => 'Availability Updated',
             'orderable' => true,
             'orderLogic' => function ($query, $column, $columnDirection) {
                 return $query->leftJoin(
@@ -421,6 +421,7 @@ class LocationCrudController extends CrudController
     protected function setupShowOperation()
     {
         $this->setupListOperation();
+        CRUD::column('provider_update_url')->limit(1000);
     }
 
     /**

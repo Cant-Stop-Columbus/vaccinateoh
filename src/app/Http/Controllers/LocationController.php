@@ -14,6 +14,8 @@ use App\Models\LocationSource;
 use App\Models\LocationType;
 use App\Models\User;
 
+use DB;
+
 use Spatie\SimpleExcel\SimpleExcelReader;
 
 class LocationController extends Controller
@@ -43,5 +45,12 @@ class LocationController extends Controller
         $map = $request->input('import_header_map');
         $match_count = $request->input('match_count');
         return Import::importLocations($match_count, $map);
+    }
+
+    public function showProviderUpdate(Request $request, $key) {
+        $location = Location::key($key)->firstOrFail();
+        return Inertia::render('ProviderUpdate', compact([
+            'location',
+        ]));
     }
 }
