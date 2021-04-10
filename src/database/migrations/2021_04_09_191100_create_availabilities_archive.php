@@ -25,13 +25,11 @@ class CreateAvailabilitiesArchive extends Migration
             $table->timestamps();
             $table->foreign('location_id')->references('id')->on('locations');
             $table->foreign('updated_by_user_id')->references('id')->on('users');
-            $table->index(['id','location_id','availability_time']);
+            $table->index(['location_id','availability_time']);
             $table->index(['availability_time']);
             $table->index(['updated_at']);
         });
         Schema::table('availabilities', function (Blueprint $table) {
-            $table->dropIndex(['location_id','availability_time']);
-            $table->index(['id','location_id','availability_time']);
             $table->index(['availability_time']);
             $table->index(['updated_at']);
         });
