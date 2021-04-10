@@ -28,7 +28,7 @@ class Stats {
      * updated.
      */
     public static function countLocationsNeverUpdated() {
-        return count(DB::select(DB::raw("select id from locations where id NOT IN (select location_id from availabilities group by location_id)")));
+      return DB::select(DB::raw("select count(*) from locations where not exists (select location_id from availabilities_all where location_id = locations.id)"))[0]->count;
     }
 
     /**
@@ -41,10 +41,11 @@ class Stats {
      * have been updated.
      */
     public static function countLocationsUpdatedLongerAgoThan(int $days) {
-        $results = Availability::where(DB::raw("floor((extract(epoch from NOW() - updated_at))/86400)"), ">", $days)
-          ->distinct()
-          ->count('location_id');
-        return $results;
+      $results = DB::table('availabilities_all')
+        ->select(DB::raw('count(distinct location_id) as count'))
+        ->where(DB::raw('floor((extract(epoch from NOW() - updated_at))/86400)'),'>',$days)
+        ->get()[0]->count;
+      return $results;
     }
 
     /**
@@ -64,7 +65,7 @@ class Stats {
          * Count the number of sites updated during each of the last
          * $forDays days.
          */
-        $results = DB::select(DB::raw("select floor((extract(epoch from NOW() - updated_at))/86400) as since_update, count(*) from (select max(updated_at) as updated_at from availabilities group by location_id) as location_update_times where floor((extract(epoch from NOW() - updated_at))/86400) < ? group by since_update order by since_update asc"), [$forDays]);
+        $results = DB::select(DB::raw("select floor((extract(epoch from NOW() - updated_at))/86400) as since_update, count(*) from (select max(updated_at) as updated_at from availabilities_all group by location_id) as location_update_times where floor((extract(epoch from NOW() - updated_at))/86400) < ? group by since_update order by since_update asc"), [$forDays]);
 
         /**
          * Not every bucket will come back with a value. Therefore, we have
@@ -120,9 +121,10 @@ class Stats {
      *
      */
     public static function topUpdaters(int $howMany = -1, $start = null, $end = null) {
-        $query = DB::table('availabilities')
+
+        $query = DB::table('availabilities_all')
             ->select('name', DB::raw('count(updated_by_user_id) as update_count'))
-            ->join('users', 'availabilities.updated_by_user_id','=','users.id')
+            ->join('users', 'availabilities_all.updated_by_user_id','=','users.id')
             ->groupBy('updated_by_user_id')
             ->groupBy('name')
             ->orderBy('update_count', 'desc');
@@ -132,11 +134,11 @@ class Stats {
         }
 
         if($start) {
-          $query->where('availabilities.created_at', '>=', $start);
+          $query->where('availabilities_all.updated_at', '>=', $start);
         }
 
         if($end) {
-          $query->where('availabilities.created_at', '<=', $end);
+          $query->where('availabilities_all.updated_at', '<=', $end);
         }
 
         return $query->get();
@@ -149,6 +151,10 @@ class Stats {
      *
      */
     public static function updatesSince(string $since) {
-        return Availability::withTrashed()->where('updated_at','>',$since)->whereNotNull('updated_by_user_id')->count();
+        return DB::table('availabilities_all')
+          ->where('updated_at', '>', $since)
+          ->whereNotNull('updated_by_user_id')
+          ->select(DB::raw('count(*) as count'))
+          ->get()[0]->count;
     }
 }
