@@ -34,15 +34,15 @@ class ApiController extends Controller
         $appt_type = $request->input('appt_type');
 
         // Just set a default always true clause to initialize the QueryBuilder object
-        $locations = Location::whereRaw(\DB::raw('1=1'));
+        $locations = Location::query()->joinAvailability();
 
         // Limit results to only available locations if the available flag is set
         if($available === 'only') {
-            $locations->available();
+            $locations->where('next_availability.doses','>','0');
         } else if($available == 'no') {
-            $locations->unavailable();
+            $locations->where('next_availability.doses','=','0');
         } else if($available != 'all') {
-            $locations->preferAvailable();
+            $locations->orderBy(DB::raw('CASE WHEN next_availability.doses > 0 THEN 1 ELSE 0 END'), 'desc');
         }
 
         if($site_type) {

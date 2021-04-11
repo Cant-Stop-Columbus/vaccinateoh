@@ -183,7 +183,7 @@
                                                 <path d="M9.17794 13.3117L6.80728 10.824L6 11.6652L9.17794 15L16 7.84116L15.1984 7L9.17794 13.3117Z" fill="#EEF7FF"/>
                                             </svg>
                                         </div>
-                                        <div v-else-if="loc.unavailable_until" title="No appointments available">
+                                        <div v-else-if="loc.doses == 0" title="No appointments available">
                                             <span class="mr-1">Not Available</span>
                                             <svg class="inline-block" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <ellipse cx="11" cy="10.5" rx="11" ry="10.5" fill="#FF0000"/>
@@ -540,7 +540,7 @@ export default {
                     let latLng = { lat: parseFloat(loc.latitude), lng: parseFloat(loc.longitude)};
 
                     let icon = iconBase;
-                    if(loc.unavailable_until) {
+                    if(loc.doses === 0) {
                         icon = 'red-square-lv.png';
                     } else if(loc.available) {
                         icon = 'grn-stars.png';
@@ -563,8 +563,8 @@ export default {
                             + '<div class="phone text-sm text-gray-500"><a href="tel:' + loc.phone + '">' + loc.phone + '</a></div>'
                             + (!loc.distance ? '' : '<div class="my-1 text-xs text-gray-500">' + this.round(loc.distance) + ' miles</div>')
                             + (!loc.available ? '' : '<div class="my-1 text-xs text-green-500"> Next appointment: ' + this.formatDate(loc.available) + '</div>')
-                            + (!loc.unavailable_until ? '' : '<div class="my-1 text-xs text-red-400"> No appointments available</div>')
-                            + (loc.available || loc.unavailable_until ? '' : '<div class="my-1 text-xs text-gray-400"> Availability Unknown</div>')
+                            + (loc.doses !== 0 ? '' : '<div class="my-1 text-xs text-red-400"> No appointments available</div>')
+                            + (loc.available || loc.doses != null ? '' : '<div class="my-1 text-xs text-gray-400"> Availability Unknown</div>')
                             + '<div class="my-1 text-xs text-gray-600">Last updated ' + this.formatDateRelative(loc.updated_at)
                             + (!this.$page.props.user ? '' : ' <span class="my-1 text-xs text-gray-500 cursor-pointer underline" onclick="vaccine_vue.showInputModal(' + loc.id + ')">update now</span>')
                             + '</div>'

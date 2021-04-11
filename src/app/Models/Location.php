@@ -19,8 +19,6 @@ class Location extends Model
     use SoftDeletes;
 
     public $appends = [
-        'available',
-        'unavailable_until',
         'name_address',
         'key',
     ];
@@ -273,6 +271,16 @@ class Location extends Model
         return $this->hasMany('App\Models\Availability', 'location_id')->where('availability_time', '>=', date('Y-m-d'));
     }
 
+    public function scopeJoinAvailability($query) {
+        return $query->leftJoin(DB::raw('(SELECT location_id,case when max(doses) = 0 THEN null ELSE min(availability_time) END as available,max(doses) as doses FROM availabilities GROUP BY location_id) as next_availability'), function($q) {
+            $q->on('next_availability.location_id', '=', 'locations.id' )
+                ->where(function($q2) {
+                    return $q2->where('available', '>=', date('Y-m-d'))
+                        ->orWhereNull('available');
+                });
+        });
+    }
+
     public function appointmentTypes() {
         return $this->belongsToMany('App\Models\AppointmentType', 'locations_appointment_types');
     }
@@ -427,24 +435,6 @@ class Location extends Model
         $availability->load('location');
 
         return $availability;
-    }
-
-    /**
-     * Next available appointment time
-     *
-     * @return string DateTime of next appoingment (YYYY-mm-dd HH:ii:ss); null if none
-     */
-    public function getAvailableAttribute() {
-        return $this->futureAvailability()->where('doses', '>', 0)->min('availability_time');
-    }
-
-    /**
-     * Date in the future when no doses are available
-     *
-     * @return String datetime when appointments will still be unavailable
-     */
-    public function getUnavailableUntilAttribute() {
-        return $this->available ? null : $this->futureAvailability()->where('doses', '0')->min('availability_time');
     }
 
     public function getAvailabilityUpdatedAtAttribute() {
