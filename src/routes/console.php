@@ -22,7 +22,11 @@ Artisan::command('import {store}', function($store) {
     $stores = $store == 'all' ? explode(',',env('IMPORT_STORE_PREFIXES')) : [$store];
 
     collect($stores)->each(function($store) {
-        $vax_locations = Import::getMatchedLocations($store);
+        $path = Import::getLatestImportPath($store);
+        $vax_locations = Import::getMatchedLocations($path);
+        if(\App::environment('production')) {
+            Import::markAsProcessed($path);
+        }
         $location_count = $vax_locations->count();
 
         $this->info("\n\nImporting from $location_count $store locations.\n");

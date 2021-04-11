@@ -41,16 +41,30 @@ class Import
         "Scraper Status" => -1,
     ];
 
-    public static function getLatestImportFile($prefix, $directory = '', $all_states = false) {
+    public static function getLatestImportPath($prefix, $directory = '') {
         $prefix = (empty($directory) ? '' : $directory . '/') . $prefix;
-        $latest_file = collect(Storage::disk('s3')->files($directory))
+        $latest_path = collect(Storage::disk('s3')->files($directory))
             ->filter(function($filename) use($prefix) {
                 return Str::startsWith($filename,$prefix);
             })
             ->sort()
             ->last();
 
-        $latest = collect(json_decode(Storage::disk('s3')->get($latest_file)));
+        return $latest_path;
+    }
+
+    public static function markAsProcessed($path) {
+        Storage::disk('s3')->move($path, 'processed/'.$path);
+    }
+
+    public static function getLatestImportFile($prefix, $directory = '', $all_states = false) {
+        $latest_filename = static::getLatestImportPath($prefix, $directory);
+        return static::getImportFile($latest_path, $all_states);
+    }
+
+    public static function getImportFile($filename, $all_states = false) {
+
+        $latest = collect(json_decode(Storage::disk('s3')->get($filename)));
 
         // Filter to just Ohio locations unless $all_states == true
         if(!$all_states) {
@@ -62,8 +76,12 @@ class Import
         return $latest;
     }
 
-    public static function getMatchedLocations($prefix, $since = null, $one_match_only = true) {
-        $data = static::getLatestImportFile($prefix);
+    public static function getMatchedLocations($path_or_prefix, $since = null, $one_match_only = true) {
+        // If it doesn't appear to be a valid path, treat it like a prefix and look up the path
+        if(!Storage::disk('s3')->exists($path_or_prefix)) {
+            $path_or_prefix = static::getLatestImportPath($path_or_prefix, $since, $one_match_only);
+        }
+        $data = static::getImportFile($path_or_prefix);
 
         $vax_locations = collect();
         $data->each(function($vax_location) use(&$vax_locations) {
