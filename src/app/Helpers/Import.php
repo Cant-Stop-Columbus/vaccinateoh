@@ -58,7 +58,7 @@ class Import
     }
 
     public static function getLatestImportFile($prefix, $directory = '', $all_states = false) {
-        $latest_filename = static::getLatestImportPath($prefix, $directory);
+        $latest_path = static::getLatestImportPath($prefix, $directory);
         return static::getImportFile($latest_path, $all_states);
     }
 
@@ -109,9 +109,13 @@ class Import
         $location = $vax_location['location_matches'][0];
         $dates = $vax_location['vax_location']->availability;
         if(is_numeric($vax_location['vax_location']->original_data_unix_time)) {
-            $updated_at = Carbon::createFromTimestamp($vax_location['vax_location']->original_data_unix_time / 1000)->toDateTimeString();
+            $updated_at = Carbon::createFromTimestamp($vax_location['vax_location']->original_data_unix_time / 1000)
+                ->tz(config('app.timezone'))
+                ->toDateTimeString();
         } else {
-            $updated_at = Carbon::parse($vax_location['vax_location']->original_data_unix_time)->toDateTimeString();
+            $updated_at = Carbon::parse($vax_location['vax_location']->original_data_unix_time)
+                ->tz(config('app.timezone'))
+                ->toDateTimeString();
         }
 
         // Clear existing availability before inserting new
