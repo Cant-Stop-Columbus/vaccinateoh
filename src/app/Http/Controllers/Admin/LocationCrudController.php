@@ -48,11 +48,20 @@ class LocationCrudController extends CrudController
      */
     protected function setupListOperation()
     {
+        $this->crud->query->joinAvailability();
         CRUD::column('name')
             ->searchLogic([self::class, 'searchCaseInsensitive']);
         CRUD::column('address')
             ->limit(255)
             ->searchLogic([self::class, 'searchCaseInsensitive']);
+        CRUD::addColumn([
+            'name' => 'all_doses',
+            'label' => 'Future Doses',
+            'orderable' => true,
+            'orderLogic' => function ($query, $column, $columnDirection) {
+                return $query->orderBy(\DB::raw('COALESCE(next_availability.all_doses,0)'), $columnDirection);
+            }
+        ]);
         CRUD::addColumn([
             'name' => 'available',
             'label' => 'Next Appointment',

@@ -272,7 +272,7 @@ class Location extends Model
     }
 
     public function scopeJoinAvailability($query) {
-        return $query->leftJoin(DB::raw('(SELECT location_id,case when max(doses) = 0 THEN null ELSE min(availability_time) END as available,max(doses) as doses FROM availabilities GROUP BY location_id) as next_availability'), function($q) {
+        return $query->leftJoin(DB::raw('(SELECT location_id,case when max(doses) = 0 THEN null ELSE min(availability_time) END as available,max(doses) as doses,sum(doses) all_doses FROM availabilities GROUP BY location_id) as next_availability'), function($q) {
             $q->on('next_availability.location_id', '=', 'locations.id' )
                 ->where(function($q2) {
                     return $q2->where('available', '>=', date('Y-m-d'))
