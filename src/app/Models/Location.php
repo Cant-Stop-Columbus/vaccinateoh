@@ -197,9 +197,7 @@ class Location extends Model
      * @return QueryBuilder
      */
     public function scopeAvailable($query) {
-        return $query->whereHas('futureAvailability', function($q) {
-            $q->where('doses', '>', 0);
-        });
+        return $query->where('next_availability.doses','>',0);
     }
 
     /**

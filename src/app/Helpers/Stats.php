@@ -20,7 +20,7 @@ class Stats {
      *
      */
     public static function countFutureAvailability() {
-      return Location::available()->count();
+      return Location::joinAvailability()->available()->count();
     }
 
     /**
