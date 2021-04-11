@@ -29,6 +29,8 @@ class StatsController extends Controller
         $locationsCount = Stats::countLocations();
         //Get the number of available locations with future availability from the DB
         $availableLocationsCount = Stats::countFutureAvailability();
+        //Get the total number of doses available in the future
+        $totalDoses = Stats::sumFutureDoses();
         //Get a list of the top updaters.
         $topUpdaters = Stats::topUpdaters();
         $topUpdatersToday = Stats::topUpdaters(-1, Carbon::today());
@@ -43,6 +45,7 @@ class StatsController extends Controller
         return Inertia::render('Dashboard', compact([
           'locationsCount',
           'availableLocationsCount',
+          'totalDoses',
           'topUpdaters',
           'topUpdatersToday',
           'topUpdaters7Days',

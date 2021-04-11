@@ -19,6 +19,7 @@
                     <h2 class="underline text-lg">VaccinateOH Database Statistics:</h2>
                     <div>Locations in the Database: {{ locationsCount }}</div>
                     <div>Locations in the Database with Future Availability: {{ availableLocationsCount }}</div>
+                    <div>Total Doses Available: {{ totalDoses }}</div>
                     <div>Locations never updated: {{ countLocationsNeverUpdated }}</div>
                 </div>
                 <div class="my-6">
@@ -195,6 +196,7 @@ tbody tr:nth-child(odd) {
         props: {
             locationsCount: Number,
             availableLocationsCount: Number,
+            totalDoses: Number,
             topUpdaters: Array,
             topUpdatersToday: Array,
             topUpdaters7Days: Array,

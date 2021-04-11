@@ -24,6 +24,14 @@ class Stats {
     }
 
     /**
+     * Get the total number of doses available in the future.
+     *
+     */
+    public static function sumFutureDoses() {
+      return Location::joinAvailability()->sum('doses');
+    }
+
+    /**
      * Get the number of locations that have never had their information
      * updated.
      */
