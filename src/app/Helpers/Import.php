@@ -69,7 +69,7 @@ class Import
         // Filter to just Ohio locations unless $all_states == true
         if(!$all_states) {
             $latest = $latest->filter(function($location) {
-                return Address::isInState($location->address,'OH');
+                return Address::isInState($location->address,config('vaccinate.state'));
             });
         }
 
