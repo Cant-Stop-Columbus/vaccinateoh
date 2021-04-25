@@ -24,6 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->command('retrieve-vaccinespotter')->cron(env('RETRIEVE_CRON','28,58 * * * *'));
         $schedule->command('import all')->cron(env('IMPORT_CRON','0,30 * * * *'));
     }
 
