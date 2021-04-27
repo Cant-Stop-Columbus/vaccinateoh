@@ -7,5 +7,5 @@ export MAIL_FROM_NAME=VaccinateOH
 export MAIL_FROM_ADDRESS=info@vaccinateoh.org
 export IMPORT_CRON="2 1 * * *"
 export RETRIEVE_CRON="0 1 * * *"
-export IMPORT_STORE_PREFIXES=vaccinespotter
+export IMPORT_STORE_PREFIXES=vaccinespotter,kroger,riteaid
 PROD_WEB_SERVER=web1.vaccinateoh.org
