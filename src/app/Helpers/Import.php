@@ -81,6 +81,9 @@ class Import
         if(!Storage::disk('s3')->exists($path_or_prefix)) {
             $path_or_prefix = static::getLatestImportPath($path_or_prefix, $since, $one_match_only);
         }
+        if(empty($path_or_prefix)) {
+            return collect();
+        }
         $data = static::getImportFile($path_or_prefix);
 
         $vax_locations = collect();
