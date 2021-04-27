@@ -54,6 +54,9 @@ class Import
     }
 
     public static function markAsProcessed($path) {
+        if(empty($path)) {
+            return;
+        }
         Storage::disk('s3')->move($path, 'processed/'.$path);
     }
 
